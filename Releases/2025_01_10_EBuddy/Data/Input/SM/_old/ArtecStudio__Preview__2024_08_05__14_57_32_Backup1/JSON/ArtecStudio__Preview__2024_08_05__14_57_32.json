@@ -1,0 +1,75 @@
+{
+    "states": [
+	    "SaveFile",
+		"CloseAllArtecStudios",
+		"Start",
+		"Ready",
+        "ArtecStudioIsOff",
+        "ArtecStudioIsOn",
+		"CameraSetupBasicVerified",
+		"CameraSetupAdvanced1Verified",
+		"CameraSetupAdvanced2Verified",
+        "ScanMenuIsOn",
+		"ScannerIsOn",
+        "PreviewIsOn",
+		"End"
+    ],
+    "transitions": [
+	    {
+            "trigger": "Auto",
+            "source": "Start",
+            "dest": "Ready"
+        },
+	    {
+            "trigger": "CheckArtecStudioIsOff",
+            "source": "Ready",
+            "dest": "ArtecStudioIsOff"
+        },
+        {
+            "trigger": "StartArtecStudio",
+            "source": "ArtecStudioIsOff",
+            "dest": "ArtecStudioIsOn"
+        },
+        {
+            "trigger": "StartScanMenu",
+            "source": "ArtecStudioIsOn",
+            "dest": "ScanMenuIsOn"
+        },
+		{
+            "trigger": "CheckScannerIsOn",
+            "source": "ScanMenuIsOn",
+            "dest": "ScannerIsOn"
+        },
+        {
+            "trigger": "VerifyCameraSetupBasic",
+            "source": "ScannerIsOn",
+            "dest": "CameraSetupBasicVerified"
+        },
+        {
+            "trigger": "VerifyCameraSetupAdvanced1",
+            "source": "CameraSetupBasicVerified",
+            "dest": "CameraSetupAdvanced1Verified"
+        },
+        {
+            "trigger": "VerifyCameraSetupAdvanced2",
+            "source": "CameraSetupAdvanced1Verified",
+            "dest": "CameraSetupAdvanced2Verified"
+        },
+        {
+            "trigger": "StartPreview",
+            "source": "CameraSetupAdvanced2Verified",
+            "dest": "PreviewIsOn"
+        },
+        {
+            "trigger": "Auto",
+            "source": "PreviewIsOn",
+            "dest": "End"
+        },
+        {
+            "trigger": "Next",
+            "source": "End",
+            "dest": "Start"
+        }
+    ],
+    "initial": "Start"
+}

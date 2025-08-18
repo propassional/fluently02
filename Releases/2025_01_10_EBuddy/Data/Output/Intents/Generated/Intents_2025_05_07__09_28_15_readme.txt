@@ -1,0 +1,9 @@
+The file \Intents_2025_05_07__09_28_15.json has been created automatically, using the FLIntentExtractFromYAMLPerState.py module 
+It contains all possible user interaction alternatives, for each SM state
+
+The user can select following alternatives:
+1) Select within states or jump states of the current state machine
+2) Select other tabs, containing other state machines: ['Components', 'Preview', 'Recording', 'FullScan', 'SliceScan', 'Registration', 'CommandHub']
+3) Select EBuddy GUI buttons or tab change commands: ['PreviousSlide', 'NextSlide', 'Okay', 'SkipSlide', 'DetailedSlide', 'ThumbUp', 'ThumbDown', 'ILike', 'IDislike', 'GoToTabLeft', 'GoToTabRight', 'AutopilotOn', 'AutopilotOff']
+
+Note: I removed the settings intent: since we decided not to command by voice the settings button contents, for consistency we do not open it by voice

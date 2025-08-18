@@ -1,0 +1,25 @@
+Here's an example of how you can use a regular expression in PyCharm to search for lines that contain both "event" and "close":
+1. Open the search functionality (Ctrl+F for current file or Ctrl+Shift+F for project-wide search).
+2. Click the regex icon to enable regular expression mode.
+3. Enter the following regular expression in the search field:
+
+(?i)^.*event.*close.*$|^.*close.*event.*$
+
+This regex will match any line that contains both "event" and "close" in any order.
+Let's break down the regex:
+- The `(?i)` at the beginning makes the entire regex case-insensitive
+- `^` : Start of the line
+- `.*` : Any character (except newline) zero or more times
+- `event` : The literal word "event"
+- `.*` : Any character (except newline) zero or more times
+- `close` : The literal word "close"
+- `.*` : Any character (except newline) zero or more times
+- `$` : End of the line
+- `|` : OR operator
+- The second part after `|` is the same pattern but with "close" and "event" swapped, to catch lines where "close" appears before "event"
+
+This regex will match lines like:
+- "The event was closed successfully."
+- "Close the event after the participants leave."
+- "Event handler for close button clicked."
+- "Closing the event prematurely is not recommended."

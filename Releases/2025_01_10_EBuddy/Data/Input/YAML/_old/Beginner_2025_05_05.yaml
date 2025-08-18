@@ -1,0 +1,40 @@
+# Add as many SM entries as needed
+# If path is empty, the user is asked to provide a path to the SM
+
+# Overall SM
+  # Defines the JSON file name as json_name.json, but indirectly it defines also the name of the code to be used as json_name.py
+
+# SM for opening Artec Studio and starting preview
+- SM_path: D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\ArtecStudio__Preview__2025_04_14__24_36_24\JSON\ArtecStudio__2025_04_14__24_36_24.json
+  # Name used for the EBuddy tab
+  SM_name: Preview
+  app_name: Artec Studio 16 Professional
+  autopilot: False
+
+# SM for setting up Artec Studio full scan mode
+- SM_path: D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\ArtecStudio__FullScan__2024_08_05__14_57_32\JSON\ArtecStudio__FullScan__2024_08_05__14_57_32.json
+  # Name used for the EBuddy tab
+  SM_name: FullScan
+  app_name: Artec Studio 16 Professional
+  autopilot: False
+  
+# SM for setting up Artec Studio slice scan mode
+- SM_path: D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\ArtecStudio__SliceScan__2025_03_12__12_21_46\JSON\ArtecStudio__SliceScan__2025_03_12__12_21_46.json
+  # Name used for the EBuddy tab
+  SM_name: SliceScan
+  app_name: Artec Studio 16 Professional
+  autopilot: False
+
+  # SM for registration
+- SM_path: D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\ArtecStudio__Registration__2024_11_07\JSON\ArtecStudio__Registration__2024_11_07.json
+  # Name used for the EBuddy tab
+  SM_name: Registration
+  app_name: 
+  autopilot: False
+  
+  # SM container for general purpose commands
+- SM_path: D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\ArtecStudio__CommandHub__2024_10_07\JSON\ArtecStudio__CommandHub__2024_10_07.json
+  # Name used for the EBuddy tab
+  SM_name: CommandHub
+  app_name: 
+  autopilot: False

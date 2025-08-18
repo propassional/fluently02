@@ -1,0 +1,44 @@
+{
+    "states": [
+		"Start",
+		"Ready",
+		"RototiltInstalled",
+		"MarkersApplied",
+		"RingBelowScanned",
+		"RingIntermediateScanned",
+		"RingAboveScanned"
+    ],
+    "transitions": [
+	    {
+            "trigger": "Auto",
+            "source": "Start",
+            "dest": "Ready"
+        },
+        {
+            "trigger": "GetARototilt",
+            "source": "Ready",
+            "dest": "RototiltInstalled"
+        },
+        {
+            "trigger": "ApplyMarkers",
+            "source": "RototiltInstalled",
+            "dest": "MarkersApplied"
+        },
+        {
+            "trigger": "ScanRingBelow",
+            "source": "MarkersApplied",
+            "dest": "RingBelowScanned"
+        },
+        {
+            "trigger": "ScanRingIntermediate",
+            "source": "RingBelowScanned",
+            "dest": "RingIntermediateScanned"
+        },
+        {
+            "trigger": "ScanRingAbove",
+            "source": "RingIntermediateScanned",
+            "dest": "RingAboveScanned"
+        }
+    ],
+    "initial": "Start"
+}

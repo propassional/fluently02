@@ -1,0 +1,461 @@
+2025-07-15 11:21:00,507 - INFO - from FLGUISM.py line 279 method graph_save_to_file: Saved current state Start as image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\Screenshot\SMGraphDefault_Components.png 
+2025-07-15 11:21:00,508 - INFO - from FLCV2.py line 277 method image_around_active_state_save: monitor.is_primary True, screen resolution: 2560 x 1440 
+2025-07-15 11:21:00,508 - INFO - from FLCV2.py line 277 method image_around_active_state_save: monitor.is_primary False, screen resolution: 1280 x 768 
+2025-07-15 11:21:00,508 - INFO - from FLCV2.py line 284 method image_around_active_state_save: Screen resolution adapted: 1216 x 768 
+2025-07-15 11:21:00,605 - INFO - from FLGUISM.py line 279 method graph_save_to_file: Saved current state Start as image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\Screenshot\SMGraphDefault_Components.png 
+2025-07-15 11:21:00,605 - INFO - from FLCV2.py line 277 method image_around_active_state_save: monitor.is_primary True, screen resolution: 2560 x 1440 
+2025-07-15 11:21:00,605 - INFO - from FLCV2.py line 277 method image_around_active_state_save: monitor.is_primary False, screen resolution: 1280 x 768 
+2025-07-15 11:21:00,606 - INFO - from FLCV2.py line 284 method image_around_active_state_save: Screen resolution adapted: 1216 x 768 
+2025-07-15 11:21:06,686 - INFO - from FLGUIMain.py line 419 method GUI_main_SM_commands_execute: State Start before trying to transition with command Auto 
+2025-07-15 11:21:06,686 - INFO - from FLGUIMain.py line 441 method GUI_main_SM_commands_execute: Firing transition Auto 
+2025-07-15 11:21:06,687 - INFO - from FLModel.py line 76 method callback_after_state_change: 
+ At callback beginning: current state Ready, rollback_do False 
+2025-07-15 11:21:06,687 - INFO - from FLModel.py line 212 method do_code: DO CODE 
+2025-07-15 11:21:06,687 - INFO - from FLModel.py line 558 method run_python_code: Exception [Errno 2] No such file or directory: 'D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\SM\\Generic__Components__2025_05_06__19_43_32\\JSON\\Generic__Components__2025_05_06__19_43_32.py', calling D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\Generic__Components__2025_05_06__19_43_32\JSON\Generic__Components__2025_05_06__19_43_32.py, spec ModuleSpec(name='Generic__Components__2025_05_06__19_43_32', loader=<_frozen_importlib_external.SourceFileLoader object at 0x000001E4D1C7A2C0>, origin='D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\SM\\Generic__Components__2025_05_06__19_43_32\\JSON\\Generic__Components__2025_05_06__19_43_32.py') 
+2025-07-15 11:21:06,687 - INFO - from FLModel.py line 588 method run_python_code: Method AutoDo not found in D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\Generic__Components__2025_05_06__19_43_32\JSON\Generic__Components__2025_05_06__19_43_32.py 
+2025-07-15 11:21:06,688 - INFO - from FLModel.py line 239 method do_images: DO IMAGES 
+2025-07-15 11:21:06,688 - INFO - from FLModel.py line 449 method items_find_in_dir: item_name searched: AutoDo.png, directory searched: D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App 
+2025-07-15 11:21:06,691 - INFO - from FLModel.py line 472 method items_find_in_dir: items found: item_path_list [], app_name_list: [] 
+2025-07-15 11:21:06,691 - INFO - from FLModel.py line 246 method do_images: No do images found 
+2025-07-15 11:21:06,691 - INFO - from FLModel.py line 148 method check_state: STATE CHECK CODE 
+2025-07-15 11:21:06,692 - INFO - from FLModel.py line 558 method run_python_code: Exception [Errno 2] No such file or directory: 'D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\SM\\Generic__Components__2025_05_06__19_43_32\\JSON\\Generic__Components__2025_05_06__19_43_32.py', calling D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\Generic__Components__2025_05_06__19_43_32\JSON\Generic__Components__2025_05_06__19_43_32.py, spec ModuleSpec(name='Generic__Components__2025_05_06__19_43_32', loader=<_frozen_importlib_external.SourceFileLoader object at 0x000001E4D1C7A3B0>, origin='D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\SM\\Generic__Components__2025_05_06__19_43_32\\JSON\\Generic__Components__2025_05_06__19_43_32.py') 
+2025-07-15 11:21:06,692 - INFO - from FLModel.py line 588 method run_python_code: Method ReadyCheck not found in D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\Generic__Components__2025_05_06__19_43_32\JSON\Generic__Components__2025_05_06__19_43_32.py 
+2025-07-15 11:21:06,692 - INFO - from FLModel.py line 162 method check_state: feedback_code_tells_state_is_valid is None 
+2025-07-15 11:21:06,692 - INFO - from FLModel.py line 176 method check_state: CHECK IMAGES 
+2025-07-15 11:21:06,692 - INFO - from FLModel.py line 449 method items_find_in_dir: item_name searched: ReadyCheck.png, directory searched: D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App 
+2025-07-15 11:21:06,696 - INFO - from FLModel.py line 472 method items_find_in_dir: items found: item_path_list [], app_name_list: [] 
+2025-07-15 11:21:06,696 - INFO - from FLModel.py line 389 method global_variables_print: self.do_code_found False 
+2025-07-15 11:21:06,696 - INFO - from FLModel.py line 390 method global_variables_print: self.do_code_result None 
+2025-07-15 11:21:06,696 - INFO - from FLModel.py line 391 method global_variables_print: self.do_code_tells_state_is_valid None 
+2025-07-15 11:21:06,696 - INFO - from FLModel.py line 393 method global_variables_print: self.do_image_found False 
+2025-07-15 11:21:06,696 - INFO - from FLModel.py line 394 method global_variables_print: self.do_image_result 0.0 
+2025-07-15 11:21:06,696 - INFO - from FLModel.py line 395 method global_variables_print: self.do_image_matched None 
+2025-07-15 11:21:06,697 - INFO - from FLModel.py line 396 method global_variables_print: self.do_image_error None 
+2025-07-15 11:21:06,697 - INFO - from FLModel.py line 397 method global_variables_print: self.do_image_tells_state_is_valid None 
+2025-07-15 11:21:06,697 - INFO - from FLModel.py line 399 method global_variables_print:  self.do_transition_result None 
+2025-07-15 11:21:06,697 - INFO - from FLModel.py line 402 method global_variables_print: self.check_code_found False 
+2025-07-15 11:21:06,697 - INFO - from FLModel.py line 403 method global_variables_print: self.check_code_result None 
+2025-07-15 11:21:06,697 - INFO - from FLModel.py line 404 method global_variables_print: self.check_code_tells_state_is_valid None 
+2025-07-15 11:21:06,697 - INFO - from FLModel.py line 406 method global_variables_print: self.check_image_found None 
+2025-07-15 11:21:06,697 - INFO - from FLModel.py line 407 method global_variables_print: self.check_image_result 0.0 
+2025-07-15 11:21:06,697 - INFO - from FLModel.py line 408 method global_variables_print: self.check_image_tells_state_is_valid None 
+2025-07-15 11:21:06,697 - INFO - from FLModel.py line 410 method global_variables_print:  self.check_state_result None 
+2025-07-15 11:21:06,698 - INFO - from FLModel.py line 413 method global_variables_print:   self.state_is_valid None 
+2025-07-15 11:21:06,698 - INFO - from FLModel.py line 414 method global_variables_print:    self.state_is_valid_final True 
+2025-07-15 11:21:06,698 - INFO - from FLModel.py line 521 method run_code_state: STATE DO 
+2025-07-15 11:21:06,698 - INFO - from FLModel.py line 558 method run_python_code: Exception [Errno 2] No such file or directory: 'D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\SM\\Generic__Components__2025_05_06__19_43_32\\JSON\\Generic__Components__2025_05_06__19_43_32.py', calling D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\Generic__Components__2025_05_06__19_43_32\JSON\Generic__Components__2025_05_06__19_43_32.py, spec ModuleSpec(name='Generic__Components__2025_05_06__19_43_32', loader=<_frozen_importlib_external.SourceFileLoader object at 0x000001E4D1C7A2C0>, origin='D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\SM\\Generic__Components__2025_05_06__19_43_32\\JSON\\Generic__Components__2025_05_06__19_43_32.py') 
+2025-07-15 11:21:06,698 - INFO - from FLModel.py line 588 method run_python_code: Method ReadyDo not found in D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\Generic__Components__2025_05_06__19_43_32\JSON\Generic__Components__2025_05_06__19_43_32.py 
+2025-07-15 11:21:06,698 - INFO - from FLModel.py line 136 method callback_after_state_change: 
+ At callback end, current state: Ready 
+2025-07-15 11:21:06,699 - INFO - from FLGUIMain.py line 450 method GUI_main_SM_commands_execute: Transition Auto fired without exceptions 
+2025-07-15 11:21:06,699 - INFO - from FLGUIMain.py line 468 method GUI_main_SM_commands_execute: State after transitioning: Ready 
+2025-07-15 11:21:06,699 - INFO - from FLGUIMain.py line 501 method GUI_main_SM_commands_execute: Handling GUI_update_requested_by_callback 
+2025-07-15 11:21:06,767 - INFO - from FLGUISM.py line 279 method graph_save_to_file: Saved current state Ready as image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\Screenshot\SMGraphDefault_Components.png 
+2025-07-15 11:21:06,768 - INFO - from FLCV2.py line 277 method image_around_active_state_save: monitor.is_primary True, screen resolution: 2560 x 1440 
+2025-07-15 11:21:06,768 - INFO - from FLCV2.py line 277 method image_around_active_state_save: monitor.is_primary False, screen resolution: 1280 x 768 
+2025-07-15 11:21:06,768 - INFO - from FLCV2.py line 284 method image_around_active_state_save: Screen resolution adapted: 1216 x 768 
+2025-07-15 11:21:06,840 - INFO - from FLGUISM.py line 279 method graph_save_to_file: Saved current state Ready as image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\Screenshot\SMGraphDefault_Components.png 
+2025-07-15 11:21:06,841 - INFO - from FLCV2.py line 277 method image_around_active_state_save: monitor.is_primary True, screen resolution: 2560 x 1440 
+2025-07-15 11:21:06,841 - INFO - from FLCV2.py line 277 method image_around_active_state_save: monitor.is_primary False, screen resolution: 1280 x 768 
+2025-07-15 11:21:06,841 - INFO - from FLCV2.py line 284 method image_around_active_state_save: Screen resolution adapted: 1216 x 768 
+2025-07-15 11:21:06,916 - INFO - from FLGUISM.py line 279 method graph_save_to_file: Saved current state Ready as image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\Screenshot\SMGraphDefault_Components.png 
+2025-07-15 11:21:06,916 - INFO - from FLCV2.py line 277 method image_around_active_state_save: monitor.is_primary True, screen resolution: 2560 x 1440 
+2025-07-15 11:21:06,916 - INFO - from FLCV2.py line 277 method image_around_active_state_save: monitor.is_primary False, screen resolution: 1280 x 768 
+2025-07-15 11:21:06,916 - INFO - from FLCV2.py line 284 method image_around_active_state_save: Screen resolution adapted: 1216 x 768 
+2025-07-15 11:21:10,817 - INFO - from FLGUISM.py line 94 method autopilot_is_on_set: autopilot_mode is now None 
+2025-07-15 11:21:10,996 - INFO - from FLGUISM.py line 279 method graph_save_to_file: Saved current state Ready as image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\Screenshot\SMGraphDefault_Components.png 
+2025-07-15 11:21:10,996 - INFO - from FLCV2.py line 277 method image_around_active_state_save: monitor.is_primary True, screen resolution: 2560 x 1440 
+2025-07-15 11:21:10,996 - INFO - from FLCV2.py line 277 method image_around_active_state_save: monitor.is_primary False, screen resolution: 1280 x 768 
+2025-07-15 11:21:10,996 - INFO - from FLCV2.py line 284 method image_around_active_state_save: Screen resolution adapted: 1216 x 768 
+2025-07-15 11:21:11,047 - INFO - from FLGUIMain.py line 419 method GUI_main_SM_commands_execute: State Ready before trying to transition with command NextState 
+2025-07-15 11:21:11,048 - INFO - from FLGUIMain.py line 441 method GUI_main_SM_commands_execute: Firing transition NextState 
+2025-07-15 11:21:11,048 - INFO - from FLModel.py line 76 method callback_after_state_change: 
+ At callback beginning: current state GUI, rollback_do False 
+2025-07-15 11:21:11,048 - INFO - from FLModel.py line 212 method do_code: DO CODE 
+2025-07-15 11:21:11,049 - INFO - from FLModel.py line 558 method run_python_code: Exception [Errno 2] No such file or directory: 'D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\SM\\Generic__Components__2025_05_06__19_43_32\\JSON\\Generic__Components__2025_05_06__19_43_32.py', calling D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\Generic__Components__2025_05_06__19_43_32\JSON\Generic__Components__2025_05_06__19_43_32.py, spec ModuleSpec(name='Generic__Components__2025_05_06__19_43_32', loader=<_frozen_importlib_external.SourceFileLoader object at 0x000001E4D1C94640>, origin='D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\SM\\Generic__Components__2025_05_06__19_43_32\\JSON\\Generic__Components__2025_05_06__19_43_32.py') 
+2025-07-15 11:21:11,049 - INFO - from FLModel.py line 588 method run_python_code: Method NextStateDo not found in D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\Generic__Components__2025_05_06__19_43_32\JSON\Generic__Components__2025_05_06__19_43_32.py 
+2025-07-15 11:21:11,049 - INFO - from FLModel.py line 239 method do_images: DO IMAGES 
+2025-07-15 11:21:11,049 - INFO - from FLModel.py line 449 method items_find_in_dir: item_name searched: NextStateDo.png, directory searched: D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App 
+2025-07-15 11:21:11,053 - INFO - from FLModel.py line 472 method items_find_in_dir: items found: item_path_list [], app_name_list: [] 
+2025-07-15 11:21:11,053 - INFO - from FLModel.py line 246 method do_images: No do images found 
+2025-07-15 11:21:11,053 - INFO - from FLModel.py line 148 method check_state: STATE CHECK CODE 
+2025-07-15 11:21:11,054 - INFO - from FLModel.py line 558 method run_python_code: Exception [Errno 2] No such file or directory: 'D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\SM\\Generic__Components__2025_05_06__19_43_32\\JSON\\Generic__Components__2025_05_06__19_43_32.py', calling D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\Generic__Components__2025_05_06__19_43_32\JSON\Generic__Components__2025_05_06__19_43_32.py, spec ModuleSpec(name='Generic__Components__2025_05_06__19_43_32', loader=<_frozen_importlib_external.SourceFileLoader object at 0x000001E4D1C94730>, origin='D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\SM\\Generic__Components__2025_05_06__19_43_32\\JSON\\Generic__Components__2025_05_06__19_43_32.py') 
+2025-07-15 11:21:11,054 - INFO - from FLModel.py line 588 method run_python_code: Method GUICheck not found in D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\Generic__Components__2025_05_06__19_43_32\JSON\Generic__Components__2025_05_06__19_43_32.py 
+2025-07-15 11:21:11,054 - INFO - from FLModel.py line 162 method check_state: feedback_code_tells_state_is_valid is None 
+2025-07-15 11:21:11,054 - INFO - from FLModel.py line 176 method check_state: CHECK IMAGES 
+2025-07-15 11:21:11,054 - INFO - from FLModel.py line 449 method items_find_in_dir: item_name searched: GUICheck.png, directory searched: D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App 
+2025-07-15 11:21:11,058 - INFO - from FLModel.py line 472 method items_find_in_dir: items found: item_path_list [], app_name_list: [] 
+2025-07-15 11:21:11,058 - INFO - from FLModel.py line 389 method global_variables_print: self.do_code_found False 
+2025-07-15 11:21:11,058 - INFO - from FLModel.py line 390 method global_variables_print: self.do_code_result None 
+2025-07-15 11:21:11,059 - INFO - from FLModel.py line 391 method global_variables_print: self.do_code_tells_state_is_valid None 
+2025-07-15 11:21:11,059 - INFO - from FLModel.py line 393 method global_variables_print: self.do_image_found False 
+2025-07-15 11:21:11,059 - INFO - from FLModel.py line 394 method global_variables_print: self.do_image_result 0.0 
+2025-07-15 11:21:11,059 - INFO - from FLModel.py line 395 method global_variables_print: self.do_image_matched None 
+2025-07-15 11:21:11,059 - INFO - from FLModel.py line 396 method global_variables_print: self.do_image_error None 
+2025-07-15 11:21:11,059 - INFO - from FLModel.py line 397 method global_variables_print: self.do_image_tells_state_is_valid None 
+2025-07-15 11:21:11,059 - INFO - from FLModel.py line 399 method global_variables_print:  self.do_transition_result None 
+2025-07-15 11:21:11,059 - INFO - from FLModel.py line 402 method global_variables_print: self.check_code_found False 
+2025-07-15 11:21:11,060 - INFO - from FLModel.py line 403 method global_variables_print: self.check_code_result None 
+2025-07-15 11:21:11,060 - INFO - from FLModel.py line 404 method global_variables_print: self.check_code_tells_state_is_valid None 
+2025-07-15 11:21:11,060 - INFO - from FLModel.py line 406 method global_variables_print: self.check_image_found None 
+2025-07-15 11:21:11,060 - INFO - from FLModel.py line 407 method global_variables_print: self.check_image_result 0.0 
+2025-07-15 11:21:11,060 - INFO - from FLModel.py line 408 method global_variables_print: self.check_image_tells_state_is_valid None 
+2025-07-15 11:21:11,060 - INFO - from FLModel.py line 410 method global_variables_print:  self.check_state_result None 
+2025-07-15 11:21:11,060 - INFO - from FLModel.py line 413 method global_variables_print:   self.state_is_valid None 
+2025-07-15 11:21:11,060 - INFO - from FLModel.py line 414 method global_variables_print:    self.state_is_valid_final True 
+2025-07-15 11:21:11,061 - INFO - from FLModel.py line 521 method run_code_state: STATE DO 
+2025-07-15 11:21:11,061 - INFO - from FLModel.py line 558 method run_python_code: Exception [Errno 2] No such file or directory: 'D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\SM\\Generic__Components__2025_05_06__19_43_32\\JSON\\Generic__Components__2025_05_06__19_43_32.py', calling D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\Generic__Components__2025_05_06__19_43_32\JSON\Generic__Components__2025_05_06__19_43_32.py, spec ModuleSpec(name='Generic__Components__2025_05_06__19_43_32', loader=<_frozen_importlib_external.SourceFileLoader object at 0x000001E4D1C94760>, origin='D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\SM\\Generic__Components__2025_05_06__19_43_32\\JSON\\Generic__Components__2025_05_06__19_43_32.py') 
+2025-07-15 11:21:11,061 - INFO - from FLModel.py line 588 method run_python_code: Method GUIDo not found in D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\Generic__Components__2025_05_06__19_43_32\JSON\Generic__Components__2025_05_06__19_43_32.py 
+2025-07-15 11:21:11,061 - INFO - from FLModel.py line 136 method callback_after_state_change: 
+ At callback end, current state: GUI 
+2025-07-15 11:21:11,061 - INFO - from FLGUIMain.py line 450 method GUI_main_SM_commands_execute: Transition NextState fired without exceptions 
+2025-07-15 11:21:11,061 - INFO - from FLGUIMain.py line 468 method GUI_main_SM_commands_execute: State after transitioning: GUI 
+2025-07-15 11:21:11,062 - INFO - from FLGUIMain.py line 501 method GUI_main_SM_commands_execute: Handling GUI_update_requested_by_callback 
+2025-07-15 11:21:11,129 - INFO - from FLGUISM.py line 279 method graph_save_to_file: Saved current state GUI as image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\Screenshot\SMGraphDefault_Components.png 
+2025-07-15 11:21:11,130 - INFO - from FLCV2.py line 277 method image_around_active_state_save: monitor.is_primary True, screen resolution: 2560 x 1440 
+2025-07-15 11:21:11,130 - INFO - from FLCV2.py line 277 method image_around_active_state_save: monitor.is_primary False, screen resolution: 1280 x 768 
+2025-07-15 11:21:11,130 - INFO - from FLCV2.py line 284 method image_around_active_state_save: Screen resolution adapted: 1216 x 768 
+2025-07-15 11:21:11,200 - INFO - from FLGUISM.py line 279 method graph_save_to_file: Saved current state GUI as image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\Screenshot\SMGraphDefault_Components.png 
+2025-07-15 11:21:11,200 - INFO - from FLCV2.py line 277 method image_around_active_state_save: monitor.is_primary True, screen resolution: 2560 x 1440 
+2025-07-15 11:21:11,200 - INFO - from FLCV2.py line 277 method image_around_active_state_save: monitor.is_primary False, screen resolution: 1280 x 768 
+2025-07-15 11:21:11,200 - INFO - from FLCV2.py line 284 method image_around_active_state_save: Screen resolution adapted: 1216 x 768 
+2025-07-15 11:21:11,278 - INFO - from FLGUISM.py line 279 method graph_save_to_file: Saved current state GUI as image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\Screenshot\SMGraphDefault_Components.png 
+2025-07-15 11:21:11,278 - INFO - from FLCV2.py line 277 method image_around_active_state_save: monitor.is_primary True, screen resolution: 2560 x 1440 
+2025-07-15 11:21:11,278 - INFO - from FLCV2.py line 277 method image_around_active_state_save: monitor.is_primary False, screen resolution: 1280 x 768 
+2025-07-15 11:21:11,279 - INFO - from FLCV2.py line 284 method image_around_active_state_save: Screen resolution adapted: 1216 x 768 
+2025-07-15 11:21:13,842 - INFO - from FLGUIMain.py line 419 method GUI_main_SM_commands_execute: State GUI before trying to transition with command NextState 
+2025-07-15 11:21:13,843 - INFO - from FLGUIMain.py line 441 method GUI_main_SM_commands_execute: Firing transition NextState 
+2025-07-15 11:21:13,843 - INFO - from FLModel.py line 76 method callback_after_state_change: 
+ At callback beginning: current state EBuddy, rollback_do False 
+2025-07-15 11:21:13,844 - INFO - from FLModel.py line 212 method do_code: DO CODE 
+2025-07-15 11:21:13,845 - INFO - from FLModel.py line 558 method run_python_code: Exception [Errno 2] No such file or directory: 'D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\SM\\Generic__Components__2025_05_06__19_43_32\\JSON\\Generic__Components__2025_05_06__19_43_32.py', calling D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\Generic__Components__2025_05_06__19_43_32\JSON\Generic__Components__2025_05_06__19_43_32.py, spec ModuleSpec(name='Generic__Components__2025_05_06__19_43_32', loader=<_frozen_importlib_external.SourceFileLoader object at 0x000001E4D1C94D60>, origin='D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\SM\\Generic__Components__2025_05_06__19_43_32\\JSON\\Generic__Components__2025_05_06__19_43_32.py') 
+2025-07-15 11:21:13,845 - INFO - from FLModel.py line 588 method run_python_code: Method NextStateDo not found in D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\Generic__Components__2025_05_06__19_43_32\JSON\Generic__Components__2025_05_06__19_43_32.py 
+2025-07-15 11:21:13,846 - INFO - from FLModel.py line 239 method do_images: DO IMAGES 
+2025-07-15 11:21:13,846 - INFO - from FLModel.py line 449 method items_find_in_dir: item_name searched: NextStateDo.png, directory searched: D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App 
+2025-07-15 11:21:13,850 - INFO - from FLModel.py line 472 method items_find_in_dir: items found: item_path_list [], app_name_list: [] 
+2025-07-15 11:21:13,850 - INFO - from FLModel.py line 246 method do_images: No do images found 
+2025-07-15 11:21:13,850 - INFO - from FLModel.py line 148 method check_state: STATE CHECK CODE 
+2025-07-15 11:21:13,850 - INFO - from FLModel.py line 558 method run_python_code: Exception [Errno 2] No such file or directory: 'D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\SM\\Generic__Components__2025_05_06__19_43_32\\JSON\\Generic__Components__2025_05_06__19_43_32.py', calling D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\Generic__Components__2025_05_06__19_43_32\JSON\Generic__Components__2025_05_06__19_43_32.py, spec ModuleSpec(name='Generic__Components__2025_05_06__19_43_32', loader=<_frozen_importlib_external.SourceFileLoader object at 0x000001E4D1C954B0>, origin='D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\SM\\Generic__Components__2025_05_06__19_43_32\\JSON\\Generic__Components__2025_05_06__19_43_32.py') 
+2025-07-15 11:21:13,851 - INFO - from FLModel.py line 588 method run_python_code: Method EBuddyCheck not found in D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\Generic__Components__2025_05_06__19_43_32\JSON\Generic__Components__2025_05_06__19_43_32.py 
+2025-07-15 11:21:13,851 - INFO - from FLModel.py line 162 method check_state: feedback_code_tells_state_is_valid is None 
+2025-07-15 11:21:13,851 - INFO - from FLModel.py line 176 method check_state: CHECK IMAGES 
+2025-07-15 11:21:13,851 - INFO - from FLModel.py line 449 method items_find_in_dir: item_name searched: EBuddyCheck.png, directory searched: D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App 
+2025-07-15 11:21:13,854 - INFO - from FLModel.py line 472 method items_find_in_dir: items found: item_path_list [], app_name_list: [] 
+2025-07-15 11:21:13,854 - INFO - from FLModel.py line 389 method global_variables_print: self.do_code_found False 
+2025-07-15 11:21:13,855 - INFO - from FLModel.py line 390 method global_variables_print: self.do_code_result None 
+2025-07-15 11:21:13,855 - INFO - from FLModel.py line 391 method global_variables_print: self.do_code_tells_state_is_valid None 
+2025-07-15 11:21:13,855 - INFO - from FLModel.py line 393 method global_variables_print: self.do_image_found False 
+2025-07-15 11:21:13,855 - INFO - from FLModel.py line 394 method global_variables_print: self.do_image_result 0.0 
+2025-07-15 11:21:13,855 - INFO - from FLModel.py line 395 method global_variables_print: self.do_image_matched None 
+2025-07-15 11:21:13,855 - INFO - from FLModel.py line 396 method global_variables_print: self.do_image_error None 
+2025-07-15 11:21:13,855 - INFO - from FLModel.py line 397 method global_variables_print: self.do_image_tells_state_is_valid None 
+2025-07-15 11:21:13,855 - INFO - from FLModel.py line 399 method global_variables_print:  self.do_transition_result None 
+2025-07-15 11:21:13,856 - INFO - from FLModel.py line 402 method global_variables_print: self.check_code_found False 
+2025-07-15 11:21:13,856 - INFO - from FLModel.py line 403 method global_variables_print: self.check_code_result None 
+2025-07-15 11:21:13,856 - INFO - from FLModel.py line 404 method global_variables_print: self.check_code_tells_state_is_valid None 
+2025-07-15 11:21:13,856 - INFO - from FLModel.py line 406 method global_variables_print: self.check_image_found None 
+2025-07-15 11:21:13,856 - INFO - from FLModel.py line 407 method global_variables_print: self.check_image_result 0.0 
+2025-07-15 11:21:13,856 - INFO - from FLModel.py line 408 method global_variables_print: self.check_image_tells_state_is_valid None 
+2025-07-15 11:21:13,856 - INFO - from FLModel.py line 410 method global_variables_print:  self.check_state_result None 
+2025-07-15 11:21:13,856 - INFO - from FLModel.py line 413 method global_variables_print:   self.state_is_valid None 
+2025-07-15 11:21:13,856 - INFO - from FLModel.py line 414 method global_variables_print:    self.state_is_valid_final True 
+2025-07-15 11:21:13,857 - INFO - from FLModel.py line 521 method run_code_state: STATE DO 
+2025-07-15 11:21:13,857 - INFO - from FLModel.py line 558 method run_python_code: Exception [Errno 2] No such file or directory: 'D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\SM\\Generic__Components__2025_05_06__19_43_32\\JSON\\Generic__Components__2025_05_06__19_43_32.py', calling D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\Generic__Components__2025_05_06__19_43_32\JSON\Generic__Components__2025_05_06__19_43_32.py, spec ModuleSpec(name='Generic__Components__2025_05_06__19_43_32', loader=<_frozen_importlib_external.SourceFileLoader object at 0x000001E4D1C94D60>, origin='D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\SM\\Generic__Components__2025_05_06__19_43_32\\JSON\\Generic__Components__2025_05_06__19_43_32.py') 
+2025-07-15 11:21:13,857 - INFO - from FLModel.py line 588 method run_python_code: Method EBuddyDo not found in D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\Generic__Components__2025_05_06__19_43_32\JSON\Generic__Components__2025_05_06__19_43_32.py 
+2025-07-15 11:21:13,857 - INFO - from FLModel.py line 136 method callback_after_state_change: 
+ At callback end, current state: EBuddy 
+2025-07-15 11:21:13,857 - INFO - from FLGUIMain.py line 450 method GUI_main_SM_commands_execute: Transition NextState fired without exceptions 
+2025-07-15 11:21:13,857 - INFO - from FLGUIMain.py line 468 method GUI_main_SM_commands_execute: State after transitioning: EBuddy 
+2025-07-15 11:21:13,858 - INFO - from FLGUIMain.py line 501 method GUI_main_SM_commands_execute: Handling GUI_update_requested_by_callback 
+2025-07-15 11:21:13,927 - INFO - from FLGUISM.py line 279 method graph_save_to_file: Saved current state EBuddy as image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\Screenshot\SMGraphDefault_Components.png 
+2025-07-15 11:21:13,927 - INFO - from FLCV2.py line 277 method image_around_active_state_save: monitor.is_primary True, screen resolution: 2560 x 1440 
+2025-07-15 11:21:13,928 - INFO - from FLCV2.py line 277 method image_around_active_state_save: monitor.is_primary False, screen resolution: 1280 x 768 
+2025-07-15 11:21:13,928 - INFO - from FLCV2.py line 284 method image_around_active_state_save: Screen resolution adapted: 1216 x 768 
+2025-07-15 11:21:13,998 - INFO - from FLGUISM.py line 279 method graph_save_to_file: Saved current state EBuddy as image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\Screenshot\SMGraphDefault_Components.png 
+2025-07-15 11:21:13,999 - INFO - from FLCV2.py line 277 method image_around_active_state_save: monitor.is_primary True, screen resolution: 2560 x 1440 
+2025-07-15 11:21:14,000 - INFO - from FLCV2.py line 277 method image_around_active_state_save: monitor.is_primary False, screen resolution: 1280 x 768 
+2025-07-15 11:21:14,000 - INFO - from FLCV2.py line 284 method image_around_active_state_save: Screen resolution adapted: 1216 x 768 
+2025-07-15 11:21:14,073 - INFO - from FLGUISM.py line 279 method graph_save_to_file: Saved current state EBuddy as image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\Screenshot\SMGraphDefault_Components.png 
+2025-07-15 11:21:14,074 - INFO - from FLCV2.py line 277 method image_around_active_state_save: monitor.is_primary True, screen resolution: 2560 x 1440 
+2025-07-15 11:21:14,074 - INFO - from FLCV2.py line 277 method image_around_active_state_save: monitor.is_primary False, screen resolution: 1280 x 768 
+2025-07-15 11:21:14,074 - INFO - from FLCV2.py line 284 method image_around_active_state_save: Screen resolution adapted: 1216 x 768 
+2025-07-15 11:21:15,886 - INFO - from FLGUIMain.py line 419 method GUI_main_SM_commands_execute: State EBuddy before trying to transition with command NextState 
+2025-07-15 11:21:15,886 - INFO - from FLGUIMain.py line 441 method GUI_main_SM_commands_execute: Firing transition NextState 
+2025-07-15 11:21:15,887 - INFO - from FLModel.py line 76 method callback_after_state_change: 
+ At callback beginning: current state Impeller, rollback_do False 
+2025-07-15 11:21:15,887 - INFO - from FLModel.py line 212 method do_code: DO CODE 
+2025-07-15 11:21:15,887 - INFO - from FLModel.py line 558 method run_python_code: Exception [Errno 2] No such file or directory: 'D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\SM\\Generic__Components__2025_05_06__19_43_32\\JSON\\Generic__Components__2025_05_06__19_43_32.py', calling D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\Generic__Components__2025_05_06__19_43_32\JSON\Generic__Components__2025_05_06__19_43_32.py, spec ModuleSpec(name='Generic__Components__2025_05_06__19_43_32', loader=<_frozen_importlib_external.SourceFileLoader object at 0x000001E4D1C97700>, origin='D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\SM\\Generic__Components__2025_05_06__19_43_32\\JSON\\Generic__Components__2025_05_06__19_43_32.py') 
+2025-07-15 11:21:15,887 - INFO - from FLModel.py line 588 method run_python_code: Method NextStateDo not found in D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\Generic__Components__2025_05_06__19_43_32\JSON\Generic__Components__2025_05_06__19_43_32.py 
+2025-07-15 11:21:15,887 - INFO - from FLModel.py line 239 method do_images: DO IMAGES 
+2025-07-15 11:21:15,888 - INFO - from FLModel.py line 449 method items_find_in_dir: item_name searched: NextStateDo.png, directory searched: D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App 
+2025-07-15 11:21:15,891 - INFO - from FLModel.py line 472 method items_find_in_dir: items found: item_path_list [], app_name_list: [] 
+2025-07-15 11:21:15,891 - INFO - from FLModel.py line 246 method do_images: No do images found 
+2025-07-15 11:21:15,891 - INFO - from FLModel.py line 148 method check_state: STATE CHECK CODE 
+2025-07-15 11:21:15,892 - INFO - from FLModel.py line 558 method run_python_code: Exception [Errno 2] No such file or directory: 'D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\SM\\Generic__Components__2025_05_06__19_43_32\\JSON\\Generic__Components__2025_05_06__19_43_32.py', calling D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\Generic__Components__2025_05_06__19_43_32\JSON\Generic__Components__2025_05_06__19_43_32.py, spec ModuleSpec(name='Generic__Components__2025_05_06__19_43_32', loader=<_frozen_importlib_external.SourceFileLoader object at 0x000001E4D1C95570>, origin='D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\SM\\Generic__Components__2025_05_06__19_43_32\\JSON\\Generic__Components__2025_05_06__19_43_32.py') 
+2025-07-15 11:21:15,892 - INFO - from FLModel.py line 588 method run_python_code: Method ImpellerCheck not found in D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\Generic__Components__2025_05_06__19_43_32\JSON\Generic__Components__2025_05_06__19_43_32.py 
+2025-07-15 11:21:15,892 - INFO - from FLModel.py line 162 method check_state: feedback_code_tells_state_is_valid is None 
+2025-07-15 11:21:15,892 - INFO - from FLModel.py line 176 method check_state: CHECK IMAGES 
+2025-07-15 11:21:15,892 - INFO - from FLModel.py line 449 method items_find_in_dir: item_name searched: ImpellerCheck.png, directory searched: D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App 
+2025-07-15 11:21:15,895 - INFO - from FLModel.py line 472 method items_find_in_dir: items found: item_path_list [], app_name_list: [] 
+2025-07-15 11:21:15,896 - INFO - from FLModel.py line 389 method global_variables_print: self.do_code_found False 
+2025-07-15 11:21:15,896 - INFO - from FLModel.py line 390 method global_variables_print: self.do_code_result None 
+2025-07-15 11:21:15,896 - INFO - from FLModel.py line 391 method global_variables_print: self.do_code_tells_state_is_valid None 
+2025-07-15 11:21:15,896 - INFO - from FLModel.py line 393 method global_variables_print: self.do_image_found False 
+2025-07-15 11:21:15,896 - INFO - from FLModel.py line 394 method global_variables_print: self.do_image_result 0.0 
+2025-07-15 11:21:15,896 - INFO - from FLModel.py line 395 method global_variables_print: self.do_image_matched None 
+2025-07-15 11:21:15,896 - INFO - from FLModel.py line 396 method global_variables_print: self.do_image_error None 
+2025-07-15 11:21:15,896 - INFO - from FLModel.py line 397 method global_variables_print: self.do_image_tells_state_is_valid None 
+2025-07-15 11:21:15,896 - INFO - from FLModel.py line 399 method global_variables_print:  self.do_transition_result None 
+2025-07-15 11:21:15,897 - INFO - from FLModel.py line 402 method global_variables_print: self.check_code_found False 
+2025-07-15 11:21:15,897 - INFO - from FLModel.py line 403 method global_variables_print: self.check_code_result None 
+2025-07-15 11:21:15,897 - INFO - from FLModel.py line 404 method global_variables_print: self.check_code_tells_state_is_valid None 
+2025-07-15 11:21:15,897 - INFO - from FLModel.py line 406 method global_variables_print: self.check_image_found None 
+2025-07-15 11:21:15,897 - INFO - from FLModel.py line 407 method global_variables_print: self.check_image_result 0.0 
+2025-07-15 11:21:15,897 - INFO - from FLModel.py line 408 method global_variables_print: self.check_image_tells_state_is_valid None 
+2025-07-15 11:21:15,897 - INFO - from FLModel.py line 410 method global_variables_print:  self.check_state_result None 
+2025-07-15 11:21:15,897 - INFO - from FLModel.py line 413 method global_variables_print:   self.state_is_valid None 
+2025-07-15 11:21:15,897 - INFO - from FLModel.py line 414 method global_variables_print:    self.state_is_valid_final True 
+2025-07-15 11:21:15,897 - INFO - from FLModel.py line 521 method run_code_state: STATE DO 
+2025-07-15 11:21:15,898 - INFO - from FLModel.py line 558 method run_python_code: Exception [Errno 2] No such file or directory: 'D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\SM\\Generic__Components__2025_05_06__19_43_32\\JSON\\Generic__Components__2025_05_06__19_43_32.py', calling D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\Generic__Components__2025_05_06__19_43_32\JSON\Generic__Components__2025_05_06__19_43_32.py, spec ModuleSpec(name='Generic__Components__2025_05_06__19_43_32', loader=<_frozen_importlib_external.SourceFileLoader object at 0x000001E4D1C97700>, origin='D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\SM\\Generic__Components__2025_05_06__19_43_32\\JSON\\Generic__Components__2025_05_06__19_43_32.py') 
+2025-07-15 11:21:15,898 - INFO - from FLModel.py line 588 method run_python_code: Method ImpellerDo not found in D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\Generic__Components__2025_05_06__19_43_32\JSON\Generic__Components__2025_05_06__19_43_32.py 
+2025-07-15 11:21:15,898 - INFO - from FLModel.py line 136 method callback_after_state_change: 
+ At callback end, current state: Impeller 
+2025-07-15 11:21:15,898 - INFO - from FLGUIMain.py line 450 method GUI_main_SM_commands_execute: Transition NextState fired without exceptions 
+2025-07-15 11:21:15,898 - INFO - from FLGUIMain.py line 468 method GUI_main_SM_commands_execute: State after transitioning: Impeller 
+2025-07-15 11:21:15,899 - INFO - from FLGUIMain.py line 501 method GUI_main_SM_commands_execute: Handling GUI_update_requested_by_callback 
+2025-07-15 11:21:15,967 - INFO - from FLGUISM.py line 279 method graph_save_to_file: Saved current state Impeller as image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\Screenshot\SMGraphDefault_Components.png 
+2025-07-15 11:21:15,967 - INFO - from FLCV2.py line 277 method image_around_active_state_save: monitor.is_primary True, screen resolution: 2560 x 1440 
+2025-07-15 11:21:15,967 - INFO - from FLCV2.py line 277 method image_around_active_state_save: monitor.is_primary False, screen resolution: 1280 x 768 
+2025-07-15 11:21:15,968 - INFO - from FLCV2.py line 284 method image_around_active_state_save: Screen resolution adapted: 1216 x 768 
+2025-07-15 11:21:16,036 - INFO - from FLGUISM.py line 279 method graph_save_to_file: Saved current state Impeller as image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\Screenshot\SMGraphDefault_Components.png 
+2025-07-15 11:21:16,037 - INFO - from FLCV2.py line 277 method image_around_active_state_save: monitor.is_primary True, screen resolution: 2560 x 1440 
+2025-07-15 11:21:16,037 - INFO - from FLCV2.py line 277 method image_around_active_state_save: monitor.is_primary False, screen resolution: 1280 x 768 
+2025-07-15 11:21:16,037 - INFO - from FLCV2.py line 284 method image_around_active_state_save: Screen resolution adapted: 1216 x 768 
+2025-07-15 11:21:16,113 - INFO - from FLGUISM.py line 279 method graph_save_to_file: Saved current state Impeller as image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\Screenshot\SMGraphDefault_Components.png 
+2025-07-15 11:21:16,113 - INFO - from FLCV2.py line 277 method image_around_active_state_save: monitor.is_primary True, screen resolution: 2560 x 1440 
+2025-07-15 11:21:16,114 - INFO - from FLCV2.py line 277 method image_around_active_state_save: monitor.is_primary False, screen resolution: 1280 x 768 
+2025-07-15 11:21:16,114 - INFO - from FLCV2.py line 284 method image_around_active_state_save: Screen resolution adapted: 1216 x 768 
+2025-07-15 11:21:19,116 - INFO - from FLGUIMain.py line 419 method GUI_main_SM_commands_execute: State Impeller before trying to transition with command BackState 
+2025-07-15 11:21:19,116 - INFO - from FLGUIMain.py line 441 method GUI_main_SM_commands_execute: Firing transition BackState 
+2025-07-15 11:21:19,116 - INFO - from FLModel.py line 76 method callback_after_state_change: 
+ At callback beginning: current state EBuddy, rollback_do False 
+2025-07-15 11:21:19,116 - INFO - from FLModel.py line 212 method do_code: DO CODE 
+2025-07-15 11:21:19,117 - INFO - from FLModel.py line 558 method run_python_code: Exception [Errno 2] No such file or directory: 'D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\SM\\Generic__Components__2025_05_06__19_43_32\\JSON\\Generic__Components__2025_05_06__19_43_32.py', calling D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\Generic__Components__2025_05_06__19_43_32\JSON\Generic__Components__2025_05_06__19_43_32.py, spec ModuleSpec(name='Generic__Components__2025_05_06__19_43_32', loader=<_frozen_importlib_external.SourceFileLoader object at 0x000001E4D1CA5D20>, origin='D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\SM\\Generic__Components__2025_05_06__19_43_32\\JSON\\Generic__Components__2025_05_06__19_43_32.py') 
+2025-07-15 11:21:19,117 - INFO - from FLModel.py line 588 method run_python_code: Method BackStateDo not found in D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\Generic__Components__2025_05_06__19_43_32\JSON\Generic__Components__2025_05_06__19_43_32.py 
+2025-07-15 11:21:19,117 - INFO - from FLModel.py line 239 method do_images: DO IMAGES 
+2025-07-15 11:21:19,117 - INFO - from FLModel.py line 449 method items_find_in_dir: item_name searched: BackStateDo.png, directory searched: D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App 
+2025-07-15 11:21:19,122 - INFO - from FLModel.py line 472 method items_find_in_dir: items found: item_path_list [], app_name_list: [] 
+2025-07-15 11:21:19,122 - INFO - from FLModel.py line 246 method do_images: No do images found 
+2025-07-15 11:21:19,122 - INFO - from FLModel.py line 148 method check_state: STATE CHECK CODE 
+2025-07-15 11:21:19,122 - INFO - from FLModel.py line 558 method run_python_code: Exception [Errno 2] No such file or directory: 'D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\SM\\Generic__Components__2025_05_06__19_43_32\\JSON\\Generic__Components__2025_05_06__19_43_32.py', calling D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\Generic__Components__2025_05_06__19_43_32\JSON\Generic__Components__2025_05_06__19_43_32.py, spec ModuleSpec(name='Generic__Components__2025_05_06__19_43_32', loader=<_frozen_importlib_external.SourceFileLoader object at 0x000001E4D1CA6920>, origin='D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\SM\\Generic__Components__2025_05_06__19_43_32\\JSON\\Generic__Components__2025_05_06__19_43_32.py') 
+2025-07-15 11:21:19,122 - INFO - from FLModel.py line 588 method run_python_code: Method EBuddyCheck not found in D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\Generic__Components__2025_05_06__19_43_32\JSON\Generic__Components__2025_05_06__19_43_32.py 
+2025-07-15 11:21:19,122 - INFO - from FLModel.py line 162 method check_state: feedback_code_tells_state_is_valid is None 
+2025-07-15 11:21:19,122 - INFO - from FLModel.py line 176 method check_state: CHECK IMAGES 
+2025-07-15 11:21:19,123 - INFO - from FLModel.py line 449 method items_find_in_dir: item_name searched: EBuddyCheck.png, directory searched: D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App 
+2025-07-15 11:21:19,126 - INFO - from FLModel.py line 472 method items_find_in_dir: items found: item_path_list [], app_name_list: [] 
+2025-07-15 11:21:19,126 - INFO - from FLModel.py line 389 method global_variables_print: self.do_code_found False 
+2025-07-15 11:21:19,126 - INFO - from FLModel.py line 390 method global_variables_print: self.do_code_result None 
+2025-07-15 11:21:19,126 - INFO - from FLModel.py line 391 method global_variables_print: self.do_code_tells_state_is_valid None 
+2025-07-15 11:21:19,126 - INFO - from FLModel.py line 393 method global_variables_print: self.do_image_found False 
+2025-07-15 11:21:19,127 - INFO - from FLModel.py line 394 method global_variables_print: self.do_image_result 0.0 
+2025-07-15 11:21:19,127 - INFO - from FLModel.py line 395 method global_variables_print: self.do_image_matched None 
+2025-07-15 11:21:19,127 - INFO - from FLModel.py line 396 method global_variables_print: self.do_image_error None 
+2025-07-15 11:21:19,127 - INFO - from FLModel.py line 397 method global_variables_print: self.do_image_tells_state_is_valid None 
+2025-07-15 11:21:19,127 - INFO - from FLModel.py line 399 method global_variables_print:  self.do_transition_result None 
+2025-07-15 11:21:19,127 - INFO - from FLModel.py line 402 method global_variables_print: self.check_code_found False 
+2025-07-15 11:21:19,127 - INFO - from FLModel.py line 403 method global_variables_print: self.check_code_result None 
+2025-07-15 11:21:19,127 - INFO - from FLModel.py line 404 method global_variables_print: self.check_code_tells_state_is_valid None 
+2025-07-15 11:21:19,127 - INFO - from FLModel.py line 406 method global_variables_print: self.check_image_found None 
+2025-07-15 11:21:19,127 - INFO - from FLModel.py line 407 method global_variables_print: self.check_image_result 0.0 
+2025-07-15 11:21:19,128 - INFO - from FLModel.py line 408 method global_variables_print: self.check_image_tells_state_is_valid None 
+2025-07-15 11:21:19,128 - INFO - from FLModel.py line 410 method global_variables_print:  self.check_state_result None 
+2025-07-15 11:21:19,128 - INFO - from FLModel.py line 413 method global_variables_print:   self.state_is_valid None 
+2025-07-15 11:21:19,128 - INFO - from FLModel.py line 414 method global_variables_print:    self.state_is_valid_final True 
+2025-07-15 11:21:19,128 - INFO - from FLModel.py line 521 method run_code_state: STATE DO 
+2025-07-15 11:21:19,128 - INFO - from FLModel.py line 558 method run_python_code: Exception [Errno 2] No such file or directory: 'D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\SM\\Generic__Components__2025_05_06__19_43_32\\JSON\\Generic__Components__2025_05_06__19_43_32.py', calling D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\Generic__Components__2025_05_06__19_43_32\JSON\Generic__Components__2025_05_06__19_43_32.py, spec ModuleSpec(name='Generic__Components__2025_05_06__19_43_32', loader=<_frozen_importlib_external.SourceFileLoader object at 0x000001E4D1CA5D20>, origin='D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\SM\\Generic__Components__2025_05_06__19_43_32\\JSON\\Generic__Components__2025_05_06__19_43_32.py') 
+2025-07-15 11:21:19,128 - INFO - from FLModel.py line 588 method run_python_code: Method EBuddyDo not found in D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\Generic__Components__2025_05_06__19_43_32\JSON\Generic__Components__2025_05_06__19_43_32.py 
+2025-07-15 11:21:19,129 - INFO - from FLModel.py line 136 method callback_after_state_change: 
+ At callback end, current state: EBuddy 
+2025-07-15 11:21:19,129 - INFO - from FLGUIMain.py line 450 method GUI_main_SM_commands_execute: Transition BackState fired without exceptions 
+2025-07-15 11:21:19,129 - INFO - from FLGUIMain.py line 468 method GUI_main_SM_commands_execute: State after transitioning: EBuddy 
+2025-07-15 11:21:19,129 - INFO - from FLGUIMain.py line 501 method GUI_main_SM_commands_execute: Handling GUI_update_requested_by_callback 
+2025-07-15 11:21:19,201 - INFO - from FLGUISM.py line 279 method graph_save_to_file: Saved current state EBuddy as image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\Screenshot\SMGraphDefault_Components.png 
+2025-07-15 11:21:19,201 - INFO - from FLCV2.py line 277 method image_around_active_state_save: monitor.is_primary True, screen resolution: 2560 x 1440 
+2025-07-15 11:21:19,201 - INFO - from FLCV2.py line 277 method image_around_active_state_save: monitor.is_primary False, screen resolution: 1280 x 768 
+2025-07-15 11:21:19,202 - INFO - from FLCV2.py line 284 method image_around_active_state_save: Screen resolution adapted: 1216 x 768 
+2025-07-15 11:21:19,274 - INFO - from FLGUISM.py line 279 method graph_save_to_file: Saved current state EBuddy as image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\Screenshot\SMGraphDefault_Components.png 
+2025-07-15 11:21:19,275 - INFO - from FLCV2.py line 277 method image_around_active_state_save: monitor.is_primary True, screen resolution: 2560 x 1440 
+2025-07-15 11:21:19,275 - INFO - from FLCV2.py line 277 method image_around_active_state_save: monitor.is_primary False, screen resolution: 1280 x 768 
+2025-07-15 11:21:19,275 - INFO - from FLCV2.py line 284 method image_around_active_state_save: Screen resolution adapted: 1216 x 768 
+2025-07-15 11:21:19,350 - INFO - from FLGUISM.py line 279 method graph_save_to_file: Saved current state EBuddy as image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\Screenshot\SMGraphDefault_Components.png 
+2025-07-15 11:21:19,350 - INFO - from FLCV2.py line 277 method image_around_active_state_save: monitor.is_primary True, screen resolution: 2560 x 1440 
+2025-07-15 11:21:19,351 - INFO - from FLCV2.py line 277 method image_around_active_state_save: monitor.is_primary False, screen resolution: 1280 x 768 
+2025-07-15 11:21:19,351 - INFO - from FLCV2.py line 284 method image_around_active_state_save: Screen resolution adapted: 1216 x 768 
+2025-07-15 11:21:21,363 - INFO - from FLGUIMain.py line 419 method GUI_main_SM_commands_execute: State EBuddy before trying to transition with command BackState 
+2025-07-15 11:21:21,364 - INFO - from FLGUIMain.py line 441 method GUI_main_SM_commands_execute: Firing transition BackState 
+2025-07-15 11:21:21,365 - INFO - from FLModel.py line 76 method callback_after_state_change: 
+ At callback beginning: current state GUI, rollback_do False 
+2025-07-15 11:21:21,365 - INFO - from FLModel.py line 212 method do_code: DO CODE 
+2025-07-15 11:21:21,367 - INFO - from FLModel.py line 558 method run_python_code: Exception [Errno 2] No such file or directory: 'D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\SM\\Generic__Components__2025_05_06__19_43_32\\JSON\\Generic__Components__2025_05_06__19_43_32.py', calling D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\Generic__Components__2025_05_06__19_43_32\JSON\Generic__Components__2025_05_06__19_43_32.py, spec ModuleSpec(name='Generic__Components__2025_05_06__19_43_32', loader=<_frozen_importlib_external.SourceFileLoader object at 0x000001E4D1CB0730>, origin='D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\SM\\Generic__Components__2025_05_06__19_43_32\\JSON\\Generic__Components__2025_05_06__19_43_32.py') 
+2025-07-15 11:21:21,367 - INFO - from FLModel.py line 588 method run_python_code: Method BackStateDo not found in D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\Generic__Components__2025_05_06__19_43_32\JSON\Generic__Components__2025_05_06__19_43_32.py 
+2025-07-15 11:21:21,368 - INFO - from FLModel.py line 239 method do_images: DO IMAGES 
+2025-07-15 11:21:21,369 - INFO - from FLModel.py line 449 method items_find_in_dir: item_name searched: BackStateDo.png, directory searched: D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App 
+2025-07-15 11:21:21,373 - INFO - from FLModel.py line 472 method items_find_in_dir: items found: item_path_list [], app_name_list: [] 
+2025-07-15 11:21:21,373 - INFO - from FLModel.py line 246 method do_images: No do images found 
+2025-07-15 11:21:21,373 - INFO - from FLModel.py line 148 method check_state: STATE CHECK CODE 
+2025-07-15 11:21:21,373 - INFO - from FLModel.py line 558 method run_python_code: Exception [Errno 2] No such file or directory: 'D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\SM\\Generic__Components__2025_05_06__19_43_32\\JSON\\Generic__Components__2025_05_06__19_43_32.py', calling D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\Generic__Components__2025_05_06__19_43_32\JSON\Generic__Components__2025_05_06__19_43_32.py, spec ModuleSpec(name='Generic__Components__2025_05_06__19_43_32', loader=<_frozen_importlib_external.SourceFileLoader object at 0x000001E4D1CB10C0>, origin='D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\SM\\Generic__Components__2025_05_06__19_43_32\\JSON\\Generic__Components__2025_05_06__19_43_32.py') 
+2025-07-15 11:21:21,373 - INFO - from FLModel.py line 588 method run_python_code: Method GUICheck not found in D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\Generic__Components__2025_05_06__19_43_32\JSON\Generic__Components__2025_05_06__19_43_32.py 
+2025-07-15 11:21:21,374 - INFO - from FLModel.py line 162 method check_state: feedback_code_tells_state_is_valid is None 
+2025-07-15 11:21:21,374 - INFO - from FLModel.py line 176 method check_state: CHECK IMAGES 
+2025-07-15 11:21:21,374 - INFO - from FLModel.py line 449 method items_find_in_dir: item_name searched: GUICheck.png, directory searched: D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App 
+2025-07-15 11:21:21,377 - INFO - from FLModel.py line 472 method items_find_in_dir: items found: item_path_list [], app_name_list: [] 
+2025-07-15 11:21:21,377 - INFO - from FLModel.py line 389 method global_variables_print: self.do_code_found False 
+2025-07-15 11:21:21,377 - INFO - from FLModel.py line 390 method global_variables_print: self.do_code_result None 
+2025-07-15 11:21:21,377 - INFO - from FLModel.py line 391 method global_variables_print: self.do_code_tells_state_is_valid None 
+2025-07-15 11:21:21,378 - INFO - from FLModel.py line 393 method global_variables_print: self.do_image_found False 
+2025-07-15 11:21:21,378 - INFO - from FLModel.py line 394 method global_variables_print: self.do_image_result 0.0 
+2025-07-15 11:21:21,378 - INFO - from FLModel.py line 395 method global_variables_print: self.do_image_matched None 
+2025-07-15 11:21:21,378 - INFO - from FLModel.py line 396 method global_variables_print: self.do_image_error None 
+2025-07-15 11:21:21,378 - INFO - from FLModel.py line 397 method global_variables_print: self.do_image_tells_state_is_valid None 
+2025-07-15 11:21:21,378 - INFO - from FLModel.py line 399 method global_variables_print:  self.do_transition_result None 
+2025-07-15 11:21:21,378 - INFO - from FLModel.py line 402 method global_variables_print: self.check_code_found False 
+2025-07-15 11:21:21,378 - INFO - from FLModel.py line 403 method global_variables_print: self.check_code_result None 
+2025-07-15 11:21:21,379 - INFO - from FLModel.py line 404 method global_variables_print: self.check_code_tells_state_is_valid None 
+2025-07-15 11:21:21,379 - INFO - from FLModel.py line 406 method global_variables_print: self.check_image_found None 
+2025-07-15 11:21:21,379 - INFO - from FLModel.py line 407 method global_variables_print: self.check_image_result 0.0 
+2025-07-15 11:21:21,379 - INFO - from FLModel.py line 408 method global_variables_print: self.check_image_tells_state_is_valid None 
+2025-07-15 11:21:21,379 - INFO - from FLModel.py line 410 method global_variables_print:  self.check_state_result None 
+2025-07-15 11:21:21,379 - INFO - from FLModel.py line 413 method global_variables_print:   self.state_is_valid None 
+2025-07-15 11:21:21,379 - INFO - from FLModel.py line 414 method global_variables_print:    self.state_is_valid_final True 
+2025-07-15 11:21:21,379 - INFO - from FLModel.py line 521 method run_code_state: STATE DO 
+2025-07-15 11:21:21,380 - INFO - from FLModel.py line 558 method run_python_code: Exception [Errno 2] No such file or directory: 'D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\SM\\Generic__Components__2025_05_06__19_43_32\\JSON\\Generic__Components__2025_05_06__19_43_32.py', calling D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\Generic__Components__2025_05_06__19_43_32\JSON\Generic__Components__2025_05_06__19_43_32.py, spec ModuleSpec(name='Generic__Components__2025_05_06__19_43_32', loader=<_frozen_importlib_external.SourceFileLoader object at 0x000001E4D1CB0730>, origin='D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\SM\\Generic__Components__2025_05_06__19_43_32\\JSON\\Generic__Components__2025_05_06__19_43_32.py') 
+2025-07-15 11:21:21,380 - INFO - from FLModel.py line 588 method run_python_code: Method GUIDo not found in D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\Generic__Components__2025_05_06__19_43_32\JSON\Generic__Components__2025_05_06__19_43_32.py 
+2025-07-15 11:21:21,380 - INFO - from FLModel.py line 136 method callback_after_state_change: 
+ At callback end, current state: GUI 
+2025-07-15 11:21:21,380 - INFO - from FLGUIMain.py line 450 method GUI_main_SM_commands_execute: Transition BackState fired without exceptions 
+2025-07-15 11:21:21,380 - INFO - from FLGUIMain.py line 468 method GUI_main_SM_commands_execute: State after transitioning: GUI 
+2025-07-15 11:21:21,380 - INFO - from FLGUIMain.py line 501 method GUI_main_SM_commands_execute: Handling GUI_update_requested_by_callback 
+2025-07-15 11:21:21,447 - INFO - from FLGUISM.py line 279 method graph_save_to_file: Saved current state GUI as image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\Screenshot\SMGraphDefault_Components.png 
+2025-07-15 11:21:21,448 - INFO - from FLCV2.py line 277 method image_around_active_state_save: monitor.is_primary True, screen resolution: 2560 x 1440 
+2025-07-15 11:21:21,448 - INFO - from FLCV2.py line 277 method image_around_active_state_save: monitor.is_primary False, screen resolution: 1280 x 768 
+2025-07-15 11:21:21,448 - INFO - from FLCV2.py line 284 method image_around_active_state_save: Screen resolution adapted: 1216 x 768 
+2025-07-15 11:21:21,518 - INFO - from FLGUISM.py line 279 method graph_save_to_file: Saved current state GUI as image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\Screenshot\SMGraphDefault_Components.png 
+2025-07-15 11:21:21,519 - INFO - from FLCV2.py line 277 method image_around_active_state_save: monitor.is_primary True, screen resolution: 2560 x 1440 
+2025-07-15 11:21:21,519 - INFO - from FLCV2.py line 277 method image_around_active_state_save: monitor.is_primary False, screen resolution: 1280 x 768 
+2025-07-15 11:21:21,519 - INFO - from FLCV2.py line 284 method image_around_active_state_save: Screen resolution adapted: 1216 x 768 
+2025-07-15 11:21:21,701 - INFO - from FLGUISM.py line 279 method graph_save_to_file: Saved current state GUI as image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\Screenshot\SMGraphDefault_Components.png 
+2025-07-15 11:21:21,702 - INFO - from FLCV2.py line 277 method image_around_active_state_save: monitor.is_primary True, screen resolution: 2560 x 1440 
+2025-07-15 11:21:21,702 - INFO - from FLCV2.py line 277 method image_around_active_state_save: monitor.is_primary False, screen resolution: 1280 x 768 
+2025-07-15 11:21:21,702 - INFO - from FLCV2.py line 284 method image_around_active_state_save: Screen resolution adapted: 1216 x 768 
+2025-07-15 11:21:24,929 - INFO - from FLGUIMain.py line 419 method GUI_main_SM_commands_execute: State GUI before trying to transition with command BackState 
+2025-07-15 11:21:24,930 - INFO - from FLGUIMain.py line 441 method GUI_main_SM_commands_execute: Firing transition BackState 
+2025-07-15 11:21:24,931 - INFO - from FLModel.py line 76 method callback_after_state_change: 
+ At callback beginning: current state Ready, rollback_do False 
+2025-07-15 11:21:24,931 - INFO - from FLModel.py line 212 method do_code: DO CODE 
+2025-07-15 11:21:24,933 - INFO - from FLModel.py line 558 method run_python_code: Exception [Errno 2] No such file or directory: 'D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\SM\\Generic__Components__2025_05_06__19_43_32\\JSON\\Generic__Components__2025_05_06__19_43_32.py', calling D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\Generic__Components__2025_05_06__19_43_32\JSON\Generic__Components__2025_05_06__19_43_32.py, spec ModuleSpec(name='Generic__Components__2025_05_06__19_43_32', loader=<_frozen_importlib_external.SourceFileLoader object at 0x000001E4D1CB2BC0>, origin='D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\SM\\Generic__Components__2025_05_06__19_43_32\\JSON\\Generic__Components__2025_05_06__19_43_32.py') 
+2025-07-15 11:21:24,933 - INFO - from FLModel.py line 588 method run_python_code: Method BackStateDo not found in D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\Generic__Components__2025_05_06__19_43_32\JSON\Generic__Components__2025_05_06__19_43_32.py 
+2025-07-15 11:21:24,933 - INFO - from FLModel.py line 239 method do_images: DO IMAGES 
+2025-07-15 11:21:24,933 - INFO - from FLModel.py line 449 method items_find_in_dir: item_name searched: BackStateDo.png, directory searched: D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App 
+2025-07-15 11:21:24,937 - INFO - from FLModel.py line 472 method items_find_in_dir: items found: item_path_list [], app_name_list: [] 
+2025-07-15 11:21:24,937 - INFO - from FLModel.py line 246 method do_images: No do images found 
+2025-07-15 11:21:24,937 - INFO - from FLModel.py line 148 method check_state: STATE CHECK CODE 
+2025-07-15 11:21:24,937 - INFO - from FLModel.py line 558 method run_python_code: Exception [Errno 2] No such file or directory: 'D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\SM\\Generic__Components__2025_05_06__19_43_32\\JSON\\Generic__Components__2025_05_06__19_43_32.py', calling D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\Generic__Components__2025_05_06__19_43_32\JSON\Generic__Components__2025_05_06__19_43_32.py, spec ModuleSpec(name='Generic__Components__2025_05_06__19_43_32', loader=<_frozen_importlib_external.SourceFileLoader object at 0x000001E4D1CB35E0>, origin='D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\SM\\Generic__Components__2025_05_06__19_43_32\\JSON\\Generic__Components__2025_05_06__19_43_32.py') 
+2025-07-15 11:21:24,938 - INFO - from FLModel.py line 588 method run_python_code: Method ReadyCheck not found in D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\Generic__Components__2025_05_06__19_43_32\JSON\Generic__Components__2025_05_06__19_43_32.py 
+2025-07-15 11:21:24,938 - INFO - from FLModel.py line 162 method check_state: feedback_code_tells_state_is_valid is None 
+2025-07-15 11:21:24,938 - INFO - from FLModel.py line 176 method check_state: CHECK IMAGES 
+2025-07-15 11:21:24,938 - INFO - from FLModel.py line 449 method items_find_in_dir: item_name searched: ReadyCheck.png, directory searched: D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App 
+2025-07-15 11:21:24,941 - INFO - from FLModel.py line 472 method items_find_in_dir: items found: item_path_list [], app_name_list: [] 
+2025-07-15 11:21:24,941 - INFO - from FLModel.py line 389 method global_variables_print: self.do_code_found False 
+2025-07-15 11:21:24,942 - INFO - from FLModel.py line 390 method global_variables_print: self.do_code_result None 
+2025-07-15 11:21:24,942 - INFO - from FLModel.py line 391 method global_variables_print: self.do_code_tells_state_is_valid None 
+2025-07-15 11:21:24,942 - INFO - from FLModel.py line 393 method global_variables_print: self.do_image_found False 
+2025-07-15 11:21:24,942 - INFO - from FLModel.py line 394 method global_variables_print: self.do_image_result 0.0 
+2025-07-15 11:21:24,942 - INFO - from FLModel.py line 395 method global_variables_print: self.do_image_matched None 
+2025-07-15 11:21:24,942 - INFO - from FLModel.py line 396 method global_variables_print: self.do_image_error None 
+2025-07-15 11:21:24,942 - INFO - from FLModel.py line 397 method global_variables_print: self.do_image_tells_state_is_valid None 
+2025-07-15 11:21:24,942 - INFO - from FLModel.py line 399 method global_variables_print:  self.do_transition_result None 
+2025-07-15 11:21:24,942 - INFO - from FLModel.py line 402 method global_variables_print: self.check_code_found False 
+2025-07-15 11:21:24,943 - INFO - from FLModel.py line 403 method global_variables_print: self.check_code_result None 
+2025-07-15 11:21:24,943 - INFO - from FLModel.py line 404 method global_variables_print: self.check_code_tells_state_is_valid None 
+2025-07-15 11:21:24,943 - INFO - from FLModel.py line 406 method global_variables_print: self.check_image_found None 
+2025-07-15 11:21:24,943 - INFO - from FLModel.py line 407 method global_variables_print: self.check_image_result 0.0 
+2025-07-15 11:21:24,943 - INFO - from FLModel.py line 408 method global_variables_print: self.check_image_tells_state_is_valid None 
+2025-07-15 11:21:24,943 - INFO - from FLModel.py line 410 method global_variables_print:  self.check_state_result None 
+2025-07-15 11:21:24,943 - INFO - from FLModel.py line 413 method global_variables_print:   self.state_is_valid None 
+2025-07-15 11:21:24,943 - INFO - from FLModel.py line 414 method global_variables_print:    self.state_is_valid_final True 
+2025-07-15 11:21:24,943 - INFO - from FLModel.py line 521 method run_code_state: STATE DO 
+2025-07-15 11:21:24,944 - INFO - from FLModel.py line 558 method run_python_code: Exception [Errno 2] No such file or directory: 'D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\SM\\Generic__Components__2025_05_06__19_43_32\\JSON\\Generic__Components__2025_05_06__19_43_32.py', calling D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\Generic__Components__2025_05_06__19_43_32\JSON\Generic__Components__2025_05_06__19_43_32.py, spec ModuleSpec(name='Generic__Components__2025_05_06__19_43_32', loader=<_frozen_importlib_external.SourceFileLoader object at 0x000001E4D1CB2BC0>, origin='D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\SM\\Generic__Components__2025_05_06__19_43_32\\JSON\\Generic__Components__2025_05_06__19_43_32.py') 
+2025-07-15 11:21:24,944 - INFO - from FLModel.py line 588 method run_python_code: Method ReadyDo not found in D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\Generic__Components__2025_05_06__19_43_32\JSON\Generic__Components__2025_05_06__19_43_32.py 
+2025-07-15 11:21:24,944 - INFO - from FLModel.py line 136 method callback_after_state_change: 
+ At callback end, current state: Ready 
+2025-07-15 11:21:24,944 - INFO - from FLGUIMain.py line 450 method GUI_main_SM_commands_execute: Transition BackState fired without exceptions 
+2025-07-15 11:21:24,944 - INFO - from FLGUIMain.py line 468 method GUI_main_SM_commands_execute: State after transitioning: Ready 
+2025-07-15 11:21:24,945 - INFO - from FLGUIMain.py line 501 method GUI_main_SM_commands_execute: Handling GUI_update_requested_by_callback 
+2025-07-15 11:21:25,016 - INFO - from FLGUISM.py line 279 method graph_save_to_file: Saved current state Ready as image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\Screenshot\SMGraphDefault_Components.png 
+2025-07-15 11:21:25,016 - INFO - from FLCV2.py line 277 method image_around_active_state_save: monitor.is_primary True, screen resolution: 2560 x 1440 
+2025-07-15 11:21:25,016 - INFO - from FLCV2.py line 277 method image_around_active_state_save: monitor.is_primary False, screen resolution: 1280 x 768 
+2025-07-15 11:21:25,016 - INFO - from FLCV2.py line 284 method image_around_active_state_save: Screen resolution adapted: 1216 x 768 
+2025-07-15 11:21:25,085 - INFO - from FLGUISM.py line 279 method graph_save_to_file: Saved current state Ready as image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\Screenshot\SMGraphDefault_Components.png 
+2025-07-15 11:21:25,087 - INFO - from FLCV2.py line 277 method image_around_active_state_save: monitor.is_primary True, screen resolution: 2560 x 1440 
+2025-07-15 11:21:25,087 - INFO - from FLCV2.py line 277 method image_around_active_state_save: monitor.is_primary False, screen resolution: 1280 x 768 
+2025-07-15 11:21:25,087 - INFO - from FLCV2.py line 284 method image_around_active_state_save: Screen resolution adapted: 1216 x 768 
+2025-07-15 11:21:25,160 - INFO - from FLGUISM.py line 279 method graph_save_to_file: Saved current state Ready as image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\Screenshot\SMGraphDefault_Components.png 
+2025-07-15 11:21:25,161 - INFO - from FLCV2.py line 277 method image_around_active_state_save: monitor.is_primary True, screen resolution: 2560 x 1440 
+2025-07-15 11:21:25,161 - INFO - from FLCV2.py line 277 method image_around_active_state_save: monitor.is_primary False, screen resolution: 1280 x 768 
+2025-07-15 11:21:25,161 - INFO - from FLCV2.py line 284 method image_around_active_state_save: Screen resolution adapted: 1216 x 768 
+2025-07-15 11:21:28,062 - INFO - from FLGUIMain.py line 419 method GUI_main_SM_commands_execute: State Ready before trying to transition with command BackState 
+2025-07-15 11:21:28,062 - INFO - from FLGUIMain.py line 441 method GUI_main_SM_commands_execute: Firing transition BackState 
+2025-07-15 11:21:28,062 - INFO - from FLModel.py line 76 method callback_after_state_change: 
+ At callback beginning: current state Scanner, rollback_do False 
+2025-07-15 11:21:28,063 - INFO - from FLModel.py line 212 method do_code: DO CODE 
+2025-07-15 11:21:28,063 - INFO - from FLModel.py line 558 method run_python_code: Exception [Errno 2] No such file or directory: 'D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\SM\\Generic__Components__2025_05_06__19_43_32\\JSON\\Generic__Components__2025_05_06__19_43_32.py', calling D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\Generic__Components__2025_05_06__19_43_32\JSON\Generic__Components__2025_05_06__19_43_32.py, spec ModuleSpec(name='Generic__Components__2025_05_06__19_43_32', loader=<_frozen_importlib_external.SourceFileLoader object at 0x000001E4D1CA97B0>, origin='D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\SM\\Generic__Components__2025_05_06__19_43_32\\JSON\\Generic__Components__2025_05_06__19_43_32.py') 
+2025-07-15 11:21:28,063 - INFO - from FLModel.py line 588 method run_python_code: Method BackStateDo not found in D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\Generic__Components__2025_05_06__19_43_32\JSON\Generic__Components__2025_05_06__19_43_32.py 
+2025-07-15 11:21:28,063 - INFO - from FLModel.py line 239 method do_images: DO IMAGES 
+2025-07-15 11:21:28,063 - INFO - from FLModel.py line 449 method items_find_in_dir: item_name searched: BackStateDo.png, directory searched: D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App 
+2025-07-15 11:21:28,067 - INFO - from FLModel.py line 472 method items_find_in_dir: items found: item_path_list [], app_name_list: [] 
+2025-07-15 11:21:28,067 - INFO - from FLModel.py line 246 method do_images: No do images found 
+2025-07-15 11:21:28,067 - INFO - from FLModel.py line 148 method check_state: STATE CHECK CODE 
+2025-07-15 11:21:28,067 - INFO - from FLModel.py line 558 method run_python_code: Exception [Errno 2] No such file or directory: 'D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\SM\\Generic__Components__2025_05_06__19_43_32\\JSON\\Generic__Components__2025_05_06__19_43_32.py', calling D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\Generic__Components__2025_05_06__19_43_32\JSON\Generic__Components__2025_05_06__19_43_32.py, spec ModuleSpec(name='Generic__Components__2025_05_06__19_43_32', loader=<_frozen_importlib_external.SourceFileLoader object at 0x000001E4D1CA97E0>, origin='D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\SM\\Generic__Components__2025_05_06__19_43_32\\JSON\\Generic__Components__2025_05_06__19_43_32.py') 
+2025-07-15 11:21:28,068 - INFO - from FLModel.py line 588 method run_python_code: Method ScannerCheck not found in D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\Generic__Components__2025_05_06__19_43_32\JSON\Generic__Components__2025_05_06__19_43_32.py 
+2025-07-15 11:21:28,068 - INFO - from FLModel.py line 162 method check_state: feedback_code_tells_state_is_valid is None 
+2025-07-15 11:21:28,068 - INFO - from FLModel.py line 176 method check_state: CHECK IMAGES 
+2025-07-15 11:21:28,068 - INFO - from FLModel.py line 449 method items_find_in_dir: item_name searched: ScannerCheck.png, directory searched: D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App 
+2025-07-15 11:21:28,071 - INFO - from FLModel.py line 472 method items_find_in_dir: items found: item_path_list [], app_name_list: [] 
+2025-07-15 11:21:28,071 - INFO - from FLModel.py line 389 method global_variables_print: self.do_code_found False 
+2025-07-15 11:21:28,072 - INFO - from FLModel.py line 390 method global_variables_print: self.do_code_result None 
+2025-07-15 11:21:28,072 - INFO - from FLModel.py line 391 method global_variables_print: self.do_code_tells_state_is_valid None 
+2025-07-15 11:21:28,072 - INFO - from FLModel.py line 393 method global_variables_print: self.do_image_found False 
+2025-07-15 11:21:28,072 - INFO - from FLModel.py line 394 method global_variables_print: self.do_image_result 0.0 
+2025-07-15 11:21:28,072 - INFO - from FLModel.py line 395 method global_variables_print: self.do_image_matched None 
+2025-07-15 11:21:28,072 - INFO - from FLModel.py line 396 method global_variables_print: self.do_image_error None 
+2025-07-15 11:21:28,072 - INFO - from FLModel.py line 397 method global_variables_print: self.do_image_tells_state_is_valid None 
+2025-07-15 11:21:28,072 - INFO - from FLModel.py line 399 method global_variables_print:  self.do_transition_result None 
+2025-07-15 11:21:28,072 - INFO - from FLModel.py line 402 method global_variables_print: self.check_code_found False 
+2025-07-15 11:21:28,073 - INFO - from FLModel.py line 403 method global_variables_print: self.check_code_result None 
+2025-07-15 11:21:28,073 - INFO - from FLModel.py line 404 method global_variables_print: self.check_code_tells_state_is_valid None 
+2025-07-15 11:21:28,073 - INFO - from FLModel.py line 406 method global_variables_print: self.check_image_found None 
+2025-07-15 11:21:28,073 - INFO - from FLModel.py line 407 method global_variables_print: self.check_image_result 0.0 
+2025-07-15 11:21:28,073 - INFO - from FLModel.py line 408 method global_variables_print: self.check_image_tells_state_is_valid None 
+2025-07-15 11:21:28,073 - INFO - from FLModel.py line 410 method global_variables_print:  self.check_state_result None 
+2025-07-15 11:21:28,073 - INFO - from FLModel.py line 413 method global_variables_print:   self.state_is_valid None 
+2025-07-15 11:21:28,073 - INFO - from FLModel.py line 414 method global_variables_print:    self.state_is_valid_final True 
+2025-07-15 11:21:28,073 - INFO - from FLModel.py line 521 method run_code_state: STATE DO 
+2025-07-15 11:21:28,074 - INFO - from FLModel.py line 558 method run_python_code: Exception [Errno 2] No such file or directory: 'D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\SM\\Generic__Components__2025_05_06__19_43_32\\JSON\\Generic__Components__2025_05_06__19_43_32.py', calling D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\Generic__Components__2025_05_06__19_43_32\JSON\Generic__Components__2025_05_06__19_43_32.py, spec ModuleSpec(name='Generic__Components__2025_05_06__19_43_32', loader=<_frozen_importlib_external.SourceFileLoader object at 0x000001E4D1CA9810>, origin='D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\SM\\Generic__Components__2025_05_06__19_43_32\\JSON\\Generic__Components__2025_05_06__19_43_32.py') 
+2025-07-15 11:21:28,074 - INFO - from FLModel.py line 588 method run_python_code: Method ScannerDo not found in D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\Generic__Components__2025_05_06__19_43_32\JSON\Generic__Components__2025_05_06__19_43_32.py 
+2025-07-15 11:21:28,074 - INFO - from FLModel.py line 136 method callback_after_state_change: 
+ At callback end, current state: Scanner 
+2025-07-15 11:21:28,074 - INFO - from FLGUIMain.py line 450 method GUI_main_SM_commands_execute: Transition BackState fired without exceptions 
+2025-07-15 11:21:28,074 - INFO - from FLGUIMain.py line 468 method GUI_main_SM_commands_execute: State after transitioning: Scanner 
+2025-07-15 11:21:28,074 - INFO - from FLGUIMain.py line 501 method GUI_main_SM_commands_execute: Handling GUI_update_requested_by_callback 
+2025-07-15 11:21:28,142 - INFO - from FLGUISM.py line 279 method graph_save_to_file: Saved current state Scanner as image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\Screenshot\SMGraphDefault_Components.png 
+2025-07-15 11:21:28,143 - INFO - from FLCV2.py line 277 method image_around_active_state_save: monitor.is_primary True, screen resolution: 2560 x 1440 
+2025-07-15 11:21:28,143 - INFO - from FLCV2.py line 277 method image_around_active_state_save: monitor.is_primary False, screen resolution: 1280 x 768 
+2025-07-15 11:21:28,143 - INFO - from FLCV2.py line 284 method image_around_active_state_save: Screen resolution adapted: 1216 x 768 
+2025-07-15 11:21:28,329 - INFO - from FLGUISM.py line 279 method graph_save_to_file: Saved current state Scanner as image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\Screenshot\SMGraphDefault_Components.png 
+2025-07-15 11:21:28,329 - INFO - from FLCV2.py line 277 method image_around_active_state_save: monitor.is_primary True, screen resolution: 2560 x 1440 
+2025-07-15 11:21:28,330 - INFO - from FLCV2.py line 277 method image_around_active_state_save: monitor.is_primary False, screen resolution: 1280 x 768 
+2025-07-15 11:21:28,330 - INFO - from FLCV2.py line 284 method image_around_active_state_save: Screen resolution adapted: 1216 x 768 
+2025-07-15 11:21:28,403 - INFO - from FLGUISM.py line 279 method graph_save_to_file: Saved current state Scanner as image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\Screenshot\SMGraphDefault_Components.png 
+2025-07-15 11:21:28,403 - INFO - from FLCV2.py line 277 method image_around_active_state_save: monitor.is_primary True, screen resolution: 2560 x 1440 
+2025-07-15 11:21:28,403 - INFO - from FLCV2.py line 277 method image_around_active_state_save: monitor.is_primary False, screen resolution: 1280 x 768 
+2025-07-15 11:21:28,404 - INFO - from FLCV2.py line 284 method image_around_active_state_save: Screen resolution adapted: 1216 x 768 

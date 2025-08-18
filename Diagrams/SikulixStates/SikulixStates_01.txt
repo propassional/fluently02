@@ -1,0 +1,19 @@
+// http://magjac.com/graphviz-visual-editor/
+
+digraph finite_state_machine {
+	fontname="Helvetica,Arial,sans-serif"
+	node [fontname="Helvetica,Arial,sans-serif"]
+	edge [fontname="Helvetica,Arial,sans-serif"]
+	//rankdir=LR;
+	{rank=source; title}
+	title [shape=polygon, label="Fluently States"]
+	//node [shape = polygon]; Title
+    node [shape = ellipse]; // 0 3 4 8;
+	
+	//node [shape = circle];
+	StudioIsOff -> PreviewIsOn [label = "scanner start"];
+	PreviewIsOn -> Recording [label = "scanning procedure"];
+	Recording -> Scanning [label = "scanner start"];
+	Scanning -> ScanStopped [label = "scanner stop"];
+    ScanStopped -> ResultsShown [label = "scanner open result"];
+}

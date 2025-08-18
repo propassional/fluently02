@@ -1,0 +1,90 @@
+{
+    "states": [
+		"Start",
+        "ArtecStudioOffIsActive",
+        "ArtecStudioIsActive",
+        "ScanMenu1IsActive",
+		"ScannerIsActive",
+        "ScanMenu2IsActive",
+        "PreviewIsActive",
+        "RecordingIsActive",
+        "PauseIsActive",
+        "RecordingOffIsActive",
+        "SaveFile1IsActive",
+        "SaveFile2IsActive",
+        "ShutdownIsActive"
+    ],
+    "transitions": [
+	    {
+            "trigger": "CmdAutoStart",
+            "source": "Start",
+            "dest": "ArtecStudioOffIsActive"
+        },
+        {
+            "trigger": "CmdStartArtecStudio",
+            "source": "ArtecStudioOffIsActive",
+            "dest": "ArtecStudioIsActive"
+        },
+        {
+            "trigger": "CmdStartScanMenu1",
+            "source": "ArtecStudioIsActive",
+            "dest": "ScanMenu1IsActive"
+        },
+        {
+            "trigger": "CmdCheckScannerIsActive",
+            "source": "ScanMenu1IsActive",
+            "dest": "ScannerIsActive"
+        },
+        {
+            "trigger": "CmdStartScanMenu2",
+            "source": "RecordingIsActive",
+            "dest": "ScanMenu2IsActive"
+        },
+        {
+            "trigger": "CmdStartPreview",
+            "source": "ScannerIsActive",
+            "dest": "PreviewIsActive"
+        },
+        {
+            "trigger": "CmdStartPreview",
+            "source": "RecordingOffIsActive",
+            "dest": "PreviewIsActive"
+        },
+        {
+            "trigger": "CmdStartRecording",
+            "source": "PreviewIsActive",
+            "dest": "RecordingIsActive"
+        },
+        {
+            "trigger": "CmdStartPause",
+            "source": "ScanMenu2IsActive",
+            "dest": "PauseIsActive"
+        },
+        {
+            "trigger": "CmdStopRecording",
+            "source": "PauseIsActive",
+            "dest": "RecordingOffIsActive"
+        },
+        {
+            "trigger": "CmdStopRecording",
+            "source": "PreviewIsActive",
+            "dest": "RecordingOffIsActive"
+        },
+        {
+            "trigger": "CmdSaveFile1",
+            "source": "RecordingOffIsActive",
+            "dest": "SaveFile1IsActive"
+        },
+        {
+            "trigger": "CmdSaveFile2",
+            "source": "SaveFile1IsActive",
+            "dest": "SaveFile2IsActive"
+        },
+        {
+            "trigger": "CmdStopArtecStudio",
+            "source": "SaveFile2IsActive",
+            "dest": "ArtecStudioOffIsActive"
+        }
+    ],
+    "initial": "Start"
+}

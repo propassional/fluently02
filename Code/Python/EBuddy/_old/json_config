@@ -1,0 +1,13 @@
+{
+  "name": "MyMachine",
+  "states": [
+    "A",
+    "B",
+    { "name": "C", "on_enter": "say_hello" }
+  ],
+  "transitions": [
+    ["go", "A", "B"],
+    {"trigger": "hello", "source": "*", "dest": "C"}
+  ],
+  "initial": "A"
+}

@@ -1,0 +1,4 @@
+2024-08-29 11:55:18,766 - INFO - from FLCV2.py line 66 method screenshot_search: Image saved at D:\Banfi\Github\Fluently\Releases\2024_07_09_EBuddy\Data\Output\CV2Image\2024_08_29__11_55_18_1_Screenshot.png 
+2024-08-29 11:55:18,766 - INFO - from FLCV2.py line 75 method screenshot_search: Template image D:\Banfi\Github\Fluently\Releases\2024_07_09_EBuddy\Data\Input\App\ArtecStudio\Image\2560x1440\Check\PauseIsOnCheck.png 
+2024-08-29 11:55:18,766 - INFO - from FLCV2.py line 86 method screenshot_search: Image saved at D:\Banfi\Github\Fluently\Releases\2024_07_09_EBuddy\Data\Output\CV2Image\2024_08_29__11_55_18_2_Template.png 
+2024-08-29 11:55:18,853 - INFO - from FLCV2.py line 116 method screenshot_search: Matching score: 0.6560 

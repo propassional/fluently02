@@ -1,0 +1,30 @@
+# https://sequencediagram.org/
+
+title Client Server Sikulix States 0.1, 25.09.23, by MB
+
+Realwear->whisper: User voice msg "cobot start"
+whisper->ROS2_bridge: "cobot start"
+ROS2_bridge->client: "cobot start"
+client->server: cmd msg "cobot start"
+server->DirCmdForSikulix: write cmd file "cobot start"
+DirCmdForSikulix->DirCmdFromSikulix: write cmd file "cobot start"
+DirCmdFromSikulix->server: Server reads cmd "cobot start" & deletes cmd file
+server->client: cmd msg "cobot start"
+client->cobot: ROS1 cmd msg "cobot start"
+cobot->cobot: move cobot
+cobot->client: ROS1 feedback msg "cobot finished"
+client->server: feedback msg "cobot finished"
+server->DirCmdFromSikulix: write feedback file "cobot finished"
+DirCmdFromSikulix->server: delete cmd file "cobot start"
+server->client: feedback msg "cobot start"
+
+Realwear->whisper: User voice msg "artec start"
+whisper->ROS2_bridge: "artec start"
+ROS2_bridge->client: "artec start"
+client->server: cmd msg "artec start"
+server->DirCmdForSikulix: write cmd file "artec start"
+DirCmdForSikulix->DirCmdForSikulix: do "artec start"
+DirCmdForSikulix->DirCmdForSikulix: delete cmd file "artec start"
+DirCmdForSikulix->server: server has no cmd file to read
+server->client: feedback msg "artec start"
+client->client: does nothing (for now)

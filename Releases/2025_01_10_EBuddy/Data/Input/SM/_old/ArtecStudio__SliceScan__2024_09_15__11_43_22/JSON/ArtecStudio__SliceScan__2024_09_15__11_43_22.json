@@ -1,0 +1,59 @@
+{
+    "states": [
+		"Start",
+		"Ready",
+        "Home",
+        "MovedUp",
+        "MovedDown",
+        "SaveHighPosition",
+        "SaveLowPosition"
+    ],
+    "transitions": [
+	    {
+            "trigger": "Auto",
+            "source": "Start",
+            "dest": "Ready"
+        },
+        {
+            "trigger": "Next",
+            "source": "Ready",
+            "dest": "Home"
+        },
+        {
+            "trigger": "Last",
+            "source": "Home",
+            "dest": "Ready"
+        },
+        {
+            "trigger": "MoveUp",
+            "source": "Home",
+            "dest": "MovedUp"
+        },
+        {
+            "trigger": "MoveUp",
+            "source": "MovedUp",
+            "dest": "MovedUp"
+        },
+        {
+            "trigger": "MoveDown",
+            "source": "Home",
+            "dest": "MovedDown"
+        },
+        {
+            "trigger": "MoveDown",
+            "source": "MovedDown",
+            "dest": "MovedDown"
+        },
+        {
+            "trigger": "MoveDown",
+            "source": "MovedUp",
+            "dest": "MovedDown"
+        },
+        {
+            "trigger": "MoveUp",
+            "source": "MovedDown",
+            "dest": "MovedUp"
+        }
+    ],
+    "initial": "Start"
+}

@@ -1,0 +1,73 @@
+{
+    "states": [
+		"Start",
+        "Ready",
+        "ArtecStudioIsOn",
+        "ScanMenuIsOn",
+		"ScannerIsOn",
+        "PreviewIsOn",
+        "RecordingIsOn",
+        "PauseIsOn",
+        "RecordingIsOff",
+        "SaveFile",
+		"Shutdown"
+    ],
+    "transitions": [
+	    {
+            "trigger": "Auto",
+            "source": "Start",
+            "dest": "Ready"
+        },
+        {
+            "trigger": "StartArtecStudio",
+            "source": "Ready",
+            "dest": "ArtecStudioIsOn"
+        },
+        {
+            "trigger": "StartScanMenu",
+            "source": "ArtecStudioIsOn",
+            "dest": "ScanMenuIsOn"
+        },
+        {
+            "trigger": "CheckScannerIsOn",
+            "source": "ScanMenuIsOn",
+            "dest": "ScannerIsOn"
+        },
+        {
+            "trigger": "StartPreview",
+            "source": "ScannerIsOn",
+            "dest": "PreviewIsOn"
+        },
+        {
+            "trigger": "StartPreview",
+            "source": "RecordingIsOff",
+            "dest": "PreviewIsOn"
+        },
+        {
+            "trigger": "StartRecording",
+            "source": "PreviewIsOn",
+            "dest": "RecordingIsOn"
+        },
+        {
+            "trigger": "StopPreview",
+            "source": "PreviewIsOn",
+            "dest": "ScannerIsOn"
+        },
+        {
+            "trigger": "StartPause",
+            "source": "RecordingIsOn",
+            "dest": "PauseIsOn"
+        },
+        {
+            "trigger": "StopRecording",
+            "source": "PauseIsOn",
+            "dest": "RecordingIsOff"
+        },
+        {
+            "trigger": "StopRecording",
+            "source": "PreviewIsOn",
+            "dest": "RecordingIsOff"
+        }
+    ],
+    "initial": "Start"
+}

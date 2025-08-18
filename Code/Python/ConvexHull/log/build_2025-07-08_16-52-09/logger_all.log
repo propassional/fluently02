@@ -1,0 +1,108 @@
+[2.710s] [34mcolcon[0m [1;30mDEBUG[0m [32mCommand line arguments: ['C:\\Python38\\Scripts\\colcon', 'build'][0m
+[2.710s] [34mcolcon[0m [1;30mDEBUG[0m [32mParsed command line arguments: Namespace(ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x000001DDFF1E73A0>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=20, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x000001DDFF1E73A0>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x000001DDFF305E50>)[0m
+[3.078s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(colcon_meta) check parameters
+[3.078s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(recursive) check parameters
+[3.078s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(ignore) check parameters
+[3.079s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(path) check parameters
+[3.079s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(colcon_meta) discover
+[3.079s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(recursive) discover
+[3.079s] [34mcolcon.colcon_core.package_discovery[0m [1;30mINFO[0m Crawling recursively for packages in 'D:\Banfi\Github\Fluently\Code\Python\ConvexHull'
+[3.079s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['ignore', 'ignore_ament_install']
+[3.079s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'ignore'
+[3.079s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'ignore_ament_install'
+[3.079s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['colcon_pkg']
+[3.079s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'colcon_pkg'
+[3.079s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['colcon_meta']
+[3.079s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'colcon_meta'
+[3.079s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['ros']
+[3.080s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'ros'
+[3.125s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['cmake', 'python']
+[3.125s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'cmake'
+[3.125s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'python'
+[3.126s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['python_setup_py']
+[3.126s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'python_setup_py'
+[3.126s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(build) by extensions ['ignore', 'ignore_ament_install']
+[3.126s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(build) by extension 'ignore'
+[3.126s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(build) ignored
+[3.126s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(install) by extensions ['ignore', 'ignore_ament_install']
+[3.126s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(install) by extension 'ignore'
+[3.127s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(install) ignored
+[3.127s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(log) by extensions ['ignore', 'ignore_ament_install']
+[3.127s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(log) by extension 'ignore'
+[3.127s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(log) ignored
+[3.127s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['ignore', 'ignore_ament_install']
+[3.127s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'ignore'
+[3.127s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'ignore_ament_install'
+[3.128s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['colcon_pkg']
+[3.128s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'colcon_pkg'
+[3.128s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['colcon_meta']
+[3.128s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'colcon_meta'
+[3.128s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['ros']
+[3.128s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'ros'
+[3.128s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['cmake', 'python']
+[3.128s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'cmake'
+[3.128s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'python'
+[3.128s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['python_setup_py']
+[3.128s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'python_setup_py'
+[3.132s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src\convex-hull-estimation-interface) by extensions ['ignore', 'ignore_ament_install']
+[3.133s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src\convex-hull-estimation-interface) by extension 'ignore'
+[3.133s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src\convex-hull-estimation-interface) by extension 'ignore_ament_install'
+[3.133s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src\convex-hull-estimation-interface) by extensions ['colcon_pkg']
+[3.133s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src\convex-hull-estimation-interface) by extension 'colcon_pkg'
+[3.133s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src\convex-hull-estimation-interface) by extensions ['colcon_meta']
+[3.133s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src\convex-hull-estimation-interface) by extension 'colcon_meta'
+[3.133s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src\convex-hull-estimation-interface) by extensions ['ros']
+[3.133s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src\convex-hull-estimation-interface) by extension 'ros'
+[3.150s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src\convex-hull-estimation-interface' with type 'ros.ament_cmake' and name 'convex_hull_estimation_interface'[0m
+[3.150s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(recursive) using defaults
+[3.150s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(ignore) discover
+[3.150s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(ignore) using defaults
+[3.151s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(path) discover
+[3.151s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(path) using defaults
+[3.193s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'convex_hull_estimation_interface' build argument 'cmake_args' from command line to 'None'
+[3.193s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'convex_hull_estimation_interface' build argument 'cmake_target' from command line to 'None'
+[3.193s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'convex_hull_estimation_interface' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[3.193s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'convex_hull_estimation_interface' build argument 'cmake_clean_cache' from command line to 'False'
+[3.193s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'convex_hull_estimation_interface' build argument 'cmake_clean_first' from command line to 'False'
+[3.193s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'convex_hull_estimation_interface' build argument 'cmake_force_configure' from command line to 'False'
+[3.193s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'convex_hull_estimation_interface' build argument 'ament_cmake_args' from command line to 'None'
+[3.193s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'convex_hull_estimation_interface' build argument 'catkin_cmake_args' from command line to 'None'
+[3.194s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'convex_hull_estimation_interface' build argument 'catkin_skip_building_tests' from command line to 'False'
+[3.194s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'convex_hull_estimation_interface' with the following arguments: {'ament_cmake_args': None, 'build_base': 'D:\\Banfi\\Github\\Fluently\\Code\\Python\\ConvexHull\\build\\convex_hull_estimation_interface', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': 'D:\\Banfi\\Github\\Fluently\\Code\\Python\\ConvexHull\\install\\convex_hull_estimation_interface', 'merge_install': False, 'path': 'D:\\Banfi\\Github\\Fluently\\Code\\Python\\ConvexHull\\src\\convex-hull-estimation-interface', 'symlink_install': False, 'test_result_base': None}[0m
+[3.194s] [34mcolcon.colcon_core.executor[0m [1;30mINFO[0m Executing jobs using 'parallel' executor
+[3.196s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mrun_until_complete[0m
+[3.197s] [34mcolcon.colcon_ros.task.ament_cmake.build[0m [1;30mINFO[0m Building ROS package in 'D:\Banfi\Github\Fluently\Code\Python\ConvexHull\src\convex-hull-estimation-interface' with build type 'ament_cmake'
+[3.197s] [34mcolcon.colcon_cmake.task.cmake.build[0m [1;30mINFO[0m Building CMake package in 'D:\Banfi\Github\Fluently\Code\Python\ConvexHull\src\convex-hull-estimation-interface'
+[3.199s] [34mcolcon.colcon_core.plugin_system[0m [1;30mINFO[0m Skipping extension 'colcon_core.shell.sh': Not used on Windows systems
+[3.199s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.344s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in 'D:\Banfi\Github\Fluently\Code\Python\ConvexHull\build\convex_hull_estimation_interface': PUBLIC=%PUBLIC%
+PyCharm Community Edition=C:\Program Files\JetBrains\PyCharm Community Edition 2024.3.5\bin; C:\Program Files\CMake\bin\cmake.EXE D:\Banfi\Github\Fluently\Code\Python\ConvexHull\src\convex-hull-estimation-interface -DCMAKE_INSTALL_PREFIX=D:\Banfi\Github\Fluently\Code\Python\ConvexHull\install\convex_hull_estimation_interface -G Visual Studio 16 2019[0m
+[10.709s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(convex_hull_estimation_interface)
+[10.712s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in 'D:\Banfi\Github\Fluently\Code\Python\ConvexHull\build\convex_hull_estimation_interface' returned '1': PUBLIC=%PUBLIC%
+PyCharm Community Edition=C:\Program Files\JetBrains\PyCharm Community Edition 2024.3.5\bin; C:\Program Files\CMake\bin\cmake.EXE D:\Banfi\Github\Fluently\Code\Python\ConvexHull\src\convex-hull-estimation-interface -DCMAKE_INSTALL_PREFIX=D:\Banfi\Github\Fluently\Code\Python\ConvexHull\install\convex_hull_estimation_interface -G Visual Studio 16 2019[0m
+[10.720s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking 'D:\Banfi\Github\Fluently\Code\Python\ConvexHull\install\convex_hull_estimation_interface' for CMake module files
+[10.721s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking 'D:\Banfi\Github\Fluently\Code\Python\ConvexHull\install\convex_hull_estimation_interface' for CMake config files
+[10.721s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking 'D:\Banfi\Github\Fluently\Code\Python\ConvexHull\install\convex_hull_estimation_interface\bin'
+[10.722s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking 'D:\Banfi\Github\Fluently\Code\Python\ConvexHull\install\convex_hull_estimation_interface\bin'
+[10.722s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking 'D:\Banfi\Github\Fluently\Code\Python\ConvexHull\install\convex_hull_estimation_interface\lib\pkgconfig\convex_hull_estimation_interface.pc'
+[10.722s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking 'D:\Banfi\Github\Fluently\Code\Python\ConvexHull\install\convex_hull_estimation_interface\Lib\site-packages'
+[10.722s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking 'D:\Banfi\Github\Fluently\Code\Python\ConvexHull\install\convex_hull_estimation_interface\Scripts'
+[10.722s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script 'D:\Banfi\Github\Fluently\Code\Python\ConvexHull\install\convex_hull_estimation_interface\share\convex_hull_estimation_interface\package.ps1'
+[10.734s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script 'D:\Banfi\Github\Fluently\Code\Python\ConvexHull\install\convex_hull_estimation_interface\share\convex_hull_estimation_interface\package.bat'
+[10.740s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor 'D:\Banfi\Github\Fluently\Code\Python\ConvexHull\install\convex_hull_estimation_interface\share\convex_hull_estimation_interface\package.dsv'
+[10.744s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(D:\Banfi\Github\Fluently\Code\Python\ConvexHull\install\convex_hull_estimation_interface\share\colcon-core\packages\convex_hull_estimation_interface)
+[10.760s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mclosing loop[0m
+[10.760s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mloop closed[0m
+[10.760s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mrun_until_complete finished with '1'[0m
+[10.760s] [34mcolcon.colcon_core.event_reactor[0m [1;30mDEBUG[0m [32mjoining thread[0m
+[10.768s] [34mcolcon.colcon_core.plugin_system[0m [1;30mINFO[0m Skipping extension 'colcon_notification.desktop_notification.notify2': 'notify2' not found
+[10.768s] [34mcolcon.colcon_core.plugin_system[0m [1;30mINFO[0m Skipping extension 'colcon_notification.desktop_notification.notify_send': Not used on non-Linux systems
+[10.768s] [34mcolcon.colcon_core.plugin_system[0m [1;30mINFO[0m Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[10.768s] [34mcolcon.colcon_notification.desktop_notification[0m [1;30mINFO[0m Sending desktop notification using 'win32'
+[17.578s] [34mcolcon.colcon_core.event_reactor[0m [1;30mDEBUG[0m [32mjoined thread[0m
+[17.579s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script 'D:\Banfi\Github\Fluently\Code\Python\ConvexHull\install\local_setup.ps1'
+[17.590s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix util module 'D:\Banfi\Github\Fluently\Code\Python\ConvexHull\install\_local_setup_util_ps1.py'
+[17.608s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script 'D:\Banfi\Github\Fluently\Code\Python\ConvexHull\install\setup.ps1'
+[17.618s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script 'D:\Banfi\Github\Fluently\Code\Python\ConvexHull\install\local_setup.bat'
+[17.638s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix util module 'D:\Banfi\Github\Fluently\Code\Python\ConvexHull\install\_local_setup_util_bat.py'
+[17.639s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script 'D:\Banfi\Github\Fluently\Code\Python\ConvexHull\install\setup.bat'

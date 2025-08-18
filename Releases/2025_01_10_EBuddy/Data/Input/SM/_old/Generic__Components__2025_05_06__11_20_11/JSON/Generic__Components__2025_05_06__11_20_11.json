@@ -1,0 +1,19 @@
+{
+    "states": [
+		"Start",
+		"Ready",
+		"Cobot",
+		"Holder",
+		"Impeller",
+		"Rototilt",
+		"Scanner"
+    ],
+    "transitions": [
+	    {
+            "trigger": "Auto",
+            "source": "Start",
+            "dest": "Ready"
+        }
+    ],
+    "initial": "Start"
+}

@@ -1,0 +1,72 @@
+{
+    "Instructions": {
+        "Start": "Next, StateIsolated1, Setup, PreviewBasic, Preview, FullScan, SliceScan, SnakeScan, Registration, CommandHub, AutopilotOn, AutopilotOff",
+        "Ready": "Next, StateIsolated1, Setup, PreviewBasic, Preview, FullScan, SliceScan, SnakeScan, Registration, CommandHub, AutopilotOn, AutopilotOff",
+        "RototiltInstalled": "Last, Next, StateIsolated1, Setup, PreviewBasic, Preview, FullScan, SliceScan, SnakeScan, Registration, CommandHub, AutopilotOn, AutopilotOff",
+        "MarkersApplied": "Next, Last, StateIsolated1, Setup, PreviewBasic, Preview, FullScan, SliceScan, SnakeScan, Registration, CommandHub, AutopilotOn, AutopilotOff",
+        "RingBelowScanned": "Next, Last, StateIsolated1, Setup, PreviewBasic, Preview, FullScan, SliceScan, SnakeScan, Registration, CommandHub, AutopilotOn, AutopilotOff",
+        "RingIntermediateScanned": "Next, Last, StateIsolated1, Setup, PreviewBasic, Preview, FullScan, SliceScan, SnakeScan, Registration, CommandHub, AutopilotOn, AutopilotOff",
+        "RingAboveScanned": "Next, Last, StateIsolated1, Setup, PreviewBasic, Preview, FullScan, SliceScan, SnakeScan, Registration, CommandHub, AutopilotOn, AutopilotOff",
+        "End": "Next, Last, StateIsolated1, Setup, PreviewBasic, Preview, FullScan, SliceScan, SnakeScan, Registration, CommandHub, AutopilotOn, AutopilotOff"
+    },
+    "Setup": {
+        "Start": "Auto, CameraSetupAdvanced, UserPreset, CameraSetupBasic, Instructions, PreviewBasic, Preview, FullScan, SliceScan, SnakeScan, Registration, CommandHub, AutopilotOn, AutopilotOff"
+    },
+    "PreviewBasic": {
+        "Start": "Next, Instructions, Setup, Preview, FullScan, SliceScan, SnakeScan, Registration, CommandHub, AutopilotOn, AutopilotOff",
+        "Ready": "CheckArtecStudioIsOff, Instructions, Setup, Preview, FullScan, SliceScan, SnakeScan, Registration, CommandHub, AutopilotOn, AutopilotOff",
+        "ArtecStudioIsOff": "StartArtecStudio, Instructions, Setup, Preview, FullScan, SliceScan, SnakeScan, Registration, CommandHub, AutopilotOn, AutopilotOff",
+        "ArtecStudioIsOn": "StartScanMenu, Instructions, Setup, Preview, FullScan, SliceScan, SnakeScan, Registration, CommandHub, AutopilotOn, AutopilotOff",
+        "CameraSetupBasicVerified": "VerifyCameraSetupAdvanced1, Instructions, Setup, Preview, FullScan, SliceScan, SnakeScan, Registration, CommandHub, AutopilotOn, AutopilotOff",
+        "CameraSetupAdvanced1Verified": "VerifyCameraSetupAdvanced2, Instructions, Setup, Preview, FullScan, SliceScan, SnakeScan, Registration, CommandHub, AutopilotOn, AutopilotOff",
+        "CameraSetupAdvanced2Verified": "StartPreview, Instructions, Setup, Preview, FullScan, SliceScan, SnakeScan, Registration, CommandHub, AutopilotOn, AutopilotOff",
+        "ScanMenuIsOn": "CheckScannerIsOn, Instructions, Setup, Preview, FullScan, SliceScan, SnakeScan, Registration, CommandHub, AutopilotOn, AutopilotOff",
+        "ScannerIsOn": "VerifyCameraSetupBasic, Instructions, Setup, Preview, FullScan, SliceScan, SnakeScan, Registration, CommandHub, AutopilotOn, AutopilotOff",
+        "PreviewIsOn": "Auto, Instructions, Setup, Preview, FullScan, SliceScan, SnakeScan, Registration, CommandHub, AutopilotOn, AutopilotOff",
+        "End": "Next, Instructions, Setup, Preview, FullScan, SliceScan, SnakeScan, Registration, CommandHub, AutopilotOn, AutopilotOff"
+    },
+    "Preview": {
+        "Start": "Next, Instructions, Setup, PreviewBasic, FullScan, SliceScan, SnakeScan, Registration, CommandHub, AutopilotOn, AutopilotOff",
+        "Ready": "CheckArtecStudioIsOn, Instructions, Setup, PreviewBasic, FullScan, SliceScan, SnakeScan, Registration, CommandHub, AutopilotOn, AutopilotOff",
+        "ArtecStudioIsOn": "StartScanMenu, Instructions, Setup, PreviewBasic, FullScan, SliceScan, SnakeScan, Registration, CommandHub, AutopilotOn, AutopilotOff",
+        "ScanMenuIsOn": "CheckScannerIsOn, Instructions, Setup, PreviewBasic, FullScan, SliceScan, SnakeScan, Registration, CommandHub, AutopilotOn, AutopilotOff",
+        "ScannerIsOn": "StartPreview, Instructions, Setup, PreviewBasic, FullScan, SliceScan, SnakeScan, Registration, CommandHub, AutopilotOn, AutopilotOff",
+        "PreviewIsOn": "Auto, Instructions, Setup, PreviewBasic, FullScan, SliceScan, SnakeScan, Registration, CommandHub, AutopilotOn, AutopilotOff",
+        "End": "Next, Instructions, Setup, PreviewBasic, FullScan, SliceScan, SnakeScan, Registration, CommandHub, AutopilotOn, AutopilotOff"
+    },
+    "FullScan": {
+        "Start": "Next, SaveFile, Instructions, Setup, PreviewBasic, Preview, SliceScan, SnakeScan, Registration, CommandHub, AutopilotOn, AutopilotOff",
+        "Ready": "CheckPreview, SaveFile, Instructions, Setup, PreviewBasic, Preview, SliceScan, SnakeScan, Registration, CommandHub, AutopilotOn, AutopilotOff",
+        "PreviewIsOn": "StartRecording, StopRecording, SaveFile, Instructions, Setup, PreviewBasic, Preview, SliceScan, SnakeScan, Registration, CommandHub, AutopilotOn, AutopilotOff",
+        "RecordingIsOn": "StartPause, SaveFile, Instructions, Setup, PreviewBasic, Preview, SliceScan, SnakeScan, Registration, CommandHub, AutopilotOn, AutopilotOff",
+        "PauseIsOn": "StopRecording, StartRecording, SaveFile, Instructions, Setup, PreviewBasic, Preview, SliceScan, SnakeScan, Registration, CommandHub, AutopilotOn, AutopilotOff",
+        "RecordingIsOff": "StartPreview, SaveFile, Instructions, Setup, PreviewBasic, Preview, SliceScan, SnakeScan, Registration, CommandHub, AutopilotOn, AutopilotOff"
+    },
+    "SliceScan": {
+        "Start": "Next, SaveLowPosition, SaveHighPosition, DoSliceScan, Instructions, Setup, PreviewBasic, Preview, FullScan, SnakeScan, Registration, CommandHub, AutopilotOn, AutopilotOff",
+        "Ready": "Next, SaveLowPosition, SaveHighPosition, DoSliceScan, Instructions, Setup, PreviewBasic, Preview, FullScan, SnakeScan, Registration, CommandHub, AutopilotOn, AutopilotOff",
+        "Home": "Next, MoveUp, MoveDown, SaveLowPosition, SaveHighPosition, DoSliceScan, Instructions, Setup, PreviewBasic, Preview, FullScan, SnakeScan, Registration, CommandHub, AutopilotOn, AutopilotOff",
+        "MovedUp": "MoveUp, MoveHome, MoveDown, SaveLowPosition, SaveHighPosition, DoSliceScan, Instructions, Setup, PreviewBasic, Preview, FullScan, SnakeScan, Registration, CommandHub, AutopilotOn, AutopilotOff",
+        "MovedDown": "MoveDown, MoveHome, MoveUp, SaveLowPosition, SaveHighPosition, DoSliceScan, Instructions, Setup, PreviewBasic, Preview, FullScan, SnakeScan, Registration, CommandHub, AutopilotOn, AutopilotOff"
+    },
+    "SnakeScan": {
+        "Start": "Next, EnlargeSnake, ShrinkSnake, SaveLowPosition, DoPartialScan, SaveHighPosition, Instructions, Setup, PreviewBasic, Preview, FullScan, SliceScan, Registration, CommandHub, AutopilotOn, AutopilotOff",
+        "Ready": "Next, EnlargeSnake, ShrinkSnake, SaveLowPosition, DoPartialScan, SaveHighPosition, Instructions, Setup, PreviewBasic, Preview, FullScan, SliceScan, Registration, CommandHub, AutopilotOn, AutopilotOff",
+        "Home": "MoveUp, MoveDown, EnlargeSnake, ShrinkSnake, SaveLowPosition, DoPartialScan, SaveHighPosition, Instructions, Setup, PreviewBasic, Preview, FullScan, SliceScan, Registration, CommandHub, AutopilotOn, AutopilotOff",
+        "MovedUp": "MoveUp, MoveHome, MoveDown, EnlargeSnake, ShrinkSnake, SaveLowPosition, DoPartialScan, SaveHighPosition, Instructions, Setup, PreviewBasic, Preview, FullScan, SliceScan, Registration, CommandHub, AutopilotOn, AutopilotOff",
+        "MovedDown": "MoveDown, MoveHome, MoveUp, EnlargeSnake, ShrinkSnake, SaveLowPosition, DoPartialScan, SaveHighPosition, Instructions, Setup, PreviewBasic, Preview, FullScan, SliceScan, Registration, CommandHub, AutopilotOn, AutopilotOff"
+    },
+    "Registration": {
+        "Start": "Next, Instructions, Setup, PreviewBasic, Preview, FullScan, SliceScan, SnakeScan, CommandHub, AutopilotOn, AutopilotOff",
+        "Ready": "StartToolsMenu, Instructions, Setup, PreviewBasic, Preview, FullScan, SliceScan, SnakeScan, CommandHub, AutopilotOn, AutopilotOff",
+        "ToolsMenuIsOn": "StartAutoMenu, Instructions, Setup, PreviewBasic, Preview, FullScan, SliceScan, SnakeScan, CommandHub, AutopilotOn, AutopilotOff",
+        "AutoMenuIsOn": "StartGlobalRegistration, Instructions, Setup, PreviewBasic, Preview, FullScan, SliceScan, SnakeScan, CommandHub, AutopilotOn, AutopilotOff",
+        "GlobalRegistrationEntered": "Auto, Instructions, Setup, PreviewBasic, Preview, FullScan, SliceScan, SnakeScan, CommandHub, AutopilotOn, AutopilotOff",
+        "CalculationIsDone": "Close, Instructions, Setup, PreviewBasic, Preview, FullScan, SliceScan, SnakeScan, CommandHub, AutopilotOn, AutopilotOff",
+        "ToolsMenuIsOff": "Next, Instructions, Setup, PreviewBasic, Preview, FullScan, SliceScan, SnakeScan, CommandHub, AutopilotOn, AutopilotOff",
+        "End": "StopToolsMenu, Instructions, Setup, PreviewBasic, Preview, FullScan, SliceScan, SnakeScan, CommandHub, AutopilotOn, AutopilotOff"
+    },
+    "CommandHub": {
+        "Start": "Auto, SaveFile, Shutdown, CloseAllArtecStudios, Instructions, Setup, PreviewBasic, Preview, FullScan, SliceScan, SnakeScan, Registration, AutopilotOn, AutopilotOff"
+    }
+}

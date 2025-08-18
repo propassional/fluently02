@@ -1,0 +1,22 @@
+title Artec Studio States
+
+#artec_studio_is_off->frames_recorded_is_off:(artec open)
+#frames_recorded_is_off->scan_menu_is_on: (artec scan)
+#scan_menu_is_on->preview_is_on: (artec preview)
+artec_studio_is_off->preview_is_on: Voice  command: "preview"
+note over artec_studio_is_off, preview_is_on: robot goto scan top position
+note over artec_studio_is_off, preview_is_on: Artec Studio: open
+note over artec_studio_is_off, preview_is_on: Artec Studio: activate scan
+#preview_is_on->scan_menu_is_on: artec stop
+preview_is_on->recording_is_on: Voice  command: "record"
+note over preview_is_on, recording_is_on: Artec Studio: record
+note over preview_is_on, recording_is_on: robot run scan top
+#recording_is_on->scan_menu_is_on: (stop)
+recording_is_on->frames_recorded_is_on: No voice command " "
+note over recording_is_on, frames_recorded_is_on: robot feedback: scan program ended
+frames_recorded_is_on->tools_is_on: tools
+tools_is_on->global_registration_done: global registration
+global_registration_done->fast_fusion_done:fast fusion
+fast_fusion_done->project_saved: save
+project_saved->artec_studio_is_closed: close
+artec_studio_is_closed->artec_studio_is_off: shutdown

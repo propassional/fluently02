@@ -1,0 +1,3 @@
+2024-07-24 14:29:17,287 - INFO - from FLCV2.py line 129 method screenshot_search: Image saved at D:\Banfi\Github\Fluently\Releases\2024_07_09_EBuddy\Data\Output\CV2Image\2024_07_24__14_29_17_3_Result.png 
+2024-07-24 14:29:17,297 - INFO - from FLModel.py line 367 method run_images: call screenshot_search with command_image_path D:\Banfi\Github\Fluently\Releases\2024_07_09_EBuddy\Data\Input\App\ArtecStudio\2560x1440\Widgets\StartScanMenu1Do.png, app_name ArtecStudio 
+2024-07-24 14:29:17,297 - INFO - from FLModel.py line 369 method run_images: screenshot_search returns mouse_x 29, mouse_y 73, matching_score 0.3700801730155945

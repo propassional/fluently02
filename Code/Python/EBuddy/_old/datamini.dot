@@ -1,0 +1,17 @@
+digraph luffarschack {
+    node [shape=none];
+    "baabb--ba-" [label=<<TABLE BORDER="1" BGCOLOR="white">
+        <TR><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+        <TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+        <TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+    </TABLE>>];
+    "baabb--ba-" -> "abbaa-a-b-";
+    "baabb--ba-" -> "ab-aaba--b";
+    "baabb--ba-" -> "abbaaba---";
+    "baabb--ba-" -> "ab--a-abba";
+    "baabb--ba-" -> "a-bba-a-ba";
+    "baabb--ba-" -> "ab-aa-a-bb";
+    "baabb--ba-" -> "a--baba-ba";
+    "baabb--ba-" -> "a-baa-ab-b";
+    "baabb--ba-" -> "ab-ba-ab-a";
+}

@@ -1,0 +1,72 @@
+{
+    "Instructions": {
+        "Start": "Next, StateIsolated1, AutopilotOn,  Autopilotff, GoToTabRight, GoToTabLeft",
+        "Ready": "Next, StateIsolated1, AutopilotOn,  Autopilotff, GoToTabRight, GoToTabLeft",
+        "RototiltInstalled": "Last, Next, StateIsolated1, AutopilotOn,  Autopilotff, GoToTabRight, GoToTabLeft",
+        "MarkersApplied": "Next, Last, StateIsolated1, AutopilotOn,  Autopilotff, GoToTabRight, GoToTabLeft",
+        "RingBelowScanned": "Next, Last, StateIsolated1, AutopilotOn,  Autopilotff, GoToTabRight, GoToTabLeft",
+        "RingIntermediateScanned": "Next, Last, StateIsolated1, AutopilotOn,  Autopilotff, GoToTabRight, GoToTabLeft",
+        "RingAboveScanned": "Next, Last, StateIsolated1, AutopilotOn,  Autopilotff, GoToTabRight, GoToTabLeft",
+        "End": "Next, Last, StateIsolated1, AutopilotOn,  Autopilotff, GoToTabRight, GoToTabLeft"
+    },
+    "Setup": {
+        "Start": "Auto, CameraSetupAdvanced, UserPreset, CameraSetupBasic, AutopilotOn,  Autopilotff, GoToTabRight, GoToTabLeft"
+    },
+    "PreviewBasic": {
+        "Start": "Next, AutopilotOn,  Autopilotff, GoToTabRight, GoToTabLeft",
+        "Ready": "CheckArtecStudioIsOff,       AutopilotOn,  Autopilotff, GoToTabRight, GoToTabLeft",
+        "ArtecStudioIsOff": "StartArtecStudio,       AutopilotOn,  Autopilotff, GoToTabRight, GoToTabLeft",
+        "ArtecStudioIsOn": "StartScanMenu,       AutopilotOn,  Autopilotff, GoToTabRight, GoToTabLeft",
+        "CameraSetupBasicVerified": "Next,       AutopilotOn,  Autopilotff, GoToTabRight, GoToTabLeft",
+        "CameraSetupAdvanced1Verified": "Next,       AutopilotOn,  Autopilotff, GoToTabRight, GoToTabLeft",
+        "CameraSetupAdvanced2Verified": "Start, AutopilotOn,  Autopilotff, GoToTabRight, GoToTabLeft",
+        "ScanMenuIsOn": "CheckScannerIsOn,       AutopilotOn,  Autopilotff, GoToTabRight, GoToTabLeft",
+        "ScannerIsOn": "Next,       AutopilotOn,  Autopilotff, GoToTabRight, GoToTabLeft",
+        "PreviewIsOn": "Auto,       AutopilotOn,  Autopilotff, GoToTabRight, GoToTabLeft",
+        "End": "Next,       AutopilotOn,  Autopilotff, GoToTabRight, GoToTabLeft"
+    },
+    "Preview": {
+        "Start": "Next,       AutopilotOn,  Autopilotff, GoToTabRight, GoToTabLeft",
+        "Ready": "CheckArtecStudioIsOn,       AutopilotOn,  Autopilotff, GoToTabRight, GoToTabLeft",
+        "ArtecStudioIsOn": "StartScanMenu,       AutopilotOn,  Autopilotff, GoToTabRight, GoToTabLeft",
+        "ScanMenuIsOn": "CheckScannerIsOn,       AutopilotOn,  Autopilotff, GoToTabRight, GoToTabLeft",
+        "ScannerIsOn": "Start, AutopilotOn,  Autopilotff, GoToTabRight, GoToTabLeft",
+        "PreviewIsOn": "Auto,       AutopilotOn,  Autopilotff, GoToTabRight, GoToTabLeft",
+        "End": "Next,       AutopilotOn,  Autopilotff, GoToTabRight, GoToTabLeft"
+    },
+    "FullScan": {
+        "Start": "Next, SaveFile,   AutopilotOn,  Autopilotff, GoToTabRight, GoToTabLeft",
+        "Ready": "Check,  SaveFile,   AutopilotOn,  Autopilotff, GoToTabRight, GoToTabLeft",
+        "PreviewIsOn": "StartRecording, StopRecording, SaveFile,   AutopilotOn,  Autopilotff, GoToTabRight, GoToTabLeft",
+        "RecordingIsOn": "StartPause, SaveFile,   AutopilotOn,  Autopilotff, GoToTabRight, GoToTabLeft",
+        "PauseIsOn": "StopRecording, StartRecording, SaveFile,   AutopilotOn,  Autopilotff, GoToTabRight, GoToTabLeft",
+        "RecordingIsOff": "Start,  SaveFile,   AutopilotOn,  Autopilotff, GoToTabRight, GoToTabLeft"
+    },
+    "SliceScan": {
+        "Start": "Next, SaveLowPosition, SaveHighPosition, DoSliceScan,   AutopilotOn,  Autopilotff, GoToTabRight, GoToTabLeft",
+        "Ready": "Next, SaveLowPosition, SaveHighPosition, DoSliceScan,   AutopilotOn,  Autopilotff, GoToTabRight, GoToTabLeft",
+        "Home": "Next, MoveUp, MoveDown, SaveLowPosition, SaveHighPosition, DoSliceScan,   AutopilotOn,  Autopilotff, GoToTabRight, GoToTabLeft",
+        "MovedUp": "MoveUp, MoveHome, MoveDown, SaveLowPosition, SaveHighPosition, DoSliceScan,   AutopilotOn,  Autopilotff, GoToTabRight, GoToTabLeft",
+        "MovedDown": "MoveDown, MoveHome, MoveUp, SaveLowPosition, SaveHighPosition, DoSliceScan,   AutopilotOn,  Autopilotff, GoToTabRight, GoToTabLeft"
+    },
+    "SnakeScan": {
+        "Start": "Next, SaveLowPosition, DoPartialScan, EnlargeSnake, ShrinkSnake, SaveHighPosition,   AutopilotOn,  Autopilotff, GoToTabRight, GoToTabLeft",
+        "Ready": "Next, SaveLowPosition, DoPartialScan, EnlargeSnake, ShrinkSnake, SaveHighPosition,   AutopilotOn,  Autopilotff, GoToTabRight, GoToTabLeft",
+        "Home": "MoveUp, MoveDown, SaveLowPosition, DoPartialScan, EnlargeSnake, ShrinkSnake, SaveHighPosition,   AutopilotOn,  Autopilotff, GoToTabRight, GoToTabLeft",
+        "MovedUp": "MoveUp, MoveHome, MoveDown, SaveLowPosition, DoPartialScan, EnlargeSnake, ShrinkSnake, SaveHighPosition,   AutopilotOn,  Autopilotff, GoToTabRight, GoToTabLeft",
+        "MovedDown": "MoveDown, MoveHome, MoveUp, SaveLowPosition, DoPartialScan, EnlargeSnake, ShrinkSnake, SaveHighPosition,   AutopilotOn,  Autopilotff, GoToTabRight, GoToTabLeft"
+    },
+    "Registration": {
+        "Start": "Next,   AutopilotOn,  Autopilotff, GoToTabRight, GoToTabLeft",
+        "Ready": "StartToolsMenu,   AutopilotOn,  Autopilotff, GoToTabRight, GoToTabLeft",
+        "ToolsMenuIsOn": "StartAutoMenu,   AutopilotOn,  Autopilotff, GoToTabRight, GoToTabLeft",
+        "AutoMenuIsOn": "StartGlobalRegistration,   AutopilotOn,  Autopilotff, GoToTabRight, GoToTabLeft",
+        "GlobalRegistrationEntered": "Auto,   AutopilotOn,  Autopilotff, GoToTabRight, GoToTabLeft",
+        "CalculationIsDone": "Close,   AutopilotOn,  Autopilotff, GoToTabRight, GoToTabLeft",
+        "ToolsMenuIsOff": "Next,   AutopilotOn,  Autopilotff, GoToTabRight, GoToTabLeft",
+        "End": "StopToolsMenu,   AutopilotOn,  Autopilotff, GoToTabRight, GoToTabLeft"
+    },
+    "CommandHub": {
+        "Start": "Auto, CloseAllArtecStudios, Shutdown, SaveFile, AutopilotOn,Autopilotff, GoToTabRight, GoToTabLeft"
+    }
+}

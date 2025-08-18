@@ -1,0 +1,70 @@
+{
+    "states": [
+		"Start",
+        "Ready",
+        "PreviewIsOn",
+        "RecordingIsOn",
+        "PauseIsOn",
+        "RecordingIsOff",
+        "SaveFile",
+		"End"
+    ],
+    "transitions": [
+	    {
+            "trigger": "Auto",
+            "source": "Start",
+            "dest": "Ready"
+        },
+        {
+            "trigger": "CheckPreviewIsOn",
+            "source": "Ready",
+            "dest": "PreviewIsOn"
+        },
+        {
+            "trigger": "StartPreview",
+            "source": "RecordingIsOff",
+            "dest": "PreviewIsOn"
+        },
+        {
+            "trigger": "StartRecording",
+            "source": "PreviewIsOn",
+            "dest": "RecordingIsOn"
+        },
+        {
+            "trigger": "BreakRecording",
+            "source": "RecordingIsOn",
+            "dest": "PauseIsOn"
+        },
+        {
+            "trigger": "StopRecording",
+            "source": "RecordingIsOn",
+            "dest": "RecordingIsOff"
+        },
+        {
+            "trigger": "StopRecording",
+            "source": "PauseIsOn",
+            "dest": "RecordingIsOff"
+        },
+        {
+            "trigger": "BackState",
+            "source": "SaveFile",
+            "dest": "RecordingIsOff"
+        },
+        {
+            "trigger": "SaveFile",
+            "source": "RecordingIsOff",
+            "dest": "SaveFile"
+        },
+        {
+            "trigger": "NextState",
+            "source": "SaveFile",
+            "dest": "End"
+        },
+        {
+            "trigger": "BackState",
+            "source": "End",
+            "dest": "SaveFile"
+        }
+    ],
+    "initial": "Start"
+}

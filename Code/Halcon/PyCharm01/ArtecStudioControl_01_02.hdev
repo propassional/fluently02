@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hdevelop file_version="1.2" halcon_version="23.11.0.0">
+<procedure name="main">
+<interface/>
+<body>
+<l>read_image (Image, 'D:/Banfi/Github/Fluently/Code/Halcon/PyCharm01/images/ArtecStudioLogo.PNG')</l>
+<l>regiongrowing (Image, Regions, 3, 3, 6, 100)</l>
+<l>dev_clear_window ()</l>
+<l>dev_display (Image)</l>
+<l>dev_set_colored (12)</l>
+<l>dev_set_draw ('margin')</l>
+<l>dev_display (Regions)</l>
+<c></c>
+<c>* Select a suitable image acquisition interface name AcqName</c>
+<l>info_framegrabber(AcqName,'port',Information,Values)</l>
+<c>* Open image acquisition device using the default settings, see</c>
+<c>* documentation of the actually used interface for more details</c>
+<l>open_framegrabber(AcqName,1,1,0,0,0,0,'default',-1,'default',-1.0, \
+                  'default','default','default',-1,-1,AcqHandle)</l>
+<l>grab_image(Image,AcqHandle)</l>
+<l>close_framegrabber(AcqHandle)</l>
+<c></c>
+<l># Load the image acquisition device</l>
+<l>acq_handle = open_framegrabber('default', 0, 0, 0, 0, 0, 0, 'default', -1, 'default', -1, 'false', 'default', 'winvideo', [], -1, -1)</l>
+<c></c>
+<l># Grab an image from the screen</l>
+<l>screen_image = grab_data(acq_handle)</l>
+<c></c>
+<l># Display the image in the graphics window</l>
+<l>dev_display('D:/Banfi/Github/Fluently/Code/Halcon/PyCharm01/EdgeLogo.PNG)</l>
+<c></c>
+<l># Manually locate the position of the logo</l>
+<c></c>
+<l># Define the model of the logo</l>
+<l>model_image = read_image('microsoft_edge_logo.png')</l>
+<l>model_region = threshold(model_image, 128, 255)</l>
+<c></c>
+<l># Find the position of the logo in the image</l>
+<l>result = find_shape_model(screen_image, model_region, 0, 0, 0.5, 1, 0.5, 'use_polarity', 'all', 0.5)</l>
+<c></c>
+<l># Display the result</l>
+<l>dev_display(result)</l>
+</body>
+<docu id="main">
+<parameters/>
+</docu>
+</procedure>
+<procedure name="display_recognition_alphabet">
+<interface>
+<ic>
+<par name="RecognitionAlphabet" base_type="ctrl" dimension="0"/>
+<par name="WindowHandle" base_type="ctrl" dimension="0"/>
+</ic>
+</interface>
+<body>
+<c>* Display the recognition alphabet in the given window handle.</c>
+<c>* </c>
+<l>Text := 'Characters the model can recognize:'</l>
+<l>Text[|Text|] := ''</l>
+<c>* </c>
+<c>* Sort the characters and set the text to be displayed.</c>
+<c>* 1) 0-9</c>
+<l>Number := uniq(regexp_match(RecognitionAlphabet,'[0-9]'))</l>
+<l>Number := remove(Number,find(Number,''))</l>
+<l>Textline := ''</l>
+<l>for i := 0 to |Number| - 1 by 1</l>
+<l>    Textline := Textline + Number[i] + ' '</l>
+<l>endfor</l>
+<l>Text[|Text|] := Textline</l>
+<c>* 2) a-z</c>
+<l>Minor := uniq(regexp_match(RecognitionAlphabet,'[a-z]'))</l>
+<l>Minor := remove(Minor,find(Minor,''))</l>
+<l>Textline := ''</l>
+<l>for i := 0 to |Minor| - 1 by 1</l>
+<l>    Textline := Textline + Minor[i] + ' '</l>
+<l>endfor</l>
+<l>Text[|Text|] := Textline</l>
+<c>* 3) A-Z</c>
+<l>Capital := uniq(regexp_match(RecognitionAlphabet,'[A-Z]'))</l>
+<l>Capital := remove(Capital,find(Capital,''))</l>
+<l>Textline := ''</l>
+<l>for i := 0 to |Capital| - 1 by 1</l>
+<l>    Textline := Textline + Capital[i] + ' '</l>
+<l>endfor</l>
+<l>Text[|Text|] := Textline</l>
+<c>* 4) Further characters</c>
+<l>Special := difference(RecognitionAlphabet,[Minor,Capital,Number])</l>
+<l>Special := remove(Special,find(Special,''))</l>
+<l>for Line := 0 to |Special| - 1 by |Capital|</l>
+<l>    Textline := ''</l>
+<l>    for c := 0 to min2(|Capital| - 1,|Special| - 1 - Line) by 1</l>
+<c>        * Some characters need special treatment for correct display.</c>
+<l>        Char := Special[Line + c]</l>
+<l>        if (Char == '\n')</l>
+<l>            Textline := Textline + '\\n' + ' '</l>
+<l>        elseif (Char == '\'')</l>
+<l>            Textline := Textline + '\'' + ' '</l>
+<l>        else</l>
+<l>            Textline := Textline + Char + ' '</l>
+<l>        endif</l>
+<l>    endfor</l>
+<l>    Text[|Text|] := Textline</l>
+<l>endfor</l>
+<c>* </c>
+<c>* Adapt window size.</c>
+<l>get_window_extents (WindowHandle, Row, Column, Width, Height)</l>
+<l>set_display_font (WindowHandle, 16, 'mono', 'true', 'false')</l>
+<l>TextWidth := -1</l>
+<l>TextHeight := -1</l>
+<l>for Line := 0 to |Text| - 1 by 1</l>
+<l>    get_string_extents (WindowHandle, Text[Line], _, _, LineWidth, LineHeight)</l>
+<l>    TextWidth := max2(TextWidth,LineWidth)</l>
+<l>    TextHeight := max2(TextHeight,LineHeight)</l>
+<l>endfor</l>
+<l>WindowWidth := TextWidth + 62</l>
+<l>WindowHeight := TextHeight * (|Text| + 1) + 150</l>
+<l>dev_set_window_extents (0, 0, WindowWidth, WindowHeight)</l>
+<c>* </c>
+<c>* Display the text.</c>
+<l>dev_disp_text (Text, 'window', 'top', 'left', 'white', 'box', 'false')</l>
+<l>dev_disp_text ('Press Run (F5) to continue', 'window', 'bottom', 'right', 'black', 'box', 'true')</l>
+<l>return ()</l>
+</body>
+<docu id="display_recognition_alphabet">
+<parameters>
+<parameter id="RecognitionAlphabet">
+<default_type>string</default_type>
+<multivalue>true</multivalue>
+<sem_type>string</sem_type>
+<type_list>
+<item>string</item>
+</type_list>
+</parameter>
+<parameter id="WindowHandle">
+<default_type>integer</default_type>
+<mixed_type>false</mixed_type>
+<multivalue>false</multivalue>
+<sem_type>window</sem_type>
+<type_list>
+<item>integer</item>
+</type_list>
+</parameter>
+</parameters>
+</docu>
+</procedure>
+<procedure name="get_inference_dl_device">
+<interface>
+<ic>
+<par name="UseFastAI2Devices" base_type="ctrl" dimension="0"/>
+</ic>
+<oc>
+<par name="DLDevice" base_type="ctrl" dimension="0"/>
+</oc>
+</interface>
+<body>
+<c>* This procedure retrieves an available deep learning device that can</c>
+<c>* be used for inference by apply_deep_ocr. It tries to choose the faster</c>
+<c>* device type following this order: tensorrt, gpu, openvino and cpu.</c>
+<c>* </c>
+<c>* Generic parameters for inference devices sorted by speed.</c>
+<l>GenParamName := ['ai_accelerator_interface', 'runtime', 'ai_accelerator_interface', 'runtime']</l>
+<l>GenParamValue := ['tensorrt', 'gpu', 'openvino', 'cpu']</l>
+<l>if (UseFastAI2Devices == 'false')</l>
+<l>    AIIdx := find(GenParamName,'ai_accelerator_interface')</l>
+<l>    GenParamName := remove(GenParamName,AIIdx)</l>
+<l>    GenParamValue := remove(GenParamValue,AIIdx)</l>
+<l>endif</l>
+<c>* </c>
+<c>* Get the deep learning inference device.</c>
+<l>DLDevices := []</l>
+<l>for P := 0 to |GenParamName| - 1 by 1</l>
+<l>    query_available_dl_devices (GenParamName[P], GenParamValue[P], DLDeviceHandles)</l>
+<l>    DLDevices := [DLDevices,DLDeviceHandles]</l>
+<l>    if (DLDevices != [])</l>
+<l>        break</l>
+<l>    endif</l>
+<l>endfor</l>
+<l>if (DLDevices == [])</l>
+<l>    throw ('No supported deep learning device found')</l>
+<l>endif</l>
+<l>DLDevice := DLDevices[0]</l>
+<c>* </c>
+<c>* In case of CPU the number of threads impacts the example duration.</c>
+<l>get_dl_device_param (DLDevice, 'ai_accelerator_interface', DLDeviceAI)</l>
+<l>get_dl_device_param (DLDevice, 'type', DLDeviceType)</l>
+<l>if (DLDeviceAI == 'none' and DLDeviceType == 'cpu')</l>
+<l>    set_system ('thread_num', 4)</l>
+<l>endif</l>
+<c>* </c>
+<l>return ()</l>
+</body>
+<docu id="get_inference_dl_device">
+<abstract lang="en_US">This procedure retrieves an available deep learning device that can be used for inference by apply_deep_ocr. It tries to choose the faster device type following this order: tensorrt, gpu, onpenvino and cpu.
+
+The parameter UseFastAI2Interfaces indicates whether to use if available the AI2 accelerator interface devices: tensorrt (on gpu) and openvino (on cpu). While in one side these devices perform during inference better than their corresponding standard runtimes gpu and cpu, on the other side their initialization and configurating the model after it can take clearly longer.</abstract>
+<short lang="en_US">Retrieve a deep learning device to work with.</short>
+<parameters>
+<parameter id="DLDevice">
+<default_type>integer</default_type>
+<description lang="en_US">Deep learning device retrieved.</description>
+<mixed_type>false</mixed_type>
+<multivalue>false</multivalue>
+<sem_type>dl_device</sem_type>
+<type_list>
+<item>integer</item>
+</type_list>
+</parameter>
+<parameter id="UseFastAI2Devices">
+<default_type>string</default_type>
+<default_value>'false'</default_value>
+<description lang="en_US">Indicate whether to use if available the AI2 accelerator interface devices tensorrt and openvino.</description>
+<mixed_type>false</mixed_type>
+<multivalue>false</multivalue>
+<sem_type>string</sem_type>
+<type_list>
+<item>string</item>
+</type_list>
+<value_list>
+<item>'false'</item>
+<item>'true'</item>
+</value_list>
+</parameter>
+</parameters>
+</docu>
+</procedure>
+<procedure name="display_tiles">
+<interface>
+<ic>
+<par name="WindowHandle" base_type="ctrl" dimension="0"/>
+</ic>
+</interface>
+<body>
+<c>* Coordinates of the tiles. These are only for visualization.</c>
+<l>TileRow1 := [0, 0, 0, 0, 0, 904, 904, 904, 904, 904, 1808, 1808, 1808, 1808, 1808]</l>
+<l>TileCol1 := [0, 808, 1616, 2424, 3232, 0, 808, 1616, 2424, 3232, 0, 808, 1616, 2424, 3232]</l>
+<l>TileRow2 := [1023, 1023, 1023, 1023, 1023, 1927, 1927, 1927, 1927, 1927, 2831, 2831, 2831, 2831, 2831]</l>
+<l>TileCol2 := [1023, 1831, 2639, 3447, 4255, 1023, 1831, 2639, 3447, 4255, 1023, 1831, 2639, 3447, 4255]</l>
+<c>* Generate and display rectangular regions.</c>
+<l>gen_rectangle1 (Tiles, TileRow1, TileCol1, TileRow2, TileCol2)</l>
+<l>dev_set_window (WindowHandle)</l>
+<l>dev_set_draw ('margin')</l>
+<l>dev_set_colored (12)</l>
+<l>dev_display (Tiles)</l>
+<c>* </c>
+<l>return ()</l>
+</body>
+<docu id="display_tiles">
+<short lang="en_US">Display tile regions of the example image.</short>
+<parameters>
+<parameter id="WindowHandle">
+<default_type>integer</default_type>
+<mixed_type>false</mixed_type>
+<sem_type>window</sem_type>
+<type_list>
+<item>integer</item>
+</type_list>
+</parameter>
+</parameters>
+</docu>
+</procedure>
+</hdevelop>

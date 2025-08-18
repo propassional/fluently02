@@ -1,0 +1,74 @@
+{
+    "states": [
+		"Start",
+        "Ready",
+		"StudioIsOff",
+        "StudioIsOn",
+        "ScanMenuIsOn",
+		"ScannerIsOn",
+        "PreviewIsOn",
+		"PreviewIsOff",
+        "SaveFile",
+		"PreviewIsOn2",
+		"KillAllStudios",
+		"End"
+    ],
+    "transitions": [
+	    {
+            "trigger": "Auto",
+            "source": "Start",
+            "dest": "Ready"
+        },
+        {
+            "trigger": "CheckStudioIsOff",
+            "source": "Ready",
+            "dest": "StudioIsOff"
+        },
+        {
+            "trigger": "StartStudio",
+            "source": "StudioIsOff",
+            "dest": "StudioIsOn"
+        },
+        {
+            "trigger": "StartScanMenu",
+            "source": "StudioIsOn",
+            "dest": "ScanMenuIsOn"
+        },
+        {
+            "trigger": "CheckScannerIsOn",
+            "source": "ScanMenuIsOn",
+            "dest": "ScannerIsOn"
+        },
+        {
+            "trigger": "StartPreview",
+            "source": "ScannerIsOn",
+            "dest": "PreviewIsOn"
+        },
+        {
+            "trigger": "StopPreview",
+            "source": "PreviewIsOn",
+            "dest": "PreviewIsOff"
+        },
+        {
+            "trigger": "StartPreview",
+            "source": "PreviewIsOff",
+            "dest": "PreviewIsOn"
+        },
+        {
+            "trigger": "SaveFile",
+            "source": "PreviewIsOff",
+            "dest": "SaveFile"
+        },
+        {
+            "trigger": "StartPreview",
+            "source": "SaveFile",
+            "dest": "PreviewIsOn2"
+        },
+        {
+            "trigger": "Auto",
+            "source": "PreviewIsOn2",
+            "dest": "End"
+        }
+    ],
+    "initial": "Start"
+}

@@ -1,0 +1,112 @@
+GoToTab -> Left, Right 
+Autopilot -> On, Off, []
+Next
+Last
+StateIsolated1
+Auto
+CameraSetup -> Advanced, Basic
+UserPreset
+Check (per esempi vedere tutti i check...)
+Start (vedere tutti start...)
+Save -> File, LowPosition, HighPosition
+Stop
+Scan
+Move -> Up, Down, Home
+EnlargeSnake (enlarge)
+ShrinkSnake (shrink)
+Close
+Shutdown
+
+
+
+--------------------------------------------------------------------------------
+Autopilot -> Start, Stop -> * StartAutopilot, StopAutopilot  
+GoToTab -> Left, Right 
+Check -> ArtecStudioOff, ArtecStudioIsOn, Preview, Scanner -> * CheckArtecStudioIsOff, CheckArtecStudioIsOn, CheckPreview, CheckScannerIsOn
+Close
+Last
+Move -> Down, Home, Up -> * MoveDown, MoveHome, MoveUp
+Next
+Start -> ArtecStudio, AutoMenu, GlobalRegistration, Pause, Preview,Recording, ScanMenu, ToolsMenu  -> * StartArtecStudio, StartAutoMenu, StartGlobalRegistration, StartPause, StartPreview, StartRecording, StartScanMenu, StartToolsMenu
+Stop -> Recording, ToolsMenu -> * StopRecording, StopToolsMenu
+Verify -> basic, advanced1, advanced2 -> * VerifyCameraSetupAdvanced1, VerifyCameraSetupAdvanced2,  VerifyCameraSetupBasic
+
+TODO: delete from state machine
+['Instructions', 'Setup', 'PreviewBasic', 'Preview', 'FullScan', 'SliceScan', 'SnakeScan', 'Registration', 'CommandHub']
+
+
+unique commands:
+GoToTab -> Left, Right 
+
+AutopilotOn
+AutopilotOff
+
+Next
+Last
+StateIsolated1
+
+Auto
+
+CameraSetupAdvanced
+UserPreset
+CameraSetupBasic
+
+CheckArtecStudioIsOff
+
+StartArtecStudio
+
+StartScanMenu
+
+VerifyCameraSetupAdvanced1
+VerifyCameraSetupAdvanced2
+
+StartPreview
+
+CheckScannerIsOn
+
+VerifyCameraSetupBasic
+
+CheckArtecStudioIsOn
+
+SaveFile
+
+CheckPreview
+
+StartRecording
+
+StopRecording
+
+StartPause
+
+SaveLowPosition
+
+SaveHighPosition
+
+DoSliceScan
+
+MoveUp
+
+MoveDown
+
+MoveHome
+
+DoPartialScan
+
+EnlargeSnake
+
+ShrinkSnake
+
+StartToolsMenu
+
+StartAutoMenu
+
+StartGlobalRegistration
+
+
+Close
+
+StopToolsMenu
+
+CloseAllArtecStudios
+
+Shutdown

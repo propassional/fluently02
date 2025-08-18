@@ -1,0 +1,79 @@
+{
+    "states": [
+		"Start",
+		"Ready",
+		"ToolsMenuIsOn",
+		"AutoMenuIsOn",
+        "GlobalRegistrationEntered",
+		"GlobRegIsDone",
+		"FusionEntered",
+		"FusionIsDone",
+		"ToolsMenuIsOff",
+		"FlagsCleared",
+		"FilesSaved",
+		"End"
+    ],
+    "transitions": [
+	    {
+            "trigger": "Auto",
+            "source": "Start",
+            "dest": "Ready"
+        },
+        {
+            "trigger": "StartToolsMenu",
+            "source": "Ready",
+            "dest": "ToolsMenuIsOn"
+        },
+        {
+            "trigger": "StartAutoMenu",
+            "source": "ToolsMenuIsOn",
+            "dest": "AutoMenuIsOn"
+        },
+        {
+            "trigger": "StartGlobalRegistration",
+            "source": "AutoMenuIsOn",
+            "dest": "GlobalRegistrationEntered"
+        },
+        {
+            "trigger": "Auto",
+            "source": "GlobalRegistrationEntered",
+            "dest": "GlobRegIsDone"
+        },
+        {
+            "trigger": "StartFusion",
+            "source": "GlobRegIsDone",
+            "dest": "FusionEntered"
+        },
+        {
+            "trigger": "Auto",
+            "source": "FusionEntered",
+            "dest": "FusionIsDone"
+        },
+        {
+            "trigger": "ClearFlags",
+            "source": "FusionIsDone",
+            "dest": "FlagsCleared"
+        },
+        {
+            "trigger": "StopToolsMenu",
+            "source": "FlagsCleared",
+            "dest": "ToolsMenuIsOff"
+        },
+        {
+            "trigger": "BackState",
+            "source": "ToolsMenuIsOff",
+            "dest": "Start"
+        },
+        {
+            "trigger": "SaveFile",
+            "source": "ToolsMenuIsOff",
+            "dest": "FilesSaved"
+        },
+        {
+            "trigger": "NextState",
+            "source": "FilesSaved",
+            "dest": "End"
+        }
+    ],
+    "initial": "Start"
+}

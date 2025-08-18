@@ -1,0 +1,69 @@
+{
+    "states": [
+		"Start",
+		"Ready",
+		"PartProgramAppStarted",
+		"PartProgramAppStarted",
+		"AlignmentDone",
+		"SurfaceReconstructed",
+		"BooleanOperated",
+		"Clustered",
+		"RepairedVolume",
+		"PartProgramGenerated",
+		"FinalResultVisualized",
+		"End"
+    ],
+    "transitions": [
+	    {
+            "trigger": "Auto",
+            "source": "Start",
+            "dest": "Ready"
+        },
+        {
+            "trigger": "StartPartProgramApp",
+            "source": "Ready",
+            "dest": "PartProgramAppStarted"
+        },
+        {
+            "trigger": "Alignment",
+            "source": "PartProgramAppStarted",
+            "dest": "AlignmentDone"
+        },
+        {
+            "trigger": "SurfaceReconstruction",
+            "source": "AlignmentDone",
+            "dest": "SurfaceReconstructed"
+        },
+        {
+            "trigger": "BooleanOperation",
+            "source": "SurfaceReconstructed",
+            "dest": "BooleanOperated"
+        },
+        {
+            "trigger": "Clustering",
+            "source": "BooleanOperated",
+            "dest": "Clustered"
+        },
+        {
+            "trigger": "RepairingVolume",
+            "source": "Clustered",
+            "dest": "RepairedVolume"
+        },
+        {
+            "trigger": "PartProgramGeneration",
+            "source": "RepairedVolume",
+            "dest": "PartProgramGenerated"
+        },
+        {
+            "trigger": "FinalVisualization",
+            "source": "PartProgramGenerated",
+            "dest": "FinalResultVisualized"
+        },
+        {
+            "trigger": "NextState",
+            "source": "FinalResultVisualized",
+            "dest": "End"
+        }
+    ],
+    "initial": "Start"
+}

@@ -1,0 +1,41 @@
+# https://sequencediagram.org/
+
+title Client Server Sikulix States 0.4, 02.10.23, by MB for MB
+
+note over Realwear, cobot: Protocol2:\ncobot cmd
+Realwear->whisper: User voice msg "cobot start"
+whisper->ROS2_bridge: "cobot start"
+ROS2_bridge->client: "cobot start"
+note over client, server: Client/Server TCP/IP
+client->server: P10s cmd msg "cobot start" P10r
+server->server: P20 writes\ncmd file "cobot start"...
+server->DirCmdForSikulix: ...writes it here
+DirCmdForSikulix->sikulix: Sikulix only knows\n how to react to cmds
+
+sikulix->sikulix: P30 writes cmd file\n"cobot goto  top_scan_pos"...
+sikulix->DirCmdFromSikulix: ...writes here
+DirCmdFromSikulix->server: P21 Server reads Sikulix cmd file \n"cobot goto top_scan_pos"
+server->server: Server deletes Sik cmd file
+server->client: P11r cmd msg "cobot start" P11s
+client->cobot: ROS1 cmd msg "cobot start"
+cobot->cobot: move cobot
+cobot->client: ROS1 feedback msg "cobot finished"
+client->server: P12s feedback msg "cobot finished"
+server->DirCmdFromSikulix: writes feedback file "cobot finished"
+DirCmdFromSikulix->DirCmdFromSikulix: Sik removes cmd\n file "cobot finished"
+DirCmdFromSikulix->DirCmdFromSikulix: Sik removes cmd\n file "cobot start"
+DirCmdFromSikulix->server: server reads this fact as acknowledge
+
+note over Realwear, cobot: Protocol1:\nartec cmd
+Realwear->whisper: User voice msg "artec start"
+whisper->ROS2_bridge: "artec start"
+ROS2_bridge->client: "artec start"
+client->server: cmd msg "artec start"
+server->DirCmdForSikulix: P20 write cmd file\n"artec start"
+DirCmdForSikulix->sikulix: do "artec start"
+sikulix->sikulix: do "artec start"
+sikulix->sikulix: delete cmd file "artec start"
+sikulix->DirCmdForSikulix: 
+DirCmdForSikulix->server: server see that Sikulix\n has deleted the cmd file
+server->client: feedback msg "artec start"
+client->client: does nothing (for now)

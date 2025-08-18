@@ -1,0 +1,74 @@
+[0.125s] Invoking command in 'D:\Banfi\Github\Fluently\Code\Python\ConvexHull\build\convex_hull_estimation_interface': PUBLIC=%PUBLIC%
+PyCharm Community Edition=C:\Program Files\JetBrains\PyCharm Community Edition 2024.3.5\bin; C:\Program Files\CMake\bin\cmake.EXE D:\Banfi\Github\Fluently\Code\Python\ConvexHull\src\convex-hull-estimation-interface -DCMAKE_INSTALL_PREFIX=D:\Banfi\Github\Fluently\Code\Python\ConvexHull\install\convex_hull_estimation_interface -G Visual Studio 16 2019
+[0.141s] CMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[0.141s]   Compatibility with CMake < 3.10 will be removed from a future version of
+[0.141s]   CMake.
+[0.141s] 
+[0.141s]   Update the VERSION argument <min> value or use a ...<max> suffix to tell
+[0.141s]   CMake that the project does not need compatibility with older versions.
+[0.141s] 
+[0.141s] 
+[0.141s] -- Selecting Windows SDK version 10.0.19041.0 to target Windows 10.0.19045.
+[0.172s] -- Found shape_msgs: 4.2.4 (C:/dev/ros2_humble/share/shape_msgs/cmake)
+[0.719s] -- Found rosidl_generator_c: 3.1.5 (C:/dev/ros2_humble/share/rosidl_generator_c/cmake)
+[0.719s] -- Found rosidl_adapter: 3.1.5 (C:/dev/ros2_humble/share/rosidl_adapter/cmake)
+[0.750s] -- Found rosidl_generator_cpp: 3.1.5 (C:/dev/ros2_humble/share/rosidl_generator_cpp/cmake)
+[0.781s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.828s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.984s] -- Found rosidl_default_generators: 1.2.0 (C:/dev/ros2_humble/share/rosidl_default_generators/cmake)
+[1.969s] -- Found ament_cmake_ros: 0.10.0 (C:/dev/ros2_humble/share/ament_cmake_ros/cmake)
+[3.984s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.781s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.781s] CMake Warning (dev) at C:/dev/ros2_humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:20 (find_package):
+[4.781s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[4.781s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[4.781s]   the cmake_policy command to set the policy and suppress this warning.
+[4.781s] 
+[4.781s] Call Stack (most recent call first):
+[4.781s]   C:/dev/ros2_humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[4.781s]   C:/dev/ros2_humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[4.781s]   CMakeLists.txt:14 (rosidl_generate_interfaces)
+[4.781s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[4.781s] 
+[4.781s] -- Found python_cmake_module: 0.10.0 (C:/dev/ros2_humble/share/python_cmake_module/cmake)
+[4.781s] CMake Warning (dev) at C:/dev/ros2_humble/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:52 (find_package):
+[4.781s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[4.781s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[4.781s]   the cmake_policy command to set the policy and suppress this warning.
+[4.781s] 
+[4.781s] Call Stack (most recent call first):
+[4.781s]   C:/dev/ros2_humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:23 (find_package)
+[4.781s]   C:/dev/ros2_humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[4.781s]   C:/dev/ros2_humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[4.781s]   CMakeLists.txt:14 (rosidl_generate_interfaces)
+[4.781s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[4.781s] 
+[4.797s] CMake Warning (dev) at C:/dev/ros2_humble/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:140 (find_package):
+[4.797s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[4.797s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[4.797s]   the cmake_policy command to set the policy and suppress this warning.
+[4.797s] 
+[4.797s] Call Stack (most recent call first):
+[4.797s]   C:/dev/ros2_humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:23 (find_package)
+[4.797s]   C:/dev/ros2_humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[4.797s]   C:/dev/ros2_humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[4.797s]   CMakeLists.txt:14 (rosidl_generate_interfaces)
+[4.797s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[4.797s] 
+[4.828s] -- Using PYTHON_EXECUTABLE: C:/Users/operator/.pyenv/pyenv-win/shims/python3
+[4.828s] -- Using PYTHON_INCLUDE_DIRS: C:/Python38/include
+[4.828s] -- Using PYTHON_LIBRARIES: C:/Python38/libs/python38.lib
+[4.828s] CMake Error at C:/dev/ros2_humble/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:174 (message):
+[4.828s]   execute_process(C:/Users/operator/.pyenv/pyenv-win/shims/python3 -c 'from
+[4.828s]   sysconfig import get_config_var;print(get_config_var('SOABI'))') returned
+[4.828s]   error code no such file or directory
+[4.828s] Call Stack (most recent call first):
+[4.828s]   C:/dev/ros2_humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:23 (find_package)
+[4.828s]   C:/dev/ros2_humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[4.828s]   C:/dev/ros2_humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[4.828s]   CMakeLists.txt:14 (rosidl_generate_interfaces)
+[4.828s] 
+[4.828s] 
+[4.828s] -- Configuring incomplete, errors occurred!
+[4.859s] Invoked command in 'D:\Banfi\Github\Fluently\Code\Python\ConvexHull\build\convex_hull_estimation_interface' returned '1': PUBLIC=%PUBLIC%
+PyCharm Community Edition=C:\Program Files\JetBrains\PyCharm Community Edition 2024.3.5\bin; C:\Program Files\CMake\bin\cmake.EXE D:\Banfi\Github\Fluently\Code\Python\ConvexHull\src\convex-hull-estimation-interface -DCMAKE_INSTALL_PREFIX=D:\Banfi\Github\Fluently\Code\Python\ConvexHull\install\convex_hull_estimation_interface -G Visual Studio 16 2019

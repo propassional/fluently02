@@ -1,0 +1,30 @@
+// http://magjac.com/graphviz-visual-editor/
+
+digraph finite_state_machine {
+	fontname="Helvetica,Arial,sans-serif"
+	node [fontname="Helvetica,Arial,sans-serif"]
+	edge [fontname="Helvetica,Arial,sans-serif"]
+
+    // Diagram direction
+	//rankdir=LR; // Prefered diagram direction is left to right
+	{rank=source; title}
+
+	title [shape=polygon, label = "Fluently States Ver 1.1"]
+    node [shape = ellipse]; 
+
+	ScannerIsOff -> PreviewIsOn [label = "    scanner\n start"];
+	PreviewIsOn -> Recording [label = "    scanning\n procedure"];
+	Recording -> Scanning [label = "    scanner\n start"];
+	Scanning -> ScanPaused [label = "  (scanner\n pause)"];
+	ScanPaused -> Scanning [label = "    (scanner\nstart)"];
+	Scanning -> ScanStopped [label = "(scanner\n stop)"];
+	//ScanStopped -> ScanClosed [label = "scanner\n close"];
+	ScanStopped -> StudioIsOff [label = "   scanner\n close"];
+	ScanStopped -> ProjectSaved [label = "   scanner\n save"];
+	ScanStopped -> ToolsOpened [label = "  tools"];
+	ToolsOpened -> GlobalRegistered [label = "   global registration"];
+	GlobalRegistered -> FastFusioned [label = "   fast fusion"];
+    ScanStopped -> ResultsShown [label = "    scanner open result"];
+    FastFusioned -> ProjectSaved [label = "   scanner\n save"];
+    ProjectSaved -> ScannerIsOff [label = "   scanner\n close"];
+}

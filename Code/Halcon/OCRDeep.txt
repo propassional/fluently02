@@ -1,0 +1,279 @@
+* 'C:\\Users\\Public\\Documents\\MVTec\\HALCON-23.11-Progress-Student-Edition/examples'
+
+* This example shows the usage of the Deep OCR:
+* - Part 1: Detection and recognition of the words within an image.
+* - Part 2: Recognition of the words only.
+* - Part 3: Detection of the words only.
+* - Part 4: Detection and recognition on a large image with automatic tiling.
+* 
+dev_update_off ()
+dev_close_window ()
+* 
+* Set path for images.
+get_system ('example_dir', PathExample)
+PathExample := PathExample + '/images/ocr/'
+ImagesPath := PathExample + ['chars_training_05.png', 'chip_01.png', 'dot_print_10.png', 'dot_print_12.png', 'industrial_text_01.png', 'industrial_text_02.png', 'keys_01.png', 'street_sign_01.png', 'wafer_semi_font_10.png']
+* 
+* In general, optimal runtime performance and minimal memory usage is
+* obtained by using an AI² device for inference (e.g. TensorRT/OpenVINO).
+* Note, however the initialization time increases if this is set to 'true'.
+UseFastAI2Devices := 'false'
+* 
+* Get the inference deep learning device.
+get_inference_dl_device (UseFastAI2Devices, DLDevice)
+* 
+* *************************************************************
+* Part 1: Detection and recognition of words within an image.
+* *************************************************************
+* Create the model.
+create_deep_ocr ([], [], DeepOcrHandle)
+* 
+* Return the list of characters for which the model has been trained.
+get_deep_ocr_param (DeepOcrHandle, 'recognition_alphabet', RecognitionAlphabet)
+* 
+* Set the inference deep learning device after the model is configurated.
+set_deep_ocr_param (DeepOcrHandle, 'device', DLDevice)
+* 
+DisplaySize := 480
+* 
+dev_open_window (0, 0, DisplaySize, DisplaySize, 'black', WindowHandleAlphabet)
+display_recognition_alphabet (RecognitionAlphabet, WindowHandleAlphabet)
+stop ()
+dev_close_window ()
+* 
+* For a prettier visualization, the preprocessed images and scores are
+* shown with a reduced size.
+PreprocessedDisplayWidth := 0.5 * DisplaySize
+PreprocessedDisplayHeight := 0.5 * DisplaySize
+ScoreMapsDisplayWidth := 2 * PreprocessedDisplayWidth
+ScoreMapsDisplayHeight := PreprocessedDisplayHeight
+* 
+dev_open_window (0, 0, DisplaySize, DisplaySize, 'black', WindowHandle)
+dev_open_window (0, 10 + DisplaySize, PreprocessedDisplayWidth, PreprocessedDisplayHeight, 'black', WindowPreprocessed)
+dev_open_window (0, 20 + DisplaySize + PreprocessedDisplayWidth, ScoreMapsDisplayWidth, ScoreMapsDisplayHeight, 'black', WindowScoreMaps)
+* 
+* Apply Deep OCR on different images.
+for Index := 0 to |ImagesPath| - 1 by 1
+    read_image (Image, ImagesPath[Index])
+    get_image_size (Image, Width, Height)
+    dev_set_window (WindowHandle)
+    dev_set_window_extents (0, 0, DisplaySize, DisplaySize * Height / Width)
+    dev_display (Image)
+    * 
+    * Detect and recognize the words.
+    apply_deep_ocr (Image, DeepOcrHandle, 'auto', DeepOcrResult)
+    * 
+    * 
+    * Visualize the results on the original image.
+    * The detections are shown as oriented rectangles, where an arrow indicates the reading direction.
+    * The recognized words are shown at a corner of the detection rectangles. For further information,
+    * please see also the documentation of the procedure "dev_display_deep_ocr_results".
+    dev_display_deep_ocr_results (Image, WindowHandle, DeepOcrResult, [], [])
+    dev_disp_text ('Original image', 'window', 'top', 'left', 'black', [], [])
+    * 
+    * Visualize the preprocessed image with the localized words as well as the
+    * respective character and link score maps.
+    dev_display_deep_ocr_results_preprocessed (WindowPreprocessed, DeepOcrResult, [], [])
+    dev_display_deep_ocr_score_maps (WindowScoreMaps, DeepOcrResult, [], [])
+    dev_disp_text ('Press Run (F5) to continue', 'window', 'bottom', 'right', 'black', [], [])
+    stop ()
+    * 
+    dev_clear_window ()
+    dev_set_window (WindowPreprocessed)
+    dev_clear_window ()
+    dev_set_window (WindowScoreMaps)
+    dev_clear_window ()
+    dev_set_lut ('default')
+endfor
+* 
+dev_set_window (WindowScoreMaps)
+dev_close_window ()
+dev_set_window (WindowPreprocessed)
+dev_close_window ()
+dev_set_window (WindowHandle)
+dev_close_window ()
+clear_handle (DeepOcrHandle)
+* 
+* *************************************************************
+* Part 2: Recognition of the word only.
+* *************************************************************
+* Create the model.
+create_deep_ocr ('mode', 'recognition', DeepOcrHandle)
+set_deep_ocr_param (DeepOcrHandle, 'recognition_image_width', 150)
+* 
+* Set the inference deep learning device after the model is configurated.
+set_deep_ocr_param (DeepOcrHandle, 'device', DLDevice)
+* 
+dev_open_window (0, 0, 500, 100, 'black', WindowHandle)
+* 
+* Apply Deep OCR on different images.
+for Index := 1 to 11 by 1
+    * Read tightly cropped word images
+    read_image (Image, PathExample + 'cropped_text_image_' + Index$'.2d')
+    * 
+    * Recognize the word.
+    apply_deep_ocr (Image, DeepOcrHandle, 'recognition', DeepOcrResult)
+    * 
+    * Visualize the results of the model.
+    dev_display_deep_ocr_results (Image, WindowHandle, DeepOcrResult, [], [])
+    dev_disp_text ('Press Run (F5) to continue', 'window', 'bottom', 'right', 'black', [], [])
+    stop ()
+endfor
+* 
+* Very long words may result in preprocessed image parts
+* where the text is too clinched for recognition.
+* This can be handled by adapting recognition_image_width
+* which should be based on the width of a long word in
+* the respective application.
+* 
+read_image (Image, 'ocr/medication_package_02_back.png')
+* 
+* Crop the word to be recognized by the recognition component.
+crop_rectangle1 (Image, ImageWord, 378, 176, 409, 605)
+* 
+* Apply recognition with default recognition_image_width.
+set_deep_ocr_param (DeepOcrHandle, 'recognition_image_width', 120)
+apply_deep_ocr (ImageWord, DeepOcrHandle, 'recognition', DeepOcrResult)
+* 
+* Visualize the results of the model.
+dev_display_deep_ocr_results (ImageWord, WindowHandle, DeepOcrResult, [], [])
+dev_disp_text (['Original image.', 'The recognition result is wrong because', 'the width of the model is too small.'], 'window', 'bottom', 'right', 'black', [], [])
+ImagePreprocessed := DeepOcrResult.image
+change_format (ImagePreprocessed, ImagePreprocessedPadded, 500, 32)
+dev_open_window (200, 0, 500, 120, 'black', WindowHandlePreprocessed1)
+dev_display_deep_ocr_results (ImagePreprocessedPadded, WindowHandlePreprocessed1, DeepOcrResult, [], [])
+get_deep_ocr_param (DeepOcrHandle, 'recognition_image_width', RecognitionImageWidth)
+dev_disp_text (['Preprocessed image with','recognition_image_width = ' + RecognitionImageWidth,'', 'The characters are not recognizable.'], 'window', 'top', 'right', 'black', [], [])
+* 
+* Set the recognition_image_width to a larger value, such that
+* the depicted word is still recognizable in the preprocessed image.
+RecognitionImageWidth := 250
+set_deep_ocr_param (DeepOcrHandle, 'recognition_image_width', RecognitionImageWidth)
+apply_deep_ocr (ImageWord, DeepOcrHandle, 'recognition', DeepOcrResult)
+* 
+* Visualize the preprocessed image and the respective result.
+ImagePreprocessed := DeepOcrResult.image
+change_format (ImagePreprocessed, ImagePreprocessedPadded, 500, 32)
+dev_open_window (390, 0, 500, 120, 'black', WindowHandlePreprocessed2)
+dev_display_deep_ocr_results (ImagePreprocessedPadded, WindowHandlePreprocessed2, DeepOcrResult, [], [])
+dev_disp_text (['Preprocessed image with','recognition_image_width = ' + RecognitionImageWidth,'', 'The characters are recognizable.'], 'window', 'top', 'right', 'black', [], [])
+dev_disp_text ('Press Run (F5) to continue', 'window', 'bottom', 'right', 'black', [], [])
+* 
+stop ()
+* 
+dev_close_window ()
+dev_close_window ()
+dev_close_window ()
+* 
+clear_handle (DeepOcrHandle)
+* 
+* *************************************************************
+* Part 3: Detection of the words only.
+* *************************************************************
+* Create the model.
+create_deep_ocr ('mode', 'detection', DeepOcrHandle)
+* 
+* Set the inference deep learning device after the model is configurated.
+set_deep_ocr_param (DeepOcrHandle, 'device', DLDevice)
+* 
+* Apply Deep OCR on different images.
+for Index := 0 to 2 by 1
+    read_image (Image, ImagesPath[Index])
+    dev_open_window_fit_image (Image, 0, 0, 800, 600, WindowHandle)
+    * 
+    * Detect the words.
+    apply_deep_ocr (Image, DeepOcrHandle, 'detection', DeepOcrResult)
+    * 
+    * Visualize the results of the model.
+    dev_display_deep_ocr_results (Image, WindowHandle, DeepOcrResult, [], [])
+    dev_disp_text ('Press Run (F5) to continue', 'window', 'bottom', 'right', 'black', [], [])
+    stop ()
+    dev_close_window ()
+endfor
+* 
+clear_handle (DeepOcrHandle)
+* 
+* *************************************************************
+* Part 4: Detection and recognition on a large image with
+*         automatic tiling.
+* *************************************************************
+* 
+* Increase the display size because of the big example image.
+DisplaySize := 1024
+* 
+* Create the model.
+create_deep_ocr ('mode', 'auto', DeepOcrHandle)
+* 
+* Set the inference deep learning device after the model is configurated.
+set_deep_ocr_param (DeepOcrHandle, 'device', DLDevice)
+* 
+dev_open_window (0, 0, DisplaySize, DisplaySize, 'black', WindowHandle)
+dev_open_window (0, 10 + DisplaySize, PreprocessedDisplayWidth, PreprocessedDisplayHeight, 'black', WindowPreprocessed)
+dev_open_window (0, 20 + DisplaySize + PreprocessedDisplayWidth, ScoreMapsDisplayWidth, ScoreMapsDisplayHeight, 'black', WindowScoreMaps)
+* 
+* Read a very large image that contains small text.
+read_image (Image, 'ocr/street_sign_02.jpg')
+* 
+get_image_size (Image, Width, Height)
+dev_set_window (WindowHandle)
+dev_set_window_extents (0, 0, DisplaySize, DisplaySize * Height / Width)
+dev_display (Image)
+* 
+* Try to detect and recognize the words without tiling.
+* Since the image is zoomed to the model size internally,
+* the text becomes very small in the preprocessed image.
+* Hence, the detection component cannot find any words.
+set_deep_ocr_param (DeepOcrHandle, 'detection_tiling', 'false')
+apply_deep_ocr (Image, DeepOcrHandle, 'auto', DeepOcrResult)
+* 
+* Visualize the results on the original image.
+dev_display_deep_ocr_results (Image, WindowHandle, DeepOcrResult, [], [])
+dev_disp_text ('Original image (' + Width + '×' + Height + ')', 'window', 'top', 'left', 'black', [], [])
+dev_display_deep_ocr_results_preprocessed (WindowPreprocessed, DeepOcrResult, [], [])
+dev_disp_text ('detection_tiling = false', 'window', 'top', 'right', 'black', [], [])
+dev_display_deep_ocr_score_maps (WindowScoreMaps, DeepOcrResult, [], [])
+dev_disp_text ('Press Run (F5) to continue', 'window', 'bottom', 'right', 'black', [], [])
+stop ()
+* 
+* Detect and recognize the words with automatic tiling.
+* The image is split into overlapping tiles of size 'detection_image_size'.
+* Since the image is not zoomed internally, the text stays readable.
+* Note that the inference takes more time as the detection component
+* must be applied to each tile image separately.
+set_deep_ocr_param (DeepOcrHandle, 'detection_tiling', 'true')
+apply_deep_ocr (Image, DeepOcrHandle, 'auto', DeepOcrResult)
+* 
+* Visualize the tiles on the original image.
+dev_display (Image)
+display_tiles (WindowHandle)
+dev_disp_text ('Original image (' + Width + '×' + Height + ')', 'window', 'top', 'left', 'black', [], [])
+dev_disp_text ('detection_tiling = true', 'window', 'top', 'right', 'black', [], [])
+dev_disp_text (['Internally, the image is automatically', 'split into overlapping tiles.'], 'window', 'bottom', 'left', 'black', [], [])
+dev_disp_text ('Press Run (F5) to continue', 'window', 'bottom', 'right', 'black', [], [])
+stop ()
+* 
+* Visualize the results on the original image.
+dev_set_window (WindowHandle)
+dev_display_deep_ocr_results (Image, WindowHandle, DeepOcrResult, [], [])
+dev_disp_text ('Original image (' + Width + '×' + Height + ')', 'window', 'top', 'left', 'black', [], [])
+dev_disp_text ('detection_tiling = true', 'window', 'top', 'right', 'black', [], [])
+* 
+* Visualize the preprocessed image with the localized words as well as the
+* respective character and link score maps.
+dev_set_window (WindowPreprocessed)
+dev_set_window_extents (-1, -1, PreprocessedDisplayWidth, PreprocessedDisplayHeight * Height / Width)
+dev_display_deep_ocr_results_preprocessed (WindowPreprocessed, DeepOcrResult, [], [])
+dev_set_window (WindowScoreMaps)
+dev_set_window_extents (-1, -1, ScoreMapsDisplayWidth, ScoreMapsDisplayHeight * Height / Width)
+dev_display_deep_ocr_score_maps (WindowScoreMaps, DeepOcrResult, [], [])
+dev_disp_text ('Press Run (F5) to continue', 'window', 'bottom', 'right', 'black', [], [])
+stop ()
+* 
+dev_set_window (WindowScoreMaps)
+dev_close_window ()
+dev_set_window (WindowPreprocessed)
+dev_close_window ()
+dev_set_window (WindowHandle)
+dev_close_window ()
+* 
+clear_handle (DeepOcrHandle)

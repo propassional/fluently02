@@ -1,0 +1,23 @@
+# https://sequencediagram.org/
+
+title Fluently States 1.0, 22.09.23, by MB
+
+all_devices_are_off->artec_studio_is_off: Admins do following:\n Restart Fanuc controller\n(if teach pendant has been used,\notherwise error "motion interface is not ready now")\n Realwear.start up\n Realwear.connect BT to Beast\n Beast.BT connect to Realwear\n Beast.ROS2 Bridge start\n ThinkCenter.ROS1 start\n ArtecPC.Server start\n ArtecPC.Sikulix start\n ThinkCenter.Client start
+artec_studio_is_off->preview_is_on: Voice command: \n"Artec start"
+preview_is_on->preview_is_on: Artec Studio is opened
+preview_is_on->preview_is_on: Artec Studio preview is activated
+preview_is_on->cobot_is_in_scan_start_pos: Voice command: \n"Cobot start"
+cobot_is_in_scan_start_pos->cobot_is_in_scan_start_pos: Cobot goto\nscan top position
+cobot_is_in_scan_start_pos->cobot_is_in_scan_start_pos: Cobot feedbacks\nscan program ended
+cobot_is_in_scan_start_pos->recording_is_on: Voice command: \n"Artec record"
+recording_is_on->recording_is_on: Artec Studio record\n is activated
+recording_is_on->recording_is_on: Cobot scans\ntop/angle/side/bottom
+recording_is_on->recording_is_on: Artec studio reports\ntracking lost (red screen)
+recording_is_on->recording_is_done: Voice command: \n"Artec stop"
+
+recording_is_done->tools_is_on: Voice command: \n"Artec tools"
+tools_is_on->global_registration_done: Voice command: \n"Artec global registration"
+global_registration_done->global_registration_done: While waiting for Artec Studio\nprocessing we explain that\nwe skip the demo of simplification,\nfast fusion,filter objects, holes filling,\nsmoothing, etc
+global_registration_done->project_saved: Voice command: \n"Artec save"
+project_saved->mesh_view: Voice command: \n"Artec open result"
+mesh_view->artec_studio_is_off: Voice command: \n"Artec close"

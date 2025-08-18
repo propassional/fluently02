@@ -1,0 +1,55 @@
+{
+    "Components": {
+        "Start": "Auto, Rototilt, Impeller, Holder, Cobot, Scanner, Preview, Recording, FullScan, SliceScan, Registration, CommandHub, PreviousSlide, NextSlide, Okay, SkipSlide, DetailedSlide, ThumbUp, ThumbDown, ILike, IDislike, GoToTabLeft, GoToTabRight, AutopilotOn, AutopilotOff",
+        "Ready": "Rototilt, Impeller, Holder, Cobot, Scanner, Preview, Recording, FullScan, SliceScan, Registration, CommandHub, PreviousSlide, NextSlide, Okay, SkipSlide, DetailedSlide, ThumbUp, ThumbDown, ILike, IDislike, GoToTabLeft, GoToTabRight, AutopilotOn, AutopilotOff"
+    },
+    "Preview": {
+        "Start": "Auto, Shutdown, SaveFile, Components, Recording, FullScan, SliceScan, Registration, CommandHub, PreviousSlide, NextSlide, Okay, SkipSlide, DetailedSlide, ThumbUp, ThumbDown, ILike, IDislike, GoToTabLeft, GoToTabRight, AutopilotOn, AutopilotOff",
+        "Ready": "CheckArtecStudioIsOff, Shutdown, SaveFile, Components, Recording, FullScan, SliceScan, Registration, CommandHub, PreviousSlide, NextSlide, Okay, SkipSlide, DetailedSlide, ThumbUp, ThumbDown, ILike, IDislike, GoToTabLeft, GoToTabRight, AutopilotOn, AutopilotOff",
+        "ArtecStudioIsOff": "StartArtecStudio, Shutdown, SaveFile, Components, Recording, FullScan, SliceScan, Registration, CommandHub, PreviousSlide, NextSlide, Okay, SkipSlide, DetailedSlide, ThumbUp, ThumbDown, ILike, IDislike, GoToTabLeft, GoToTabRight, AutopilotOn, AutopilotOff",
+        "ArtecStudioIsOn": "StartScanMenu, Shutdown, SaveFile, Components, Recording, FullScan, SliceScan, Registration, CommandHub, PreviousSlide, NextSlide, Okay, SkipSlide, DetailedSlide, ThumbUp, ThumbDown, ILike, IDislike, GoToTabLeft, GoToTabRight, AutopilotOn, AutopilotOff",
+        "ScanMenuIsOn": "CheckScannerIsOn, Shutdown, SaveFile, Components, Recording, FullScan, SliceScan, Registration, CommandHub, PreviousSlide, NextSlide, Okay, SkipSlide, DetailedSlide, ThumbUp, ThumbDown, ILike, IDislike, GoToTabLeft, GoToTabRight, AutopilotOn, AutopilotOff",
+        "ScannerIsOn": "StartPreview, Shutdown, SaveFile, Components, Recording, FullScan, SliceScan, Registration, CommandHub, PreviousSlide, NextSlide, Okay, SkipSlide, DetailedSlide, ThumbUp, ThumbDown, ILike, IDislike, GoToTabLeft, GoToTabRight, AutopilotOn, AutopilotOff",
+        "PreviewIsOn": "StopPreview, Shutdown, SaveFile, Components, Recording, FullScan, SliceScan, Registration, CommandHub, PreviousSlide, NextSlide, Okay, SkipSlide, DetailedSlide, ThumbUp, ThumbDown, ILike, IDislike, GoToTabLeft, GoToTabRight, AutopilotOn, AutopilotOff"
+    },
+    "Recording": {
+        "Start": "Auto, Shutdown, SaveFile, Components, Preview, FullScan, SliceScan, Registration, CommandHub, PreviousSlide, NextSlide, Okay, SkipSlide, DetailedSlide, ThumbUp, ThumbDown, ILike, IDislike, GoToTabLeft, GoToTabRight, AutopilotOn, AutopilotOff",
+        "Ready": "CheckPreviewIsOn, Shutdown, SaveFile, Components, Preview, FullScan, SliceScan, Registration, CommandHub, PreviousSlide, NextSlide, Okay, SkipSlide, DetailedSlide, ThumbUp, ThumbDown, ILike, IDislike, GoToTabLeft, GoToTabRight, AutopilotOn, AutopilotOff",
+        "PreviewIsOn": "StartRecording, Shutdown, SaveFile, Components, Preview, FullScan, SliceScan, Registration, CommandHub, PreviousSlide, NextSlide, Okay, SkipSlide, DetailedSlide, ThumbUp, ThumbDown, ILike, IDislike, GoToTabLeft, GoToTabRight, AutopilotOn, AutopilotOff",
+        "RecordingIsOn": "StartPause, StopRecording, Shutdown, SaveFile, Components, Preview, FullScan, SliceScan, Registration, CommandHub, PreviousSlide, NextSlide, Okay, SkipSlide, DetailedSlide, ThumbUp, ThumbDown, ILike, IDislike, GoToTabLeft, GoToTabRight, AutopilotOn, AutopilotOff",
+        "PauseIsOn": "StopRecording, StartRecording, Shutdown, SaveFile, Components, Preview, FullScan, SliceScan, Registration, CommandHub, PreviousSlide, NextSlide, Okay, SkipSlide, DetailedSlide, ThumbUp, ThumbDown, ILike, IDislike, GoToTabLeft, GoToTabRight, AutopilotOn, AutopilotOff",
+        "RecordingIsOff": "StartPreview, Shutdown, SaveFile, Components, Preview, FullScan, SliceScan, Registration, CommandHub, PreviousSlide, NextSlide, Okay, SkipSlide, DetailedSlide, ThumbUp, ThumbDown, ILike, IDislike, GoToTabLeft, GoToTabRight, AutopilotOn, AutopilotOff"
+    },
+    "FullScan": {
+        "Start": "Auto, SaveFile, Components, Preview, Recording, SliceScan, Registration, CommandHub, PreviousSlide, NextSlide, Okay, SkipSlide, DetailedSlide, ThumbUp, ThumbDown, ILike, IDislike, GoToTabLeft, GoToTabRight, AutopilotOn, AutopilotOff",
+        "Ready": "CheckPreview, SaveFile, Components, Preview, Recording, SliceScan, Registration, CommandHub, PreviousSlide, NextSlide, Okay, SkipSlide, DetailedSlide, ThumbUp, ThumbDown, ILike, IDislike, GoToTabLeft, GoToTabRight, AutopilotOn, AutopilotOff",
+        "PreviewIsOn": "StartRecording, StopRecording, SaveFile, Components, Preview, Recording, SliceScan, Registration, CommandHub, PreviousSlide, NextSlide, Okay, SkipSlide, DetailedSlide, ThumbUp, ThumbDown, ILike, IDislike, GoToTabLeft, GoToTabRight, AutopilotOn, AutopilotOff",
+        "RecordingIsOn": "StartPause, SaveFile, Components, Preview, Recording, SliceScan, Registration, CommandHub, PreviousSlide, NextSlide, Okay, SkipSlide, DetailedSlide, ThumbUp, ThumbDown, ILike, IDislike, GoToTabLeft, GoToTabRight, AutopilotOn, AutopilotOff",
+        "PauseIsOn": "StopRecording, SaveFile, Components, Preview, Recording, SliceScan, Registration, CommandHub, PreviousSlide, NextSlide, Okay, SkipSlide, DetailedSlide, ThumbUp, ThumbDown, ILike, IDislike, GoToTabLeft, GoToTabRight, AutopilotOn, AutopilotOff",
+        "RecordingIsOff": "StartPreview, SaveFile, Components, Preview, Recording, SliceScan, Registration, CommandHub, PreviousSlide, NextSlide, Okay, SkipSlide, DetailedSlide, ThumbUp, ThumbDown, ILike, IDislike, GoToTabLeft, GoToTabRight, AutopilotOn, AutopilotOff"
+    },
+    "SliceScan": {
+        "Start": "Auto, SaveHighPosition, SaveLowPosition, Components, Preview, Recording, FullScan, Registration, CommandHub, PreviousSlide, NextSlide, Okay, SkipSlide, DetailedSlide, ThumbUp, ThumbDown, ILike, IDislike, GoToTabLeft, GoToTabRight, AutopilotOn, AutopilotOff",
+        "Ready": "Next, SaveHighPosition, SaveLowPosition, Components, Preview, Recording, FullScan, Registration, CommandHub, PreviousSlide, NextSlide, Okay, SkipSlide, DetailedSlide, ThumbUp, ThumbDown, ILike, IDislike, GoToTabLeft, GoToTabRight, AutopilotOn, AutopilotOff",
+        "TopScanPos": "Next, SaveHighPosition, SaveLowPosition, Components, Preview, Recording, FullScan, Registration, CommandHub, PreviousSlide, NextSlide, Okay, SkipSlide, DetailedSlide, ThumbUp, ThumbDown, ILike, IDislike, GoToTabLeft, GoToTabRight, AutopilotOn, AutopilotOff",
+        "SliceScanHome": "Last, MoveUp, MoveDown, SaveHighPosition, SaveLowPosition, Components, Preview, Recording, FullScan, Registration, CommandHub, PreviousSlide, NextSlide, Okay, SkipSlide, DetailedSlide, ThumbUp, ThumbDown, ILike, IDislike, GoToTabLeft, GoToTabRight, AutopilotOn, AutopilotOff",
+        "MovedUp": "MoveUp, MoveDown, Home, SaveHighPosition, SaveLowPosition, Components, Preview, Recording, FullScan, Registration, CommandHub, PreviousSlide, NextSlide, Okay, SkipSlide, DetailedSlide, ThumbUp, ThumbDown, ILike, IDislike, GoToTabLeft, GoToTabRight, AutopilotOn, AutopilotOff",
+        "MovedDown": "MoveDown, MoveUp, Home, SaveHighPosition, SaveLowPosition, Components, Preview, Recording, FullScan, Registration, CommandHub, PreviousSlide, NextSlide, Okay, SkipSlide, DetailedSlide, ThumbUp, ThumbDown, ILike, IDislike, GoToTabLeft, GoToTabRight, AutopilotOn, AutopilotOff"
+    },
+    "Registration": {
+        "Start": "Auto, Components, Preview, Recording, FullScan, SliceScan, CommandHub, PreviousSlide, NextSlide, Okay, SkipSlide, DetailedSlide, ThumbUp, ThumbDown, ILike, IDislike, GoToTabLeft, GoToTabRight, AutopilotOn, AutopilotOff",
+        "Ready": "StartToolsMenu, Components, Preview, Recording, FullScan, SliceScan, CommandHub, PreviousSlide, NextSlide, Okay, SkipSlide, DetailedSlide, ThumbUp, ThumbDown, ILike, IDislike, GoToTabLeft, GoToTabRight, AutopilotOn, AutopilotOff",
+        "ToolsMenuIsOn": "StartAutoMenu, Components, Preview, Recording, FullScan, SliceScan, CommandHub, PreviousSlide, NextSlide, Okay, SkipSlide, DetailedSlide, ThumbUp, ThumbDown, ILike, IDislike, GoToTabLeft, GoToTabRight, AutopilotOn, AutopilotOff",
+        "AutoMenuIsOn": "StartGlobalRegistration, Components, Preview, Recording, FullScan, SliceScan, CommandHub, PreviousSlide, NextSlide, Okay, SkipSlide, DetailedSlide, ThumbUp, ThumbDown, ILike, IDislike, GoToTabLeft, GoToTabRight, AutopilotOn, AutopilotOff",
+        "GlobalRegistrationEntered": "Auto, Components, Preview, Recording, FullScan, SliceScan, CommandHub, PreviousSlide, NextSlide, Okay, SkipSlide, DetailedSlide, ThumbUp, ThumbDown, ILike, IDislike, GoToTabLeft, GoToTabRight, AutopilotOn, AutopilotOff",
+        "GlobRegIsDone": "StartFusion, Components, Preview, Recording, FullScan, SliceScan, CommandHub, PreviousSlide, NextSlide, Okay, SkipSlide, DetailedSlide, ThumbUp, ThumbDown, ILike, IDislike, GoToTabLeft, GoToTabRight, AutopilotOn, AutopilotOff",
+        "FusionEntered": "Auto, Components, Preview, Recording, FullScan, SliceScan, CommandHub, PreviousSlide, NextSlide, Okay, SkipSlide, DetailedSlide, ThumbUp, ThumbDown, ILike, IDislike, GoToTabLeft, GoToTabRight, AutopilotOn, AutopilotOff",
+        "FusionIsDone": "Close, Components, Preview, Recording, FullScan, SliceScan, CommandHub, PreviousSlide, NextSlide, Okay, SkipSlide, DetailedSlide, ThumbUp, ThumbDown, ILike, IDislike, GoToTabLeft, GoToTabRight, AutopilotOn, AutopilotOff",
+        "ToolsMenuIsOff": "Next, Components, Preview, Recording, FullScan, SliceScan, CommandHub, PreviousSlide, NextSlide, Okay, SkipSlide, DetailedSlide, ThumbUp, ThumbDown, ILike, IDislike, GoToTabLeft, GoToTabRight, AutopilotOn, AutopilotOff",
+        "End": "StopToolsMenu, Components, Preview, Recording, FullScan, SliceScan, CommandHub, PreviousSlide, NextSlide, Okay, SkipSlide, DetailedSlide, ThumbUp, ThumbDown, ILike, IDislike, GoToTabLeft, GoToTabRight, AutopilotOn, AutopilotOff"
+    },
+    "CommandHub": {
+        "Start": "Auto, SaveFile, CloseAllArtecStudios, Shutdown, Components, Preview, Recording, FullScan, SliceScan, Registration, PreviousSlide, NextSlide, Okay, SkipSlide, DetailedSlide, ThumbUp, ThumbDown, ILike, IDislike, GoToTabLeft, GoToTabRight, AutopilotOn, AutopilotOff",
+        "Ready": "SaveFile, CloseAllArtecStudios, Shutdown, Components, Preview, Recording, FullScan, SliceScan, Registration, PreviousSlide, NextSlide, Okay, SkipSlide, DetailedSlide, ThumbUp, ThumbDown, ILike, IDislike, GoToTabLeft, GoToTabRight, AutopilotOn, AutopilotOff"
+    }
+}

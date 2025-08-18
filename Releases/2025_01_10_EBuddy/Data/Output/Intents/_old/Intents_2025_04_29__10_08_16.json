@@ -1,0 +1,43 @@
+{
+    "Preview": {
+        "Start": "Auto, Shutdown, SaveFile, FullScan, SliceScan, Registration, CommandHub, AutopilotOn, AutopilotOff",
+        "ArtecStudioIsOff": "StartArtecStudio, Shutdown, SaveFile, FullScan, SliceScan, Registration, CommandHub, AutopilotOn, AutopilotOff",
+        "ArtecStudioIsOn": "StartScanMenu, StopArtecStudio, Shutdown, SaveFile, FullScan, SliceScan, Registration, CommandHub, AutopilotOn, AutopilotOff",
+        "ScanMenuIsOn": "CheckScannerIsOn, Shutdown, SaveFile, FullScan, SliceScan, Registration, CommandHub, AutopilotOn, AutopilotOff",
+        "ScannerIsOn": "StartPreview, StopPreview, Shutdown, SaveFile, FullScan, SliceScan, Registration, CommandHub, AutopilotOn, AutopilotOff",
+        "PreviewIsOn": "StartRecording, StopPreview, StopRecording, Shutdown, SaveFile, FullScan, SliceScan, Registration, CommandHub, AutopilotOn, AutopilotOff",
+        "RecordingIsOn": "StartPause, Shutdown, SaveFile, FullScan, SliceScan, Registration, CommandHub, AutopilotOn, AutopilotOff",
+        "PauseIsOn": "StopRecording, Shutdown, SaveFile, FullScan, SliceScan, Registration, CommandHub, AutopilotOn, AutopilotOff",
+        "RecordingIsOff": "StartPreview, Shutdown, SaveFile, FullScan, SliceScan, Registration, CommandHub, AutopilotOn, AutopilotOff"
+    },
+    "FullScan": {
+        "Start": "Auto, SaveFile, Preview, SliceScan, Registration, CommandHub, AutopilotOn, AutopilotOff",
+        "Ready": "CheckPreview, SaveFile, Preview, SliceScan, Registration, CommandHub, AutopilotOn, AutopilotOff",
+        "PreviewIsOn": "StartRecording, StopRecording, SaveFile, Preview, SliceScan, Registration, CommandHub, AutopilotOn, AutopilotOff",
+        "RecordingIsOn": "StartPause, SaveFile, Preview, SliceScan, Registration, CommandHub, AutopilotOn, AutopilotOff",
+        "PauseIsOn": "StopRecording, SaveFile, Preview, SliceScan, Registration, CommandHub, AutopilotOn, AutopilotOff",
+        "RecordingIsOff": "StartPreview, SaveFile, Preview, SliceScan, Registration, CommandHub, AutopilotOn, AutopilotOff"
+    },
+    "SliceScan": {
+        "Start": "Auto, SaveHighPosition, SaveLowPosition, Preview, FullScan, Registration, CommandHub, AutopilotOn, AutopilotOff",
+        "Ready": "Next, SaveHighPosition, SaveLowPosition, Preview, FullScan, Registration, CommandHub, AutopilotOn, AutopilotOff",
+        "TopScanPos": "Next, SaveHighPosition, SaveLowPosition, Preview, FullScan, Registration, CommandHub, AutopilotOn, AutopilotOff",
+        "SliceScanHome": "Last, MoveUp, MoveDown, SaveHighPosition, SaveLowPosition, Preview, FullScan, Registration, CommandHub, AutopilotOn, AutopilotOff",
+        "MovedUp": "MoveUp, MoveDown, Home, SaveHighPosition, SaveLowPosition, Preview, FullScan, Registration, CommandHub, AutopilotOn, AutopilotOff",
+        "MovedDown": "MoveDown, MoveUp, Home, SaveHighPosition, SaveLowPosition, Preview, FullScan, Registration, CommandHub, AutopilotOn, AutopilotOff"
+    },
+    "Registration": {
+        "Start": "Auto, Preview, FullScan, SliceScan, CommandHub, AutopilotOn, AutopilotOff",
+        "Ready": "StartToolsMenu, Preview, FullScan, SliceScan, CommandHub, AutopilotOn, AutopilotOff",
+        "ToolsMenuIsOn": "StartAutoMenu, Preview, FullScan, SliceScan, CommandHub, AutopilotOn, AutopilotOff",
+        "AutoMenuIsOn": "StartGlobalRegistration, Preview, FullScan, SliceScan, CommandHub, AutopilotOn, AutopilotOff",
+        "GlobalRegistrationEntered": "Auto, Preview, FullScan, SliceScan, CommandHub, AutopilotOn, AutopilotOff",
+        "CalculationIsDone": "Close, Preview, FullScan, SliceScan, CommandHub, AutopilotOn, AutopilotOff",
+        "ToolsMenuIsOff": "Next, Preview, FullScan, SliceScan, CommandHub, AutopilotOn, AutopilotOff",
+        "End": "StopToolsMenu, Preview, FullScan, SliceScan, CommandHub, AutopilotOn, AutopilotOff"
+    },
+    "CommandHub": {
+        "Start": "Auto, CloseAllArtecStudios, Shutdown, SaveFile, Preview, FullScan, SliceScan, Registration, AutopilotOn, AutopilotOff",
+        "Ready": "CloseAllArtecStudios, Shutdown, SaveFile, Preview, FullScan, SliceScan, Registration, AutopilotOn, AutopilotOff"
+    }
+}

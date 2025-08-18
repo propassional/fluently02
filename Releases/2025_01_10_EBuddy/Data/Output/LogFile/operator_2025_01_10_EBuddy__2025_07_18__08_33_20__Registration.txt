@@ -1,0 +1,980 @@
+2025-07-18 08:33:20,637 - INFO - from FLGUISM.py line 279 method graph_save_to_file: Saved current state Start as image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\Screenshot\SMGraphDefault_Registration.png 
+2025-07-18 08:33:20,637 - INFO - from FLCV2.py line 285 method image_around_active_state_save: monitor.is_primary True, screen resolution: 2560 x 1440 
+2025-07-18 08:33:20,637 - INFO - from FLCV2.py line 285 method image_around_active_state_save: monitor.is_primary False, screen resolution: 1280 x 768 
+2025-07-18 08:33:20,638 - INFO - from FLCV2.py line 292 method image_around_active_state_save: Screen resolution adapted: 1216 x 768 
+2025-07-18 08:33:21,271 - INFO - from FLGUISM.py line 279 method graph_save_to_file: Saved current state Start as image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\Screenshot\SMGraphDefault_Registration.png 
+2025-07-18 08:33:21,273 - INFO - from FLCV2.py line 285 method image_around_active_state_save: monitor.is_primary True, screen resolution: 2560 x 1440 
+2025-07-18 08:33:21,273 - INFO - from FLCV2.py line 285 method image_around_active_state_save: monitor.is_primary False, screen resolution: 1280 x 768 
+2025-07-18 08:33:21,273 - INFO - from FLCV2.py line 292 method image_around_active_state_save: Screen resolution adapted: 1216 x 768 
+2025-07-18 08:33:24,176 - INFO - from FLGUIMain.py line 422 method GUI_main_SM_commands_execute: State Start before trying to transition with command Auto 
+2025-07-18 08:33:24,176 - INFO - from FLGUIMain.py line 444 method GUI_main_SM_commands_execute: Firing transition Auto 
+2025-07-18 08:33:24,177 - INFO - from FLModel.py line 75 method callback_after_state_change: 
+ At callback beginning: current state Ready, rollback_do False 
+2025-07-18 08:33:24,177 - INFO - from FLModel.py line 211 method do_code: DO CODE 
+2025-07-18 08:33:24,214 - INFO - from FLModel.py line 552 method run_python_code: Module loaded from file D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\ArtecStudio__Registration__2024_11_07\JSON\ArtecStudio__Registration__2024_11_07.py 
+2025-07-18 08:33:24,215 - INFO - from FLModel.py line 587 method run_python_code: Method AutoDo not found in D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\ArtecStudio__Registration__2024_11_07\JSON\ArtecStudio__Registration__2024_11_07.py 
+2025-07-18 08:33:24,215 - INFO - from FLModel.py line 238 method do_images: DO IMAGES 
+2025-07-18 08:33:24,215 - INFO - from FLModel.py line 448 method items_find_in_dir: item_name searched: AutoDo.png, directory searched: D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App 
+2025-07-18 08:33:24,218 - INFO - from FLModel.py line 471 method items_find_in_dir: items found: item_path_list [], app_name_list: [] 
+2025-07-18 08:33:24,219 - INFO - from FLModel.py line 245 method do_images: No do images found 
+2025-07-18 08:33:24,219 - INFO - from FLModel.py line 147 method check_state: STATE CHECK CODE 
+2025-07-18 08:33:24,220 - INFO - from FLModel.py line 552 method run_python_code: Module loaded from file D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\ArtecStudio__Registration__2024_11_07\JSON\ArtecStudio__Registration__2024_11_07.py 
+2025-07-18 08:33:24,220 - INFO - from FLModel.py line 587 method run_python_code: Method ReadyCheck not found in D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\ArtecStudio__Registration__2024_11_07\JSON\ArtecStudio__Registration__2024_11_07.py 
+2025-07-18 08:33:24,220 - INFO - from FLModel.py line 161 method check_state: feedback_code_tells_state_is_valid is None 
+2025-07-18 08:33:24,221 - INFO - from FLModel.py line 175 method check_state: CHECK IMAGES 
+2025-07-18 08:33:24,221 - INFO - from FLModel.py line 448 method items_find_in_dir: item_name searched: ReadyCheck.png, directory searched: D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App 
+2025-07-18 08:33:24,224 - INFO - from FLModel.py line 471 method items_find_in_dir: items found: item_path_list [], app_name_list: [] 
+2025-07-18 08:33:24,224 - INFO - from FLModel.py line 388 method global_variables_print: self.do_code_found False 
+2025-07-18 08:33:24,225 - INFO - from FLModel.py line 389 method global_variables_print: self.do_code_result None 
+2025-07-18 08:33:24,225 - INFO - from FLModel.py line 390 method global_variables_print: self.do_code_tells_state_is_valid None 
+2025-07-18 08:33:24,225 - INFO - from FLModel.py line 392 method global_variables_print: self.do_image_found False 
+2025-07-18 08:33:24,225 - INFO - from FLModel.py line 393 method global_variables_print: self.do_image_result 0.0 
+2025-07-18 08:33:24,225 - INFO - from FLModel.py line 394 method global_variables_print: self.do_image_matched None 
+2025-07-18 08:33:24,225 - INFO - from FLModel.py line 395 method global_variables_print: self.do_image_error None 
+2025-07-18 08:33:24,225 - INFO - from FLModel.py line 396 method global_variables_print: self.do_image_tells_state_is_valid None 
+2025-07-18 08:33:24,225 - INFO - from FLModel.py line 398 method global_variables_print:  self.do_transition_result None 
+2025-07-18 08:33:24,225 - INFO - from FLModel.py line 401 method global_variables_print: self.check_code_found False 
+2025-07-18 08:33:24,225 - INFO - from FLModel.py line 402 method global_variables_print: self.check_code_result None 
+2025-07-18 08:33:24,226 - INFO - from FLModel.py line 403 method global_variables_print: self.check_code_tells_state_is_valid None 
+2025-07-18 08:33:24,226 - INFO - from FLModel.py line 405 method global_variables_print: self.check_image_found None 
+2025-07-18 08:33:24,226 - INFO - from FLModel.py line 406 method global_variables_print: self.check_image_result 0.0 
+2025-07-18 08:33:24,226 - INFO - from FLModel.py line 407 method global_variables_print: self.check_image_tells_state_is_valid None 
+2025-07-18 08:33:24,226 - INFO - from FLModel.py line 409 method global_variables_print:  self.check_state_result None 
+2025-07-18 08:33:24,226 - INFO - from FLModel.py line 412 method global_variables_print:   self.state_is_valid None 
+2025-07-18 08:33:24,226 - INFO - from FLModel.py line 413 method global_variables_print:    self.state_is_valid_final True 
+2025-07-18 08:33:24,226 - INFO - from FLModel.py line 520 method run_code_state: STATE DO 
+2025-07-18 08:33:24,228 - INFO - from FLModel.py line 552 method run_python_code: Module loaded from file D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\ArtecStudio__Registration__2024_11_07\JSON\ArtecStudio__Registration__2024_11_07.py 
+2025-07-18 08:33:24,228 - INFO - from FLModel.py line 565 method run_python_code: Executing method ReadyDo in module <module 'ArtecStudio__Registration__2024_11_07' from 'D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\SM\\ArtecStudio__Registration__2024_11_07\\JSON\\ArtecStudio__Registration__2024_11_07.py'> 
+2025-07-18 08:33:25,010 - INFO - from FLModel.py line 579 method run_python_code: Executed module returned result False, message Save&Close Artec Studio 
+2025-07-18 08:33:25,011 - INFO - from FLModel.py line 135 method callback_after_state_change: 
+ At callback end, current state: Ready 
+2025-07-18 08:33:25,011 - INFO - from FLGUIMain.py line 453 method GUI_main_SM_commands_execute: Transition Auto fired without exceptions 
+2025-07-18 08:33:25,011 - INFO - from FLGUIMain.py line 471 method GUI_main_SM_commands_execute: State after transitioning: Ready 
+2025-07-18 08:33:25,011 - INFO - from FLGUIMain.py line 504 method GUI_main_SM_commands_execute: Handling GUI_update_requested_by_callback 
+2025-07-18 08:33:25,190 - INFO - from FLGUISM.py line 279 method graph_save_to_file: Saved current state Ready as image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\Screenshot\SMGraphDefault_Registration.png 
+2025-07-18 08:33:25,190 - INFO - from FLCV2.py line 285 method image_around_active_state_save: monitor.is_primary True, screen resolution: 2560 x 1440 
+2025-07-18 08:33:25,191 - INFO - from FLCV2.py line 285 method image_around_active_state_save: monitor.is_primary False, screen resolution: 1280 x 768 
+2025-07-18 08:33:25,191 - INFO - from FLCV2.py line 292 method image_around_active_state_save: Screen resolution adapted: 1216 x 768 
+2025-07-18 08:33:25,255 - INFO - from FLGUISM.py line 279 method graph_save_to_file: Saved current state Ready as image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\Screenshot\SMGraphDefault_Registration.png 
+2025-07-18 08:33:25,256 - INFO - from FLCV2.py line 285 method image_around_active_state_save: monitor.is_primary True, screen resolution: 2560 x 1440 
+2025-07-18 08:33:25,256 - INFO - from FLCV2.py line 285 method image_around_active_state_save: monitor.is_primary False, screen resolution: 1280 x 768 
+2025-07-18 08:33:25,256 - INFO - from FLCV2.py line 292 method image_around_active_state_save: Screen resolution adapted: 1216 x 768 
+2025-07-18 08:33:25,327 - INFO - from FLGUISM.py line 279 method graph_save_to_file: Saved current state Ready as image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\Screenshot\SMGraphDefault_Registration.png 
+2025-07-18 08:33:25,327 - INFO - from FLCV2.py line 285 method image_around_active_state_save: monitor.is_primary True, screen resolution: 2560 x 1440 
+2025-07-18 08:33:25,327 - INFO - from FLCV2.py line 285 method image_around_active_state_save: monitor.is_primary False, screen resolution: 1280 x 768 
+2025-07-18 08:33:25,328 - INFO - from FLCV2.py line 292 method image_around_active_state_save: Screen resolution adapted: 1216 x 768 
+2025-07-18 08:33:28,212 - INFO - from FLGUISM.py line 279 method graph_save_to_file: Saved current state Ready as image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\Screenshot\SMGraphDefault_Registration.png 
+2025-07-18 08:33:28,212 - INFO - from FLCV2.py line 285 method image_around_active_state_save: monitor.is_primary True, screen resolution: 2560 x 1440 
+2025-07-18 08:33:28,212 - INFO - from FLCV2.py line 285 method image_around_active_state_save: monitor.is_primary False, screen resolution: 1280 x 768 
+2025-07-18 08:33:28,213 - INFO - from FLCV2.py line 292 method image_around_active_state_save: Screen resolution adapted: 1216 x 768 
+2025-07-18 08:33:48,239 - INFO - from FLGUISM.py line 94 method autopilot_is_on_set: autopilot_mode is now None 
+2025-07-18 08:33:48,300 - INFO - from FLGUISM.py line 279 method graph_save_to_file: Saved current state Ready as image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\Screenshot\SMGraphDefault_Registration.png 
+2025-07-18 08:33:48,300 - INFO - from FLCV2.py line 285 method image_around_active_state_save: monitor.is_primary True, screen resolution: 2560 x 1440 
+2025-07-18 08:33:48,301 - INFO - from FLCV2.py line 285 method image_around_active_state_save: monitor.is_primary False, screen resolution: 1280 x 768 
+2025-07-18 08:33:48,301 - INFO - from FLCV2.py line 292 method image_around_active_state_save: Screen resolution adapted: 1216 x 768 
+2025-07-18 08:33:48,348 - INFO - from FLGUIMain.py line 422 method GUI_main_SM_commands_execute: State Ready before trying to transition with command StartToolsMenu 
+2025-07-18 08:33:48,348 - INFO - from FLGUIMain.py line 444 method GUI_main_SM_commands_execute: Firing transition StartToolsMenu 
+2025-07-18 08:33:48,348 - INFO - from FLModel.py line 75 method callback_after_state_change: 
+ At callback beginning: current state ToolsMenuIsOn, rollback_do False 
+2025-07-18 08:33:48,348 - INFO - from FLModel.py line 211 method do_code: DO CODE 
+2025-07-18 08:33:48,350 - INFO - from FLModel.py line 552 method run_python_code: Module loaded from file D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\ArtecStudio__Registration__2024_11_07\JSON\ArtecStudio__Registration__2024_11_07.py 
+2025-07-18 08:33:48,350 - INFO - from FLModel.py line 587 method run_python_code: Method StartToolsMenuDo not found in D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\ArtecStudio__Registration__2024_11_07\JSON\ArtecStudio__Registration__2024_11_07.py 
+2025-07-18 08:33:48,350 - INFO - from FLModel.py line 238 method do_images: DO IMAGES 
+2025-07-18 08:33:48,350 - INFO - from FLModel.py line 448 method items_find_in_dir: item_name searched: StartToolsMenuDo.png, directory searched: D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App 
+2025-07-18 08:33:48,354 - INFO - from FLModel.py line 471 method items_find_in_dir: items found: item_path_list ['D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\App\\ArtecStudio\\Image\\2560x1440\\Do\\StartToolsMenuDo.png'], app_name_list: ['ArtecStudio'] 
+2025-07-18 08:33:48,354 - INFO - from FLModel.py line 348 method focus_set_on_app: focus is required on app ArtecStudio, focus is now on window EBuddyforBeginnerUser, window nr 4261732 
+2025-07-18 08:33:48,354 - INFO - from FLModel.py line 353 method focus_set_on_app: Set focus on app ArtecStudio 
+2025-07-18 08:33:48,354 - INFO - from FLModel.py line 448 method items_find_in_dir: item_name searched: FocusIsOnArtecStudio.png, directory searched: D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App 
+2025-07-18 08:33:48,358 - INFO - from FLModel.py line 471 method items_find_in_dir: items found: item_path_list ['D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\App\\ArtecStudio\\Image\\2560x1440\\Do\\FocusIsOnArtecStudioDo.png'], app_name_list: ['ArtecStudio'] 
+2025-07-18 08:33:49,449 - INFO - from FLCV2.py line 78 method screenshot_search: Screenshot image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_33_49_1_Screenshot.png 
+2025-07-18 08:33:49,449 - INFO - from FLCV2.py line 87 method screenshot_search: Read template image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App\ArtecStudio\Image\2560x1440\Do\FocusIsOnArtecStudioDo.png 
+2025-07-18 08:33:49,450 - INFO - from FLCV2.py line 100 method screenshot_search: Template image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_33_49_2_Template.png 
+2025-07-18 08:33:49,551 - INFO - from FLCV2.py line 130 method screenshot_search: Matching score: 0.9889 
+2025-07-18 08:33:49,552 - INFO - from FLCV2.py line 131 method screenshot_search: Found template image at position (x, y): (453, 0) 
+2025-07-18 08:33:49,587 - INFO - from FLCV2.py line 143 method screenshot_search: Image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_33_49_3_Result.png 
+2025-07-18 08:33:52,333 - INFO - from FLModel.py line 364 method focus_set_on_app: clicked on app ArtecStudio at mouse_x 548, mouse_y 15, matching_score_focus 0.9888769388198853 
+2025-07-18 08:33:54,429 - INFO - from FLCV2.py line 78 method screenshot_search: Screenshot image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_33_54_1_Screenshot.png 
+2025-07-18 08:33:54,430 - INFO - from FLCV2.py line 87 method screenshot_search: Read template image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App\ArtecStudio\Image\2560x1440\Do\StartToolsMenuDo.png 
+2025-07-18 08:33:54,430 - INFO - from FLCV2.py line 100 method screenshot_search: Template image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_33_54_2_Template.png 
+2025-07-18 08:33:54,514 - INFO - from FLCV2.py line 130 method screenshot_search: Matching score: 1.0000 
+2025-07-18 08:33:54,514 - INFO - from FLCV2.py line 131 method screenshot_search: Found template image at position (x, y): (8, 183) 
+2025-07-18 08:33:54,550 - INFO - from FLCV2.py line 143 method screenshot_search: Image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_33_54_3_Result.png 
+2025-07-18 08:33:54,553 - INFO - from FLModel.py line 265 method do_images: call screenshot_search with command_image_path D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App\ArtecStudio\Image\2560x1440\Do\StartToolsMenuDo.png, app_name ArtecStudio 
+2025-07-18 08:33:54,553 - INFO - from FLModel.py line 267 method do_images: screenshot_search returns mouse_x 37, mouse_y 265, matching_score 1.0 
+2025-07-18 08:33:54,554 - INFO - from FLModel.py line 448 method items_find_in_dir: item_name searched: StartToolsMenuDo.txt, directory searched: D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App 
+2025-07-18 08:33:54,557 - INFO - from FLModel.py line 471 method items_find_in_dir: items found: item_path_list [], app_name_list: [] 
+2025-07-18 08:33:54,557 - INFO - from FLModel.py line 287 method do_images: click on mouse_x 37, mouse_y 265 
+2025-07-18 08:33:57,280 - INFO - from FLModel.py line 147 method check_state: STATE CHECK CODE 
+2025-07-18 08:33:57,284 - INFO - from FLModel.py line 552 method run_python_code: Module loaded from file D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\ArtecStudio__Registration__2024_11_07\JSON\ArtecStudio__Registration__2024_11_07.py 
+2025-07-18 08:33:57,284 - INFO - from FLModel.py line 587 method run_python_code: Method ToolsMenuIsOnCheck not found in D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\ArtecStudio__Registration__2024_11_07\JSON\ArtecStudio__Registration__2024_11_07.py 
+2025-07-18 08:33:57,284 - INFO - from FLModel.py line 161 method check_state: feedback_code_tells_state_is_valid is None 
+2025-07-18 08:33:57,284 - INFO - from FLModel.py line 175 method check_state: CHECK IMAGES 
+2025-07-18 08:33:57,284 - INFO - from FLModel.py line 448 method items_find_in_dir: item_name searched: ToolsMenuIsOnCheck.png, directory searched: D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App 
+2025-07-18 08:33:57,289 - INFO - from FLModel.py line 471 method items_find_in_dir: items found: item_path_list ['D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\App\\ArtecStudio\\Image\\2560x1440\\Check\\ToolsMenuIsOnCheck.png'], app_name_list: ['ArtecStudio'] 
+2025-07-18 08:33:57,290 - INFO - from FLModel.py line 184 method check_state: check_image_found: True, feedback_image_path_item D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App\ArtecStudio\Image\2560x1440\Check\ToolsMenuIsOnCheck.png , app_name_item ArtecStudio 
+2025-07-18 08:33:57,290 - INFO - from FLModel.py line 348 method focus_set_on_app: focus is required on app ArtecStudio, focus is now on window D:\Banfi\ArtecStudio\ArtecStudio16ProjectsTest\Tom\Tom.a3d-ArtecStudio16Professional, window nr 2431280 
+2025-07-18 08:33:57,290 - INFO - from FLModel.py line 351 method focus_set_on_app: app ArtecStudio is already on focus 
+2025-07-18 08:33:58,390 - INFO - from FLCV2.py line 78 method screenshot_search: Screenshot image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_33_58_1_Screenshot.png 
+2025-07-18 08:33:58,390 - INFO - from FLCV2.py line 87 method screenshot_search: Read template image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App\ArtecStudio\Image\2560x1440\Check\ToolsMenuIsOnCheck.png 
+2025-07-18 08:33:58,392 - INFO - from FLCV2.py line 100 method screenshot_search: Template image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_33_58_2_Template.png 
+2025-07-18 08:33:58,481 - INFO - from FLCV2.py line 130 method screenshot_search: Matching score: 0.9011 
+2025-07-18 08:33:58,481 - INFO - from FLCV2.py line 131 method screenshot_search: Found template image at position (x, y): (94, 74) 
+2025-07-18 08:33:58,518 - INFO - from FLCV2.py line 143 method screenshot_search: Image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_33_58_3_Result.png 
+2025-07-18 08:33:58,521 - INFO - from FLModel.py line 199 method check_state: feedback_image_tells_state_is_valid True, matching_score 0.9010710120201111, matching threshold 0.5 
+2025-07-18 08:33:58,521 - INFO - from FLModel.py line 388 method global_variables_print: self.do_code_found False 
+2025-07-18 08:33:58,521 - INFO - from FLModel.py line 389 method global_variables_print: self.do_code_result None 
+2025-07-18 08:33:58,521 - INFO - from FLModel.py line 390 method global_variables_print: self.do_code_tells_state_is_valid None 
+2025-07-18 08:33:58,521 - INFO - from FLModel.py line 392 method global_variables_print: self.do_image_found True 
+2025-07-18 08:33:58,521 - INFO - from FLModel.py line 393 method global_variables_print: self.do_image_result 0.0 
+2025-07-18 08:33:58,521 - INFO - from FLModel.py line 394 method global_variables_print: self.do_image_matched True 
+2025-07-18 08:33:58,521 - INFO - from FLModel.py line 395 method global_variables_print: self.do_image_error None 
+2025-07-18 08:33:58,521 - INFO - from FLModel.py line 396 method global_variables_print: self.do_image_tells_state_is_valid True 
+2025-07-18 08:33:58,522 - INFO - from FLModel.py line 398 method global_variables_print:  self.do_transition_result True 
+2025-07-18 08:33:58,522 - INFO - from FLModel.py line 401 method global_variables_print: self.check_code_found False 
+2025-07-18 08:33:58,522 - INFO - from FLModel.py line 402 method global_variables_print: self.check_code_result None 
+2025-07-18 08:33:58,522 - INFO - from FLModel.py line 403 method global_variables_print: self.check_code_tells_state_is_valid None 
+2025-07-18 08:33:58,522 - INFO - from FLModel.py line 405 method global_variables_print: self.check_image_found True 
+2025-07-18 08:33:58,522 - INFO - from FLModel.py line 406 method global_variables_print: self.check_image_result 0.9010710120201111 
+2025-07-18 08:33:58,522 - INFO - from FLModel.py line 407 method global_variables_print: self.check_image_tells_state_is_valid True 
+2025-07-18 08:33:58,522 - INFO - from FLModel.py line 409 method global_variables_print:  self.check_state_result True 
+2025-07-18 08:33:58,522 - INFO - from FLModel.py line 412 method global_variables_print:   self.state_is_valid True 
+2025-07-18 08:33:58,522 - INFO - from FLModel.py line 413 method global_variables_print:    self.state_is_valid_final True 
+2025-07-18 08:33:58,523 - INFO - from FLModel.py line 520 method run_code_state: STATE DO 
+2025-07-18 08:33:58,524 - INFO - from FLModel.py line 552 method run_python_code: Module loaded from file D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\ArtecStudio__Registration__2024_11_07\JSON\ArtecStudio__Registration__2024_11_07.py 
+2025-07-18 08:33:58,524 - INFO - from FLModel.py line 565 method run_python_code: Executing method ToolsMenuIsOnDo in module <module 'ArtecStudio__Registration__2024_11_07' from 'D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\SM\\ArtecStudio__Registration__2024_11_07\\JSON\\ArtecStudio__Registration__2024_11_07.py'> 
+2025-07-18 08:33:58,525 - INFO - from FLModel.py line 579 method run_python_code: Executed module returned result True, message Tools Menu started 
+2025-07-18 08:33:58,525 - INFO - from FLModel.py line 135 method callback_after_state_change: 
+ At callback end, current state: ToolsMenuIsOn 
+2025-07-18 08:33:58,525 - INFO - from FLGUIMain.py line 453 method GUI_main_SM_commands_execute: Transition StartToolsMenu fired without exceptions 
+2025-07-18 08:33:58,525 - INFO - from FLGUIMain.py line 471 method GUI_main_SM_commands_execute: State after transitioning: ToolsMenuIsOn 
+2025-07-18 08:33:58,525 - INFO - from FLGUIMain.py line 504 method GUI_main_SM_commands_execute: Handling GUI_update_requested_by_callback 
+2025-07-18 08:33:58,590 - INFO - from FLGUISM.py line 279 method graph_save_to_file: Saved current state ToolsMenuIsOn as image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\Screenshot\SMGraphDefault_Registration.png 
+2025-07-18 08:33:58,590 - INFO - from FLCV2.py line 285 method image_around_active_state_save: monitor.is_primary True, screen resolution: 2560 x 1440 
+2025-07-18 08:33:58,591 - INFO - from FLCV2.py line 285 method image_around_active_state_save: monitor.is_primary False, screen resolution: 1280 x 768 
+2025-07-18 08:33:58,591 - INFO - from FLCV2.py line 292 method image_around_active_state_save: Screen resolution adapted: 1216 x 768 
+2025-07-18 08:33:58,654 - INFO - from FLGUISM.py line 279 method graph_save_to_file: Saved current state ToolsMenuIsOn as image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\Screenshot\SMGraphDefault_Registration.png 
+2025-07-18 08:33:58,654 - INFO - from FLCV2.py line 285 method image_around_active_state_save: monitor.is_primary True, screen resolution: 2560 x 1440 
+2025-07-18 08:33:58,654 - INFO - from FLCV2.py line 285 method image_around_active_state_save: monitor.is_primary False, screen resolution: 1280 x 768 
+2025-07-18 08:33:58,654 - INFO - from FLCV2.py line 292 method image_around_active_state_save: Screen resolution adapted: 1216 x 768 
+2025-07-18 08:33:58,721 - INFO - from FLGUISM.py line 279 method graph_save_to_file: Saved current state ToolsMenuIsOn as image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\Screenshot\SMGraphDefault_Registration.png 
+2025-07-18 08:33:58,721 - INFO - from FLCV2.py line 285 method image_around_active_state_save: monitor.is_primary True, screen resolution: 2560 x 1440 
+2025-07-18 08:33:58,721 - INFO - from FLCV2.py line 285 method image_around_active_state_save: monitor.is_primary False, screen resolution: 1280 x 768 
+2025-07-18 08:33:58,722 - INFO - from FLCV2.py line 292 method image_around_active_state_save: Screen resolution adapted: 1216 x 768 
+2025-07-18 08:34:07,892 - INFO - from FLGUIMain.py line 422 method GUI_main_SM_commands_execute: State ToolsMenuIsOn before trying to transition with command StartAutoMenu 
+2025-07-18 08:34:07,893 - INFO - from FLGUIMain.py line 444 method GUI_main_SM_commands_execute: Firing transition StartAutoMenu 
+2025-07-18 08:34:07,893 - INFO - from FLModel.py line 75 method callback_after_state_change: 
+ At callback beginning: current state AutoMenuIsOn, rollback_do False 
+2025-07-18 08:34:07,893 - INFO - from FLModel.py line 211 method do_code: DO CODE 
+2025-07-18 08:34:07,894 - INFO - from FLModel.py line 552 method run_python_code: Module loaded from file D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\ArtecStudio__Registration__2024_11_07\JSON\ArtecStudio__Registration__2024_11_07.py 
+2025-07-18 08:34:07,895 - INFO - from FLModel.py line 587 method run_python_code: Method StartAutoMenuDo not found in D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\ArtecStudio__Registration__2024_11_07\JSON\ArtecStudio__Registration__2024_11_07.py 
+2025-07-18 08:34:07,895 - INFO - from FLModel.py line 238 method do_images: DO IMAGES 
+2025-07-18 08:34:07,895 - INFO - from FLModel.py line 448 method items_find_in_dir: item_name searched: StartAutoMenuDo.png, directory searched: D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App 
+2025-07-18 08:34:07,898 - INFO - from FLModel.py line 471 method items_find_in_dir: items found: item_path_list ['D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\App\\ArtecStudio\\Image\\2560x1440\\Do\\StartAutoMenuDo.png'], app_name_list: ['ArtecStudio'] 
+2025-07-18 08:34:07,899 - INFO - from FLModel.py line 348 method focus_set_on_app: focus is required on app ArtecStudio, focus is now on window EBuddyforBeginnerUser, window nr 4261732 
+2025-07-18 08:34:07,899 - INFO - from FLModel.py line 353 method focus_set_on_app: Set focus on app ArtecStudio 
+2025-07-18 08:34:07,899 - INFO - from FLModel.py line 448 method items_find_in_dir: item_name searched: FocusIsOnArtecStudio.png, directory searched: D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App 
+2025-07-18 08:34:07,902 - INFO - from FLModel.py line 471 method items_find_in_dir: items found: item_path_list ['D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\App\\ArtecStudio\\Image\\2560x1440\\Do\\FocusIsOnArtecStudioDo.png'], app_name_list: ['ArtecStudio'] 
+2025-07-18 08:34:09,011 - INFO - from FLCV2.py line 78 method screenshot_search: Screenshot image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_34_08_1_Screenshot.png 
+2025-07-18 08:34:09,011 - INFO - from FLCV2.py line 87 method screenshot_search: Read template image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App\ArtecStudio\Image\2560x1440\Do\FocusIsOnArtecStudioDo.png 
+2025-07-18 08:34:09,012 - INFO - from FLCV2.py line 100 method screenshot_search: Template image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_34_09_2_Template.png 
+2025-07-18 08:34:09,111 - INFO - from FLCV2.py line 130 method screenshot_search: Matching score: 0.9889 
+2025-07-18 08:34:09,111 - INFO - from FLCV2.py line 131 method screenshot_search: Found template image at position (x, y): (453, 0) 
+2025-07-18 08:34:09,147 - INFO - from FLCV2.py line 143 method screenshot_search: Image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_34_09_3_Result.png 
+2025-07-18 08:34:11,869 - INFO - from FLModel.py line 364 method focus_set_on_app: clicked on app ArtecStudio at mouse_x 548, mouse_y 15, matching_score_focus 0.9888806939125061 
+2025-07-18 08:34:13,963 - INFO - from FLCV2.py line 78 method screenshot_search: Screenshot image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_34_13_1_Screenshot.png 
+2025-07-18 08:34:13,963 - INFO - from FLCV2.py line 87 method screenshot_search: Read template image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App\ArtecStudio\Image\2560x1440\Do\StartAutoMenuDo.png 
+2025-07-18 08:34:13,964 - INFO - from FLCV2.py line 100 method screenshot_search: Template image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_34_13_2_Template.png 
+2025-07-18 08:34:14,044 - INFO - from FLCV2.py line 130 method screenshot_search: Matching score: 0.9201 
+2025-07-18 08:34:14,044 - INFO - from FLCV2.py line 131 method screenshot_search: Found template image at position (x, y): (94, 141) 
+2025-07-18 08:34:14,081 - INFO - from FLCV2.py line 143 method screenshot_search: Image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_34_14_3_Result.png 
+2025-07-18 08:34:14,083 - INFO - from FLModel.py line 265 method do_images: call screenshot_search with command_image_path D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App\ArtecStudio\Image\2560x1440\Do\StartAutoMenuDo.png, app_name ArtecStudio 
+2025-07-18 08:34:14,084 - INFO - from FLModel.py line 267 method do_images: screenshot_search returns mouse_x 175, mouse_y 224, matching_score 0.9201124906539917 
+2025-07-18 08:34:14,084 - INFO - from FLModel.py line 448 method items_find_in_dir: item_name searched: StartAutoMenuDo.txt, directory searched: D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App 
+2025-07-18 08:34:14,087 - INFO - from FLModel.py line 471 method items_find_in_dir: items found: item_path_list [], app_name_list: [] 
+2025-07-18 08:34:14,088 - INFO - from FLModel.py line 287 method do_images: click on mouse_x 175, mouse_y 224 
+2025-07-18 08:34:16,804 - INFO - from FLModel.py line 147 method check_state: STATE CHECK CODE 
+2025-07-18 08:34:16,811 - INFO - from FLModel.py line 552 method run_python_code: Module loaded from file D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\ArtecStudio__Registration__2024_11_07\JSON\ArtecStudio__Registration__2024_11_07.py 
+2025-07-18 08:34:16,812 - INFO - from FLModel.py line 587 method run_python_code: Method AutoMenuIsOnCheck not found in D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\ArtecStudio__Registration__2024_11_07\JSON\ArtecStudio__Registration__2024_11_07.py 
+2025-07-18 08:34:16,813 - INFO - from FLModel.py line 161 method check_state: feedback_code_tells_state_is_valid is None 
+2025-07-18 08:34:16,813 - INFO - from FLModel.py line 175 method check_state: CHECK IMAGES 
+2025-07-18 08:34:16,813 - INFO - from FLModel.py line 448 method items_find_in_dir: item_name searched: AutoMenuIsOnCheck.png, directory searched: D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App 
+2025-07-18 08:34:16,816 - INFO - from FLModel.py line 471 method items_find_in_dir: items found: item_path_list ['D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\App\\ArtecStudio\\Image\\2560x1440\\Check\\AutoMenuIsOnCheck.png'], app_name_list: ['ArtecStudio'] 
+2025-07-18 08:34:16,817 - INFO - from FLModel.py line 184 method check_state: check_image_found: True, feedback_image_path_item D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App\ArtecStudio\Image\2560x1440\Check\AutoMenuIsOnCheck.png , app_name_item ArtecStudio 
+2025-07-18 08:34:16,817 - INFO - from FLModel.py line 348 method focus_set_on_app: focus is required on app ArtecStudio, focus is now on window D:\Banfi\ArtecStudio\ArtecStudio16ProjectsTest\Tom\Tom.a3d-ArtecStudio16Professional, window nr 2431280 
+2025-07-18 08:34:16,817 - INFO - from FLModel.py line 351 method focus_set_on_app: app ArtecStudio is already on focus 
+2025-07-18 08:34:17,908 - INFO - from FLCV2.py line 78 method screenshot_search: Screenshot image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_34_17_1_Screenshot.png 
+2025-07-18 08:34:17,908 - INFO - from FLCV2.py line 87 method screenshot_search: Read template image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App\ArtecStudio\Image\2560x1440\Check\AutoMenuIsOnCheck.png 
+2025-07-18 08:34:17,908 - INFO - from FLCV2.py line 100 method screenshot_search: Template image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_34_17_2_Template.png 
+2025-07-18 08:34:17,982 - INFO - from FLCV2.py line 130 method screenshot_search: Matching score: 0.9850 
+2025-07-18 08:34:17,982 - INFO - from FLCV2.py line 131 method screenshot_search: Found template image at position (x, y): (162, 216) 
+2025-07-18 08:34:18,018 - INFO - from FLCV2.py line 143 method screenshot_search: Image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_34_17_3_Result.png 
+2025-07-18 08:34:18,021 - INFO - from FLModel.py line 199 method check_state: feedback_image_tells_state_is_valid True, matching_score 0.9850255250930786, matching threshold 0.5 
+2025-07-18 08:34:18,021 - INFO - from FLModel.py line 388 method global_variables_print: self.do_code_found False 
+2025-07-18 08:34:18,021 - INFO - from FLModel.py line 389 method global_variables_print: self.do_code_result None 
+2025-07-18 08:34:18,021 - INFO - from FLModel.py line 390 method global_variables_print: self.do_code_tells_state_is_valid None 
+2025-07-18 08:34:18,022 - INFO - from FLModel.py line 392 method global_variables_print: self.do_image_found True 
+2025-07-18 08:34:18,022 - INFO - from FLModel.py line 393 method global_variables_print: self.do_image_result 0.0 
+2025-07-18 08:34:18,022 - INFO - from FLModel.py line 394 method global_variables_print: self.do_image_matched True 
+2025-07-18 08:34:18,022 - INFO - from FLModel.py line 395 method global_variables_print: self.do_image_error None 
+2025-07-18 08:34:18,022 - INFO - from FLModel.py line 396 method global_variables_print: self.do_image_tells_state_is_valid True 
+2025-07-18 08:34:18,022 - INFO - from FLModel.py line 398 method global_variables_print:  self.do_transition_result True 
+2025-07-18 08:34:18,022 - INFO - from FLModel.py line 401 method global_variables_print: self.check_code_found False 
+2025-07-18 08:34:18,022 - INFO - from FLModel.py line 402 method global_variables_print: self.check_code_result None 
+2025-07-18 08:34:18,022 - INFO - from FLModel.py line 403 method global_variables_print: self.check_code_tells_state_is_valid None 
+2025-07-18 08:34:18,022 - INFO - from FLModel.py line 405 method global_variables_print: self.check_image_found True 
+2025-07-18 08:34:18,023 - INFO - from FLModel.py line 406 method global_variables_print: self.check_image_result 0.9850255250930786 
+2025-07-18 08:34:18,023 - INFO - from FLModel.py line 407 method global_variables_print: self.check_image_tells_state_is_valid True 
+2025-07-18 08:34:18,023 - INFO - from FLModel.py line 409 method global_variables_print:  self.check_state_result True 
+2025-07-18 08:34:18,023 - INFO - from FLModel.py line 412 method global_variables_print:   self.state_is_valid True 
+2025-07-18 08:34:18,023 - INFO - from FLModel.py line 413 method global_variables_print:    self.state_is_valid_final True 
+2025-07-18 08:34:18,023 - INFO - from FLModel.py line 520 method run_code_state: STATE DO 
+2025-07-18 08:34:18,025 - INFO - from FLModel.py line 552 method run_python_code: Module loaded from file D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\ArtecStudio__Registration__2024_11_07\JSON\ArtecStudio__Registration__2024_11_07.py 
+2025-07-18 08:34:18,025 - INFO - from FLModel.py line 565 method run_python_code: Executing method AutoMenuIsOnDo in module <module 'ArtecStudio__Registration__2024_11_07' from 'D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\SM\\ArtecStudio__Registration__2024_11_07\\JSON\\ArtecStudio__Registration__2024_11_07.py'> 
+2025-07-18 08:34:18,025 - INFO - from FLModel.py line 579 method run_python_code: Executed module returned result True, message Tool Menu set on Auto 
+2025-07-18 08:34:18,025 - INFO - from FLModel.py line 135 method callback_after_state_change: 
+ At callback end, current state: AutoMenuIsOn 
+2025-07-18 08:34:18,025 - INFO - from FLGUIMain.py line 453 method GUI_main_SM_commands_execute: Transition StartAutoMenu fired without exceptions 
+2025-07-18 08:34:18,025 - INFO - from FLGUIMain.py line 471 method GUI_main_SM_commands_execute: State after transitioning: AutoMenuIsOn 
+2025-07-18 08:34:18,026 - INFO - from FLGUIMain.py line 504 method GUI_main_SM_commands_execute: Handling GUI_update_requested_by_callback 
+2025-07-18 08:34:18,091 - INFO - from FLGUISM.py line 279 method graph_save_to_file: Saved current state AutoMenuIsOn as image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\Screenshot\SMGraphDefault_Registration.png 
+2025-07-18 08:34:18,092 - INFO - from FLCV2.py line 285 method image_around_active_state_save: monitor.is_primary True, screen resolution: 2560 x 1440 
+2025-07-18 08:34:18,092 - INFO - from FLCV2.py line 285 method image_around_active_state_save: monitor.is_primary False, screen resolution: 1280 x 768 
+2025-07-18 08:34:18,092 - INFO - from FLCV2.py line 292 method image_around_active_state_save: Screen resolution adapted: 1216 x 768 
+2025-07-18 08:34:18,156 - INFO - from FLGUISM.py line 279 method graph_save_to_file: Saved current state AutoMenuIsOn as image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\Screenshot\SMGraphDefault_Registration.png 
+2025-07-18 08:34:18,157 - INFO - from FLCV2.py line 285 method image_around_active_state_save: monitor.is_primary True, screen resolution: 2560 x 1440 
+2025-07-18 08:34:18,157 - INFO - from FLCV2.py line 285 method image_around_active_state_save: monitor.is_primary False, screen resolution: 1280 x 768 
+2025-07-18 08:34:18,157 - INFO - from FLCV2.py line 292 method image_around_active_state_save: Screen resolution adapted: 1216 x 768 
+2025-07-18 08:34:18,224 - INFO - from FLGUISM.py line 279 method graph_save_to_file: Saved current state AutoMenuIsOn as image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\Screenshot\SMGraphDefault_Registration.png 
+2025-07-18 08:34:18,224 - INFO - from FLCV2.py line 285 method image_around_active_state_save: monitor.is_primary True, screen resolution: 2560 x 1440 
+2025-07-18 08:34:18,224 - INFO - from FLCV2.py line 285 method image_around_active_state_save: monitor.is_primary False, screen resolution: 1280 x 768 
+2025-07-18 08:34:18,224 - INFO - from FLCV2.py line 292 method image_around_active_state_save: Screen resolution adapted: 1216 x 768 
+2025-07-18 08:34:23,322 - INFO - from FLGUIMain.py line 422 method GUI_main_SM_commands_execute: State AutoMenuIsOn before trying to transition with command StartGlobalRegistration 
+2025-07-18 08:34:23,322 - INFO - from FLGUIMain.py line 444 method GUI_main_SM_commands_execute: Firing transition StartGlobalRegistration 
+2025-07-18 08:34:23,322 - INFO - from FLModel.py line 75 method callback_after_state_change: 
+ At callback beginning: current state GlobalRegistrationEntered, rollback_do False 
+2025-07-18 08:34:23,322 - INFO - from FLModel.py line 211 method do_code: DO CODE 
+2025-07-18 08:34:23,324 - INFO - from FLModel.py line 552 method run_python_code: Module loaded from file D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\ArtecStudio__Registration__2024_11_07\JSON\ArtecStudio__Registration__2024_11_07.py 
+2025-07-18 08:34:23,324 - INFO - from FLModel.py line 587 method run_python_code: Method StartGlobalRegistrationDo not found in D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\ArtecStudio__Registration__2024_11_07\JSON\ArtecStudio__Registration__2024_11_07.py 
+2025-07-18 08:34:23,324 - INFO - from FLModel.py line 238 method do_images: DO IMAGES 
+2025-07-18 08:34:23,324 - INFO - from FLModel.py line 448 method items_find_in_dir: item_name searched: StartGlobalRegistrationDo.png, directory searched: D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App 
+2025-07-18 08:34:23,328 - INFO - from FLModel.py line 471 method items_find_in_dir: items found: item_path_list ['D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\App\\ArtecStudio\\Image\\2560x1440\\Do\\StartGlobalRegistrationDo1.png', 'D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\App\\ArtecStudio\\Image\\2560x1440\\Do\\StartGlobalRegistrationDo2.png'], app_name_list: ['ArtecStudio', 'ArtecStudio'] 
+2025-07-18 08:34:23,329 - INFO - from FLModel.py line 348 method focus_set_on_app: focus is required on app ArtecStudio, focus is now on window EBuddyforBeginnerUser, window nr 4261732 
+2025-07-18 08:34:23,329 - INFO - from FLModel.py line 353 method focus_set_on_app: Set focus on app ArtecStudio 
+2025-07-18 08:34:23,329 - INFO - from FLModel.py line 448 method items_find_in_dir: item_name searched: FocusIsOnArtecStudio.png, directory searched: D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App 
+2025-07-18 08:34:23,332 - INFO - from FLModel.py line 471 method items_find_in_dir: items found: item_path_list ['D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\App\\ArtecStudio\\Image\\2560x1440\\Do\\FocusIsOnArtecStudioDo.png'], app_name_list: ['ArtecStudio'] 
+2025-07-18 08:34:24,426 - INFO - from FLCV2.py line 78 method screenshot_search: Screenshot image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_34_24_1_Screenshot.png 
+2025-07-18 08:34:24,426 - INFO - from FLCV2.py line 87 method screenshot_search: Read template image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App\ArtecStudio\Image\2560x1440\Do\FocusIsOnArtecStudioDo.png 
+2025-07-18 08:34:24,426 - INFO - from FLCV2.py line 100 method screenshot_search: Template image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_34_24_2_Template.png 
+2025-07-18 08:34:24,525 - INFO - from FLCV2.py line 130 method screenshot_search: Matching score: 0.9889 
+2025-07-18 08:34:24,525 - INFO - from FLCV2.py line 131 method screenshot_search: Found template image at position (x, y): (453, 0) 
+2025-07-18 08:34:24,561 - INFO - from FLCV2.py line 143 method screenshot_search: Image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_34_24_3_Result.png 
+2025-07-18 08:34:27,291 - INFO - from FLModel.py line 364 method focus_set_on_app: clicked on app ArtecStudio at mouse_x 548, mouse_y 15, matching_score_focus 0.9888806939125061 
+2025-07-18 08:34:29,389 - INFO - from FLCV2.py line 78 method screenshot_search: Screenshot image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_34_29_1_Screenshot.png 
+2025-07-18 08:34:29,389 - INFO - from FLCV2.py line 87 method screenshot_search: Read template image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App\ArtecStudio\Image\2560x1440\Do\StartGlobalRegistrationDo1.png 
+2025-07-18 08:34:29,390 - INFO - from FLCV2.py line 100 method screenshot_search: Template image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_34_29_2_Template.png 
+2025-07-18 08:34:29,495 - INFO - from FLCV2.py line 130 method screenshot_search: Matching score: 0.9983 
+2025-07-18 08:34:29,495 - INFO - from FLCV2.py line 131 method screenshot_search: Found template image at position (x, y): (100, 405) 
+2025-07-18 08:34:29,532 - INFO - from FLCV2.py line 143 method screenshot_search: Image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_34_29_3_Result.png 
+2025-07-18 08:34:29,535 - INFO - from FLModel.py line 265 method do_images: call screenshot_search with command_image_path D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App\ArtecStudio\Image\2560x1440\Do\StartGlobalRegistrationDo1.png, app_name ArtecStudio 
+2025-07-18 08:34:29,535 - INFO - from FLModel.py line 267 method do_images: screenshot_search returns mouse_x 356, mouse_y 415, matching_score 0.998285710811615 
+2025-07-18 08:34:29,535 - INFO - from FLModel.py line 448 method items_find_in_dir: item_name searched: StartGlobalRegistrationDo1.txt, directory searched: D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App 
+2025-07-18 08:34:29,538 - INFO - from FLModel.py line 471 method items_find_in_dir: items found: item_path_list [], app_name_list: [] 
+2025-07-18 08:34:29,539 - INFO - from FLModel.py line 287 method do_images: click on mouse_x 356, mouse_y 415 
+2025-07-18 08:34:32,256 - INFO - from FLModel.py line 348 method focus_set_on_app: focus is required on app ArtecStudio, focus is now on window D:\Banfi\ArtecStudio\ArtecStudio16ProjectsTest\Tom\Tom.a3d-ArtecStudio16Professional, window nr 2431280 
+2025-07-18 08:34:32,257 - INFO - from FLModel.py line 351 method focus_set_on_app: app ArtecStudio is already on focus 
+2025-07-18 08:34:33,361 - INFO - from FLCV2.py line 78 method screenshot_search: Screenshot image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_34_33_1_Screenshot.png 
+2025-07-18 08:34:33,361 - INFO - from FLCV2.py line 87 method screenshot_search: Read template image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App\ArtecStudio\Image\2560x1440\Do\StartGlobalRegistrationDo2.png 
+2025-07-18 08:34:33,362 - INFO - from FLCV2.py line 100 method screenshot_search: Template image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_34_33_2_Template.png 
+2025-07-18 08:34:33,469 - INFO - from FLCV2.py line 130 method screenshot_search: Matching score: 0.9952 
+2025-07-18 08:34:33,470 - INFO - from FLCV2.py line 131 method screenshot_search: Found template image at position (x, y): (99, 989) 
+2025-07-18 08:34:33,505 - INFO - from FLCV2.py line 143 method screenshot_search: Image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_34_33_3_Result.png 
+2025-07-18 08:34:33,508 - INFO - from FLModel.py line 265 method do_images: call screenshot_search with command_image_path D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App\ArtecStudio\Image\2560x1440\Do\StartGlobalRegistrationDo2.png, app_name ArtecStudio 
+2025-07-18 08:34:33,508 - INFO - from FLModel.py line 267 method do_images: screenshot_search returns mouse_x 256, mouse_y 1012, matching_score 0.9951600432395935 
+2025-07-18 08:34:33,508 - INFO - from FLModel.py line 448 method items_find_in_dir: item_name searched: StartGlobalRegistrationDo2.txt, directory searched: D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App 
+2025-07-18 08:34:33,512 - INFO - from FLModel.py line 471 method items_find_in_dir: items found: item_path_list [], app_name_list: [] 
+2025-07-18 08:34:33,512 - INFO - from FLModel.py line 287 method do_images: click on mouse_x 256, mouse_y 1012 
+2025-07-18 08:34:36,244 - INFO - from FLModel.py line 147 method check_state: STATE CHECK CODE 
+2025-07-18 08:34:36,247 - INFO - from FLModel.py line 552 method run_python_code: Module loaded from file D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\ArtecStudio__Registration__2024_11_07\JSON\ArtecStudio__Registration__2024_11_07.py 
+2025-07-18 08:34:36,247 - INFO - from FLModel.py line 587 method run_python_code: Method GlobalRegistrationEnteredCheck not found in D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\ArtecStudio__Registration__2024_11_07\JSON\ArtecStudio__Registration__2024_11_07.py 
+2025-07-18 08:34:36,247 - INFO - from FLModel.py line 161 method check_state: feedback_code_tells_state_is_valid is None 
+2025-07-18 08:34:36,247 - INFO - from FLModel.py line 175 method check_state: CHECK IMAGES 
+2025-07-18 08:34:36,247 - INFO - from FLModel.py line 448 method items_find_in_dir: item_name searched: GlobalRegistrationEnteredCheck.png, directory searched: D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App 
+2025-07-18 08:34:36,251 - INFO - from FLModel.py line 471 method items_find_in_dir: items found: item_path_list [], app_name_list: [] 
+2025-07-18 08:34:36,251 - INFO - from FLModel.py line 388 method global_variables_print: self.do_code_found False 
+2025-07-18 08:34:36,251 - INFO - from FLModel.py line 389 method global_variables_print: self.do_code_result None 
+2025-07-18 08:34:36,251 - INFO - from FLModel.py line 390 method global_variables_print: self.do_code_tells_state_is_valid None 
+2025-07-18 08:34:36,251 - INFO - from FLModel.py line 392 method global_variables_print: self.do_image_found True 
+2025-07-18 08:34:36,251 - INFO - from FLModel.py line 393 method global_variables_print: self.do_image_result 0.0 
+2025-07-18 08:34:36,251 - INFO - from FLModel.py line 394 method global_variables_print: self.do_image_matched True 
+2025-07-18 08:34:36,251 - INFO - from FLModel.py line 395 method global_variables_print: self.do_image_error None 
+2025-07-18 08:34:36,252 - INFO - from FLModel.py line 396 method global_variables_print: self.do_image_tells_state_is_valid True 
+2025-07-18 08:34:36,252 - INFO - from FLModel.py line 398 method global_variables_print:  self.do_transition_result True 
+2025-07-18 08:34:36,252 - INFO - from FLModel.py line 401 method global_variables_print: self.check_code_found False 
+2025-07-18 08:34:36,252 - INFO - from FLModel.py line 402 method global_variables_print: self.check_code_result None 
+2025-07-18 08:34:36,252 - INFO - from FLModel.py line 403 method global_variables_print: self.check_code_tells_state_is_valid None 
+2025-07-18 08:34:36,252 - INFO - from FLModel.py line 405 method global_variables_print: self.check_image_found None 
+2025-07-18 08:34:36,252 - INFO - from FLModel.py line 406 method global_variables_print: self.check_image_result 0.0 
+2025-07-18 08:34:36,252 - INFO - from FLModel.py line 407 method global_variables_print: self.check_image_tells_state_is_valid None 
+2025-07-18 08:34:36,252 - INFO - from FLModel.py line 409 method global_variables_print:  self.check_state_result None 
+2025-07-18 08:34:36,253 - INFO - from FLModel.py line 412 method global_variables_print:   self.state_is_valid True 
+2025-07-18 08:34:36,253 - INFO - from FLModel.py line 413 method global_variables_print:    self.state_is_valid_final True 
+2025-07-18 08:34:36,253 - INFO - from FLModel.py line 520 method run_code_state: STATE DO 
+2025-07-18 08:34:36,254 - INFO - from FLModel.py line 552 method run_python_code: Module loaded from file D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\ArtecStudio__Registration__2024_11_07\JSON\ArtecStudio__Registration__2024_11_07.py 
+2025-07-18 08:34:36,255 - INFO - from FLModel.py line 565 method run_python_code: Executing method GlobalRegistrationEnteredDo in module <module 'ArtecStudio__Registration__2024_11_07' from 'D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\SM\\ArtecStudio__Registration__2024_11_07\\JSON\\ArtecStudio__Registration__2024_11_07.py'> 
+2025-07-18 08:34:36,255 - INFO - from FLModel.py line 579 method run_python_code: Executed module returned result True, message Global Registration Entered 
+2025-07-18 08:34:36,255 - INFO - from FLModel.py line 135 method callback_after_state_change: 
+ At callback end, current state: GlobalRegistrationEntered 
+2025-07-18 08:34:36,255 - INFO - from FLGUIMain.py line 453 method GUI_main_SM_commands_execute: Transition StartGlobalRegistration fired without exceptions 
+2025-07-18 08:34:36,255 - INFO - from FLGUIMain.py line 471 method GUI_main_SM_commands_execute: State after transitioning: GlobalRegistrationEntered 
+2025-07-18 08:34:36,255 - INFO - from FLGUIMain.py line 504 method GUI_main_SM_commands_execute: Handling GUI_update_requested_by_callback 
+2025-07-18 08:34:36,322 - INFO - from FLGUISM.py line 279 method graph_save_to_file: Saved current state GlobalRegistrationEntered as image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\Screenshot\SMGraphDefault_Registration.png 
+2025-07-18 08:34:36,322 - INFO - from FLCV2.py line 285 method image_around_active_state_save: monitor.is_primary True, screen resolution: 2560 x 1440 
+2025-07-18 08:34:36,322 - INFO - from FLCV2.py line 285 method image_around_active_state_save: monitor.is_primary False, screen resolution: 1280 x 768 
+2025-07-18 08:34:36,322 - INFO - from FLCV2.py line 292 method image_around_active_state_save: Screen resolution adapted: 1216 x 768 
+2025-07-18 08:34:36,388 - INFO - from FLGUISM.py line 279 method graph_save_to_file: Saved current state GlobalRegistrationEntered as image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\Screenshot\SMGraphDefault_Registration.png 
+2025-07-18 08:34:36,389 - INFO - from FLCV2.py line 285 method image_around_active_state_save: monitor.is_primary True, screen resolution: 2560 x 1440 
+2025-07-18 08:34:36,389 - INFO - from FLCV2.py line 285 method image_around_active_state_save: monitor.is_primary False, screen resolution: 1280 x 768 
+2025-07-18 08:34:36,389 - INFO - from FLCV2.py line 292 method image_around_active_state_save: Screen resolution adapted: 1216 x 768 
+2025-07-18 08:34:36,455 - INFO - from FLGUISM.py line 279 method graph_save_to_file: Saved current state GlobalRegistrationEntered as image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\Screenshot\SMGraphDefault_Registration.png 
+2025-07-18 08:34:36,456 - INFO - from FLCV2.py line 285 method image_around_active_state_save: monitor.is_primary True, screen resolution: 2560 x 1440 
+2025-07-18 08:34:36,456 - INFO - from FLCV2.py line 285 method image_around_active_state_save: monitor.is_primary False, screen resolution: 1280 x 768 
+2025-07-18 08:34:36,456 - INFO - from FLCV2.py line 292 method image_around_active_state_save: Screen resolution adapted: 1216 x 768 
+2025-07-18 08:34:36,515 - INFO - from FLGUIMain.py line 422 method GUI_main_SM_commands_execute: State GlobalRegistrationEntered before trying to transition with command Auto 
+2025-07-18 08:34:36,516 - INFO - from FLGUIMain.py line 444 method GUI_main_SM_commands_execute: Firing transition Auto 
+2025-07-18 08:34:36,516 - INFO - from FLModel.py line 75 method callback_after_state_change: 
+ At callback beginning: current state GlobRegIsDone, rollback_do False 
+2025-07-18 08:34:36,516 - INFO - from FLModel.py line 211 method do_code: DO CODE 
+2025-07-18 08:34:36,518 - INFO - from FLModel.py line 552 method run_python_code: Module loaded from file D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\ArtecStudio__Registration__2024_11_07\JSON\ArtecStudio__Registration__2024_11_07.py 
+2025-07-18 08:34:36,519 - INFO - from FLModel.py line 587 method run_python_code: Method AutoDo not found in D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\ArtecStudio__Registration__2024_11_07\JSON\ArtecStudio__Registration__2024_11_07.py 
+2025-07-18 08:34:36,519 - INFO - from FLModel.py line 238 method do_images: DO IMAGES 
+2025-07-18 08:34:36,519 - INFO - from FLModel.py line 448 method items_find_in_dir: item_name searched: AutoDo.png, directory searched: D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App 
+2025-07-18 08:34:36,522 - INFO - from FLModel.py line 471 method items_find_in_dir: items found: item_path_list [], app_name_list: [] 
+2025-07-18 08:34:36,522 - INFO - from FLModel.py line 245 method do_images: No do images found 
+2025-07-18 08:34:36,523 - INFO - from FLModel.py line 147 method check_state: STATE CHECK CODE 
+2025-07-18 08:34:36,523 - INFO - from FLModel.py line 552 method run_python_code: Module loaded from file D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\ArtecStudio__Registration__2024_11_07\JSON\ArtecStudio__Registration__2024_11_07.py 
+2025-07-18 08:34:36,524 - INFO - from FLModel.py line 587 method run_python_code: Method GlobRegIsDoneCheck not found in D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\ArtecStudio__Registration__2024_11_07\JSON\ArtecStudio__Registration__2024_11_07.py 
+2025-07-18 08:34:36,524 - INFO - from FLModel.py line 161 method check_state: feedback_code_tells_state_is_valid is None 
+2025-07-18 08:34:36,524 - INFO - from FLModel.py line 175 method check_state: CHECK IMAGES 
+2025-07-18 08:34:36,524 - INFO - from FLModel.py line 448 method items_find_in_dir: item_name searched: GlobRegIsDoneCheck.png, directory searched: D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App 
+2025-07-18 08:34:36,527 - INFO - from FLModel.py line 471 method items_find_in_dir: items found: item_path_list ['D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\App\\ArtecStudio\\Image\\2560x1440\\Check\\GlobRegIsDoneCheck.png'], app_name_list: ['ArtecStudio'] 
+2025-07-18 08:34:36,528 - INFO - from FLModel.py line 184 method check_state: check_image_found: True, feedback_image_path_item D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App\ArtecStudio\Image\2560x1440\Check\GlobRegIsDoneCheck.png , app_name_item ArtecStudio 
+2025-07-18 08:34:36,528 - INFO - from FLModel.py line 348 method focus_set_on_app: focus is required on app ArtecStudio, focus is now on window D:\Banfi\ArtecStudio\ArtecStudio16ProjectsTest\Tom\Tom.a3d-ArtecStudio16Professional, window nr 2431280 
+2025-07-18 08:34:36,528 - INFO - from FLModel.py line 351 method focus_set_on_app: app ArtecStudio is already on focus 
+2025-07-18 08:34:37,622 - INFO - from FLCV2.py line 78 method screenshot_search: Screenshot image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_34_37_1_Screenshot.png 
+2025-07-18 08:34:37,622 - INFO - from FLCV2.py line 87 method screenshot_search: Read template image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App\ArtecStudio\Image\2560x1440\Check\GlobRegIsDoneCheck.png 
+2025-07-18 08:34:37,622 - INFO - from FLCV2.py line 100 method screenshot_search: Template image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_34_37_2_Template.png 
+2025-07-18 08:34:37,701 - INFO - from FLCV2.py line 130 method screenshot_search: Matching score: 0.9632 
+2025-07-18 08:34:37,701 - INFO - from FLCV2.py line 131 method screenshot_search: Found template image at position (x, y): (408, 1363) 
+2025-07-18 08:34:37,739 - INFO - from FLCV2.py line 143 method screenshot_search: Image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_34_37_3_Result.png 
+2025-07-18 08:34:37,742 - INFO - from FLModel.py line 199 method check_state: feedback_image_tells_state_is_valid True, matching_score 0.9632306694984436, matching threshold 0.5 
+2025-07-18 08:34:37,742 - INFO - from FLModel.py line 388 method global_variables_print: self.do_code_found False 
+2025-07-18 08:34:37,742 - INFO - from FLModel.py line 389 method global_variables_print: self.do_code_result None 
+2025-07-18 08:34:37,742 - INFO - from FLModel.py line 390 method global_variables_print: self.do_code_tells_state_is_valid None 
+2025-07-18 08:34:37,742 - INFO - from FLModel.py line 392 method global_variables_print: self.do_image_found False 
+2025-07-18 08:34:37,742 - INFO - from FLModel.py line 393 method global_variables_print: self.do_image_result 0.0 
+2025-07-18 08:34:37,742 - INFO - from FLModel.py line 394 method global_variables_print: self.do_image_matched None 
+2025-07-18 08:34:37,743 - INFO - from FLModel.py line 395 method global_variables_print: self.do_image_error None 
+2025-07-18 08:34:37,743 - INFO - from FLModel.py line 396 method global_variables_print: self.do_image_tells_state_is_valid None 
+2025-07-18 08:34:37,743 - INFO - from FLModel.py line 398 method global_variables_print:  self.do_transition_result None 
+2025-07-18 08:34:37,743 - INFO - from FLModel.py line 401 method global_variables_print: self.check_code_found False 
+2025-07-18 08:34:37,743 - INFO - from FLModel.py line 402 method global_variables_print: self.check_code_result None 
+2025-07-18 08:34:37,743 - INFO - from FLModel.py line 403 method global_variables_print: self.check_code_tells_state_is_valid None 
+2025-07-18 08:34:37,743 - INFO - from FLModel.py line 405 method global_variables_print: self.check_image_found True 
+2025-07-18 08:34:37,743 - INFO - from FLModel.py line 406 method global_variables_print: self.check_image_result 0.9632306694984436 
+2025-07-18 08:34:37,743 - INFO - from FLModel.py line 407 method global_variables_print: self.check_image_tells_state_is_valid True 
+2025-07-18 08:34:37,744 - INFO - from FLModel.py line 409 method global_variables_print:  self.check_state_result True 
+2025-07-18 08:34:37,744 - INFO - from FLModel.py line 412 method global_variables_print:   self.state_is_valid True 
+2025-07-18 08:34:37,744 - INFO - from FLModel.py line 413 method global_variables_print:    self.state_is_valid_final True 
+2025-07-18 08:34:37,744 - INFO - from FLModel.py line 520 method run_code_state: STATE DO 
+2025-07-18 08:34:37,746 - INFO - from FLModel.py line 552 method run_python_code: Module loaded from file D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\ArtecStudio__Registration__2024_11_07\JSON\ArtecStudio__Registration__2024_11_07.py 
+2025-07-18 08:34:37,746 - INFO - from FLModel.py line 565 method run_python_code: Executing method GlobRegIsDoneDo in module <module 'ArtecStudio__Registration__2024_11_07' from 'D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\SM\\ArtecStudio__Registration__2024_11_07\\JSON\\ArtecStudio__Registration__2024_11_07.py'> 
+2025-07-18 08:34:37,746 - INFO - from FLModel.py line 579 method run_python_code: Executed module returned result True, message Global Registration Calc Done 
+2025-07-18 08:34:37,746 - INFO - from FLModel.py line 135 method callback_after_state_change: 
+ At callback end, current state: GlobRegIsDone 
+2025-07-18 08:34:37,746 - INFO - from FLGUIMain.py line 453 method GUI_main_SM_commands_execute: Transition Auto fired without exceptions 
+2025-07-18 08:34:37,746 - INFO - from FLGUIMain.py line 471 method GUI_main_SM_commands_execute: State after transitioning: GlobRegIsDone 
+2025-07-18 08:34:37,746 - INFO - from FLGUIMain.py line 504 method GUI_main_SM_commands_execute: Handling GUI_update_requested_by_callback 
+2025-07-18 08:34:37,813 - INFO - from FLGUISM.py line 279 method graph_save_to_file: Saved current state GlobRegIsDone as image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\Screenshot\SMGraphDefault_Registration.png 
+2025-07-18 08:34:37,813 - INFO - from FLCV2.py line 285 method image_around_active_state_save: monitor.is_primary True, screen resolution: 2560 x 1440 
+2025-07-18 08:34:37,814 - INFO - from FLCV2.py line 285 method image_around_active_state_save: monitor.is_primary False, screen resolution: 1280 x 768 
+2025-07-18 08:34:37,814 - INFO - from FLCV2.py line 292 method image_around_active_state_save: Screen resolution adapted: 1216 x 768 
+2025-07-18 08:34:37,879 - INFO - from FLGUISM.py line 279 method graph_save_to_file: Saved current state GlobRegIsDone as image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\Screenshot\SMGraphDefault_Registration.png 
+2025-07-18 08:34:37,880 - INFO - from FLCV2.py line 285 method image_around_active_state_save: monitor.is_primary True, screen resolution: 2560 x 1440 
+2025-07-18 08:34:37,880 - INFO - from FLCV2.py line 285 method image_around_active_state_save: monitor.is_primary False, screen resolution: 1280 x 768 
+2025-07-18 08:34:37,880 - INFO - from FLCV2.py line 292 method image_around_active_state_save: Screen resolution adapted: 1216 x 768 
+2025-07-18 08:34:38,060 - INFO - from FLGUISM.py line 279 method graph_save_to_file: Saved current state GlobRegIsDone as image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\Screenshot\SMGraphDefault_Registration.png 
+2025-07-18 08:34:38,060 - INFO - from FLCV2.py line 285 method image_around_active_state_save: monitor.is_primary True, screen resolution: 2560 x 1440 
+2025-07-18 08:34:38,060 - INFO - from FLCV2.py line 285 method image_around_active_state_save: monitor.is_primary False, screen resolution: 1280 x 768 
+2025-07-18 08:34:38,060 - INFO - from FLCV2.py line 292 method image_around_active_state_save: Screen resolution adapted: 1216 x 768 
+2025-07-18 08:34:43,049 - INFO - from FLGUIMain.py line 422 method GUI_main_SM_commands_execute: State GlobRegIsDone before trying to transition with command StartFusion 
+2025-07-18 08:34:43,049 - INFO - from FLGUIMain.py line 444 method GUI_main_SM_commands_execute: Firing transition StartFusion 
+2025-07-18 08:34:43,049 - INFO - from FLModel.py line 75 method callback_after_state_change: 
+ At callback beginning: current state FusionEntered, rollback_do False 
+2025-07-18 08:34:43,050 - INFO - from FLModel.py line 211 method do_code: DO CODE 
+2025-07-18 08:34:43,051 - INFO - from FLModel.py line 552 method run_python_code: Module loaded from file D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\ArtecStudio__Registration__2024_11_07\JSON\ArtecStudio__Registration__2024_11_07.py 
+2025-07-18 08:34:43,051 - INFO - from FLModel.py line 587 method run_python_code: Method StartFusionDo not found in D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\ArtecStudio__Registration__2024_11_07\JSON\ArtecStudio__Registration__2024_11_07.py 
+2025-07-18 08:34:43,051 - INFO - from FLModel.py line 238 method do_images: DO IMAGES 
+2025-07-18 08:34:43,052 - INFO - from FLModel.py line 448 method items_find_in_dir: item_name searched: StartFusionDo.png, directory searched: D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App 
+2025-07-18 08:34:43,055 - INFO - from FLModel.py line 471 method items_find_in_dir: items found: item_path_list ['D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\App\\ArtecStudio\\Image\\2560x1440\\Do\\StartFusionDo1.png', 'D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\App\\ArtecStudio\\Image\\2560x1440\\Do\\StartFusionDo2.png', 'D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\App\\ArtecStudio\\Image\\2560x1440\\Do\\StartFusionDo3.png', 'D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\App\\ArtecStudio\\Image\\2560x1440\\Do\\StartFusionDo4.png'], app_name_list: ['ArtecStudio', 'ArtecStudio', 'ArtecStudio', 'ArtecStudio'] 
+2025-07-18 08:34:43,055 - INFO - from FLModel.py line 348 method focus_set_on_app: focus is required on app ArtecStudio, focus is now on window EBuddyforBeginnerUser, window nr 4261732 
+2025-07-18 08:34:43,056 - INFO - from FLModel.py line 353 method focus_set_on_app: Set focus on app ArtecStudio 
+2025-07-18 08:34:43,056 - INFO - from FLModel.py line 448 method items_find_in_dir: item_name searched: FocusIsOnArtecStudio.png, directory searched: D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App 
+2025-07-18 08:34:43,059 - INFO - from FLModel.py line 471 method items_find_in_dir: items found: item_path_list ['D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\App\\ArtecStudio\\Image\\2560x1440\\Do\\FocusIsOnArtecStudioDo.png'], app_name_list: ['ArtecStudio'] 
+2025-07-18 08:34:44,142 - INFO - from FLCV2.py line 78 method screenshot_search: Screenshot image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_34_44_1_Screenshot.png 
+2025-07-18 08:34:44,143 - INFO - from FLCV2.py line 87 method screenshot_search: Read template image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App\ArtecStudio\Image\2560x1440\Do\FocusIsOnArtecStudioDo.png 
+2025-07-18 08:34:44,143 - INFO - from FLCV2.py line 100 method screenshot_search: Template image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_34_44_2_Template.png 
+2025-07-18 08:34:44,244 - INFO - from FLCV2.py line 130 method screenshot_search: Matching score: 0.9889 
+2025-07-18 08:34:44,245 - INFO - from FLCV2.py line 131 method screenshot_search: Found template image at position (x, y): (453, 0) 
+2025-07-18 08:34:44,280 - INFO - from FLCV2.py line 143 method screenshot_search: Image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_34_44_3_Result.png 
+2025-07-18 08:34:46,986 - INFO - from FLModel.py line 364 method focus_set_on_app: clicked on app ArtecStudio at mouse_x 548, mouse_y 15, matching_score_focus 0.9888806939125061 
+2025-07-18 08:34:49,093 - INFO - from FLCV2.py line 78 method screenshot_search: Screenshot image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_34_49_1_Screenshot.png 
+2025-07-18 08:34:49,093 - INFO - from FLCV2.py line 87 method screenshot_search: Read template image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App\ArtecStudio\Image\2560x1440\Do\StartFusionDo1.png 
+2025-07-18 08:34:49,094 - INFO - from FLCV2.py line 100 method screenshot_search: Template image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_34_49_2_Template.png 
+2025-07-18 08:34:49,200 - INFO - from FLCV2.py line 130 method screenshot_search: Matching score: 0.9566 
+2025-07-18 08:34:49,200 - INFO - from FLCV2.py line 131 method screenshot_search: Found template image at position (x, y): (100, 405) 
+2025-07-18 08:34:49,236 - INFO - from FLCV2.py line 143 method screenshot_search: Image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_34_49_3_Result.png 
+2025-07-18 08:34:49,239 - INFO - from FLModel.py line 265 method do_images: call screenshot_search with command_image_path D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App\ArtecStudio\Image\2560x1440\Do\StartFusionDo1.png, app_name ArtecStudio 
+2025-07-18 08:34:49,239 - INFO - from FLModel.py line 267 method do_images: screenshot_search returns mouse_x 356, mouse_y 415, matching_score 0.9565893411636353 
+2025-07-18 08:34:49,239 - INFO - from FLModel.py line 448 method items_find_in_dir: item_name searched: StartFusionDo1.txt, directory searched: D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App 
+2025-07-18 08:34:49,243 - INFO - from FLModel.py line 471 method items_find_in_dir: items found: item_path_list [], app_name_list: [] 
+2025-07-18 08:34:49,243 - INFO - from FLModel.py line 287 method do_images: click on mouse_x 356, mouse_y 415 
+2025-07-18 08:34:51,966 - INFO - from FLModel.py line 348 method focus_set_on_app: focus is required on app ArtecStudio, focus is now on window D:\Banfi\ArtecStudio\ArtecStudio16ProjectsTest\Tom\Tom.a3d-ArtecStudio16Professional, window nr 2431280 
+2025-07-18 08:34:51,967 - INFO - from FLModel.py line 351 method focus_set_on_app: app ArtecStudio is already on focus 
+2025-07-18 08:34:53,060 - INFO - from FLCV2.py line 78 method screenshot_search: Screenshot image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_34_53_1_Screenshot.png 
+2025-07-18 08:34:53,060 - INFO - from FLCV2.py line 87 method screenshot_search: Read template image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App\ArtecStudio\Image\2560x1440\Do\StartFusionDo2.png 
+2025-07-18 08:34:53,061 - INFO - from FLCV2.py line 100 method screenshot_search: Template image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_34_53_2_Template.png 
+2025-07-18 08:34:53,164 - INFO - from FLCV2.py line 130 method screenshot_search: Matching score: 0.9987 
+2025-07-18 08:34:53,164 - INFO - from FLCV2.py line 131 method screenshot_search: Found template image at position (x, y): (101, 541) 
+2025-07-18 08:34:53,201 - INFO - from FLCV2.py line 143 method screenshot_search: Image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_34_53_3_Result.png 
+2025-07-18 08:34:53,204 - INFO - from FLModel.py line 265 method do_images: call screenshot_search with command_image_path D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App\ArtecStudio\Image\2560x1440\Do\StartFusionDo2.png, app_name ArtecStudio 
+2025-07-18 08:34:53,204 - INFO - from FLModel.py line 267 method do_images: screenshot_search returns mouse_x 369, mouse_y 552, matching_score 0.9986534118652344 
+2025-07-18 08:34:53,204 - INFO - from FLModel.py line 448 method items_find_in_dir: item_name searched: StartFusionDo2.txt, directory searched: D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App 
+2025-07-18 08:34:53,208 - INFO - from FLModel.py line 471 method items_find_in_dir: items found: item_path_list [], app_name_list: [] 
+2025-07-18 08:34:53,208 - INFO - from FLModel.py line 287 method do_images: click on mouse_x 369, mouse_y 552 
+2025-07-18 08:34:55,903 - INFO - from FLModel.py line 348 method focus_set_on_app: focus is required on app ArtecStudio, focus is now on window D:\Banfi\ArtecStudio\ArtecStudio16ProjectsTest\Tom\Tom.a3d-ArtecStudio16Professional, window nr 2431280 
+2025-07-18 08:34:55,903 - INFO - from FLModel.py line 351 method focus_set_on_app: app ArtecStudio is already on focus 
+2025-07-18 08:34:56,995 - INFO - from FLCV2.py line 78 method screenshot_search: Screenshot image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_34_56_1_Screenshot.png 
+2025-07-18 08:34:56,995 - INFO - from FLCV2.py line 87 method screenshot_search: Read template image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App\ArtecStudio\Image\2560x1440\Do\StartFusionDo3.png 
+2025-07-18 08:34:56,996 - INFO - from FLCV2.py line 100 method screenshot_search: Template image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_34_56_2_Template.png 
+2025-07-18 08:34:57,104 - INFO - from FLCV2.py line 130 method screenshot_search: Matching score: 0.9980 
+2025-07-18 08:34:57,104 - INFO - from FLCV2.py line 131 method screenshot_search: Found template image at position (x, y): (101, 498) 
+2025-07-18 08:34:57,140 - INFO - from FLCV2.py line 143 method screenshot_search: Image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_34_57_3_Result.png 
+2025-07-18 08:34:57,142 - INFO - from FLModel.py line 265 method do_images: call screenshot_search with command_image_path D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App\ArtecStudio\Image\2560x1440\Do\StartFusionDo3.png, app_name ArtecStudio 
+2025-07-18 08:34:57,143 - INFO - from FLModel.py line 267 method do_images: screenshot_search returns mouse_x 358, mouse_y 508, matching_score 0.9979698657989502 
+2025-07-18 08:34:57,143 - INFO - from FLModel.py line 448 method items_find_in_dir: item_name searched: StartFusionDo3.txt, directory searched: D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App 
+2025-07-18 08:34:57,146 - INFO - from FLModel.py line 471 method items_find_in_dir: items found: item_path_list [], app_name_list: [] 
+2025-07-18 08:34:57,146 - INFO - from FLModel.py line 287 method do_images: click on mouse_x 358, mouse_y 508 
+2025-07-18 08:34:59,863 - INFO - from FLModel.py line 348 method focus_set_on_app: focus is required on app ArtecStudio, focus is now on window D:\Banfi\ArtecStudio\ArtecStudio16ProjectsTest\Tom\Tom.a3d-ArtecStudio16Professional, window nr 2431280 
+2025-07-18 08:34:59,864 - INFO - from FLModel.py line 351 method focus_set_on_app: app ArtecStudio is already on focus 
+2025-07-18 08:35:00,969 - INFO - from FLCV2.py line 78 method screenshot_search: Screenshot image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_35_00_1_Screenshot.png 
+2025-07-18 08:35:00,969 - INFO - from FLCV2.py line 87 method screenshot_search: Read template image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App\ArtecStudio\Image\2560x1440\Do\StartFusionDo4.png 
+2025-07-18 08:35:00,970 - INFO - from FLCV2.py line 100 method screenshot_search: Template image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_35_00_2_Template.png 
+2025-07-18 08:35:01,078 - INFO - from FLCV2.py line 130 method screenshot_search: Matching score: 0.9952 
+2025-07-18 08:35:01,078 - INFO - from FLCV2.py line 131 method screenshot_search: Found template image at position (x, y): (99, 989) 
+2025-07-18 08:35:01,114 - INFO - from FLCV2.py line 143 method screenshot_search: Image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_35_01_3_Result.png 
+2025-07-18 08:35:01,117 - INFO - from FLModel.py line 265 method do_images: call screenshot_search with command_image_path D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App\ArtecStudio\Image\2560x1440\Do\StartFusionDo4.png, app_name ArtecStudio 
+2025-07-18 08:35:01,117 - INFO - from FLModel.py line 267 method do_images: screenshot_search returns mouse_x 256, mouse_y 1012, matching_score 0.9951600432395935 
+2025-07-18 08:35:01,118 - INFO - from FLModel.py line 448 method items_find_in_dir: item_name searched: StartFusionDo4.txt, directory searched: D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App 
+2025-07-18 08:35:01,121 - INFO - from FLModel.py line 471 method items_find_in_dir: items found: item_path_list [], app_name_list: [] 
+2025-07-18 08:35:01,121 - INFO - from FLModel.py line 287 method do_images: click on mouse_x 256, mouse_y 1012 
+2025-07-18 08:35:03,847 - INFO - from FLModel.py line 147 method check_state: STATE CHECK CODE 
+2025-07-18 08:35:03,848 - INFO - from FLModel.py line 552 method run_python_code: Module loaded from file D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\ArtecStudio__Registration__2024_11_07\JSON\ArtecStudio__Registration__2024_11_07.py 
+2025-07-18 08:35:03,849 - INFO - from FLModel.py line 587 method run_python_code: Method FusionEnteredCheck not found in D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\ArtecStudio__Registration__2024_11_07\JSON\ArtecStudio__Registration__2024_11_07.py 
+2025-07-18 08:35:03,849 - INFO - from FLModel.py line 161 method check_state: feedback_code_tells_state_is_valid is None 
+2025-07-18 08:35:03,849 - INFO - from FLModel.py line 175 method check_state: CHECK IMAGES 
+2025-07-18 08:35:03,849 - INFO - from FLModel.py line 448 method items_find_in_dir: item_name searched: FusionEnteredCheck.png, directory searched: D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App 
+2025-07-18 08:35:03,853 - INFO - from FLModel.py line 471 method items_find_in_dir: items found: item_path_list [], app_name_list: [] 
+2025-07-18 08:35:03,853 - INFO - from FLModel.py line 388 method global_variables_print: self.do_code_found False 
+2025-07-18 08:35:03,853 - INFO - from FLModel.py line 389 method global_variables_print: self.do_code_result None 
+2025-07-18 08:35:03,853 - INFO - from FLModel.py line 390 method global_variables_print: self.do_code_tells_state_is_valid None 
+2025-07-18 08:35:03,853 - INFO - from FLModel.py line 392 method global_variables_print: self.do_image_found True 
+2025-07-18 08:35:03,853 - INFO - from FLModel.py line 393 method global_variables_print: self.do_image_result 0.0 
+2025-07-18 08:35:03,853 - INFO - from FLModel.py line 394 method global_variables_print: self.do_image_matched True 
+2025-07-18 08:35:03,853 - INFO - from FLModel.py line 395 method global_variables_print: self.do_image_error None 
+2025-07-18 08:35:03,853 - INFO - from FLModel.py line 396 method global_variables_print: self.do_image_tells_state_is_valid True 
+2025-07-18 08:35:03,854 - INFO - from FLModel.py line 398 method global_variables_print:  self.do_transition_result True 
+2025-07-18 08:35:03,854 - INFO - from FLModel.py line 401 method global_variables_print: self.check_code_found False 
+2025-07-18 08:35:03,854 - INFO - from FLModel.py line 402 method global_variables_print: self.check_code_result None 
+2025-07-18 08:35:03,854 - INFO - from FLModel.py line 403 method global_variables_print: self.check_code_tells_state_is_valid None 
+2025-07-18 08:35:03,854 - INFO - from FLModel.py line 405 method global_variables_print: self.check_image_found None 
+2025-07-18 08:35:03,854 - INFO - from FLModel.py line 406 method global_variables_print: self.check_image_result 0.0 
+2025-07-18 08:35:03,854 - INFO - from FLModel.py line 407 method global_variables_print: self.check_image_tells_state_is_valid None 
+2025-07-18 08:35:03,854 - INFO - from FLModel.py line 409 method global_variables_print:  self.check_state_result None 
+2025-07-18 08:35:03,854 - INFO - from FLModel.py line 412 method global_variables_print:   self.state_is_valid True 
+2025-07-18 08:35:03,854 - INFO - from FLModel.py line 413 method global_variables_print:    self.state_is_valid_final True 
+2025-07-18 08:35:03,855 - INFO - from FLModel.py line 520 method run_code_state: STATE DO 
+2025-07-18 08:35:03,856 - INFO - from FLModel.py line 552 method run_python_code: Module loaded from file D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\ArtecStudio__Registration__2024_11_07\JSON\ArtecStudio__Registration__2024_11_07.py 
+2025-07-18 08:35:03,856 - INFO - from FLModel.py line 587 method run_python_code: Method FusionEnteredDo not found in D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\ArtecStudio__Registration__2024_11_07\JSON\ArtecStudio__Registration__2024_11_07.py 
+2025-07-18 08:35:03,856 - INFO - from FLModel.py line 135 method callback_after_state_change: 
+ At callback end, current state: FusionEntered 
+2025-07-18 08:35:03,856 - INFO - from FLGUIMain.py line 453 method GUI_main_SM_commands_execute: Transition StartFusion fired without exceptions 
+2025-07-18 08:35:03,857 - INFO - from FLGUIMain.py line 471 method GUI_main_SM_commands_execute: State after transitioning: FusionEntered 
+2025-07-18 08:35:03,857 - INFO - from FLGUIMain.py line 504 method GUI_main_SM_commands_execute: Handling GUI_update_requested_by_callback 
+2025-07-18 08:35:03,926 - INFO - from FLGUISM.py line 279 method graph_save_to_file: Saved current state FusionEntered as image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\Screenshot\SMGraphDefault_Registration.png 
+2025-07-18 08:35:03,926 - INFO - from FLCV2.py line 285 method image_around_active_state_save: monitor.is_primary True, screen resolution: 2560 x 1440 
+2025-07-18 08:35:03,927 - INFO - from FLCV2.py line 285 method image_around_active_state_save: monitor.is_primary False, screen resolution: 1280 x 768 
+2025-07-18 08:35:03,927 - INFO - from FLCV2.py line 292 method image_around_active_state_save: Screen resolution adapted: 1216 x 768 
+2025-07-18 08:35:03,993 - INFO - from FLGUISM.py line 279 method graph_save_to_file: Saved current state FusionEntered as image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\Screenshot\SMGraphDefault_Registration.png 
+2025-07-18 08:35:03,994 - INFO - from FLCV2.py line 285 method image_around_active_state_save: monitor.is_primary True, screen resolution: 2560 x 1440 
+2025-07-18 08:35:03,994 - INFO - from FLCV2.py line 285 method image_around_active_state_save: monitor.is_primary False, screen resolution: 1280 x 768 
+2025-07-18 08:35:03,994 - INFO - from FLCV2.py line 292 method image_around_active_state_save: Screen resolution adapted: 1216 x 768 
+2025-07-18 08:35:04,166 - INFO - from FLGUISM.py line 279 method graph_save_to_file: Saved current state FusionEntered as image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\Screenshot\SMGraphDefault_Registration.png 
+2025-07-18 08:35:04,166 - INFO - from FLCV2.py line 285 method image_around_active_state_save: monitor.is_primary True, screen resolution: 2560 x 1440 
+2025-07-18 08:35:04,166 - INFO - from FLCV2.py line 285 method image_around_active_state_save: monitor.is_primary False, screen resolution: 1280 x 768 
+2025-07-18 08:35:04,166 - INFO - from FLCV2.py line 292 method image_around_active_state_save: Screen resolution adapted: 1216 x 768 
+2025-07-18 08:35:04,227 - INFO - from FLGUIMain.py line 422 method GUI_main_SM_commands_execute: State FusionEntered before trying to transition with command Auto 
+2025-07-18 08:35:04,227 - INFO - from FLGUIMain.py line 444 method GUI_main_SM_commands_execute: Firing transition Auto 
+2025-07-18 08:35:04,227 - INFO - from FLModel.py line 75 method callback_after_state_change: 
+ At callback beginning: current state FusionIsDone, rollback_do False 
+2025-07-18 08:35:04,227 - INFO - from FLModel.py line 211 method do_code: DO CODE 
+2025-07-18 08:35:04,229 - INFO - from FLModel.py line 552 method run_python_code: Module loaded from file D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\ArtecStudio__Registration__2024_11_07\JSON\ArtecStudio__Registration__2024_11_07.py 
+2025-07-18 08:35:04,229 - INFO - from FLModel.py line 587 method run_python_code: Method AutoDo not found in D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\ArtecStudio__Registration__2024_11_07\JSON\ArtecStudio__Registration__2024_11_07.py 
+2025-07-18 08:35:04,229 - INFO - from FLModel.py line 238 method do_images: DO IMAGES 
+2025-07-18 08:35:04,229 - INFO - from FLModel.py line 448 method items_find_in_dir: item_name searched: AutoDo.png, directory searched: D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App 
+2025-07-18 08:35:04,233 - INFO - from FLModel.py line 471 method items_find_in_dir: items found: item_path_list [], app_name_list: [] 
+2025-07-18 08:35:04,233 - INFO - from FLModel.py line 245 method do_images: No do images found 
+2025-07-18 08:35:04,233 - INFO - from FLModel.py line 147 method check_state: STATE CHECK CODE 
+2025-07-18 08:35:04,235 - INFO - from FLModel.py line 552 method run_python_code: Module loaded from file D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\ArtecStudio__Registration__2024_11_07\JSON\ArtecStudio__Registration__2024_11_07.py 
+2025-07-18 08:35:04,235 - INFO - from FLModel.py line 587 method run_python_code: Method FusionIsDoneCheck not found in D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\ArtecStudio__Registration__2024_11_07\JSON\ArtecStudio__Registration__2024_11_07.py 
+2025-07-18 08:35:04,235 - INFO - from FLModel.py line 161 method check_state: feedback_code_tells_state_is_valid is None 
+2025-07-18 08:35:04,235 - INFO - from FLModel.py line 175 method check_state: CHECK IMAGES 
+2025-07-18 08:35:04,235 - INFO - from FLModel.py line 448 method items_find_in_dir: item_name searched: FusionIsDoneCheck.png, directory searched: D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App 
+2025-07-18 08:35:04,239 - INFO - from FLModel.py line 471 method items_find_in_dir: items found: item_path_list [], app_name_list: [] 
+2025-07-18 08:35:04,239 - INFO - from FLModel.py line 388 method global_variables_print: self.do_code_found False 
+2025-07-18 08:35:04,239 - INFO - from FLModel.py line 389 method global_variables_print: self.do_code_result None 
+2025-07-18 08:35:04,239 - INFO - from FLModel.py line 390 method global_variables_print: self.do_code_tells_state_is_valid None 
+2025-07-18 08:35:04,239 - INFO - from FLModel.py line 392 method global_variables_print: self.do_image_found False 
+2025-07-18 08:35:04,239 - INFO - from FLModel.py line 393 method global_variables_print: self.do_image_result 0.0 
+2025-07-18 08:35:04,239 - INFO - from FLModel.py line 394 method global_variables_print: self.do_image_matched None 
+2025-07-18 08:35:04,239 - INFO - from FLModel.py line 395 method global_variables_print: self.do_image_error None 
+2025-07-18 08:35:04,239 - INFO - from FLModel.py line 396 method global_variables_print: self.do_image_tells_state_is_valid None 
+2025-07-18 08:35:04,240 - INFO - from FLModel.py line 398 method global_variables_print:  self.do_transition_result None 
+2025-07-18 08:35:04,240 - INFO - from FLModel.py line 401 method global_variables_print: self.check_code_found False 
+2025-07-18 08:35:04,240 - INFO - from FLModel.py line 402 method global_variables_print: self.check_code_result None 
+2025-07-18 08:35:04,240 - INFO - from FLModel.py line 403 method global_variables_print: self.check_code_tells_state_is_valid None 
+2025-07-18 08:35:04,240 - INFO - from FLModel.py line 405 method global_variables_print: self.check_image_found None 
+2025-07-18 08:35:04,240 - INFO - from FLModel.py line 406 method global_variables_print: self.check_image_result 0.0 
+2025-07-18 08:35:04,240 - INFO - from FLModel.py line 407 method global_variables_print: self.check_image_tells_state_is_valid None 
+2025-07-18 08:35:04,240 - INFO - from FLModel.py line 409 method global_variables_print:  self.check_state_result None 
+2025-07-18 08:35:04,240 - INFO - from FLModel.py line 412 method global_variables_print:   self.state_is_valid None 
+2025-07-18 08:35:04,241 - INFO - from FLModel.py line 413 method global_variables_print:    self.state_is_valid_final True 
+2025-07-18 08:35:04,241 - INFO - from FLModel.py line 520 method run_code_state: STATE DO 
+2025-07-18 08:35:04,242 - INFO - from FLModel.py line 552 method run_python_code: Module loaded from file D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\ArtecStudio__Registration__2024_11_07\JSON\ArtecStudio__Registration__2024_11_07.py 
+2025-07-18 08:35:04,242 - INFO - from FLModel.py line 565 method run_python_code: Executing method FusionIsDoneDo in module <module 'ArtecStudio__Registration__2024_11_07' from 'D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\SM\\ArtecStudio__Registration__2024_11_07\\JSON\\ArtecStudio__Registration__2024_11_07.py'> 
+2025-07-18 08:35:04,242 - INFO - from FLModel.py line 579 method run_python_code: Executed module returned result True, message Fusion Calc Done 
+2025-07-18 08:35:04,242 - INFO - from FLModel.py line 135 method callback_after_state_change: 
+ At callback end, current state: FusionIsDone 
+2025-07-18 08:35:04,243 - INFO - from FLGUIMain.py line 453 method GUI_main_SM_commands_execute: Transition Auto fired without exceptions 
+2025-07-18 08:35:04,243 - INFO - from FLGUIMain.py line 471 method GUI_main_SM_commands_execute: State after transitioning: FusionIsDone 
+2025-07-18 08:35:04,243 - INFO - from FLGUIMain.py line 504 method GUI_main_SM_commands_execute: Handling GUI_update_requested_by_callback 
+2025-07-18 08:35:04,311 - INFO - from FLGUISM.py line 279 method graph_save_to_file: Saved current state FusionIsDone as image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\Screenshot\SMGraphDefault_Registration.png 
+2025-07-18 08:35:04,311 - INFO - from FLCV2.py line 285 method image_around_active_state_save: monitor.is_primary True, screen resolution: 2560 x 1440 
+2025-07-18 08:35:04,311 - INFO - from FLCV2.py line 285 method image_around_active_state_save: monitor.is_primary False, screen resolution: 1280 x 768 
+2025-07-18 08:35:04,312 - INFO - from FLCV2.py line 292 method image_around_active_state_save: Screen resolution adapted: 1216 x 768 
+2025-07-18 08:35:04,378 - INFO - from FLGUISM.py line 279 method graph_save_to_file: Saved current state FusionIsDone as image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\Screenshot\SMGraphDefault_Registration.png 
+2025-07-18 08:35:04,378 - INFO - from FLCV2.py line 285 method image_around_active_state_save: monitor.is_primary True, screen resolution: 2560 x 1440 
+2025-07-18 08:35:04,378 - INFO - from FLCV2.py line 285 method image_around_active_state_save: monitor.is_primary False, screen resolution: 1280 x 768 
+2025-07-18 08:35:04,379 - INFO - from FLCV2.py line 292 method image_around_active_state_save: Screen resolution adapted: 1216 x 768 
+2025-07-18 08:35:04,450 - INFO - from FLGUISM.py line 279 method graph_save_to_file: Saved current state FusionIsDone as image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\Screenshot\SMGraphDefault_Registration.png 
+2025-07-18 08:35:04,451 - INFO - from FLCV2.py line 285 method image_around_active_state_save: monitor.is_primary True, screen resolution: 2560 x 1440 
+2025-07-18 08:35:04,451 - INFO - from FLCV2.py line 285 method image_around_active_state_save: monitor.is_primary False, screen resolution: 1280 x 768 
+2025-07-18 08:35:04,451 - INFO - from FLCV2.py line 292 method image_around_active_state_save: Screen resolution adapted: 1216 x 768 
+2025-07-18 08:35:15,828 - INFO - from FLGUIMain.py line 422 method GUI_main_SM_commands_execute: State FusionIsDone before trying to transition with command ClearFlags 
+2025-07-18 08:35:15,828 - INFO - from FLGUIMain.py line 444 method GUI_main_SM_commands_execute: Firing transition ClearFlags 
+2025-07-18 08:35:15,828 - INFO - from FLModel.py line 75 method callback_after_state_change: 
+ At callback beginning: current state FlagsCleared, rollback_do False 
+2025-07-18 08:35:15,829 - INFO - from FLModel.py line 211 method do_code: DO CODE 
+2025-07-18 08:35:15,829 - INFO - from FLModel.py line 552 method run_python_code: Module loaded from file D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\ArtecStudio__Registration__2024_11_07\JSON\ArtecStudio__Registration__2024_11_07.py 
+2025-07-18 08:35:15,830 - INFO - from FLModel.py line 587 method run_python_code: Method ClearFlagsDo not found in D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\ArtecStudio__Registration__2024_11_07\JSON\ArtecStudio__Registration__2024_11_07.py 
+2025-07-18 08:35:15,830 - INFO - from FLModel.py line 238 method do_images: DO IMAGES 
+2025-07-18 08:35:15,830 - INFO - from FLModel.py line 448 method items_find_in_dir: item_name searched: ClearFlagsDo.png, directory searched: D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App 
+2025-07-18 08:35:15,833 - INFO - from FLModel.py line 471 method items_find_in_dir: items found: item_path_list ['D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\App\\ArtecStudio\\Image\\2560x1440\\Do\\ClearFlagsDo1.png', 'D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\App\\ArtecStudio\\Image\\2560x1440\\Do\\ClearFlagsDo3.png'], app_name_list: ['ArtecStudio', 'ArtecStudio'] 
+2025-07-18 08:35:15,835 - INFO - from FLModel.py line 348 method focus_set_on_app: focus is required on app ArtecStudio, focus is now on window EBuddyforBeginnerUser, window nr 4261732 
+2025-07-18 08:35:15,835 - INFO - from FLModel.py line 353 method focus_set_on_app: Set focus on app ArtecStudio 
+2025-07-18 08:35:15,835 - INFO - from FLModel.py line 448 method items_find_in_dir: item_name searched: FocusIsOnArtecStudio.png, directory searched: D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App 
+2025-07-18 08:35:15,839 - INFO - from FLModel.py line 471 method items_find_in_dir: items found: item_path_list ['D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\App\\ArtecStudio\\Image\\2560x1440\\Do\\FocusIsOnArtecStudioDo.png'], app_name_list: ['ArtecStudio'] 
+2025-07-18 08:35:16,934 - INFO - from FLCV2.py line 78 method screenshot_search: Screenshot image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_35_16_1_Screenshot.png 
+2025-07-18 08:35:16,935 - INFO - from FLCV2.py line 87 method screenshot_search: Read template image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App\ArtecStudio\Image\2560x1440\Do\FocusIsOnArtecStudioDo.png 
+2025-07-18 08:35:16,935 - INFO - from FLCV2.py line 100 method screenshot_search: Template image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_35_16_2_Template.png 
+2025-07-18 08:35:17,034 - INFO - from FLCV2.py line 130 method screenshot_search: Matching score: 0.9889 
+2025-07-18 08:35:17,034 - INFO - from FLCV2.py line 131 method screenshot_search: Found template image at position (x, y): (453, 0) 
+2025-07-18 08:35:17,071 - INFO - from FLCV2.py line 143 method screenshot_search: Image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_35_17_3_Result.png 
+2025-07-18 08:35:19,771 - INFO - from FLModel.py line 364 method focus_set_on_app: clicked on app ArtecStudio at mouse_x 548, mouse_y 15, matching_score_focus 0.9888806939125061 
+2025-07-18 08:35:21,868 - INFO - from FLCV2.py line 78 method screenshot_search: Screenshot image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_35_21_1_Screenshot.png 
+2025-07-18 08:35:21,868 - INFO - from FLCV2.py line 87 method screenshot_search: Read template image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App\ArtecStudio\Image\2560x1440\Do\ClearFlagsDo1.png 
+2025-07-18 08:35:21,869 - INFO - from FLCV2.py line 100 method screenshot_search: Template image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_35_21_2_Template.png 
+2025-07-18 08:35:21,976 - INFO - from FLCV2.py line 130 method screenshot_search: Matching score: 0.9596 
+2025-07-18 08:35:21,976 - INFO - from FLCV2.py line 131 method screenshot_search: Found template image at position (x, y): (101, 541) 
+2025-07-18 08:35:22,012 - INFO - from FLCV2.py line 143 method screenshot_search: Image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_35_21_3_Result.png 
+2025-07-18 08:35:22,015 - INFO - from FLModel.py line 265 method do_images: call screenshot_search with command_image_path D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App\ArtecStudio\Image\2560x1440\Do\ClearFlagsDo1.png, app_name ArtecStudio 
+2025-07-18 08:35:22,015 - INFO - from FLModel.py line 267 method do_images: screenshot_search returns mouse_x 369, mouse_y 552, matching_score 0.9595582485198975 
+2025-07-18 08:35:22,015 - INFO - from FLModel.py line 448 method items_find_in_dir: item_name searched: ClearFlagsDo1.txt, directory searched: D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App 
+2025-07-18 08:35:22,019 - INFO - from FLModel.py line 471 method items_find_in_dir: items found: item_path_list [], app_name_list: [] 
+2025-07-18 08:35:22,019 - INFO - from FLModel.py line 287 method do_images: click on mouse_x 369, mouse_y 552 
+2025-07-18 08:35:24,724 - INFO - from FLModel.py line 348 method focus_set_on_app: focus is required on app ArtecStudio, focus is now on window D:\Banfi\ArtecStudio\ArtecStudio16ProjectsTest\Tom\Tom.a3d-ArtecStudio16Professional, window nr 2431280 
+2025-07-18 08:35:24,724 - INFO - from FLModel.py line 351 method focus_set_on_app: app ArtecStudio is already on focus 
+2025-07-18 08:35:25,804 - INFO - from FLCV2.py line 78 method screenshot_search: Screenshot image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_35_25_1_Screenshot.png 
+2025-07-18 08:35:25,804 - INFO - from FLCV2.py line 87 method screenshot_search: Read template image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App\ArtecStudio\Image\2560x1440\Do\ClearFlagsDo3.png 
+2025-07-18 08:35:25,805 - INFO - from FLCV2.py line 100 method screenshot_search: Template image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_35_25_2_Template.png 
+2025-07-18 08:35:25,888 - INFO - from FLCV2.py line 130 method screenshot_search: Matching score: 0.9101 
+2025-07-18 08:35:25,888 - INFO - from FLCV2.py line 131 method screenshot_search: Found template image at position (x, y): (95, 142) 
+2025-07-18 08:35:25,926 - INFO - from FLCV2.py line 143 method screenshot_search: Image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_35_25_3_Result.png 
+2025-07-18 08:35:25,930 - INFO - from FLModel.py line 265 method do_images: call screenshot_search with command_image_path D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App\ArtecStudio\Image\2560x1440\Do\ClearFlagsDo3.png, app_name ArtecStudio 
+2025-07-18 08:35:25,930 - INFO - from FLModel.py line 267 method do_images: screenshot_search returns mouse_x 124, mouse_y 224, matching_score 0.9100651741027832 
+2025-07-18 08:35:25,930 - INFO - from FLModel.py line 448 method items_find_in_dir: item_name searched: ClearFlagsDo3.txt, directory searched: D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App 
+2025-07-18 08:35:25,934 - INFO - from FLModel.py line 471 method items_find_in_dir: items found: item_path_list [], app_name_list: [] 
+2025-07-18 08:35:25,934 - INFO - from FLModel.py line 287 method do_images: click on mouse_x 124, mouse_y 224 
+2025-07-18 08:35:28,654 - INFO - from FLModel.py line 147 method check_state: STATE CHECK CODE 
+2025-07-18 08:35:28,658 - INFO - from FLModel.py line 552 method run_python_code: Module loaded from file D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\ArtecStudio__Registration__2024_11_07\JSON\ArtecStudio__Registration__2024_11_07.py 
+2025-07-18 08:35:28,658 - INFO - from FLModel.py line 587 method run_python_code: Method FlagsClearedCheck not found in D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\ArtecStudio__Registration__2024_11_07\JSON\ArtecStudio__Registration__2024_11_07.py 
+2025-07-18 08:35:28,658 - INFO - from FLModel.py line 161 method check_state: feedback_code_tells_state_is_valid is None 
+2025-07-18 08:35:28,659 - INFO - from FLModel.py line 175 method check_state: CHECK IMAGES 
+2025-07-18 08:35:28,659 - INFO - from FLModel.py line 448 method items_find_in_dir: item_name searched: FlagsClearedCheck.png, directory searched: D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App 
+2025-07-18 08:35:28,664 - INFO - from FLModel.py line 471 method items_find_in_dir: items found: item_path_list [], app_name_list: [] 
+2025-07-18 08:35:28,664 - INFO - from FLModel.py line 388 method global_variables_print: self.do_code_found False 
+2025-07-18 08:35:28,664 - INFO - from FLModel.py line 389 method global_variables_print: self.do_code_result None 
+2025-07-18 08:35:28,664 - INFO - from FLModel.py line 390 method global_variables_print: self.do_code_tells_state_is_valid None 
+2025-07-18 08:35:28,664 - INFO - from FLModel.py line 392 method global_variables_print: self.do_image_found True 
+2025-07-18 08:35:28,664 - INFO - from FLModel.py line 393 method global_variables_print: self.do_image_result 0.0 
+2025-07-18 08:35:28,664 - INFO - from FLModel.py line 394 method global_variables_print: self.do_image_matched True 
+2025-07-18 08:35:28,664 - INFO - from FLModel.py line 395 method global_variables_print: self.do_image_error None 
+2025-07-18 08:35:28,664 - INFO - from FLModel.py line 396 method global_variables_print: self.do_image_tells_state_is_valid True 
+2025-07-18 08:35:28,665 - INFO - from FLModel.py line 398 method global_variables_print:  self.do_transition_result True 
+2025-07-18 08:35:28,665 - INFO - from FLModel.py line 401 method global_variables_print: self.check_code_found False 
+2025-07-18 08:35:28,665 - INFO - from FLModel.py line 402 method global_variables_print: self.check_code_result None 
+2025-07-18 08:35:28,665 - INFO - from FLModel.py line 403 method global_variables_print: self.check_code_tells_state_is_valid None 
+2025-07-18 08:35:28,665 - INFO - from FLModel.py line 405 method global_variables_print: self.check_image_found None 
+2025-07-18 08:35:28,665 - INFO - from FLModel.py line 406 method global_variables_print: self.check_image_result 0.0 
+2025-07-18 08:35:28,665 - INFO - from FLModel.py line 407 method global_variables_print: self.check_image_tells_state_is_valid None 
+2025-07-18 08:35:28,665 - INFO - from FLModel.py line 409 method global_variables_print:  self.check_state_result None 
+2025-07-18 08:35:28,665 - INFO - from FLModel.py line 412 method global_variables_print:   self.state_is_valid True 
+2025-07-18 08:35:28,665 - INFO - from FLModel.py line 413 method global_variables_print:    self.state_is_valid_final True 
+2025-07-18 08:35:28,666 - INFO - from FLModel.py line 520 method run_code_state: STATE DO 
+2025-07-18 08:35:28,667 - INFO - from FLModel.py line 552 method run_python_code: Module loaded from file D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\ArtecStudio__Registration__2024_11_07\JSON\ArtecStudio__Registration__2024_11_07.py 
+2025-07-18 08:35:28,667 - INFO - from FLModel.py line 587 method run_python_code: Method FlagsClearedDo not found in D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\ArtecStudio__Registration__2024_11_07\JSON\ArtecStudio__Registration__2024_11_07.py 
+2025-07-18 08:35:28,667 - INFO - from FLModel.py line 135 method callback_after_state_change: 
+ At callback end, current state: FlagsCleared 
+2025-07-18 08:35:28,667 - INFO - from FLGUIMain.py line 453 method GUI_main_SM_commands_execute: Transition ClearFlags fired without exceptions 
+2025-07-18 08:35:28,668 - INFO - from FLGUIMain.py line 471 method GUI_main_SM_commands_execute: State after transitioning: FlagsCleared 
+2025-07-18 08:35:28,668 - INFO - from FLGUIMain.py line 504 method GUI_main_SM_commands_execute: Handling GUI_update_requested_by_callback 
+2025-07-18 08:35:28,736 - INFO - from FLGUISM.py line 279 method graph_save_to_file: Saved current state FlagsCleared as image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\Screenshot\SMGraphDefault_Registration.png 
+2025-07-18 08:35:28,737 - INFO - from FLCV2.py line 285 method image_around_active_state_save: monitor.is_primary True, screen resolution: 2560 x 1440 
+2025-07-18 08:35:28,737 - INFO - from FLCV2.py line 285 method image_around_active_state_save: monitor.is_primary False, screen resolution: 1280 x 768 
+2025-07-18 08:35:28,737 - INFO - from FLCV2.py line 292 method image_around_active_state_save: Screen resolution adapted: 1216 x 768 
+2025-07-18 08:35:28,802 - INFO - from FLGUISM.py line 279 method graph_save_to_file: Saved current state FlagsCleared as image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\Screenshot\SMGraphDefault_Registration.png 
+2025-07-18 08:35:28,803 - INFO - from FLCV2.py line 285 method image_around_active_state_save: monitor.is_primary True, screen resolution: 2560 x 1440 
+2025-07-18 08:35:28,803 - INFO - from FLCV2.py line 285 method image_around_active_state_save: monitor.is_primary False, screen resolution: 1280 x 768 
+2025-07-18 08:35:28,803 - INFO - from FLCV2.py line 292 method image_around_active_state_save: Screen resolution adapted: 1216 x 768 
+2025-07-18 08:35:28,871 - INFO - from FLGUISM.py line 279 method graph_save_to_file: Saved current state FlagsCleared as image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\Screenshot\SMGraphDefault_Registration.png 
+2025-07-18 08:35:28,872 - INFO - from FLCV2.py line 285 method image_around_active_state_save: monitor.is_primary True, screen resolution: 2560 x 1440 
+2025-07-18 08:35:28,872 - INFO - from FLCV2.py line 285 method image_around_active_state_save: monitor.is_primary False, screen resolution: 1280 x 768 
+2025-07-18 08:35:28,872 - INFO - from FLCV2.py line 292 method image_around_active_state_save: Screen resolution adapted: 1216 x 768 
+2025-07-18 08:37:18,887 - INFO - from FLGUIMain.py line 422 method GUI_main_SM_commands_execute: State FlagsCleared before trying to transition with command StopToolsMenu 
+2025-07-18 08:37:18,887 - INFO - from FLGUIMain.py line 444 method GUI_main_SM_commands_execute: Firing transition StopToolsMenu 
+2025-07-18 08:37:18,887 - INFO - from FLModel.py line 75 method callback_after_state_change: 
+ At callback beginning: current state ToolsMenuIsOff, rollback_do False 
+2025-07-18 08:37:18,888 - INFO - from FLModel.py line 211 method do_code: DO CODE 
+2025-07-18 08:37:18,889 - INFO - from FLModel.py line 552 method run_python_code: Module loaded from file D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\ArtecStudio__Registration__2024_11_07\JSON\ArtecStudio__Registration__2024_11_07.py 
+2025-07-18 08:37:18,889 - INFO - from FLModel.py line 587 method run_python_code: Method StopToolsMenuDo not found in D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\ArtecStudio__Registration__2024_11_07\JSON\ArtecStudio__Registration__2024_11_07.py 
+2025-07-18 08:37:18,889 - INFO - from FLModel.py line 238 method do_images: DO IMAGES 
+2025-07-18 08:37:18,890 - INFO - from FLModel.py line 448 method items_find_in_dir: item_name searched: StopToolsMenuDo.png, directory searched: D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App 
+2025-07-18 08:37:18,893 - INFO - from FLModel.py line 471 method items_find_in_dir: items found: item_path_list ['D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\App\\ArtecStudio\\Image\\2560x1440\\Do\\StopToolsMenuDo.png'], app_name_list: ['ArtecStudio'] 
+2025-07-18 08:37:18,893 - INFO - from FLModel.py line 348 method focus_set_on_app: focus is required on app ArtecStudio, focus is now on window EBuddyforBeginnerUser, window nr 4261732 
+2025-07-18 08:37:18,893 - INFO - from FLModel.py line 353 method focus_set_on_app: Set focus on app ArtecStudio 
+2025-07-18 08:37:18,894 - INFO - from FLModel.py line 448 method items_find_in_dir: item_name searched: FocusIsOnArtecStudio.png, directory searched: D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App 
+2025-07-18 08:37:18,897 - INFO - from FLModel.py line 471 method items_find_in_dir: items found: item_path_list ['D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\App\\ArtecStudio\\Image\\2560x1440\\Do\\FocusIsOnArtecStudioDo.png'], app_name_list: ['ArtecStudio'] 
+2025-07-18 08:37:19,986 - INFO - from FLCV2.py line 78 method screenshot_search: Screenshot image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_37_19_1_Screenshot.png 
+2025-07-18 08:37:19,986 - INFO - from FLCV2.py line 87 method screenshot_search: Read template image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App\ArtecStudio\Image\2560x1440\Do\FocusIsOnArtecStudioDo.png 
+2025-07-18 08:37:19,986 - INFO - from FLCV2.py line 100 method screenshot_search: Template image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_37_19_2_Template.png 
+2025-07-18 08:37:20,088 - INFO - from FLCV2.py line 130 method screenshot_search: Matching score: 0.9889 
+2025-07-18 08:37:20,088 - INFO - from FLCV2.py line 131 method screenshot_search: Found template image at position (x, y): (453, 0) 
+2025-07-18 08:37:20,124 - INFO - from FLCV2.py line 143 method screenshot_search: Image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_37_20_3_Result.png 
+2025-07-18 08:37:22,843 - INFO - from FLModel.py line 364 method focus_set_on_app: clicked on app ArtecStudio at mouse_x 548, mouse_y 15, matching_score_focus 0.9888806939125061 
+2025-07-18 08:37:24,937 - INFO - from FLCV2.py line 78 method screenshot_search: Screenshot image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_37_24_1_Screenshot.png 
+2025-07-18 08:37:24,938 - INFO - from FLCV2.py line 87 method screenshot_search: Read template image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App\ArtecStudio\Image\2560x1440\Do\StopToolsMenuDo.png 
+2025-07-18 08:37:24,938 - INFO - from FLCV2.py line 100 method screenshot_search: Template image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_37_24_2_Template.png 
+2025-07-18 08:37:25,044 - INFO - from FLCV2.py line 130 method screenshot_search: Matching score: 0.9989 
+2025-07-18 08:37:25,044 - INFO - from FLCV2.py line 131 method screenshot_search: Found template image at position (x, y): (90, 74) 
+2025-07-18 08:37:25,081 - INFO - from FLCV2.py line 143 method screenshot_search: Image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_37_25_3_Result.png 
+2025-07-18 08:37:25,084 - INFO - from FLModel.py line 265 method do_images: call screenshot_search with command_image_path D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App\ArtecStudio\Image\2560x1440\Do\StopToolsMenuDo.png, app_name ArtecStudio 
+2025-07-18 08:37:25,084 - INFO - from FLModel.py line 267 method do_images: screenshot_search returns mouse_x 409, mouse_y 86, matching_score 0.998900294303894 
+2025-07-18 08:37:25,084 - INFO - from FLModel.py line 448 method items_find_in_dir: item_name searched: StopToolsMenuDo.txt, directory searched: D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App 
+2025-07-18 08:37:25,088 - INFO - from FLModel.py line 471 method items_find_in_dir: items found: item_path_list [], app_name_list: [] 
+2025-07-18 08:37:25,088 - INFO - from FLModel.py line 287 method do_images: click on mouse_x 409, mouse_y 86 
+2025-07-18 08:37:27,817 - INFO - from FLModel.py line 147 method check_state: STATE CHECK CODE 
+2025-07-18 08:37:27,822 - INFO - from FLModel.py line 552 method run_python_code: Module loaded from file D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\ArtecStudio__Registration__2024_11_07\JSON\ArtecStudio__Registration__2024_11_07.py 
+2025-07-18 08:37:27,822 - INFO - from FLModel.py line 587 method run_python_code: Method ToolsMenuIsOffCheck not found in D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\ArtecStudio__Registration__2024_11_07\JSON\ArtecStudio__Registration__2024_11_07.py 
+2025-07-18 08:37:27,822 - INFO - from FLModel.py line 161 method check_state: feedback_code_tells_state_is_valid is None 
+2025-07-18 08:37:27,823 - INFO - from FLModel.py line 175 method check_state: CHECK IMAGES 
+2025-07-18 08:37:27,823 - INFO - from FLModel.py line 448 method items_find_in_dir: item_name searched: ToolsMenuIsOffCheck.png, directory searched: D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App 
+2025-07-18 08:37:27,827 - INFO - from FLModel.py line 471 method items_find_in_dir: items found: item_path_list [], app_name_list: [] 
+2025-07-18 08:37:27,828 - INFO - from FLModel.py line 388 method global_variables_print: self.do_code_found False 
+2025-07-18 08:37:27,828 - INFO - from FLModel.py line 389 method global_variables_print: self.do_code_result None 
+2025-07-18 08:37:27,828 - INFO - from FLModel.py line 390 method global_variables_print: self.do_code_tells_state_is_valid None 
+2025-07-18 08:37:27,828 - INFO - from FLModel.py line 392 method global_variables_print: self.do_image_found True 
+2025-07-18 08:37:27,828 - INFO - from FLModel.py line 393 method global_variables_print: self.do_image_result 0.0 
+2025-07-18 08:37:27,828 - INFO - from FLModel.py line 394 method global_variables_print: self.do_image_matched True 
+2025-07-18 08:37:27,828 - INFO - from FLModel.py line 395 method global_variables_print: self.do_image_error None 
+2025-07-18 08:37:27,828 - INFO - from FLModel.py line 396 method global_variables_print: self.do_image_tells_state_is_valid True 
+2025-07-18 08:37:27,828 - INFO - from FLModel.py line 398 method global_variables_print:  self.do_transition_result True 
+2025-07-18 08:37:27,828 - INFO - from FLModel.py line 401 method global_variables_print: self.check_code_found False 
+2025-07-18 08:37:27,829 - INFO - from FLModel.py line 402 method global_variables_print: self.check_code_result None 
+2025-07-18 08:37:27,829 - INFO - from FLModel.py line 403 method global_variables_print: self.check_code_tells_state_is_valid None 
+2025-07-18 08:37:27,829 - INFO - from FLModel.py line 405 method global_variables_print: self.check_image_found None 
+2025-07-18 08:37:27,829 - INFO - from FLModel.py line 406 method global_variables_print: self.check_image_result 0.0 
+2025-07-18 08:37:27,829 - INFO - from FLModel.py line 407 method global_variables_print: self.check_image_tells_state_is_valid None 
+2025-07-18 08:37:27,829 - INFO - from FLModel.py line 409 method global_variables_print:  self.check_state_result None 
+2025-07-18 08:37:27,829 - INFO - from FLModel.py line 412 method global_variables_print:   self.state_is_valid True 
+2025-07-18 08:37:27,829 - INFO - from FLModel.py line 413 method global_variables_print:    self.state_is_valid_final True 
+2025-07-18 08:37:27,829 - INFO - from FLModel.py line 520 method run_code_state: STATE DO 
+2025-07-18 08:37:27,831 - INFO - from FLModel.py line 552 method run_python_code: Module loaded from file D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\ArtecStudio__Registration__2024_11_07\JSON\ArtecStudio__Registration__2024_11_07.py 
+2025-07-18 08:37:27,831 - INFO - from FLModel.py line 587 method run_python_code: Method ToolsMenuIsOffDo not found in D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\ArtecStudio__Registration__2024_11_07\JSON\ArtecStudio__Registration__2024_11_07.py 
+2025-07-18 08:37:27,831 - INFO - from FLModel.py line 135 method callback_after_state_change: 
+ At callback end, current state: ToolsMenuIsOff 
+2025-07-18 08:37:27,831 - INFO - from FLGUIMain.py line 453 method GUI_main_SM_commands_execute: Transition StopToolsMenu fired without exceptions 
+2025-07-18 08:37:27,831 - INFO - from FLGUIMain.py line 471 method GUI_main_SM_commands_execute: State after transitioning: ToolsMenuIsOff 
+2025-07-18 08:37:27,831 - INFO - from FLGUIMain.py line 504 method GUI_main_SM_commands_execute: Handling GUI_update_requested_by_callback 
+2025-07-18 08:37:27,904 - INFO - from FLGUISM.py line 279 method graph_save_to_file: Saved current state ToolsMenuIsOff as image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\Screenshot\SMGraphDefault_Registration.png 
+2025-07-18 08:37:27,905 - INFO - from FLCV2.py line 285 method image_around_active_state_save: monitor.is_primary True, screen resolution: 2560 x 1440 
+2025-07-18 08:37:27,905 - INFO - from FLCV2.py line 285 method image_around_active_state_save: monitor.is_primary False, screen resolution: 1280 x 768 
+2025-07-18 08:37:27,905 - INFO - from FLCV2.py line 292 method image_around_active_state_save: Screen resolution adapted: 1216 x 768 
+2025-07-18 08:37:27,975 - INFO - from FLGUISM.py line 279 method graph_save_to_file: Saved current state ToolsMenuIsOff as image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\Screenshot\SMGraphDefault_Registration.png 
+2025-07-18 08:37:27,976 - INFO - from FLCV2.py line 285 method image_around_active_state_save: monitor.is_primary True, screen resolution: 2560 x 1440 
+2025-07-18 08:37:27,976 - INFO - from FLCV2.py line 285 method image_around_active_state_save: monitor.is_primary False, screen resolution: 1280 x 768 
+2025-07-18 08:37:27,976 - INFO - from FLCV2.py line 292 method image_around_active_state_save: Screen resolution adapted: 1216 x 768 
+2025-07-18 08:37:28,050 - INFO - from FLGUISM.py line 279 method graph_save_to_file: Saved current state ToolsMenuIsOff as image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\Screenshot\SMGraphDefault_Registration.png 
+2025-07-18 08:37:28,050 - INFO - from FLCV2.py line 285 method image_around_active_state_save: monitor.is_primary True, screen resolution: 2560 x 1440 
+2025-07-18 08:37:28,050 - INFO - from FLCV2.py line 285 method image_around_active_state_save: monitor.is_primary False, screen resolution: 1280 x 768 
+2025-07-18 08:37:28,051 - INFO - from FLCV2.py line 292 method image_around_active_state_save: Screen resolution adapted: 1216 x 768 
+2025-07-18 08:37:36,440 - INFO - from FLGUIMain.py line 422 method GUI_main_SM_commands_execute: State ToolsMenuIsOff before trying to transition with command SaveFile 
+2025-07-18 08:37:36,440 - INFO - from FLGUIMain.py line 444 method GUI_main_SM_commands_execute: Firing transition SaveFile 
+2025-07-18 08:37:36,440 - INFO - from FLModel.py line 75 method callback_after_state_change: 
+ At callback beginning: current state FilesSaved, rollback_do False 
+2025-07-18 08:37:36,440 - INFO - from FLModel.py line 211 method do_code: DO CODE 
+2025-07-18 08:37:36,441 - INFO - from FLModel.py line 552 method run_python_code: Module loaded from file D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\ArtecStudio__Registration__2024_11_07\JSON\ArtecStudio__Registration__2024_11_07.py 
+2025-07-18 08:37:36,442 - INFO - from FLModel.py line 565 method run_python_code: Executing method SaveFileDo in module <module 'ArtecStudio__Registration__2024_11_07' from 'D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\SM\\ArtecStudio__Registration__2024_11_07\\JSON\\ArtecStudio__Registration__2024_11_07.py'> 
+2025-07-18 08:37:36,444 - INFO - from FLModel.py line 579 method run_python_code: Executed module returned result True, message  
+2025-07-18 08:37:36,444 - INFO - from FLModel.py line 238 method do_images: DO IMAGES 
+2025-07-18 08:37:36,444 - INFO - from FLModel.py line 448 method items_find_in_dir: item_name searched: SaveFileDo.png, directory searched: D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App 
+2025-07-18 08:37:36,448 - INFO - from FLModel.py line 471 method items_find_in_dir: items found: item_path_list ['D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\App\\ArtecStudio\\Image\\2560x1440\\Do\\SaveFileDo1.png', 'D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\App\\ArtecStudio\\Image\\2560x1440\\Do\\SaveFileDo2.png', 'D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\App\\ArtecStudio\\Image\\2560x1440\\Do\\SaveFileDo5.png', 'D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\App\\ArtecStudio\\Image\\2560x1440\\Do\\SaveFileDo6.png', 'D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\App\\ArtecStudio\\Image\\2560x1440\\Do\\SaveFileDo7.png'], app_name_list: ['ArtecStudio', 'ArtecStudio', 'ArtecStudio', 'ArtecStudio', 'ArtecStudio'] 
+2025-07-18 08:37:36,448 - INFO - from FLModel.py line 348 method focus_set_on_app: focus is required on app ArtecStudio, focus is now on window EBuddyforBeginnerUser, window nr 4261732 
+2025-07-18 08:37:36,448 - INFO - from FLModel.py line 353 method focus_set_on_app: Set focus on app ArtecStudio 
+2025-07-18 08:37:36,448 - INFO - from FLModel.py line 448 method items_find_in_dir: item_name searched: FocusIsOnArtecStudio.png, directory searched: D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App 
+2025-07-18 08:37:36,452 - INFO - from FLModel.py line 471 method items_find_in_dir: items found: item_path_list ['D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\App\\ArtecStudio\\Image\\2560x1440\\Do\\FocusIsOnArtecStudioDo.png'], app_name_list: ['ArtecStudio'] 
+2025-07-18 08:37:37,551 - INFO - from FLCV2.py line 78 method screenshot_search: Screenshot image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_37_37_1_Screenshot.png 
+2025-07-18 08:37:37,552 - INFO - from FLCV2.py line 87 method screenshot_search: Read template image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App\ArtecStudio\Image\2560x1440\Do\FocusIsOnArtecStudioDo.png 
+2025-07-18 08:37:37,552 - INFO - from FLCV2.py line 100 method screenshot_search: Template image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_37_37_2_Template.png 
+2025-07-18 08:37:37,655 - INFO - from FLCV2.py line 130 method screenshot_search: Matching score: 0.9889 
+2025-07-18 08:37:37,655 - INFO - from FLCV2.py line 131 method screenshot_search: Found template image at position (x, y): (453, 0) 
+2025-07-18 08:37:37,693 - INFO - from FLCV2.py line 143 method screenshot_search: Image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_37_37_3_Result.png 
+2025-07-18 08:37:40,403 - INFO - from FLModel.py line 364 method focus_set_on_app: clicked on app ArtecStudio at mouse_x 548, mouse_y 15, matching_score_focus 0.9888769388198853 
+2025-07-18 08:37:42,485 - INFO - from FLCV2.py line 78 method screenshot_search: Screenshot image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_37_42_1_Screenshot.png 
+2025-07-18 08:37:42,485 - INFO - from FLCV2.py line 87 method screenshot_search: Read template image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App\ArtecStudio\Image\2560x1440\Do\SaveFileDo1.png 
+2025-07-18 08:37:42,486 - INFO - from FLCV2.py line 100 method screenshot_search: Template image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_37_42_2_Template.png 
+2025-07-18 08:37:42,568 - INFO - from FLCV2.py line 130 method screenshot_search: Matching score: 0.5251 
+2025-07-18 08:37:42,568 - INFO - from FLCV2.py line 131 method screenshot_search: Found template image at position (x, y): (2, 1) 
+2025-07-18 08:37:42,604 - INFO - from FLCV2.py line 143 method screenshot_search: Image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_37_42_3_Result.png 
+2025-07-18 08:37:42,607 - INFO - from FLModel.py line 265 method do_images: call screenshot_search with command_image_path D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App\ArtecStudio\Image\2560x1440\Do\SaveFileDo1.png, app_name ArtecStudio 
+2025-07-18 08:37:42,608 - INFO - from FLModel.py line 267 method do_images: screenshot_search returns mouse_x 21, mouse_y 43, matching_score 0.525117039680481 
+2025-07-18 08:37:42,608 - INFO - from FLModel.py line 448 method items_find_in_dir: item_name searched: SaveFileDo1.txt, directory searched: D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App 
+2025-07-18 08:37:42,611 - INFO - from FLModel.py line 471 method items_find_in_dir: items found: item_path_list [], app_name_list: [] 
+2025-07-18 08:37:42,611 - INFO - from FLModel.py line 287 method do_images: click on mouse_x 21, mouse_y 43 
+2025-07-18 08:37:45,324 - INFO - from FLModel.py line 348 method focus_set_on_app: focus is required on app ArtecStudio, focus is now on window D:\Banfi\ArtecStudio\ArtecStudio16ProjectsTest\Tom\Tom.a3d-ArtecStudio16Professional, window nr 2431280 
+2025-07-18 08:37:45,324 - INFO - from FLModel.py line 351 method focus_set_on_app: app ArtecStudio is already on focus 
+2025-07-18 08:37:46,420 - INFO - from FLCV2.py line 78 method screenshot_search: Screenshot image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_37_46_1_Screenshot.png 
+2025-07-18 08:37:46,420 - INFO - from FLCV2.py line 87 method screenshot_search: Read template image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App\ArtecStudio\Image\2560x1440\Do\SaveFileDo2.png 
+2025-07-18 08:37:46,426 - INFO - from FLCV2.py line 100 method screenshot_search: Template image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_37_46_2_Template.png 
+2025-07-18 08:37:46,535 - INFO - from FLCV2.py line 130 method screenshot_search: Matching score: 0.6661 
+2025-07-18 08:37:46,535 - INFO - from FLCV2.py line 131 method screenshot_search: Found template image at position (x, y): (7, 149) 
+2025-07-18 08:37:46,572 - INFO - from FLCV2.py line 143 method screenshot_search: Image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_37_46_3_Result.png 
+2025-07-18 08:37:46,574 - INFO - from FLModel.py line 265 method do_images: call screenshot_search with command_image_path D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App\ArtecStudio\Image\2560x1440\Do\SaveFileDo2.png, app_name ArtecStudio 
+2025-07-18 08:37:46,575 - INFO - from FLModel.py line 267 method do_images: screenshot_search returns mouse_x 161, mouse_y 161, matching_score 0.6661407351493835 
+2025-07-18 08:37:46,575 - INFO - from FLModel.py line 448 method items_find_in_dir: item_name searched: SaveFileDo2.txt, directory searched: D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App 
+2025-07-18 08:37:46,578 - INFO - from FLModel.py line 471 method items_find_in_dir: items found: item_path_list [], app_name_list: [] 
+2025-07-18 08:37:46,578 - INFO - from FLModel.py line 287 method do_images: click on mouse_x 161, mouse_y 161 
+2025-07-18 08:37:49,295 - INFO - from FLModel.py line 348 method focus_set_on_app: focus is required on app ArtecStudio, focus is now on window Specifyprojectnameandlocation, window nr 1180786 
+2025-07-18 08:37:49,295 - INFO - from FLModel.py line 353 method focus_set_on_app: Set focus on app ArtecStudio 
+2025-07-18 08:37:49,297 - INFO - from FLModel.py line 448 method items_find_in_dir: item_name searched: FocusIsOnArtecStudio.png, directory searched: D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App 
+2025-07-18 08:37:49,302 - INFO - from FLModel.py line 471 method items_find_in_dir: items found: item_path_list ['D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\App\\ArtecStudio\\Image\\2560x1440\\Do\\FocusIsOnArtecStudioDo.png'], app_name_list: ['ArtecStudio'] 
+2025-07-18 08:37:50,393 - INFO - from FLCV2.py line 78 method screenshot_search: Screenshot image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_37_50_1_Screenshot.png 
+2025-07-18 08:37:50,393 - INFO - from FLCV2.py line 87 method screenshot_search: Read template image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App\ArtecStudio\Image\2560x1440\Do\FocusIsOnArtecStudioDo.png 
+2025-07-18 08:37:50,394 - INFO - from FLCV2.py line 100 method screenshot_search: Template image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_37_50_2_Template.png 
+2025-07-18 08:37:50,492 - INFO - from FLCV2.py line 130 method screenshot_search: Matching score: 0.9889 
+2025-07-18 08:37:50,492 - INFO - from FLCV2.py line 131 method screenshot_search: Found template image at position (x, y): (453, 0) 
+2025-07-18 08:37:50,528 - INFO - from FLCV2.py line 143 method screenshot_search: Image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_37_50_3_Result.png 
+2025-07-18 08:37:53,255 - INFO - from FLModel.py line 364 method focus_set_on_app: clicked on app ArtecStudio at mouse_x 548, mouse_y 15, matching_score_focus 0.9888769388198853 
+2025-07-18 08:37:55,362 - INFO - from FLCV2.py line 78 method screenshot_search: Screenshot image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_37_55_1_Screenshot.png 
+2025-07-18 08:37:55,362 - INFO - from FLCV2.py line 87 method screenshot_search: Read template image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App\ArtecStudio\Image\2560x1440\Do\SaveFileDo5.png 
+2025-07-18 08:37:55,369 - INFO - from FLCV2.py line 100 method screenshot_search: Template image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_37_55_2_Template.png 
+2025-07-18 08:37:55,449 - INFO - from FLCV2.py line 130 method screenshot_search: Matching score: 0.6570 
+2025-07-18 08:37:55,449 - INFO - from FLCV2.py line 131 method screenshot_search: Found template image at position (x, y): (979, 565) 
+2025-07-18 08:37:55,485 - INFO - from FLCV2.py line 143 method screenshot_search: Image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_37_55_3_Result.png 
+2025-07-18 08:37:55,488 - INFO - from FLModel.py line 265 method do_images: call screenshot_search with command_image_path D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App\ArtecStudio\Image\2560x1440\Do\SaveFileDo5.png, app_name ArtecStudio 
+2025-07-18 08:37:55,488 - INFO - from FLModel.py line 267 method do_images: screenshot_search returns mouse_x 1077, mouse_y 664, matching_score 0.6569830775260925 
+2025-07-18 08:37:55,488 - INFO - from FLModel.py line 448 method items_find_in_dir: item_name searched: SaveFileDo5.txt, directory searched: D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App 
+2025-07-18 08:37:55,492 - INFO - from FLModel.py line 471 method items_find_in_dir: items found: item_path_list ['D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\App\\ArtecStudio\\Image\\2560x1440\\Do\\SaveFileDo5.txt'], app_name_list: ['ArtecStudio'] 
+2025-07-18 08:37:58,427 - INFO - from FLModel.py line 283 method do_images: clickAndWriteTextAndEnter on mouse_x 1077, mouse_y 664, matching_score 0.6569830775260925, write command_text Ctrl&A&Del | DataDirectory 
+2025-07-18 08:37:58,428 - INFO - from FLModel.py line 348 method focus_set_on_app: focus is required on app ArtecStudio, focus is now on window Specifyprojectnameandlocation, window nr 1180786 
+2025-07-18 08:37:58,429 - INFO - from FLModel.py line 353 method focus_set_on_app: Set focus on app ArtecStudio 
+2025-07-18 08:37:58,429 - INFO - from FLModel.py line 448 method items_find_in_dir: item_name searched: FocusIsOnArtecStudio.png, directory searched: D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App 
+2025-07-18 08:37:58,435 - INFO - from FLModel.py line 471 method items_find_in_dir: items found: item_path_list ['D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\App\\ArtecStudio\\Image\\2560x1440\\Do\\FocusIsOnArtecStudioDo.png'], app_name_list: ['ArtecStudio'] 
+2025-07-18 08:37:59,513 - INFO - from FLCV2.py line 78 method screenshot_search: Screenshot image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_37_59_1_Screenshot.png 
+2025-07-18 08:37:59,514 - INFO - from FLCV2.py line 87 method screenshot_search: Read template image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App\ArtecStudio\Image\2560x1440\Do\FocusIsOnArtecStudioDo.png 
+2025-07-18 08:37:59,514 - INFO - from FLCV2.py line 100 method screenshot_search: Template image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_37_59_2_Template.png 
+2025-07-18 08:37:59,613 - INFO - from FLCV2.py line 130 method screenshot_search: Matching score: 0.9889 
+2025-07-18 08:37:59,614 - INFO - from FLCV2.py line 131 method screenshot_search: Found template image at position (x, y): (453, 0) 
+2025-07-18 08:37:59,649 - INFO - from FLCV2.py line 143 method screenshot_search: Image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_37_59_3_Result.png 
+2025-07-18 08:38:02,361 - INFO - from FLModel.py line 364 method focus_set_on_app: clicked on app ArtecStudio at mouse_x 548, mouse_y 15, matching_score_focus 0.9888769388198853 
+2025-07-18 08:38:04,454 - INFO - from FLCV2.py line 78 method screenshot_search: Screenshot image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_38_04_1_Screenshot.png 
+2025-07-18 08:38:04,454 - INFO - from FLCV2.py line 87 method screenshot_search: Read template image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App\ArtecStudio\Image\2560x1440\Do\SaveFileDo6.png 
+2025-07-18 08:38:04,460 - INFO - from FLCV2.py line 100 method screenshot_search: Template image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_38_04_2_Template.png 
+2025-07-18 08:38:04,537 - INFO - from FLCV2.py line 130 method screenshot_search: Matching score: 0.6570 
+2025-07-18 08:38:04,538 - INFO - from FLCV2.py line 131 method screenshot_search: Found template image at position (x, y): (980, 566) 
+2025-07-18 08:38:04,574 - INFO - from FLCV2.py line 143 method screenshot_search: Image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_38_04_3_Result.png 
+2025-07-18 08:38:04,576 - INFO - from FLModel.py line 265 method do_images: call screenshot_search with command_image_path D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App\ArtecStudio\Image\2560x1440\Do\SaveFileDo6.png, app_name ArtecStudio 
+2025-07-18 08:38:04,577 - INFO - from FLModel.py line 267 method do_images: screenshot_search returns mouse_x 1077, mouse_y 625, matching_score 0.6569687128067017 
+2025-07-18 08:38:04,577 - INFO - from FLModel.py line 448 method items_find_in_dir: item_name searched: SaveFileDo6.txt, directory searched: D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App 
+2025-07-18 08:38:04,580 - INFO - from FLModel.py line 471 method items_find_in_dir: items found: item_path_list ['D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\App\\ArtecStudio\\Image\\2560x1440\\Do\\SaveFileDo6.txt'], app_name_list: ['ArtecStudio'] 
+2025-07-18 08:38:06,351 - INFO - from FLModel.py line 283 method do_images: clickAndWriteTextAndEnter on mouse_x 1077, mouse_y 625, matching_score 0.6569687128067017, write command_text Ctrl&A&Del | NewFileNameWithDate | PressNotEnter 
+2025-07-18 08:38:06,351 - INFO - from FLModel.py line 348 method focus_set_on_app: focus is required on app ArtecStudio, focus is now on window Specifyprojectnameandlocation, window nr 1180786 
+2025-07-18 08:38:06,352 - INFO - from FLModel.py line 353 method focus_set_on_app: Set focus on app ArtecStudio 
+2025-07-18 08:38:06,352 - INFO - from FLModel.py line 448 method items_find_in_dir: item_name searched: FocusIsOnArtecStudio.png, directory searched: D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App 
+2025-07-18 08:38:06,357 - INFO - from FLModel.py line 471 method items_find_in_dir: items found: item_path_list ['D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\App\\ArtecStudio\\Image\\2560x1440\\Do\\FocusIsOnArtecStudioDo.png'], app_name_list: ['ArtecStudio'] 
+2025-07-18 08:38:07,455 - INFO - from FLCV2.py line 78 method screenshot_search: Screenshot image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_38_07_1_Screenshot.png 
+2025-07-18 08:38:07,455 - INFO - from FLCV2.py line 87 method screenshot_search: Read template image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App\ArtecStudio\Image\2560x1440\Do\FocusIsOnArtecStudioDo.png 
+2025-07-18 08:38:07,456 - INFO - from FLCV2.py line 100 method screenshot_search: Template image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_38_07_2_Template.png 
+2025-07-18 08:38:07,555 - INFO - from FLCV2.py line 130 method screenshot_search: Matching score: 0.9889 
+2025-07-18 08:38:07,555 - INFO - from FLCV2.py line 131 method screenshot_search: Found template image at position (x, y): (453, 0) 
+2025-07-18 08:38:07,591 - INFO - from FLCV2.py line 143 method screenshot_search: Image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_38_07_3_Result.png 
+2025-07-18 08:38:10,324 - INFO - from FLModel.py line 364 method focus_set_on_app: clicked on app ArtecStudio at mouse_x 548, mouse_y 15, matching_score_focus 0.9888769388198853 
+2025-07-18 08:38:12,424 - INFO - from FLCV2.py line 78 method screenshot_search: Screenshot image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_38_12_1_Screenshot.png 
+2025-07-18 08:38:12,424 - INFO - from FLCV2.py line 87 method screenshot_search: Read template image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App\ArtecStudio\Image\2560x1440\Do\SaveFileDo7.png 
+2025-07-18 08:38:12,431 - INFO - from FLCV2.py line 100 method screenshot_search: Template image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_38_12_2_Template.png 
+2025-07-18 08:38:12,540 - INFO - from FLCV2.py line 130 method screenshot_search: Matching score: 0.9971 
+2025-07-18 08:38:12,541 - INFO - from FLCV2.py line 131 method screenshot_search: Found template image at position (x, y): (1211, 745) 
+2025-07-18 08:38:12,577 - INFO - from FLCV2.py line 143 method screenshot_search: Image saved at D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image\2025_07_18__08_38_12_3_Result.png 
+2025-07-18 08:38:12,580 - INFO - from FLModel.py line 265 method do_images: call screenshot_search with command_image_path D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App\ArtecStudio\Image\2560x1440\Do\SaveFileDo7.png, app_name ArtecStudio 
+2025-07-18 08:38:12,580 - INFO - from FLModel.py line 267 method do_images: screenshot_search returns mouse_x 1396, mouse_y 767, matching_score 0.9971234202384949 
+2025-07-18 08:38:12,580 - INFO - from FLModel.py line 448 method items_find_in_dir: item_name searched: SaveFileDo7.txt, directory searched: D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App 
+2025-07-18 08:38:12,583 - INFO - from FLModel.py line 471 method items_find_in_dir: items found: item_path_list [], app_name_list: [] 
+2025-07-18 08:38:12,584 - INFO - from FLModel.py line 287 method do_images: click on mouse_x 1396, mouse_y 767 
+2025-07-18 08:38:15,295 - INFO - from FLModel.py line 147 method check_state: STATE CHECK CODE 
+2025-07-18 08:38:15,296 - INFO - from FLModel.py line 552 method run_python_code: Module loaded from file D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\ArtecStudio__Registration__2024_11_07\JSON\ArtecStudio__Registration__2024_11_07.py 
+2025-07-18 08:38:15,297 - INFO - from FLModel.py line 587 method run_python_code: Method FilesSavedCheck not found in D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\ArtecStudio__Registration__2024_11_07\JSON\ArtecStudio__Registration__2024_11_07.py 
+2025-07-18 08:38:15,297 - INFO - from FLModel.py line 161 method check_state: feedback_code_tells_state_is_valid is None 
+2025-07-18 08:38:15,297 - INFO - from FLModel.py line 175 method check_state: CHECK IMAGES 
+2025-07-18 08:38:15,297 - INFO - from FLModel.py line 448 method items_find_in_dir: item_name searched: FilesSavedCheck.png, directory searched: D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App 
+2025-07-18 08:38:15,301 - INFO - from FLModel.py line 471 method items_find_in_dir: items found: item_path_list [], app_name_list: [] 
+2025-07-18 08:38:15,301 - INFO - from FLModel.py line 388 method global_variables_print: self.do_code_found True 
+2025-07-18 08:38:15,301 - INFO - from FLModel.py line 389 method global_variables_print: self.do_code_result True 
+2025-07-18 08:38:15,301 - INFO - from FLModel.py line 390 method global_variables_print: self.do_code_tells_state_is_valid True 
+2025-07-18 08:38:15,301 - INFO - from FLModel.py line 392 method global_variables_print: self.do_image_found True 
+2025-07-18 08:38:15,301 - INFO - from FLModel.py line 393 method global_variables_print: self.do_image_result 0.0 
+2025-07-18 08:38:15,301 - INFO - from FLModel.py line 394 method global_variables_print: self.do_image_matched True 
+2025-07-18 08:38:15,301 - INFO - from FLModel.py line 395 method global_variables_print: self.do_image_error None 
+2025-07-18 08:38:15,301 - INFO - from FLModel.py line 396 method global_variables_print: self.do_image_tells_state_is_valid True 
+2025-07-18 08:38:15,302 - INFO - from FLModel.py line 398 method global_variables_print:  self.do_transition_result True 
+2025-07-18 08:38:15,302 - INFO - from FLModel.py line 401 method global_variables_print: self.check_code_found False 
+2025-07-18 08:38:15,302 - INFO - from FLModel.py line 402 method global_variables_print: self.check_code_result None 
+2025-07-18 08:38:15,302 - INFO - from FLModel.py line 403 method global_variables_print: self.check_code_tells_state_is_valid None 
+2025-07-18 08:38:15,302 - INFO - from FLModel.py line 405 method global_variables_print: self.check_image_found None 
+2025-07-18 08:38:15,302 - INFO - from FLModel.py line 406 method global_variables_print: self.check_image_result 0.0 
+2025-07-18 08:38:15,302 - INFO - from FLModel.py line 407 method global_variables_print: self.check_image_tells_state_is_valid None 
+2025-07-18 08:38:15,302 - INFO - from FLModel.py line 409 method global_variables_print:  self.check_state_result None 
+2025-07-18 08:38:15,303 - INFO - from FLModel.py line 412 method global_variables_print:   self.state_is_valid True 
+2025-07-18 08:38:15,303 - INFO - from FLModel.py line 413 method global_variables_print:    self.state_is_valid_final True 
+2025-07-18 08:38:15,303 - INFO - from FLModel.py line 520 method run_code_state: STATE DO 
+2025-07-18 08:38:15,304 - INFO - from FLModel.py line 552 method run_python_code: Module loaded from file D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\ArtecStudio__Registration__2024_11_07\JSON\ArtecStudio__Registration__2024_11_07.py 
+2025-07-18 08:38:15,304 - INFO - from FLModel.py line 587 method run_python_code: Method FilesSavedDo not found in D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\ArtecStudio__Registration__2024_11_07\JSON\ArtecStudio__Registration__2024_11_07.py 
+2025-07-18 08:38:15,304 - INFO - from FLModel.py line 135 method callback_after_state_change: 
+ At callback end, current state: FilesSaved 
+2025-07-18 08:38:15,305 - INFO - from FLGUIMain.py line 453 method GUI_main_SM_commands_execute: Transition SaveFile fired without exceptions 
+2025-07-18 08:38:15,305 - INFO - from FLGUIMain.py line 471 method GUI_main_SM_commands_execute: State after transitioning: FilesSaved 
+2025-07-18 08:38:15,305 - INFO - from FLGUIMain.py line 504 method GUI_main_SM_commands_execute: Handling GUI_update_requested_by_callback 
+2025-07-18 08:38:15,376 - INFO - from FLGUISM.py line 279 method graph_save_to_file: Saved current state FilesSaved as image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\Screenshot\SMGraphDefault_Registration.png 
+2025-07-18 08:38:15,377 - INFO - from FLCV2.py line 285 method image_around_active_state_save: monitor.is_primary True, screen resolution: 2560 x 1440 
+2025-07-18 08:38:15,377 - INFO - from FLCV2.py line 285 method image_around_active_state_save: monitor.is_primary False, screen resolution: 1280 x 768 
+2025-07-18 08:38:15,377 - INFO - from FLCV2.py line 292 method image_around_active_state_save: Screen resolution adapted: 1216 x 768 
+2025-07-18 08:38:15,447 - INFO - from FLGUISM.py line 279 method graph_save_to_file: Saved current state FilesSaved as image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\Screenshot\SMGraphDefault_Registration.png 
+2025-07-18 08:38:15,448 - INFO - from FLCV2.py line 285 method image_around_active_state_save: monitor.is_primary True, screen resolution: 2560 x 1440 
+2025-07-18 08:38:15,448 - INFO - from FLCV2.py line 285 method image_around_active_state_save: monitor.is_primary False, screen resolution: 1280 x 768 
+2025-07-18 08:38:15,448 - INFO - from FLCV2.py line 292 method image_around_active_state_save: Screen resolution adapted: 1216 x 768 
+2025-07-18 08:38:15,523 - INFO - from FLGUISM.py line 279 method graph_save_to_file: Saved current state FilesSaved as image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\Screenshot\SMGraphDefault_Registration.png 
+2025-07-18 08:38:15,523 - INFO - from FLCV2.py line 285 method image_around_active_state_save: monitor.is_primary True, screen resolution: 2560 x 1440 
+2025-07-18 08:38:15,523 - INFO - from FLCV2.py line 285 method image_around_active_state_save: monitor.is_primary False, screen resolution: 1280 x 768 
+2025-07-18 08:38:15,524 - INFO - from FLCV2.py line 292 method image_around_active_state_save: Screen resolution adapted: 1216 x 768 
+2025-07-18 08:38:24,354 - INFO - from FLGUIMain.py line 422 method GUI_main_SM_commands_execute: State FilesSaved before trying to transition with command NextState 
+2025-07-18 08:38:24,354 - INFO - from FLGUIMain.py line 444 method GUI_main_SM_commands_execute: Firing transition NextState 
+2025-07-18 08:38:24,354 - INFO - from FLModel.py line 75 method callback_after_state_change: 
+ At callback beginning: current state End, rollback_do False 
+2025-07-18 08:38:24,354 - INFO - from FLModel.py line 211 method do_code: DO CODE 
+2025-07-18 08:38:24,356 - INFO - from FLModel.py line 552 method run_python_code: Module loaded from file D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\ArtecStudio__Registration__2024_11_07\JSON\ArtecStudio__Registration__2024_11_07.py 
+2025-07-18 08:38:24,356 - INFO - from FLModel.py line 587 method run_python_code: Method NextStateDo not found in D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\ArtecStudio__Registration__2024_11_07\JSON\ArtecStudio__Registration__2024_11_07.py 
+2025-07-18 08:38:24,356 - INFO - from FLModel.py line 238 method do_images: DO IMAGES 
+2025-07-18 08:38:24,356 - INFO - from FLModel.py line 448 method items_find_in_dir: item_name searched: NextStateDo.png, directory searched: D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App 
+2025-07-18 08:38:24,360 - INFO - from FLModel.py line 471 method items_find_in_dir: items found: item_path_list [], app_name_list: [] 
+2025-07-18 08:38:24,360 - INFO - from FLModel.py line 245 method do_images: No do images found 
+2025-07-18 08:38:24,360 - INFO - from FLModel.py line 147 method check_state: STATE CHECK CODE 
+2025-07-18 08:38:24,361 - INFO - from FLModel.py line 552 method run_python_code: Module loaded from file D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\ArtecStudio__Registration__2024_11_07\JSON\ArtecStudio__Registration__2024_11_07.py 
+2025-07-18 08:38:24,361 - INFO - from FLModel.py line 587 method run_python_code: Method EndCheck not found in D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\ArtecStudio__Registration__2024_11_07\JSON\ArtecStudio__Registration__2024_11_07.py 
+2025-07-18 08:38:24,362 - INFO - from FLModel.py line 161 method check_state: feedback_code_tells_state_is_valid is None 
+2025-07-18 08:38:24,362 - INFO - from FLModel.py line 175 method check_state: CHECK IMAGES 
+2025-07-18 08:38:24,362 - INFO - from FLModel.py line 448 method items_find_in_dir: item_name searched: EndCheck.png, directory searched: D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App 
+2025-07-18 08:38:24,365 - INFO - from FLModel.py line 471 method items_find_in_dir: items found: item_path_list [], app_name_list: [] 
+2025-07-18 08:38:24,365 - INFO - from FLModel.py line 388 method global_variables_print: self.do_code_found False 
+2025-07-18 08:38:24,366 - INFO - from FLModel.py line 389 method global_variables_print: self.do_code_result None 
+2025-07-18 08:38:24,366 - INFO - from FLModel.py line 390 method global_variables_print: self.do_code_tells_state_is_valid None 
+2025-07-18 08:38:24,366 - INFO - from FLModel.py line 392 method global_variables_print: self.do_image_found False 
+2025-07-18 08:38:24,366 - INFO - from FLModel.py line 393 method global_variables_print: self.do_image_result 0.0 
+2025-07-18 08:38:24,366 - INFO - from FLModel.py line 394 method global_variables_print: self.do_image_matched None 
+2025-07-18 08:38:24,366 - INFO - from FLModel.py line 395 method global_variables_print: self.do_image_error None 
+2025-07-18 08:38:24,366 - INFO - from FLModel.py line 396 method global_variables_print: self.do_image_tells_state_is_valid None 
+2025-07-18 08:38:24,366 - INFO - from FLModel.py line 398 method global_variables_print:  self.do_transition_result None 
+2025-07-18 08:38:24,366 - INFO - from FLModel.py line 401 method global_variables_print: self.check_code_found False 
+2025-07-18 08:38:24,367 - INFO - from FLModel.py line 402 method global_variables_print: self.check_code_result None 
+2025-07-18 08:38:24,367 - INFO - from FLModel.py line 403 method global_variables_print: self.check_code_tells_state_is_valid None 
+2025-07-18 08:38:24,367 - INFO - from FLModel.py line 405 method global_variables_print: self.check_image_found None 
+2025-07-18 08:38:24,367 - INFO - from FLModel.py line 406 method global_variables_print: self.check_image_result 0.0 
+2025-07-18 08:38:24,367 - INFO - from FLModel.py line 407 method global_variables_print: self.check_image_tells_state_is_valid None 
+2025-07-18 08:38:24,367 - INFO - from FLModel.py line 409 method global_variables_print:  self.check_state_result None 
+2025-07-18 08:38:24,367 - INFO - from FLModel.py line 412 method global_variables_print:   self.state_is_valid None 
+2025-07-18 08:38:24,367 - INFO - from FLModel.py line 413 method global_variables_print:    self.state_is_valid_final True 
+2025-07-18 08:38:24,367 - INFO - from FLModel.py line 520 method run_code_state: STATE DO 
+2025-07-18 08:38:24,369 - INFO - from FLModel.py line 552 method run_python_code: Module loaded from file D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\ArtecStudio__Registration__2024_11_07\JSON\ArtecStudio__Registration__2024_11_07.py 
+2025-07-18 08:38:24,369 - INFO - from FLModel.py line 565 method run_python_code: Executing method EndDo in module <module 'ArtecStudio__Registration__2024_11_07' from 'D:\\Banfi\\Github\\Fluently\\Releases\\2025_01_10_EBuddy\\Data\\Input\\SM\\ArtecStudio__Registration__2024_11_07\\JSON\\ArtecStudio__Registration__2024_11_07.py'> 
+2025-07-18 08:38:24,370 - INFO - from FLModel.py line 579 method run_python_code: Executed module returned result True, message End sent autopilot to False 
+2025-07-18 08:38:24,370 - INFO - from FLModel.py line 135 method callback_after_state_change: 
+ At callback end, current state: End 
+2025-07-18 08:38:24,370 - INFO - from FLGUIMain.py line 453 method GUI_main_SM_commands_execute: Transition NextState fired without exceptions 
+2025-07-18 08:38:24,370 - INFO - from FLGUIMain.py line 471 method GUI_main_SM_commands_execute: State after transitioning: End 
+2025-07-18 08:38:24,370 - INFO - from FLGUIMain.py line 504 method GUI_main_SM_commands_execute: Handling GUI_update_requested_by_callback 
+2025-07-18 08:38:24,440 - INFO - from FLGUISM.py line 279 method graph_save_to_file: Saved current state End as image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\Screenshot\SMGraphDefault_Registration.png 
+2025-07-18 08:38:24,441 - INFO - from FLCV2.py line 285 method image_around_active_state_save: monitor.is_primary True, screen resolution: 2560 x 1440 
+2025-07-18 08:38:24,441 - INFO - from FLCV2.py line 285 method image_around_active_state_save: monitor.is_primary False, screen resolution: 1280 x 768 
+2025-07-18 08:38:24,441 - INFO - from FLCV2.py line 292 method image_around_active_state_save: Screen resolution adapted: 1216 x 768 
+2025-07-18 08:38:24,511 - INFO - from FLGUISM.py line 279 method graph_save_to_file: Saved current state End as image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\Screenshot\SMGraphDefault_Registration.png 
+2025-07-18 08:38:24,512 - INFO - from FLCV2.py line 285 method image_around_active_state_save: monitor.is_primary True, screen resolution: 2560 x 1440 
+2025-07-18 08:38:24,512 - INFO - from FLCV2.py line 285 method image_around_active_state_save: monitor.is_primary False, screen resolution: 1280 x 768 
+2025-07-18 08:38:24,512 - INFO - from FLCV2.py line 292 method image_around_active_state_save: Screen resolution adapted: 1216 x 768 
+2025-07-18 08:38:24,525 - INFO - from FLGUISM.py line 94 method autopilot_is_on_set: autopilot_mode is now False 
+2025-07-18 08:38:24,586 - INFO - from FLGUISM.py line 279 method graph_save_to_file: Saved current state End as image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\Screenshot\SMGraphDefault_Registration.png 
+2025-07-18 08:38:24,586 - INFO - from FLCV2.py line 285 method image_around_active_state_save: monitor.is_primary True, screen resolution: 2560 x 1440 
+2025-07-18 08:38:24,587 - INFO - from FLCV2.py line 285 method image_around_active_state_save: monitor.is_primary False, screen resolution: 1280 x 768 
+2025-07-18 08:38:24,587 - INFO - from FLCV2.py line 292 method image_around_active_state_save: Screen resolution adapted: 1216 x 768 
+2025-07-18 08:38:24,602 - INFO - from FLGUIMain.py line 504 method GUI_main_SM_commands_execute: Handling GUI_update_requested_by_callback 
+2025-07-18 08:38:24,667 - INFO - from FLGUISM.py line 279 method graph_save_to_file: Saved current state End as image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\Screenshot\SMGraphDefault_Registration.png 
+2025-07-18 08:38:24,668 - INFO - from FLCV2.py line 285 method image_around_active_state_save: monitor.is_primary True, screen resolution: 2560 x 1440 
+2025-07-18 08:38:24,668 - INFO - from FLCV2.py line 285 method image_around_active_state_save: monitor.is_primary False, screen resolution: 1280 x 768 
+2025-07-18 08:38:24,668 - INFO - from FLCV2.py line 292 method image_around_active_state_save: Screen resolution adapted: 1216 x 768 
+2025-07-18 08:38:24,738 - INFO - from FLGUISM.py line 279 method graph_save_to_file: Saved current state End as image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\Screenshot\SMGraphDefault_Registration.png 
+2025-07-18 08:38:24,738 - INFO - from FLCV2.py line 285 method image_around_active_state_save: monitor.is_primary True, screen resolution: 2560 x 1440 
+2025-07-18 08:38:24,739 - INFO - from FLCV2.py line 285 method image_around_active_state_save: monitor.is_primary False, screen resolution: 1280 x 768 
+2025-07-18 08:38:24,739 - INFO - from FLCV2.py line 292 method image_around_active_state_save: Screen resolution adapted: 1216 x 768 
+2025-07-18 08:38:24,820 - INFO - from FLGUISM.py line 279 method graph_save_to_file: Saved current state End as image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\Screenshot\SMGraphDefault_Registration.png 
+2025-07-18 08:38:24,820 - INFO - from FLCV2.py line 285 method image_around_active_state_save: monitor.is_primary True, screen resolution: 2560 x 1440 
+2025-07-18 08:38:24,821 - INFO - from FLCV2.py line 285 method image_around_active_state_save: monitor.is_primary False, screen resolution: 1280 x 768 
+2025-07-18 08:38:24,821 - INFO - from FLCV2.py line 292 method image_around_active_state_save: Screen resolution adapted: 1216 x 768 
+2025-07-18 08:38:24,894 - INFO - from FLGUISM.py line 279 method graph_save_to_file: Saved current state End as image D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\Screenshot\SMGraphDefault_Registration.png 
+2025-07-18 08:38:24,895 - INFO - from FLCV2.py line 285 method image_around_active_state_save: monitor.is_primary True, screen resolution: 2560 x 1440 
+2025-07-18 08:38:24,895 - INFO - from FLCV2.py line 285 method image_around_active_state_save: monitor.is_primary False, screen resolution: 1280 x 768 
+2025-07-18 08:38:24,895 - INFO - from FLCV2.py line 292 method image_around_active_state_save: Screen resolution adapted: 1216 x 768 

@@ -1,0 +1,25 @@
+# https://sequencediagram.org/
+
+title Fluently States
+
+#artec_studio_is_off->frames_recorded_is_off:(artec open)
+#frames_recorded_is_off->scan_menu_is_on: (artec scan)
+#scan_menu_is_on->preview_is_on: (artec preview)
+all_devices_are_off->artec_studio_is_off: Start Realwear\nConnect to Beast BT\nStart ROS2 Bridge\nStart ThinkCenter.ROS1\nStart ThinkCenter.Client\nStart ArtecPC.Server\nStart ArtecPC.Sikulix
+artec_studio_is_off->preview_is_on: Voice command: \n"preview"
+note over artec_studio_is_off, preview_is_on: Cobot goto scan top position
+note over artec_studio_is_off, preview_is_on: Artec Studio: open
+note over artec_studio_is_off, preview_is_on: Artec Studio: activate scan
+#preview_is_on->scan_menu_is_on: artec stop
+preview_is_on->recording_is_on: Voice command: \n"record"
+note over preview_is_on, recording_is_on: Artec Studio: record
+note over preview_is_on, recording_is_on: Cobot runs scan top
+#recording_is_on->scan_menu_is_on: (stop)
+recording_is_on->frames_recorded_is_on: No voice command: \n" "
+note over recording_is_on, frames_recorded_is_on: Cobot feedback: scan program ended
+frames_recorded_is_on->tools_is_on: Voice command: \n"tools"
+tools_is_on->global_registration_done: Voice command: \n"global registration"
+global_registration_done->fast_fusion_done:Voice command: \n"fast fusion"
+fast_fusion_done->project_saved: Voice command: \n"save"
+project_saved->artec_studio_is_off: Voice command: \n"close"
+artec_studio_is_off->all_devices_are_off: Voice command: \n"shutdown"

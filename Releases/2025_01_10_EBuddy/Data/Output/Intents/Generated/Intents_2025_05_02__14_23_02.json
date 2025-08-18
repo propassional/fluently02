@@ -1,0 +1,44 @@
+{
+    "Preview": {
+        "Start": "Auto, SaveFile, Shutdown, FullScan, SliceScan, Registration, CommandHub, GotoTabLeft, GotoTabRight, AutopilotOn, AutopilotOff",
+        "Ready": "CheckArtecStudioIsOff, SaveFile, Shutdown, FullScan, SliceScan, Registration, CommandHub, GotoTabLeft, GotoTabRight, AutopilotOn, AutopilotOff",
+        "ArtecStudioIsOff": "StartArtecStudio, SaveFile, Shutdown, FullScan, SliceScan, Registration, CommandHub, GotoTabLeft, GotoTabRight, AutopilotOn, AutopilotOff",
+        "ArtecStudioIsOn": "StartScanMenu, SaveFile, Shutdown, FullScan, SliceScan, Registration, CommandHub, GotoTabLeft, GotoTabRight, AutopilotOn, AutopilotOff",
+        "ScanMenuIsOn": "CheckScannerIsOn, SaveFile, Shutdown, FullScan, SliceScan, Registration, CommandHub, GotoTabLeft, GotoTabRight, AutopilotOn, AutopilotOff",
+        "ScannerIsOn": "StartPreview, SaveFile, Shutdown, FullScan, SliceScan, Registration, CommandHub, GotoTabLeft, GotoTabRight, AutopilotOn, AutopilotOff",
+        "PreviewIsOn": "StartRecording, StopPreview, StopRecording, SaveFile, Shutdown, FullScan, SliceScan, Registration, CommandHub, GotoTabLeft, GotoTabRight, AutopilotOn, AutopilotOff",
+        "RecordingIsOn": "StartPause, SaveFile, Shutdown, FullScan, SliceScan, Registration, CommandHub, GotoTabLeft, GotoTabRight, AutopilotOn, AutopilotOff",
+        "PauseIsOn": "StopRecording, StartRecording, SaveFile, Shutdown, FullScan, SliceScan, Registration, CommandHub, GotoTabLeft, GotoTabRight, AutopilotOn, AutopilotOff",
+        "RecordingIsOff": "StartPreview, SaveFile, Shutdown, FullScan, SliceScan, Registration, CommandHub, GotoTabLeft, GotoTabRight, AutopilotOn, AutopilotOff"
+    },
+    "FullScan": {
+        "Start": "Auto, SaveFile, Preview, SliceScan, Registration, CommandHub, GotoTabLeft, GotoTabRight, AutopilotOn, AutopilotOff",
+        "Ready": "CheckPreview, SaveFile, Preview, SliceScan, Registration, CommandHub, GotoTabLeft, GotoTabRight, AutopilotOn, AutopilotOff",
+        "PreviewIsOn": "StartRecording, StopRecording, SaveFile, Preview, SliceScan, Registration, CommandHub, GotoTabLeft, GotoTabRight, AutopilotOn, AutopilotOff",
+        "RecordingIsOn": "StartPause, SaveFile, Preview, SliceScan, Registration, CommandHub, GotoTabLeft, GotoTabRight, AutopilotOn, AutopilotOff",
+        "PauseIsOn": "StopRecording, SaveFile, Preview, SliceScan, Registration, CommandHub, GotoTabLeft, GotoTabRight, AutopilotOn, AutopilotOff",
+        "RecordingIsOff": "StartPreview, SaveFile, Preview, SliceScan, Registration, CommandHub, GotoTabLeft, GotoTabRight, AutopilotOn, AutopilotOff"
+    },
+    "SliceScan": {
+        "Start": "Auto, SaveHighPosition, SaveLowPosition, Preview, FullScan, Registration, CommandHub, GotoTabLeft, GotoTabRight, AutopilotOn, AutopilotOff",
+        "Ready": "Next, SaveHighPosition, SaveLowPosition, Preview, FullScan, Registration, CommandHub, GotoTabLeft, GotoTabRight, AutopilotOn, AutopilotOff",
+        "TopScanPos": "Next, SaveHighPosition, SaveLowPosition, Preview, FullScan, Registration, CommandHub, GotoTabLeft, GotoTabRight, AutopilotOn, AutopilotOff",
+        "SliceScanHome": "Last, MoveUp, MoveDown, SaveHighPosition, SaveLowPosition, Preview, FullScan, Registration, CommandHub, GotoTabLeft, GotoTabRight, AutopilotOn, AutopilotOff",
+        "MovedUp": "MoveUp, MoveDown, Home, SaveHighPosition, SaveLowPosition, Preview, FullScan, Registration, CommandHub, GotoTabLeft, GotoTabRight, AutopilotOn, AutopilotOff",
+        "MovedDown": "MoveDown, MoveUp, Home, SaveHighPosition, SaveLowPosition, Preview, FullScan, Registration, CommandHub, GotoTabLeft, GotoTabRight, AutopilotOn, AutopilotOff"
+    },
+    "Registration": {
+        "Start": "Auto, Preview, FullScan, SliceScan, CommandHub, GotoTabLeft, GotoTabRight, AutopilotOn, AutopilotOff",
+        "Ready": "StartToolsMenu, Preview, FullScan, SliceScan, CommandHub, GotoTabLeft, GotoTabRight, AutopilotOn, AutopilotOff",
+        "ToolsMenuIsOn": "StartAutoMenu, Preview, FullScan, SliceScan, CommandHub, GotoTabLeft, GotoTabRight, AutopilotOn, AutopilotOff",
+        "AutoMenuIsOn": "StartGlobalRegistration, Preview, FullScan, SliceScan, CommandHub, GotoTabLeft, GotoTabRight, AutopilotOn, AutopilotOff",
+        "GlobalRegistrationEntered": "Auto, Preview, FullScan, SliceScan, CommandHub, GotoTabLeft, GotoTabRight, AutopilotOn, AutopilotOff",
+        "CalculationIsDone": "Close, Preview, FullScan, SliceScan, CommandHub, GotoTabLeft, GotoTabRight, AutopilotOn, AutopilotOff",
+        "ToolsMenuIsOff": "Next, Preview, FullScan, SliceScan, CommandHub, GotoTabLeft, GotoTabRight, AutopilotOn, AutopilotOff",
+        "End": "StopToolsMenu, Preview, FullScan, SliceScan, CommandHub, GotoTabLeft, GotoTabRight, AutopilotOn, AutopilotOff"
+    },
+    "CommandHub": {
+        "Start": "Auto, Shutdown, SaveFile, CloseAllArtecStudios, Preview, FullScan, SliceScan, Registration, GotoTabLeft, GotoTabRight, AutopilotOn, AutopilotOff",
+        "Ready": "Shutdown, SaveFile, CloseAllArtecStudios, Preview, FullScan, SliceScan, Registration, GotoTabLeft, GotoTabRight, AutopilotOn, AutopilotOff"
+    }
+}

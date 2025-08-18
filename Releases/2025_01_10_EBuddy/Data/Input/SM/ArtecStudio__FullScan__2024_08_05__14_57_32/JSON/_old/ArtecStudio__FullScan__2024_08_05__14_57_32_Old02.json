@@ -1,0 +1,76 @@
+{
+    "states": [
+		"Start",
+		"Ready",
+        "PreviewIsOn1",
+        "PreviewIsOn2",
+		"RecordingIsOn1",
+		"RecordingIsOn2",
+		"RecordingIsOn3",
+        "PauseIsOn1",
+		"PauseIsOn2",
+		"PauseIsOn3",
+        "RecordingIsOff",
+		"ChangeCameraSetupAdvanced2",
+        "SaveFile",
+		"Shutdown"
+    ],
+    "transitions": [
+	    {
+            "trigger": "Auto",
+            "source": "Start",
+            "dest": "Ready"
+        },
+        {
+            "trigger": "DoIt",
+            "source": "Ready",
+            "dest": "PreviewIsOn1"
+        },
+        {
+            "trigger": "DoIt",
+            "source": "PreviewIsOn1",
+            "dest": "RecordingIsOn1"
+        },
+        {
+            "trigger": "DoIt",
+            "source": "RecordingIsOn1",
+            "dest": "PauseIsOn1"
+        },
+        {
+            "trigger": "DoIt",
+            "source": "PauseIsOn1",
+            "dest": "ChangeCameraSetupAdvanced2"
+        },
+        {
+            "trigger": "DoIt",
+            "source": "ChangeCameraSetupAdvanced2",
+            "dest": "PreviewIsOn2"
+        },
+        {
+            "trigger": "DoIt",
+            "source": "PreviewIsOn2",
+            "dest": "RecordingIsOn2"
+        },
+        {
+            "trigger": "DoIt",
+            "source": "RecordingIsOn2",
+            "dest": "PauseIsOn2"
+		},
+		{
+            "trigger": "DoIt",
+            "source": "PauseIsOn2",
+            "dest": "RecordingIsOn3"
+        },
+        {
+            "trigger": "DoIt",
+            "source": "RecordingIsOn3",
+            "dest": "PauseIsOn3"
+		},
+		{
+            "trigger": "DoIt",
+            "source": "PauseIsOn3",
+            "dest": "RecordingIsOff"
+		}
+    ],
+    "initial": "Start"
+}

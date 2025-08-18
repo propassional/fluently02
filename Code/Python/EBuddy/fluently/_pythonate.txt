@@ -1,0 +1,71 @@
+- Python positive + and negative (Paionate) - experiences<br>
++ command_text_path = command_text_path_list[0] if command_text_path_list else ""<br>
+- Crasha senza dare errore:<br>
+- Il terzo parametro viene richiesto dal chiamante ma non viene fornito dal metodo<br>
+self.do_image_found, self.do_image_matched, self.do_image_error = self.run_images()<br>
+- Check ExpBoolean: l'operator and non è commutativo se uno dei due operandi non è boolean ma NoneType<br>
+- Hidden bombs:<br>
+- Improvvisamente pyautogui.typewrite si è messo a convertire il testo in capital, pycharm restart solved the problem<br>
+- Missing import: se per errore commenti un import in un else che usi poco spesso, solo quando passerai di li si pianterà, durante una demo, ovviamente :-D<br>
+In debug mode non ti dà neanche un errore e crasha, ma prima di crashare ti mostra il codice di altri moduli a sbalzo<br>
+In run mode ti dice dove c'è l'errore d'import, in casi del genere usa run prima d'impazzire :-d<br>
+- Per far crashare un metodo, ti basta chiamare: my_future_crash_is_here = self.attributo_non_definito<br>
+self.nome_non_definito verrà mostrato in giallo, ma non ti dà nessun errore, poi a runtime si pianta ma almeno ti mostra dove<br>
+- sys.exit() probabilmente anche negli altri linguaggi chiude l'applicazione senza lasciare tracce (GUI o thread)<br>
+- PySimpleGUI, Tkinter, Matplot must run completely into the main loop (but using GUI signals from other threads is ok):<br>
+FLCommand does not work in standalone mode, and interferes with FLGUIMain<br>
+=> Integrated in FLGUIMain (user interaction is less elegant)<br>
+- If not, it happened more than once that a thread crash brought the main thread to crash (main GUI window)<br>
+- Given main_window, multiple examples of perplexity and gpt to extract a tab don't work<br>
+If TabGroup would be a type, it would be simple to find out how to interact with it<br>
+All I have is this bad doc...<br>
+https://docs.pysimplegui.com/en/latest/call_reference/web/elements/tab_group/#class-methods<br>
+...that divides layout from dynamic layout (instead than layout and layout dynamic),<br>
+thus a pain in the ass to find out that once defined, a layout can not be modified in the same way as you created, but in this way<br>
+https://docs.pysimplegui.com/en/latest/documentation/module/dynamic_layouts/<br>
+- ExpButtonPressedCheck.py shows how difficult it is to implement a listener, and - most of all - to stop the thread, since there is no stop method!<br>
+- I don't like that much the way global is implemented in python (check out ExpGUITkinter00.py)<br>
+- If this part "if __name__ == '__main__':" is tabbed in, it does not even find the constructor of the class it belongs<br>
+- Python doesn’t have strict access control (public, protected, private), so the convention of naming an attribute with underscore<br>
+suggests that an attribute is not meant to be accessed directly from outside the class (beware of the recursion error if underscore is not used)<br>
+- If when you modify a method you forget to implement a return value (you deleted it by mistake),<br>
+there is no warning at all and you will get a crash on the first method call<br>
+- The method __init__ never reports usage links, for finding out who uses it, check its class usage<br>
+- If you define a variable as global in pycharm, you won't see its value in debugging, you have to manually add it as watch<br>
+=> Define the variable at the beginning of the method, but not as global, just define and initialize it<br>
+- Passing arguments in Python:<br>
+arguments are "passed by assignment", which means it’s neither pure pass-by-value nor pass-by-reference.<br>
+Instead, Python employs a concept called “pass by assignment” or “call by object reference”<br>
+If you pass a mutable object (like a list, dictionary or custom object) into a method, the method gets a reference to the same object.<br>
+You can modify it within the method, and the changes will be reflected outside.<br>
+If you pass an immutable object (like a string or integer), you can’t rebind the outer reference, and you can’t mutate the object.<br>
+https://stackoverflow.com/questions/986006/how-do-i-pass-a-variable-by-reference<br>
+- Returning results from a method:<br>
+If a method returns two results (feedback_code_path, app_name = self.item_find()),<br>
+but only one result is assigned (feedback_code_path = self.item_find()),<br>
+you will get a feedback_code_path containing two items (always!), which is quite different from feedback_code_path = ""<br>
+- Method interface:<br>
+Pros: it is convenient to be able to return multiple values from a method,<br>
+Cons: from the interface of a method you cannot read what it returns, you have to read the "return" part of the method code<br>
+- There is no do while statement, static non c'é, elif e non else if<br>
+- Python tacitly fails:<br>
+Se l'errore è in una parte di codice mai eseguita, resta li silente pronto a saltare quando verrà eseguito<br>
+E' pericoloso come python "salta via" in una callback una chiamata diventata sbagliata causa spostamento di funzionalità<br>
+(la esegue, va in errore ma poi resta su e termina la callback come se non fosse stata eseguita, visto che la chiamata era la prima cosa da fare),<br>
+invece di piantarsi come fanno i C languages. Il rischio è che parti intere di codice non vengano eseguite, senza che ce ne si accorga<br>
+- text_elements refers to the original list, while *text_elements is the separate list unpacked and treated as separate arguments<br>
+*text_elements,  # Unpack the text elements<br>
+- sys.exit(0) # It does not terminate all threads, but only the main thread, 0 = successful<br>
+- Creare un numero random di bottoni<br>
+layout = [[sg.Button(file_name, key=file_name) for file_name in file_names],<br>
+- Print the type of a variable: print(type(extracted_transitions))<br>
+- try: "this code" except Exception as e: print(f"An error occurred: {str(e)}")<br>
+- if cmd_to_do == "StopRecording": breakpoint()  # or pdb.set_trace()<br>
+- In Python, the __name__ variable is a special built-in attribute that represents the name of the current module or script.<br>
+When a Python script is executed directly (as the main program), __name__ is set to "__main__".<br>
+When the script is imported as a module into another script, __name__ takes the name of the module.<br>
+- Add to Fluently doc, PyCharm: Ctrl+shift+up or down moves an entire method, ctrl+alt+left to navigate back to your last positions<br>
+- Windows Explorer indexing:<br>
+Search within files works only if files are pre-indexed: Win + S to open the Windows search, type “indexing options” and select the corresponding result<br>
+Click the “Advanced” button, switch to the “File Types” tab, select the .py extension (Python files), wait for indexing, check the “Index Properties and File Contents” option<br>
+Search string within files with cmd: >findstr /s /i /m /c:"string to search" *.py<br>

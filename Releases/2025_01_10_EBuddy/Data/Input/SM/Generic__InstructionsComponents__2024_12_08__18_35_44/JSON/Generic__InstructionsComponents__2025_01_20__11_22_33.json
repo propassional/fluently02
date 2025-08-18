@@ -1,0 +1,85 @@
+{
+    "states": [
+		"Start",
+		"Ready",
+		"RototiltInstalled",
+		"MarkersApplied",
+		"RingBelowScanned",
+		"RingIntermediateScanned",
+		"RingAboveScanned",
+		"End"
+    ],
+    "transitions": [
+	    {
+            "trigger": "Auto",
+            "source": "Start",
+            "dest": "Ready"
+        },
+        {
+            "trigger": "Next",
+            "source": "Ready",
+            "dest": "RototiltInstalled"
+        },
+        {
+            "trigger": "Last",
+            "source": "RototiltInstalled",
+            "dest": "Ready"
+        },
+        {
+            "trigger": "Next",
+            "source": "RototiltInstalled",
+            "dest": "MarkersApplied"
+        },
+        {
+            "trigger": "Next",
+            "source": "MarkersApplied",
+            "dest": "RingBelowScanned"
+        },
+        {
+            "trigger": "Last",
+            "source": "MarkersApplied",
+            "dest": "RototiltInstalled"
+        },
+        {
+            "trigger": "Next",
+            "source": "RingBelowScanned",
+            "dest": "RingIntermediateScanned"
+        },
+        {
+            "trigger": "Last",
+            "source": "RingBelowScanned",
+            "dest": "MarkersApplied"
+        },
+        {
+            "trigger": "Next",
+            "source": "RingIntermediateScanned",
+            "dest": "RingAboveScanned"
+        },
+        {
+            "trigger": "Last",
+            "source": "RingIntermediateScanned",
+            "dest": "RingBelowScanned"
+        },
+		{
+            "trigger": "Next",
+            "source": "RingAboveScanned",
+            "dest": "End"
+        },
+		{
+            "trigger": "Last",
+            "source": "RingAboveScanned",
+            "dest": "RingIntermediateScanned"
+        },
+		{
+            "trigger": "Next",
+            "source": "End",
+            "dest": "Start"
+        },
+		{
+            "trigger": "Last",
+            "source": "End",
+            "dest": "RingAboveScanned"
+        }
+    ],
+    "initial": "Start"
+}

@@ -1,0 +1,55 @@
+{
+    "states": [
+		"Start",
+		"Ready",
+		"ToolsMenuIsOn",
+		"AutoMenuIsOn",
+        "GlobalRegistrationEntered",
+		"CalculationIsDone",
+		"ToolsMenuIsOff",
+		"End"
+    ],
+    "transitions": [
+	    {
+            "trigger": "Auto",
+            "source": "Start",
+            "dest": "Ready"
+        },
+        {
+            "trigger": "StartToolsMenu",
+            "source": "Ready",
+            "dest": "ToolsMenuIsOn"
+        },
+        {
+            "trigger": "StartAutoMenu",
+            "source": "ToolsMenuIsOn",
+            "dest": "AutoMenuIsOn"
+        },
+        {
+            "trigger": "StartGlobalRegistration",
+            "source": "AutoMenuIsOn",
+            "dest": "GlobalRegistrationEntered"
+        },
+        {
+            "trigger": "Auto",
+            "source": "GlobalRegistrationEntered",
+            "dest": "CalculationIsDone"
+        },
+        {
+            "trigger": "Close",
+            "source": "CalculationIsDone",
+            "dest": "End"
+        },
+        {
+            "trigger": "StopToolsMenu",
+            "source": "End",
+            "dest": "ToolsMenuIsOff"
+        },
+        {
+            "trigger": "Next",
+            "source": "ToolsMenuIsOff",
+            "dest": "Start"
+        }
+    ],
+    "initial": "Start"
+}

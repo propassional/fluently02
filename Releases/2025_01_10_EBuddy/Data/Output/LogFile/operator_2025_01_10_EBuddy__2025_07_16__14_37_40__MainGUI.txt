@@ -1,0 +1,191 @@
+2025-07-16 14:37:42,849 - INFO - from FLOS.py line 256 method screenshots_delete: Deleted D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\Screenshot\SMGraphCropped_(Recording).png 
+2025-07-16 14:37:42,850 - INFO - from FLOS.py line 256 method screenshots_delete: Deleted D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\Screenshot\SMGraphCropped_(SliceScan).png 
+2025-07-16 14:37:42,850 - INFO - from FLOS.py line 256 method screenshots_delete: Deleted D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\Screenshot\SMGraphCropped_Components.png 
+2025-07-16 14:37:42,850 - INFO - from FLOS.py line 256 method screenshots_delete: Deleted D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\Screenshot\SMGraphCropped_FullScan.png 
+2025-07-16 14:37:42,854 - INFO - from FLOS.py line 256 method screenshots_delete: Deleted D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\Screenshot\SMGraphCropped_PartProgram.png 
+2025-07-16 14:37:42,854 - INFO - from FLOS.py line 256 method screenshots_delete: Deleted D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\Screenshot\SMGraphCropped_Preview.png 
+2025-07-16 14:37:42,854 - INFO - from FLOS.py line 256 method screenshots_delete: Deleted D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\Screenshot\SMGraphCropped_Registration.png 
+2025-07-16 14:37:42,854 - INFO - from FLOS.py line 256 method screenshots_delete: Deleted D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\Screenshot\SMGraphDefault_(Recording).png 
+2025-07-16 14:37:42,855 - INFO - from FLOS.py line 256 method screenshots_delete: Deleted D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\Screenshot\SMGraphDefault_(SliceScan).png 
+2025-07-16 14:37:42,855 - INFO - from FLOS.py line 256 method screenshots_delete: Deleted D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\Screenshot\SMGraphDefault_Components.png 
+2025-07-16 14:37:42,855 - INFO - from FLOS.py line 256 method screenshots_delete: Deleted D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\Screenshot\SMGraphDefault_FullScan.png 
+2025-07-16 14:37:42,856 - INFO - from FLOS.py line 256 method screenshots_delete: Deleted D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\Screenshot\SMGraphDefault_PartProgram.png 
+2025-07-16 14:37:42,856 - INFO - from FLOS.py line 256 method screenshots_delete: Deleted D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\Screenshot\SMGraphDefault_Preview.png 
+2025-07-16 14:37:42,856 - INFO - from FLOS.py line 256 method screenshots_delete: Deleted D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\Screenshot\SMGraphDefault_Registration.png 
+2025-07-16 14:37:44,814 - INFO - from FLGUIMain.py line 190 method GUI_main_event_loop: Main GUI is up and entered the event loop 
+2025-07-16 14:37:45,537 - INFO - from FLQueue.py line 13 method element_insert: element_insert: inserted SM_name = (Recording), command = Auto, autopilot_is_on = False 
+2025-07-16 14:37:45,537 - INFO - from FLQueue.py line 19 method element_remove: element_remove: removed SM_name = (Recording), command = Auto, autopilot_is_on = False 
+2025-07-16 14:37:45,537 - INFO - from FLGUIMain.py line 319 method GUI_main_SM_commands_execute: command_to_be_executed: SM name (Recording), command: Auto, autopilot is False 
+2025-07-16 14:37:45,685 - INFO - from FLGUIMain.py line 524 method GUI_main_update_a_SM: self.window_main.write_event_value, key -THREAD_READ_COMMANDS- ,value (Recording) 
+2025-07-16 14:37:45,685 - INFO - from FLQueue.py line 13 method element_insert: element_insert: inserted SM_name = (SliceScan), command = Auto, autopilot_is_on = False 
+2025-07-16 14:37:45,686 - INFO - from FLQueue.py line 19 method element_remove: element_remove: removed SM_name = (SliceScan), command = Auto, autopilot_is_on = False 
+2025-07-16 14:37:45,686 - INFO - from FLGUIMain.py line 319 method GUI_main_SM_commands_execute: command_to_be_executed: SM name (SliceScan), command: Auto, autopilot is False 
+2025-07-16 14:37:45,688 - INFO - from FLGUIMain.py line 238 method GUI_main_event_loop: Selected tab: (Recording) 
+2025-07-16 14:37:45,769 - INFO - from FLGUIMain.py line 289 method GUI_main_event_loop: Error local variable 'message_GUI' referenced before assignment 
+2025-07-16 14:37:45,769 - INFO - from FLGUIMain.py line 290 method GUI_main_event_loop: Error traceback: Traceback (most recent call last):
+  File "D:\Banfi\Github\Fluently\Code\Python\EBuddy\fluently\FLGUIMain.py", line 282, in GUI_main_event_loop
+    message_GUI = "Message: " + message_GUI
+UnboundLocalError: local variable 'message_GUI' referenced before assignment
+ 
+2025-07-16 14:37:46,415 - INFO - from FLGUIMain.py line 238 method GUI_main_event_loop: Selected tab: (SliceScan) 
+2025-07-16 14:37:46,417 - INFO - from FLGUIMain.py line 524 method GUI_main_update_a_SM: self.window_main.write_event_value, key -THREAD_READ_COMMANDS- ,value (SliceScan) 
+2025-07-16 14:37:46,417 - INFO - from FLQueue.py line 13 method element_insert: element_insert: inserted SM_name = PartProgram, command = Auto, autopilot_is_on = False 
+2025-07-16 14:37:46,417 - INFO - from FLQueue.py line 19 method element_remove: element_remove: removed SM_name = PartProgram, command = Auto, autopilot_is_on = False 
+2025-07-16 14:37:46,417 - INFO - from FLGUIMain.py line 319 method GUI_main_SM_commands_execute: command_to_be_executed: SM name PartProgram, command: Auto, autopilot is False 
+2025-07-16 14:37:46,494 - INFO - from FLGUIMain.py line 289 method GUI_main_event_loop: Error local variable 'message_GUI' referenced before assignment 
+2025-07-16 14:37:46,494 - INFO - from FLGUIMain.py line 290 method GUI_main_event_loop: Error traceback: Traceback (most recent call last):
+  File "D:\Banfi\Github\Fluently\Code\Python\EBuddy\fluently\FLGUIMain.py", line 282, in GUI_main_event_loop
+    message_GUI = "Message: " + message_GUI
+UnboundLocalError: local variable 'message_GUI' referenced before assignment
+ 
+2025-07-16 14:37:46,665 - INFO - from FLGUIMain.py line 238 method GUI_main_event_loop: Selected tab: PartProgram 
+2025-07-16 14:37:46,667 - INFO - from FLGUIMain.py line 524 method GUI_main_update_a_SM: self.window_main.write_event_value, key -THREAD_READ_COMMANDS- ,value PartProgram 
+2025-07-16 14:37:46,667 - INFO - from FLQueue.py line 13 method element_insert: element_insert: inserted SM_name = Registration, command = Auto, autopilot_is_on = False 
+2025-07-16 14:37:46,667 - INFO - from FLQueue.py line 19 method element_remove: element_remove: removed SM_name = Registration, command = Auto, autopilot_is_on = False 
+2025-07-16 14:37:46,667 - INFO - from FLGUIMain.py line 319 method GUI_main_SM_commands_execute: command_to_be_executed: SM name Registration, command: Auto, autopilot is False 
+2025-07-16 14:37:46,731 - INFO - from FLGUIMain.py line 289 method GUI_main_event_loop: Error local variable 'message_GUI' referenced before assignment 
+2025-07-16 14:37:46,731 - INFO - from FLGUIMain.py line 290 method GUI_main_event_loop: Error traceback: Traceback (most recent call last):
+  File "D:\Banfi\Github\Fluently\Code\Python\EBuddy\fluently\FLGUIMain.py", line 282, in GUI_main_event_loop
+    message_GUI = "Message: " + message_GUI
+UnboundLocalError: local variable 'message_GUI' referenced before assignment
+ 
+2025-07-16 14:37:47,443 - INFO - from FLGUIMain.py line 238 method GUI_main_event_loop: Selected tab: Registration 
+2025-07-16 14:37:47,445 - INFO - from FLGUIMain.py line 524 method GUI_main_update_a_SM: self.window_main.write_event_value, key -THREAD_READ_COMMANDS- ,value Registration 
+2025-07-16 14:37:47,445 - INFO - from FLQueue.py line 13 method element_insert: element_insert: inserted SM_name = FullScan, command = Auto, autopilot_is_on = False 
+2025-07-16 14:37:47,445 - INFO - from FLQueue.py line 19 method element_remove: element_remove: removed SM_name = FullScan, command = Auto, autopilot_is_on = False 
+2025-07-16 14:37:47,445 - INFO - from FLGUIMain.py line 319 method GUI_main_SM_commands_execute: command_to_be_executed: SM name FullScan, command: Auto, autopilot is False 
+2025-07-16 14:37:47,520 - INFO - from FLGUIMain.py line 289 method GUI_main_event_loop: Error local variable 'message_GUI' referenced before assignment 
+2025-07-16 14:37:47,521 - INFO - from FLGUIMain.py line 290 method GUI_main_event_loop: Error traceback: Traceback (most recent call last):
+  File "D:\Banfi\Github\Fluently\Code\Python\EBuddy\fluently\FLGUIMain.py", line 282, in GUI_main_event_loop
+    message_GUI = "Message: " + message_GUI
+UnboundLocalError: local variable 'message_GUI' referenced before assignment
+ 
+2025-07-16 14:37:47,729 - INFO - from FLGUIMain.py line 238 method GUI_main_event_loop: Selected tab: FullScan 
+2025-07-16 14:37:47,731 - INFO - from FLGUIMain.py line 524 method GUI_main_update_a_SM: self.window_main.write_event_value, key -THREAD_READ_COMMANDS- ,value FullScan 
+2025-07-16 14:37:47,731 - INFO - from FLQueue.py line 13 method element_insert: element_insert: inserted SM_name = Preview, command = Auto, autopilot_is_on = False 
+2025-07-16 14:37:47,731 - INFO - from FLQueue.py line 19 method element_remove: element_remove: removed SM_name = Preview, command = Auto, autopilot_is_on = False 
+2025-07-16 14:37:47,732 - INFO - from FLGUIMain.py line 319 method GUI_main_SM_commands_execute: command_to_be_executed: SM name Preview, command: Auto, autopilot is False 
+2025-07-16 14:37:47,803 - INFO - from FLGUIMain.py line 289 method GUI_main_event_loop: Error local variable 'message_GUI' referenced before assignment 
+2025-07-16 14:37:47,803 - INFO - from FLGUIMain.py line 290 method GUI_main_event_loop: Error traceback: Traceback (most recent call last):
+  File "D:\Banfi\Github\Fluently\Code\Python\EBuddy\fluently\FLGUIMain.py", line 282, in GUI_main_event_loop
+    message_GUI = "Message: " + message_GUI
+UnboundLocalError: local variable 'message_GUI' referenced before assignment
+ 
+2025-07-16 14:37:47,995 - INFO - from FLGUIMain.py line 524 method GUI_main_update_a_SM: self.window_main.write_event_value, key -THREAD_READ_COMMANDS- ,value Preview 
+2025-07-16 14:37:47,995 - INFO - from FLQueue.py line 13 method element_insert: element_insert: inserted SM_name = Components, command = Auto, autopilot_is_on = False 
+2025-07-16 14:37:47,996 - INFO - from FLQueue.py line 19 method element_remove: element_remove: removed SM_name = Components, command = Auto, autopilot_is_on = False 
+2025-07-16 14:37:47,996 - INFO - from FLGUIMain.py line 319 method GUI_main_SM_commands_execute: command_to_be_executed: SM name Components, command: Auto, autopilot is False 
+2025-07-16 14:37:47,998 - INFO - from FLGUIMain.py line 238 method GUI_main_event_loop: Selected tab: Preview 
+2025-07-16 14:37:48,081 - INFO - from FLGUIMain.py line 289 method GUI_main_event_loop: Error local variable 'message_GUI' referenced before assignment 
+2025-07-16 14:37:48,081 - INFO - from FLGUIMain.py line 290 method GUI_main_event_loop: Error traceback: Traceback (most recent call last):
+  File "D:\Banfi\Github\Fluently\Code\Python\EBuddy\fluently\FLGUIMain.py", line 282, in GUI_main_event_loop
+    message_GUI = "Message: " + message_GUI
+UnboundLocalError: local variable 'message_GUI' referenced before assignment
+ 
+2025-07-16 14:37:48,245 - INFO - from FLGUIMain.py line 524 method GUI_main_update_a_SM: self.window_main.write_event_value, key -THREAD_READ_COMMANDS- ,value Components 
+2025-07-16 14:37:48,248 - INFO - from FLGUIMain.py line 238 method GUI_main_event_loop: Selected tab: Components 
+2025-07-16 14:37:48,321 - INFO - from FLGUIMain.py line 289 method GUI_main_event_loop: Error local variable 'message_GUI' referenced before assignment 
+2025-07-16 14:37:48,321 - INFO - from FLGUIMain.py line 290 method GUI_main_event_loop: Error traceback: Traceback (most recent call last):
+  File "D:\Banfi\Github\Fluently\Code\Python\EBuddy\fluently\FLGUIMain.py", line 282, in GUI_main_event_loop
+    message_GUI = "Message: " + message_GUI
+UnboundLocalError: local variable 'message_GUI' referenced before assignment
+ 
+2025-07-16 14:37:52,671 - INFO - from FLQueue.py line 13 method element_insert: element_insert: inserted SM_name = Components, command = Preview, autopilot_is_on = None 
+2025-07-16 14:37:52,671 - INFO - from FLCommands.py line 106 method commands_read_and_insert_into_queue: commands_read: command appended to the queue: Components, Preview, None 
+2025-07-16 14:37:52,672 - INFO - from FLCommands.py line 67 method command_file_archive: File archived to D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\Command\CommandForEBuddyHistory\2025_07_16__14_37_52_Components_Preview_queued.txt 
+2025-07-16 14:37:52,672 - INFO - from FLQueue.py line 19 method element_remove: element_remove: removed SM_name = Components, command = Preview, autopilot_is_on = None 
+2025-07-16 14:37:52,672 - INFO - from FLGUIMain.py line 319 method GUI_main_SM_commands_execute: command_to_be_executed: SM name Components, command: Preview, autopilot is None 
+2025-07-16 14:37:52,675 - INFO - from FLGUIMain.py line 238 method GUI_main_event_loop: Selected tab: Components 
+2025-07-16 14:37:52,751 - INFO - from FLGUIMain.py line 289 method GUI_main_event_loop: Error local variable 'message_GUI' referenced before assignment 
+2025-07-16 14:37:52,751 - INFO - from FLGUIMain.py line 290 method GUI_main_event_loop: Error traceback: Traceback (most recent call last):
+  File "D:\Banfi\Github\Fluently\Code\Python\EBuddy\fluently\FLGUIMain.py", line 282, in GUI_main_event_loop
+    message_GUI = "Message: " + message_GUI
+UnboundLocalError: local variable 'message_GUI' referenced before assignment
+ 
+2025-07-16 14:37:52,793 - INFO - from FLGUIMain.py line 238 method GUI_main_event_loop: Selected tab: Preview 
+2025-07-16 14:37:52,872 - INFO - from FLGUIMain.py line 289 method GUI_main_event_loop: Error local variable 'message_GUI' referenced before assignment 
+2025-07-16 14:37:52,872 - INFO - from FLGUIMain.py line 290 method GUI_main_event_loop: Error traceback: Traceback (most recent call last):
+  File "D:\Banfi\Github\Fluently\Code\Python\EBuddy\fluently\FLGUIMain.py", line 282, in GUI_main_event_loop
+    message_GUI = "Message: " + message_GUI
+UnboundLocalError: local variable 'message_GUI' referenced before assignment
+ 
+2025-07-16 14:37:53,127 - INFO - from FLGUIMain.py line 524 method GUI_main_update_a_SM: self.window_main.write_event_value, key -THREAD_READ_COMMANDS- ,value Components 
+2025-07-16 14:37:53,129 - INFO - from FLGUIMain.py line 238 method GUI_main_event_loop: Selected tab: Components 
+2025-07-16 14:37:53,206 - INFO - from FLGUIMain.py line 289 method GUI_main_event_loop: Error local variable 'message_GUI' referenced before assignment 
+2025-07-16 14:37:53,206 - INFO - from FLGUIMain.py line 290 method GUI_main_event_loop: Error traceback: Traceback (most recent call last):
+  File "D:\Banfi\Github\Fluently\Code\Python\EBuddy\fluently\FLGUIMain.py", line 282, in GUI_main_event_loop
+    message_GUI = "Message: " + message_GUI
+UnboundLocalError: local variable 'message_GUI' referenced before assignment
+ 
+2025-07-16 14:38:00,202 - INFO - from FLQueue.py line 13 method element_insert: element_insert: inserted SM_name = Preview, command = CheckArtecStudioIsOff, autopilot_is_on = None 
+2025-07-16 14:38:00,202 - INFO - from FLCommands.py line 106 method commands_read_and_insert_into_queue: commands_read: command appended to the queue: Preview, CheckArtecStudioIsOff, None 
+2025-07-16 14:38:00,202 - INFO - from FLCommands.py line 67 method command_file_archive: File archived to D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\Command\CommandForEBuddyHistory\2025_07_16__14_38_00_Preview_CheckArtecStudioIsOff_queued.txt 
+2025-07-16 14:38:00,202 - INFO - from FLQueue.py line 19 method element_remove: element_remove: removed SM_name = Preview, command = CheckArtecStudioIsOff, autopilot_is_on = None 
+2025-07-16 14:38:00,202 - INFO - from FLGUIMain.py line 319 method GUI_main_SM_commands_execute: command_to_be_executed: SM name Preview, command: CheckArtecStudioIsOff, autopilot is None 
+2025-07-16 14:38:00,205 - INFO - from FLGUIMain.py line 238 method GUI_main_event_loop: Selected tab: Preview 
+2025-07-16 14:38:00,286 - INFO - from FLGUIMain.py line 289 method GUI_main_event_loop: Error local variable 'message_GUI' referenced before assignment 
+2025-07-16 14:38:00,286 - INFO - from FLGUIMain.py line 290 method GUI_main_event_loop: Error traceback: Traceback (most recent call last):
+  File "D:\Banfi\Github\Fluently\Code\Python\EBuddy\fluently\FLGUIMain.py", line 282, in GUI_main_event_loop
+    message_GUI = "Message: " + message_GUI
+UnboundLocalError: local variable 'message_GUI' referenced before assignment
+ 
+2025-07-16 14:38:00,468 - INFO - from FLGUIMain.py line 524 method GUI_main_update_a_SM: self.window_main.write_event_value, key -THREAD_READ_COMMANDS- ,value Preview 
+2025-07-16 14:38:00,470 - INFO - from FLGUIMain.py line 238 method GUI_main_event_loop: Selected tab: Preview 
+2025-07-16 14:38:00,549 - INFO - from FLGUIMain.py line 289 method GUI_main_event_loop: Error local variable 'message_GUI' referenced before assignment 
+2025-07-16 14:38:00,549 - INFO - from FLGUIMain.py line 290 method GUI_main_event_loop: Error traceback: Traceback (most recent call last):
+  File "D:\Banfi\Github\Fluently\Code\Python\EBuddy\fluently\FLGUIMain.py", line 282, in GUI_main_event_loop
+    message_GUI = "Message: " + message_GUI
+UnboundLocalError: local variable 'message_GUI' referenced before assignment
+ 
+2025-07-16 14:38:27,452 - INFO - from FLQueue.py line 13 method element_insert: element_insert: inserted SM_name = Preview, command = KillAllArtecStudios, autopilot_is_on = None 
+2025-07-16 14:38:27,452 - INFO - from FLCommands.py line 106 method commands_read_and_insert_into_queue: commands_read: command appended to the queue: Preview, KillAllArtecStudios, None 
+2025-07-16 14:38:27,453 - INFO - from FLCommands.py line 67 method command_file_archive: File archived to D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\Command\CommandForEBuddyHistory\2025_07_16__14_38_27_Preview_KillAllArtecStudios_queued.txt 
+2025-07-16 14:38:27,453 - INFO - from FLQueue.py line 19 method element_remove: element_remove: removed SM_name = Preview, command = KillAllArtecStudios, autopilot_is_on = None 
+2025-07-16 14:38:27,453 - INFO - from FLGUIMain.py line 319 method GUI_main_SM_commands_execute: command_to_be_executed: SM name Preview, command: KillAllArtecStudios, autopilot is None 
+2025-07-16 14:38:27,630 - INFO - from FLGUIMain.py line 524 method GUI_main_update_a_SM: self.window_main.write_event_value, key -THREAD_READ_COMMANDS- ,value Preview 
+2025-07-16 14:38:27,632 - INFO - from FLGUIMain.py line 238 method GUI_main_event_loop: Selected tab: Preview 
+2025-07-16 14:38:27,711 - INFO - from FLGUIMain.py line 289 method GUI_main_event_loop: Error local variable 'message_GUI' referenced before assignment 
+2025-07-16 14:38:27,711 - INFO - from FLGUIMain.py line 290 method GUI_main_event_loop: Error traceback: Traceback (most recent call last):
+  File "D:\Banfi\Github\Fluently\Code\Python\EBuddy\fluently\FLGUIMain.py", line 282, in GUI_main_event_loop
+    message_GUI = "Message: " + message_GUI
+UnboundLocalError: local variable 'message_GUI' referenced before assignment
+ 
+2025-07-16 14:38:43,117 - INFO - from FLQueue.py line 13 method element_insert: element_insert: inserted SM_name = Preview, command = KillAllArtecStudios, autopilot_is_on = None 
+2025-07-16 14:38:43,117 - INFO - from FLCommands.py line 106 method commands_read_and_insert_into_queue: commands_read: command appended to the queue: Preview, KillAllArtecStudios, None 
+2025-07-16 14:38:43,118 - INFO - from FLCommands.py line 67 method command_file_archive: File archived to D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\Command\CommandForEBuddyHistory\2025_07_16__14_38_43_Preview_KillAllArtecStudios_queued.txt 
+2025-07-16 14:38:43,119 - INFO - from FLQueue.py line 19 method element_remove: element_remove: removed SM_name = Preview, command = KillAllArtecStudios, autopilot_is_on = None 
+2025-07-16 14:38:43,119 - INFO - from FLGUIMain.py line 319 method GUI_main_SM_commands_execute: command_to_be_executed: SM name Preview, command: KillAllArtecStudios, autopilot is None 
+2025-07-16 14:38:43,397 - INFO - from FLGUIMain.py line 238 method GUI_main_event_loop: Selected tab: Preview 
+2025-07-16 14:38:43,399 - INFO - from FLGUIMain.py line 524 method GUI_main_update_a_SM: self.window_main.write_event_value, key -THREAD_READ_COMMANDS- ,value Preview 
+2025-07-16 14:38:43,477 - INFO - from FLGUIMain.py line 289 method GUI_main_event_loop: Error local variable 'message_GUI' referenced before assignment 
+2025-07-16 14:38:43,477 - INFO - from FLGUIMain.py line 290 method GUI_main_event_loop: Error traceback: Traceback (most recent call last):
+  File "D:\Banfi\Github\Fluently\Code\Python\EBuddy\fluently\FLGUIMain.py", line 282, in GUI_main_event_loop
+    message_GUI = "Message: " + message_GUI
+UnboundLocalError: local variable 'message_GUI' referenced before assignment
+ 
+2025-07-16 14:39:36,370 - INFO - from FLQueue.py line 13 method element_insert: element_insert: inserted SM_name = Preview, command = StartArtecStudio, autopilot_is_on = None 
+2025-07-16 14:39:36,371 - INFO - from FLCommands.py line 106 method commands_read_and_insert_into_queue: commands_read: command appended to the queue: Preview, StartArtecStudio, None 
+2025-07-16 14:39:36,372 - INFO - from FLCommands.py line 67 method command_file_archive: File archived to D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\Command\CommandForEBuddyHistory\2025_07_16__14_39_36_Preview_StartArtecStudio_queued.txt 
+2025-07-16 14:39:36,373 - INFO - from FLQueue.py line 19 method element_remove: element_remove: removed SM_name = Preview, command = StartArtecStudio, autopilot_is_on = None 
+2025-07-16 14:39:36,373 - INFO - from FLGUIMain.py line 319 method GUI_main_SM_commands_execute: command_to_be_executed: SM name Preview, command: StartArtecStudio, autopilot is None 
+2025-07-16 14:40:02,021 - INFO - from FLGUIMain.py line 524 method GUI_main_update_a_SM: self.window_main.write_event_value, key -THREAD_READ_COMMANDS- ,value Preview 
+2025-07-16 14:40:02,023 - INFO - from FLGUIMain.py line 238 method GUI_main_event_loop: Selected tab: Preview 
+2025-07-16 14:40:02,103 - INFO - from FLGUIMain.py line 289 method GUI_main_event_loop: Error local variable 'message_GUI' referenced before assignment 
+2025-07-16 14:40:02,104 - INFO - from FLGUIMain.py line 290 method GUI_main_event_loop: Error traceback: Traceback (most recent call last):
+  File "D:\Banfi\Github\Fluently\Code\Python\EBuddy\fluently\FLGUIMain.py", line 282, in GUI_main_event_loop
+    message_GUI = "Message: " + message_GUI
+UnboundLocalError: local variable 'message_GUI' referenced before assignment
+ 
+2025-07-16 14:40:10,042 - INFO - from FLQueue.py line 13 method element_insert: element_insert: inserted SM_name = Preview, command = StartScanMenu, autopilot_is_on = None 
+2025-07-16 14:40:10,043 - INFO - from FLCommands.py line 106 method commands_read_and_insert_into_queue: commands_read: command appended to the queue: Preview, StartScanMenu, None 
+2025-07-16 14:40:10,044 - INFO - from FLCommands.py line 67 method command_file_archive: File archived to D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\Command\CommandForEBuddyHistory\2025_07_16__14_40_10_Preview_StartScanMenu_queued.txt 
+2025-07-16 14:40:10,044 - INFO - from FLQueue.py line 19 method element_remove: element_remove: removed SM_name = Preview, command = StartScanMenu, autopilot_is_on = None 
+2025-07-16 14:40:10,044 - INFO - from FLGUIMain.py line 319 method GUI_main_SM_commands_execute: command_to_be_executed: SM name Preview, command: StartScanMenu, autopilot is None 
+2025-07-16 14:40:14,151 - INFO - from FLGUIMain.py line 238 method GUI_main_event_loop: Selected tab: Preview 
+2025-07-16 14:40:14,153 - INFO - from FLGUIMain.py line 524 method GUI_main_update_a_SM: self.window_main.write_event_value, key -THREAD_READ_COMMANDS- ,value Preview 
+2025-07-16 14:40:14,235 - INFO - from FLGUIMain.py line 289 method GUI_main_event_loop: Error local variable 'message_GUI' referenced before assignment 
+2025-07-16 14:40:14,235 - INFO - from FLGUIMain.py line 290 method GUI_main_event_loop: Error traceback: Traceback (most recent call last):
+  File "D:\Banfi\Github\Fluently\Code\Python\EBuddy\fluently\FLGUIMain.py", line 282, in GUI_main_event_loop
+    message_GUI = "Message: " + message_GUI
+UnboundLocalError: local variable 'message_GUI' referenced before assignment
+ 

@@ -1,0 +1,68 @@
+#####################################
+# Oliver & Stefano Demo 30.08.24 Do #
+#####################################
+Remember that if scanner is not seen, restart Artec
+Show how arrows change SM
+
+Instructions F5:
+    - Sequence of help instructions, which can be used wherever we want inside a SM
+    - Use Next + StateDo
+    - Show autopilot
+    - Show code StateDo, here there is no feedback from the states, just sleep time
+    - Show how to add End
+
+Preview F2:
+Show the whole SM
+
+ShortcutCreateMesh:
+What is a shortcut
+SM contains all shortcuts until Mesh is created
+
+Esc == Autopilot off
+
+#########################################
+# Oliver & Stefano Demo 30.08.24 Report #
+#########################################
+x See FluentlyDevices.doc GUI interactions
+x Demo a fine dicembre
+x Oliver vuole che ci siano almeno due livelli d'interazione: user basic, user advanced, che lo user sceglie all'inizio dell'interazione
+x Interactions to model:
+  Oliver considera ambito di Fluent le interazioni con il cobot, non con Artec Studio (discuss this with SB)
+  Oliver accetta che io sviluppi in primis l'interazione man machine con Frank ma lo interessa poco poichè non c'è il robot
+x Mostrare ad Oliver i passi che EBuddy fa per l'image processing, e "venderglieli", dimostrando che quei passi diventano "straight ahead"
+    x Scan on the field: provare di piu', come mai continuava a perdere il tracking? Forse nel ring2 va meglio?
+        x Prova usando il robot e facendo girare la tavola
+        x Se tracking lost è inevitabile (ma non penso), accorgersi che diventa red e dire di tornare indietro di qualche grado
+x Oliver vuole vedere la demo d'interazione man machine sul robot
+    xAA Basic user: Oliver vuole che EBuddy gli dica ogni cosa che deve fare, sin dall'inizio
+    xAA L'approccio a tabs risulta piu' potente per advanced user, ridurlo al minimo per basic users che puo' risultare confuso
+    x Integrare asap voce + intenti con Rocco: Oliver vuole una demo completa
+    x Instructions change: il ring 2 deve iniziare dallo stesso punto di attacco del ring1
+    x Interaction scan ring 1 deve funzionare con molteplici interruzioni
+    x Implement global registrations ecc steps into SM
+x Robot scans workpiece moving around it
+    x Paolo dice che non è banale mantenere un angolo verso il pezzo e girargli attorno
+    x Ribadire la questione a SB
+    x Interactions:
+        x Disegnare uno use case
+        x user cambia il grado di orientamento dello scanner perchè da quella posa riesce a vedere meglio dei dettagli interni,
+        dà ok, learn cobot pose, acquire un ring, user evaluates if it is better
+
+###############################
+# Oliver Demo 12.11.24 Report #
+###############################
+x Oliver feedback, da fare da lun 25.11 entro ven 29.11
+    x Ascoltare e capire il suo bisogno: efficacia, si aspettava delle slides per la GA, e non una demo di EBuddy che gestisce il partial scan: è corretto?
+        x Lo vedo estremamente frustrato dal nostro fraintendimento, mi dice che deve fare tantissime cose e non avrà neanche tempo per guardarla, in seguito
+            x Suo giudizio (fuori luogo): noi sviluppatori "non vogliamo fare slides". Cosa lo fa pensare che IO non voglia fare slides?
+        x Come potevo realizzare delle slides, senza aver definito con lui il contenuto (la lista delle tematiche), ed il contenitore (il tempo della presentazione)?
+            Questo lo abbiamo fatto, discutendone per quasi 30 minuti, il 12.11, non prima!
+        x Lesson learned: evitare l'implicito: abbiamo parlato ma dovremmo imparare a ripeterci (ev scrivere) cosa verificheremo al prossimo incontro
+        x Alla fine del giorno dopo, nonostante il mio problema all'occhio, gli ho consegnato le slides
+    x Roles and rules: coesione (vs accoppiamento): login lo fa Corrado, a me arriva un msg ROS, non devo sapere di tutto
+                        (Vengono fatte modifiche alle celle, non si avvisa nessuno, e Corrado perde molto tempo per capire che le cose sono cambiate)
+    x Roles and rules: roles: lui mi considera il respo PA. Ok. Questo va comunicato, si fissano obiettivi misurabili da raggiungere, si crea il contatto col partner prima industria
+    x Roles and rules: il capo progetto prende decisioni e le mantiene, non rimanda dicendo "dobbiamo vedere come fare", oppure dice "entro la data X decideremo Y"
+        (x Roles: Paolo è il responsabile di CIM? Perchè vai a parlare con SDU, e Paolo non sa neanche se è invitato, quando Paolo ha investito una settimana per creare il link?)
+    x Qual'è il problema? Mi sono arrangiato da solo, senza Tommaso, e questo sarebbe un problema? Manca funzionalità, manca qualità, sono in ritardo?
+    (x Ascolto: i commissari avevano detto di non fare tutto: abbiamo rinunciato a quale funzionalità?)

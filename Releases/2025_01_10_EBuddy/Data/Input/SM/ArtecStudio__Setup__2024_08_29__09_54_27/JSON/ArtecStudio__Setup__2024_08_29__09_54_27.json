@@ -1,0 +1,16 @@
+{
+    "states": [
+		"UserPreset",
+		"CameraSetupAdvanced",
+		"CameraSetupBasic",
+		"Start"
+    ],
+    "transitions": [
+		    {
+            "trigger": "Auto",
+            "source": "Start",
+            "dest": "Start"
+        }
+    ],
+    "initial": "Start"
+}

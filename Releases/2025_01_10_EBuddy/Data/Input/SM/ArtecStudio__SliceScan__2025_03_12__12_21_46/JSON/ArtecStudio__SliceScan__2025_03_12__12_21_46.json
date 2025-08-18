@@ -1,0 +1,73 @@
+{
+    "states": [
+		"Start",
+		"Ready",
+		"TopScanPos",
+        "SliceScanHome",
+        "MovedUp",
+        "MovedDown"
+    ],
+    "transitions": [
+	    {
+            "trigger": "Auto",
+            "source": "Start",
+            "dest": "Ready"
+        },
+        {
+            "trigger": "StartCobot",
+            "source": "Ready",
+            "dest": "TopScanPos"
+        },
+        {
+            "trigger": "NextState",
+            "source": "TopScanPos",
+            "dest": "SliceScanHome"
+        },
+        {
+            "trigger": "Last",
+            "source": "SliceScanHome",
+            "dest": "TopScanPos"
+        },
+        {
+            "trigger": "MoveUp",
+            "source": "SliceScanHome",
+            "dest": "MovedUp"
+        },
+        {
+            "trigger": "MoveUp",
+            "source": "MovedUp",
+            "dest": "MovedUp"
+        },
+        {
+            "trigger": "MoveDown",
+            "source": "SliceScanHome",
+            "dest": "MovedDown"
+        },
+        {
+            "trigger": "MoveDown",
+            "source": "MovedDown",
+            "dest": "MovedDown"
+        },
+        {
+            "trigger": "MoveDown",
+            "source": "MovedUp",
+            "dest": "MovedDown"
+        },
+        {
+            "trigger": "MoveUp",
+            "source": "MovedDown",
+            "dest": "MovedUp"
+        },
+        {
+            "trigger": "GoHome",
+            "source": "MovedDown",
+            "dest": "SliceScanHome"
+        },
+        {
+            "trigger": "GoHome",
+            "source": "MovedUp",
+            "dest": "SliceScanHome"
+        }
+    ],
+    "initial": "Start"
+}

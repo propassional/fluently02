@@ -1,0 +1,55 @@
+{
+    "states": [
+		"Start",
+		"Ready",
+		"RototiltInstalled",
+		"MarkersApplied",
+		"RingBelowScanned",
+		"RingIntermediateScanned",
+		"RingAboveScanned",
+		"End"
+    ],
+    "transitions": [
+	    {
+            "trigger": "Next",
+            "source": "Start",
+            "dest": "Ready"
+        },
+        {
+            "trigger": "Next",
+            "source": "Ready",
+            "dest": "RototiltInstalled"
+        },
+        {
+            "trigger": "Next",
+            "source": "RototiltInstalled",
+            "dest": "MarkersApplied"
+        },
+        {
+            "trigger": "Next",
+            "source": "MarkersApplied",
+            "dest": "RingBelowScanned"
+        },
+        {
+            "trigger": "Next",
+            "source": "RingBelowScanned",
+            "dest": "RingIntermediateScanned"
+        },
+        {
+            "trigger": "Next",
+            "source": "RingIntermediateScanned",
+            "dest": "RingAboveScanned"
+        },
+		{
+            "trigger": "Next",
+            "source": "RingAboveScanned",
+            "dest": "End"
+        },
+		{
+            "trigger": "Next",
+            "source": "End",
+            "dest": "Ready"
+        }
+    ],
+    "initial": "Start"
+}

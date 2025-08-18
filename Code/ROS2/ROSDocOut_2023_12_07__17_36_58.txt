@@ -1,0 +1,2981 @@
+rosparam list:
+####################
+/fanuc_interface_node/create_license
+/fanuc_interface_node/fast_joints_hz
+/fanuc_interface_node/license_path
+/fanuc_interface_node/robot_ip
+/fanuc_interface_node/robot_port
+/fanuc_interface_node/robot_type
+/intent
+/move_group/allow_trajectory_execution
+/move_group/arm/default_planner_config
+/move_group/arm/longest_valid_segment_fraction
+/move_group/arm/planner_configs
+/move_group/arm/projection_evaluator
+/move_group/capabilities
+/move_group/controller_list
+/move_group/default_planning_pipeline
+/move_group/disable_capabilities
+/move_group/generic_hw_control_loop/cycle_time_error_threshold
+/move_group/generic_hw_control_loop/loop_hz
+/move_group/hardware_interface/joints
+/move_group/hardware_interface/sim_control_mode
+/move_group/jiggle_fraction
+/move_group/joint_state_controller/publish_rate
+/move_group/joint_state_controller/type
+/move_group/max_range
+/move_group/max_safe_path_cost
+/move_group/moveit_controller_manager
+/move_group/moveit_manage_controllers
+/move_group/moveit_sim_hw_interface/joint_model_group
+/move_group/moveit_sim_hw_interface/joint_model_group_pose
+/move_group/octomap_resolution
+/move_group/ompl/display_random_valid_states
+/move_group/ompl/link_for_exploration_tree
+/move_group/ompl/maximum_waypoint_distance
+/move_group/ompl/minimum_waypoint_count
+/move_group/ompl/simplify_solutions
+/move_group/plan_execution/max_replan_attempts
+/move_group/plan_execution/record_trajectory_state_frequency
+/move_group/planner_configs/BFMT/balanced
+/move_group/planner_configs/BFMT/cache_cc
+/move_group/planner_configs/BFMT/extended_fmt
+/move_group/planner_configs/BFMT/heuristics
+/move_group/planner_configs/BFMT/nearest_k
+/move_group/planner_configs/BFMT/num_samples
+/move_group/planner_configs/BFMT/optimality
+/move_group/planner_configs/BFMT/radius_multiplier
+/move_group/planner_configs/BFMT/type
+/move_group/planner_configs/BKPIECE/border_fraction
+/move_group/planner_configs/BKPIECE/failed_expansion_score_factor
+/move_group/planner_configs/BKPIECE/min_valid_path_fraction
+/move_group/planner_configs/BKPIECE/range
+/move_group/planner_configs/BKPIECE/type
+/move_group/planner_configs/BiEST/range
+/move_group/planner_configs/BiEST/type
+/move_group/planner_configs/BiTRRT/cost_threshold
+/move_group/planner_configs/BiTRRT/frountier_node_ratio
+/move_group/planner_configs/BiTRRT/frountier_threshold
+/move_group/planner_configs/BiTRRT/init_temperature
+/move_group/planner_configs/BiTRRT/range
+/move_group/planner_configs/BiTRRT/temp_change_factor
+/move_group/planner_configs/BiTRRT/type
+/move_group/planner_configs/EST/goal_bias
+/move_group/planner_configs/EST/range
+/move_group/planner_configs/EST/type
+/move_group/planner_configs/FMT/cache_cc
+/move_group/planner_configs/FMT/extended_fmt
+/move_group/planner_configs/FMT/heuristics
+/move_group/planner_configs/FMT/nearest_k
+/move_group/planner_configs/FMT/num_samples
+/move_group/planner_configs/FMT/radius_multiplier
+/move_group/planner_configs/FMT/type
+/move_group/planner_configs/KPIECE/border_fraction
+/move_group/planner_configs/KPIECE/failed_expansion_score_factor
+/move_group/planner_configs/KPIECE/goal_bias
+/move_group/planner_configs/KPIECE/min_valid_path_fraction
+/move_group/planner_configs/KPIECE/range
+/move_group/planner_configs/KPIECE/type
+/move_group/planner_configs/LBKPIECE/border_fraction
+/move_group/planner_configs/LBKPIECE/min_valid_path_fraction
+/move_group/planner_configs/LBKPIECE/range
+/move_group/planner_configs/LBKPIECE/type
+/move_group/planner_configs/LBTRRT/epsilon
+/move_group/planner_configs/LBTRRT/goal_bias
+/move_group/planner_configs/LBTRRT/range
+/move_group/planner_configs/LBTRRT/type
+/move_group/planner_configs/LazyPRM/range
+/move_group/planner_configs/LazyPRM/type
+/move_group/planner_configs/LazyPRMstar/type
+/move_group/planner_configs/PDST/type
+/move_group/planner_configs/PRM/max_nearest_neighbors
+/move_group/planner_configs/PRM/type
+/move_group/planner_configs/PRMstar/type
+/move_group/planner_configs/ProjEST/goal_bias
+/move_group/planner_configs/ProjEST/range
+/move_group/planner_configs/ProjEST/type
+/move_group/planner_configs/RRT/goal_bias
+/move_group/planner_configs/RRT/range
+/move_group/planner_configs/RRT/type
+/move_group/planner_configs/RRTConnect/range
+/move_group/planner_configs/RRTConnect/type
+/move_group/planner_configs/RRTstar/delay_collision_checking
+/move_group/planner_configs/RRTstar/goal_bias
+/move_group/planner_configs/RRTstar/range
+/move_group/planner_configs/RRTstar/type
+/move_group/planner_configs/SBL/range
+/move_group/planner_configs/SBL/type
+/move_group/planner_configs/SPARS/dense_delta_fraction
+/move_group/planner_configs/SPARS/max_failures
+/move_group/planner_configs/SPARS/sparse_delta_fraction
+/move_group/planner_configs/SPARS/stretch_factor
+/move_group/planner_configs/SPARS/type
+/move_group/planner_configs/SPARStwo/dense_delta_fraction
+/move_group/planner_configs/SPARStwo/max_failures
+/move_group/planner_configs/SPARStwo/sparse_delta_fraction
+/move_group/planner_configs/SPARStwo/stretch_factor
+/move_group/planner_configs/SPARStwo/type
+/move_group/planner_configs/STRIDE/degree
+/move_group/planner_configs/STRIDE/estimated_dimension
+/move_group/planner_configs/STRIDE/goal_bias
+/move_group/planner_configs/STRIDE/max_degree
+/move_group/planner_configs/STRIDE/max_pts_per_leaf
+/move_group/planner_configs/STRIDE/min_degree
+/move_group/planner_configs/STRIDE/min_valid_path_fraction
+/move_group/planner_configs/STRIDE/range
+/move_group/planner_configs/STRIDE/type
+/move_group/planner_configs/STRIDE/use_projected_distance
+/move_group/planner_configs/TRRT/frountierNodeRatio
+/move_group/planner_configs/TRRT/frountier_threshold
+/move_group/planner_configs/TRRT/goal_bias
+/move_group/planner_configs/TRRT/init_temperature
+/move_group/planner_configs/TRRT/k_constant
+/move_group/planner_configs/TRRT/max_states_failed
+/move_group/planner_configs/TRRT/min_temperature
+/move_group/planner_configs/TRRT/range
+/move_group/planner_configs/TRRT/temp_change_factor
+/move_group/planner_configs/TRRT/type
+/move_group/planning_plugin
+/move_group/planning_scene_monitor/publish_geometry_updates
+/move_group/planning_scene_monitor/publish_planning_scene
+/move_group/planning_scene_monitor/publish_planning_scene_hz
+/move_group/planning_scene_monitor/publish_state_updates
+/move_group/planning_scene_monitor/publish_transforms_updates
+/move_group/request_adapters
+/move_group/sense_for_plan/discard_overlapping_cost_sources
+/move_group/sense_for_plan/max_cost_sources
+/move_group/sense_for_plan/max_look_attempts
+/move_group/sense_for_plan/max_safe_path_cost
+/move_group/sensors
+/move_group/start_state_max_bounds_error
+/move_group/trajectory_execution/allowed_execution_duration_scaling
+/move_group/trajectory_execution/allowed_goal_duration_margin
+/move_group/trajectory_execution/allowed_start_tolerance
+/move_group/trajectory_execution/execution_duration_monitoring
+/move_group/trajectory_execution/execution_velocity_scaling
+/move_group/trajectory_execution/wait_for_trajectory_completion
+/mqtt_client/bridge/mqtt2ros
+/mqtt_client/bridge/ros2mqtt
+/mqtt_client/broker/host
+/mqtt_client/broker/port
+/onto_frequency
+/place_objects
+/ready_for_voice
+/robot_description
+/robot_description_kinematics/arm/kinematics_solver
+/robot_description_kinematics/arm/kinematics_solver_search_resolution
+/robot_description_kinematics/arm/kinematics_solver_timeout
+/robot_description_planning/cartesian_limits/max_rot_vel
+/robot_description_planning/cartesian_limits/max_trans_acc
+/robot_description_planning/cartesian_limits/max_trans_dec
+/robot_description_planning/cartesian_limits/max_trans_vel
+/robot_description_planning/joint_limits/J1/has_acceleration_limits
+/robot_description_planning/joint_limits/J1/has_velocity_limits
+/robot_description_planning/joint_limits/J1/max_acceleration
+/robot_description_planning/joint_limits/J1/max_velocity
+/robot_description_planning/joint_limits/J2/has_acceleration_limits
+/robot_description_planning/joint_limits/J2/has_velocity_limits
+/robot_description_planning/joint_limits/J2/max_acceleration
+/robot_description_planning/joint_limits/J2/max_velocity
+/robot_description_planning/joint_limits/J3/has_acceleration_limits
+/robot_description_planning/joint_limits/J3/has_velocity_limits
+/robot_description_planning/joint_limits/J3/max_acceleration
+/robot_description_planning/joint_limits/J3/max_velocity
+/robot_description_planning/joint_limits/J4/has_acceleration_limits
+/robot_description_planning/joint_limits/J4/has_velocity_limits
+/robot_description_planning/joint_limits/J4/max_acceleration
+/robot_description_planning/joint_limits/J4/max_velocity
+/robot_description_planning/joint_limits/J5/has_acceleration_limits
+/robot_description_planning/joint_limits/J5/has_velocity_limits
+/robot_description_planning/joint_limits/J5/max_acceleration
+/robot_description_planning/joint_limits/J5/max_velocity
+/robot_description_planning/joint_limits/J6/has_acceleration_limits
+/robot_description_planning/joint_limits/J6/has_velocity_limits
+/robot_description_planning/joint_limits/J6/max_acceleration
+/robot_description_planning/joint_limits/J6/max_velocity
+/robot_description_semantic
+/rosdistro
+/roslaunch/uris/host_10_11_31_112__36605
+/roslaunch/uris/host_10_11_31_112__40065
+/roslaunch/uris/host_10_11_31_112__41645
+/roslaunch/uris/host_10_11_31_112__43487
+/roslaunch/uris/host_10_11_31_112__45027
+/roslaunch/uris/host_10_11_31_112__45083
+/roslaunch/uris/host_10_11_31_113__43087
+/roslaunch/uris/host_10_11_31_113__45131
+/rosversion
+/run_id
+/rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037/motionplanning_planning_scene_monitor/publish_geometry_updates
+/rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037/motionplanning_planning_scene_monitor/publish_planning_scene
+/rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037/motionplanning_planning_scene_monitor/publish_planning_scene_hz
+/rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037/motionplanning_planning_scene_monitor/publish_state_updates
+/rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037/motionplanning_planning_scene_monitor/publish_transforms_updates
+/topics
+rosservice list:
+####################
+/apply_planning_scene
+/check_state_validity
+/clear_octomap
+/compute_cartesian_path
+/compute_fk
+/compute_ik
+/dynamic_ontology/get_loggers
+/dynamic_ontology/set_logger_level
+/fanuc_interface_node/get_loggers
+/fanuc_interface_node/set_logger_level
+/get_planner_params
+/get_planning_scene
+/intent_listener/get_loggers
+/intent_listener/set_logger_level
+/intent_publisher/get_loggers
+/intent_publisher/set_logger_level
+/move_group/get_loggers
+/move_group/load_map
+/move_group/ompl/set_parameters
+/move_group/plan_execution/set_parameters
+/move_group/planning_scene_monitor/set_parameters
+/move_group/save_map
+/move_group/sense_for_plan/set_parameters
+/move_group/set_logger_level
+/move_group/trajectory_execution/set_parameters
+/move_group_commander_wrappers_1701951924462759870/get_loggers
+/move_group_commander_wrappers_1701951924462759870/set_logger_level
+/mqtt_client/get_loggers
+/mqtt_client/is_connected
+/mqtt_client/set_logger_level
+/ontologenius/actions
+/ontologenius/class
+/ontologenius/class_index
+/ontologenius/conversion
+/ontologenius/data_property
+/ontologenius/data_property_index
+/ontologenius/individual
+/ontologenius/individual_index
+/ontologenius/object_property
+/ontologenius/object_property_index
+/ontologenius/reasoner
+/ontologenius/rest
+/ontologenius/sparql
+/ontologenius/sparql_index
+/ontologenius_core/get_loggers
+/ontologenius_core/set_logger_level
+/ontologenius_rest/get_loggers
+/ontologenius_rest/set_logger_level
+/plan_kinematic_path
+/planner/get_loggers
+/planner/set_logger_level
+/query_planner_interface
+/read_single_io
+/rob_st_pub/get_loggers
+/rob_st_pub/set_logger_level
+/ros_bridge/get_loggers
+/ros_bridge/set_logger_level
+/rosout/get_loggers
+/rosout/set_logger_level
+/rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037/get_loggers
+/rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037/load_config
+/rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037/load_config_discarding_changes
+/rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037/motionplanning_planning_scene_monitor/set_parameters
+/rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037/reload_shaders
+/rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037/save_config
+/rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037/set_logger_level
+/set_payload_num
+/set_planner_params
+/stf_pub/get_loggers
+/stf_pub/set_logger_level
+/vision_node/get_loggers
+/vision_node/set_logger_level
+/write_single_io
+rosmsg packages:
+####################
+actionlib
+actionlib_msgs
+actionlib_tutorials
+bond
+control_msgs
+controller_manager_msgs
+diagnostic_msgs
+dynamic_reconfigure
+gazebo_msgs
+geometry_msgs
+industrial_msgs
+map_msgs
+moveit_msgs
+nav_msgs
+object_recognition_msgs
+octomap_msgs
+pcl_msgs
+roscpp
+rosgraph_msgs
+rospy_tutorials
+sensor_msgs
+shape_msgs
+smach_msgs
+std_msgs
+stereo_msgs
+tf
+tf2_msgs
+theora_image_transport
+trajectory_msgs
+turtle_actionlib
+turtlesim
+visualization_msgs
+rosmsg list:
+####################
+actionlib/TestAction
+actionlib/TestActionFeedback
+actionlib/TestActionGoal
+actionlib/TestActionResult
+actionlib/TestFeedback
+actionlib/TestGoal
+actionlib/TestRequestAction
+actionlib/TestRequestActionFeedback
+actionlib/TestRequestActionGoal
+actionlib/TestRequestActionResult
+actionlib/TestRequestFeedback
+actionlib/TestRequestGoal
+actionlib/TestRequestResult
+actionlib/TestResult
+actionlib/TwoIntsAction
+actionlib/TwoIntsActionFeedback
+actionlib/TwoIntsActionGoal
+actionlib/TwoIntsActionResult
+actionlib/TwoIntsFeedback
+actionlib/TwoIntsGoal
+actionlib/TwoIntsResult
+actionlib_msgs/GoalID
+actionlib_msgs/GoalStatus
+actionlib_msgs/GoalStatusArray
+actionlib_tutorials/AveragingAction
+actionlib_tutorials/AveragingActionFeedback
+actionlib_tutorials/AveragingActionGoal
+actionlib_tutorials/AveragingActionResult
+actionlib_tutorials/AveragingFeedback
+actionlib_tutorials/AveragingGoal
+actionlib_tutorials/AveragingResult
+actionlib_tutorials/FibonacciAction
+actionlib_tutorials/FibonacciActionFeedback
+actionlib_tutorials/FibonacciActionGoal
+actionlib_tutorials/FibonacciActionResult
+actionlib_tutorials/FibonacciFeedback
+actionlib_tutorials/FibonacciGoal
+actionlib_tutorials/FibonacciResult
+bond/Constants
+bond/Status
+control_msgs/FollowJointTrajectoryAction
+control_msgs/FollowJointTrajectoryActionFeedback
+control_msgs/FollowJointTrajectoryActionGoal
+control_msgs/FollowJointTrajectoryActionResult
+control_msgs/FollowJointTrajectoryFeedback
+control_msgs/FollowJointTrajectoryGoal
+control_msgs/FollowJointTrajectoryResult
+control_msgs/GripperCommand
+control_msgs/GripperCommandAction
+control_msgs/GripperCommandActionFeedback
+control_msgs/GripperCommandActionGoal
+control_msgs/GripperCommandActionResult
+control_msgs/GripperCommandFeedback
+control_msgs/GripperCommandGoal
+control_msgs/GripperCommandResult
+control_msgs/JointControllerState
+control_msgs/JointJog
+control_msgs/JointTolerance
+control_msgs/JointTrajectoryAction
+control_msgs/JointTrajectoryActionFeedback
+control_msgs/JointTrajectoryActionGoal
+control_msgs/JointTrajectoryActionResult
+control_msgs/JointTrajectoryControllerState
+control_msgs/JointTrajectoryFeedback
+control_msgs/JointTrajectoryGoal
+control_msgs/JointTrajectoryResult
+control_msgs/PidState
+control_msgs/PointHeadAction
+control_msgs/PointHeadActionFeedback
+control_msgs/PointHeadActionGoal
+control_msgs/PointHeadActionResult
+control_msgs/PointHeadFeedback
+control_msgs/PointHeadGoal
+control_msgs/PointHeadResult
+control_msgs/SingleJointPositionAction
+control_msgs/SingleJointPositionActionFeedback
+control_msgs/SingleJointPositionActionGoal
+control_msgs/SingleJointPositionActionResult
+control_msgs/SingleJointPositionFeedback
+control_msgs/SingleJointPositionGoal
+control_msgs/SingleJointPositionResult
+controller_manager_msgs/ControllerState
+controller_manager_msgs/ControllerStatistics
+controller_manager_msgs/ControllersStatistics
+controller_manager_msgs/HardwareInterfaceResources
+diagnostic_msgs/DiagnosticArray
+diagnostic_msgs/DiagnosticStatus
+diagnostic_msgs/KeyValue
+dynamic_reconfigure/BoolParameter
+dynamic_reconfigure/Config
+dynamic_reconfigure/ConfigDescription
+dynamic_reconfigure/DoubleParameter
+dynamic_reconfigure/Group
+dynamic_reconfigure/GroupState
+dynamic_reconfigure/IntParameter
+dynamic_reconfigure/ParamDescription
+dynamic_reconfigure/SensorLevels
+dynamic_reconfigure/StrParameter
+gazebo_msgs/ContactState
+gazebo_msgs/ContactsState
+gazebo_msgs/LinkState
+gazebo_msgs/LinkStates
+gazebo_msgs/ModelState
+gazebo_msgs/ModelStates
+gazebo_msgs/ODEJointProperties
+gazebo_msgs/ODEPhysics
+gazebo_msgs/PerformanceMetrics
+gazebo_msgs/SensorPerformanceMetric
+gazebo_msgs/WorldState
+geometry_msgs/Accel
+geometry_msgs/AccelStamped
+geometry_msgs/AccelWithCovariance
+geometry_msgs/AccelWithCovarianceStamped
+geometry_msgs/Inertia
+geometry_msgs/InertiaStamped
+geometry_msgs/Point
+geometry_msgs/Point32
+geometry_msgs/PointStamped
+geometry_msgs/Polygon
+geometry_msgs/PolygonStamped
+geometry_msgs/Pose
+geometry_msgs/Pose2D
+geometry_msgs/PoseArray
+geometry_msgs/PoseStamped
+geometry_msgs/PoseWithCovariance
+geometry_msgs/PoseWithCovarianceStamped
+geometry_msgs/Quaternion
+geometry_msgs/QuaternionStamped
+geometry_msgs/Transform
+geometry_msgs/TransformStamped
+geometry_msgs/Twist
+geometry_msgs/TwistStamped
+geometry_msgs/TwistWithCovariance
+geometry_msgs/TwistWithCovarianceStamped
+geometry_msgs/Vector3
+geometry_msgs/Vector3Stamped
+geometry_msgs/Wrench
+geometry_msgs/WrenchStamped
+industrial_msgs/DebugLevel
+industrial_msgs/DeviceInfo
+industrial_msgs/RobotMode
+industrial_msgs/RobotStatus
+industrial_msgs/ServiceReturnCode
+industrial_msgs/TriState
+map_msgs/OccupancyGridUpdate
+map_msgs/PointCloud2Update
+map_msgs/ProjectedMap
+map_msgs/ProjectedMapInfo
+moveit_msgs/AllowedCollisionEntry
+moveit_msgs/AllowedCollisionMatrix
+moveit_msgs/AttachedCollisionObject
+moveit_msgs/BoundingVolume
+moveit_msgs/CartesianPoint
+moveit_msgs/CartesianTrajectory
+moveit_msgs/CartesianTrajectoryPoint
+moveit_msgs/CollisionObject
+moveit_msgs/ConstraintEvalResult
+moveit_msgs/Constraints
+moveit_msgs/ContactInformation
+moveit_msgs/CostSource
+moveit_msgs/DisplayRobotState
+moveit_msgs/DisplayTrajectory
+moveit_msgs/ExecuteTrajectoryAction
+moveit_msgs/ExecuteTrajectoryActionFeedback
+moveit_msgs/ExecuteTrajectoryActionGoal
+moveit_msgs/ExecuteTrajectoryActionResult
+moveit_msgs/ExecuteTrajectoryFeedback
+moveit_msgs/ExecuteTrajectoryGoal
+moveit_msgs/ExecuteTrajectoryResult
+moveit_msgs/GenericTrajectory
+moveit_msgs/Grasp
+moveit_msgs/GripperTranslation
+moveit_msgs/JointConstraint
+moveit_msgs/JointLimits
+moveit_msgs/KinematicSolverInfo
+moveit_msgs/LinkPadding
+moveit_msgs/LinkScale
+moveit_msgs/MotionPlanDetailedResponse
+moveit_msgs/MotionPlanRequest
+moveit_msgs/MotionPlanResponse
+moveit_msgs/MotionSequenceItem
+moveit_msgs/MotionSequenceRequest
+moveit_msgs/MotionSequenceResponse
+moveit_msgs/MoveGroupAction
+moveit_msgs/MoveGroupActionFeedback
+moveit_msgs/MoveGroupActionGoal
+moveit_msgs/MoveGroupActionResult
+moveit_msgs/MoveGroupFeedback
+moveit_msgs/MoveGroupGoal
+moveit_msgs/MoveGroupResult
+moveit_msgs/MoveGroupSequenceAction
+moveit_msgs/MoveGroupSequenceActionFeedback
+moveit_msgs/MoveGroupSequenceActionGoal
+moveit_msgs/MoveGroupSequenceActionResult
+moveit_msgs/MoveGroupSequenceFeedback
+moveit_msgs/MoveGroupSequenceGoal
+moveit_msgs/MoveGroupSequenceResult
+moveit_msgs/MoveItErrorCodes
+moveit_msgs/ObjectColor
+moveit_msgs/OrientationConstraint
+moveit_msgs/OrientedBoundingBox
+moveit_msgs/PickupAction
+moveit_msgs/PickupActionFeedback
+moveit_msgs/PickupActionGoal
+moveit_msgs/PickupActionResult
+moveit_msgs/PickupFeedback
+moveit_msgs/PickupGoal
+moveit_msgs/PickupResult
+moveit_msgs/PlaceAction
+moveit_msgs/PlaceActionFeedback
+moveit_msgs/PlaceActionGoal
+moveit_msgs/PlaceActionResult
+moveit_msgs/PlaceFeedback
+moveit_msgs/PlaceGoal
+moveit_msgs/PlaceLocation
+moveit_msgs/PlaceResult
+moveit_msgs/PlannerInterfaceDescription
+moveit_msgs/PlannerParams
+moveit_msgs/PlanningOptions
+moveit_msgs/PlanningScene
+moveit_msgs/PlanningSceneComponents
+moveit_msgs/PlanningSceneWorld
+moveit_msgs/PositionConstraint
+moveit_msgs/PositionIKRequest
+moveit_msgs/RobotState
+moveit_msgs/RobotTrajectory
+moveit_msgs/TrajectoryConstraints
+moveit_msgs/VisibilityConstraint
+moveit_msgs/WorkspaceParameters
+nav_msgs/GetMapAction
+nav_msgs/GetMapActionFeedback
+nav_msgs/GetMapActionGoal
+nav_msgs/GetMapActionResult
+nav_msgs/GetMapFeedback
+nav_msgs/GetMapGoal
+nav_msgs/GetMapResult
+nav_msgs/GridCells
+nav_msgs/MapMetaData
+nav_msgs/OccupancyGrid
+nav_msgs/Odometry
+nav_msgs/Path
+object_recognition_msgs/ObjectInformation
+object_recognition_msgs/ObjectRecognitionAction
+object_recognition_msgs/ObjectRecognitionActionFeedback
+object_recognition_msgs/ObjectRecognitionActionGoal
+object_recognition_msgs/ObjectRecognitionActionResult
+object_recognition_msgs/ObjectRecognitionFeedback
+object_recognition_msgs/ObjectRecognitionGoal
+object_recognition_msgs/ObjectRecognitionResult
+object_recognition_msgs/ObjectType
+object_recognition_msgs/RecognizedObject
+object_recognition_msgs/RecognizedObjectArray
+object_recognition_msgs/Table
+object_recognition_msgs/TableArray
+octomap_msgs/Octomap
+octomap_msgs/OctomapWithPose
+pcl_msgs/ModelCoefficients
+pcl_msgs/PointIndices
+pcl_msgs/PolygonMesh
+pcl_msgs/Vertices
+roscpp/Logger
+rosgraph_msgs/Clock
+rosgraph_msgs/Log
+rosgraph_msgs/TopicStatistics
+rospy_tutorials/Floats
+rospy_tutorials/HeaderString
+sensor_msgs/BatteryState
+sensor_msgs/CameraInfo
+sensor_msgs/ChannelFloat32
+sensor_msgs/CompressedImage
+sensor_msgs/FluidPressure
+sensor_msgs/Illuminance
+sensor_msgs/Image
+sensor_msgs/Imu
+sensor_msgs/JointState
+sensor_msgs/Joy
+sensor_msgs/JoyFeedback
+sensor_msgs/JoyFeedbackArray
+sensor_msgs/LaserEcho
+sensor_msgs/LaserScan
+sensor_msgs/MagneticField
+sensor_msgs/MultiDOFJointState
+sensor_msgs/MultiEchoLaserScan
+sensor_msgs/NavSatFix
+sensor_msgs/NavSatStatus
+sensor_msgs/PointCloud
+sensor_msgs/PointCloud2
+sensor_msgs/PointField
+sensor_msgs/Range
+sensor_msgs/RegionOfInterest
+sensor_msgs/RelativeHumidity
+sensor_msgs/Temperature
+sensor_msgs/TimeReference
+shape_msgs/Mesh
+shape_msgs/MeshTriangle
+shape_msgs/Plane
+shape_msgs/SolidPrimitive
+smach_msgs/SmachContainerInitialStatusCmd
+smach_msgs/SmachContainerStatus
+smach_msgs/SmachContainerStructure
+std_msgs/Bool
+std_msgs/Byte
+std_msgs/ByteMultiArray
+std_msgs/Char
+std_msgs/ColorRGBA
+std_msgs/Duration
+std_msgs/Empty
+std_msgs/Float32
+std_msgs/Float32MultiArray
+std_msgs/Float64
+std_msgs/Float64MultiArray
+std_msgs/Header
+std_msgs/Int16
+std_msgs/Int16MultiArray
+std_msgs/Int32
+std_msgs/Int32MultiArray
+std_msgs/Int64
+std_msgs/Int64MultiArray
+std_msgs/Int8
+std_msgs/Int8MultiArray
+std_msgs/MultiArrayDimension
+std_msgs/MultiArrayLayout
+std_msgs/String
+std_msgs/Time
+std_msgs/UInt16
+std_msgs/UInt16MultiArray
+std_msgs/UInt32
+std_msgs/UInt32MultiArray
+std_msgs/UInt64
+std_msgs/UInt64MultiArray
+std_msgs/UInt8
+std_msgs/UInt8MultiArray
+stereo_msgs/DisparityImage
+tf/tfMessage
+tf2_msgs/LookupTransformAction
+tf2_msgs/LookupTransformActionFeedback
+tf2_msgs/LookupTransformActionGoal
+tf2_msgs/LookupTransformActionResult
+tf2_msgs/LookupTransformFeedback
+tf2_msgs/LookupTransformGoal
+tf2_msgs/LookupTransformResult
+tf2_msgs/TF2Error
+tf2_msgs/TFMessage
+theora_image_transport/Packet
+trajectory_msgs/JointTrajectory
+trajectory_msgs/JointTrajectoryPoint
+trajectory_msgs/MultiDOFJointTrajectory
+trajectory_msgs/MultiDOFJointTrajectoryPoint
+turtle_actionlib/ShapeAction
+turtle_actionlib/ShapeActionFeedback
+turtle_actionlib/ShapeActionGoal
+turtle_actionlib/ShapeActionResult
+turtle_actionlib/ShapeFeedback
+turtle_actionlib/ShapeGoal
+turtle_actionlib/ShapeResult
+turtle_actionlib/Velocity
+turtlesim/Color
+turtlesim/Pose
+visualization_msgs/ImageMarker
+visualization_msgs/InteractiveMarker
+visualization_msgs/InteractiveMarkerControl
+visualization_msgs/InteractiveMarkerFeedback
+visualization_msgs/InteractiveMarkerInit
+visualization_msgs/InteractiveMarkerPose
+visualization_msgs/InteractiveMarkerUpdate
+visualization_msgs/Marker
+visualization_msgs/MarkerArray
+visualization_msgs/MenuEntry
+rosnode list:
+####################
+/dynamic_ontology
+/fanuc_interface_node
+/intent_listener
+/intent_publisher
+/move_group
+/move_group_commander_wrappers_1701951924462759870
+/mqtt_client
+/ontologenius_core
+/ontologenius_rest
+/planner
+/rob_st_pub
+/ros_bridge
+/rosout
+/rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037
+/stf_pub
+/vision_node
+rostopic list:
+####################
+/arm_controller/follow_joint_trajectory/cancel
+/arm_controller/follow_joint_trajectory/feedback
+/arm_controller/follow_joint_trajectory/goal
+/arm_controller/follow_joint_trajectory/result
+/arm_controller/follow_joint_trajectory/status
+/attached_collision_object
+/clicked_point
+/collision_object
+/detected_objects
+/execute_trajectory/cancel
+/execute_trajectory/feedback
+/execute_trajectory/goal
+/execute_trajectory/result
+/execute_trajectory/status
+/fanuc_feedback
+/initialpose
+/joint_states
+/move_base_simple/goal
+/move_group/cancel
+/move_group/display_contacts
+/move_group/display_planned_path
+/move_group/feedback
+/move_group/goal
+/move_group/monitored_planning_scene
+/move_group/ompl/parameter_descriptions
+/move_group/ompl/parameter_updates
+/move_group/plan_execution/parameter_descriptions
+/move_group/plan_execution/parameter_updates
+/move_group/planning_scene_monitor/parameter_descriptions
+/move_group/planning_scene_monitor/parameter_updates
+/move_group/result
+/move_group/sense_for_plan/parameter_descriptions
+/move_group/sense_for_plan/parameter_updates
+/move_group/status
+/move_group/trajectory_execution/parameter_descriptions
+/move_group/trajectory_execution/parameter_updates
+/mqtt_to_ros
+/mqtt_to_ros/robot
+/mqtt_to_ros/text_output
+/nlu/robot_intent
+/ontologenius/end
+/ontologenius/feeder_notifications
+/ontologenius/insert
+/ontologenius/insert_echo
+/ontologenius/insert_explanations
+/ontologenius/insert_stamped
+/ontologenius/reasoner_notifications
+/pickup/cancel
+/pickup/feedback
+/pickup/goal
+/pickup/result
+/pickup/status
+/place/cancel
+/place/feedback
+/place/goal
+/place/result
+/place/status
+/planning_scene
+/planning_scene_world
+/recognized_object_array
+/rfluenty2/aligned_depth_to_color/image_raw
+/robot_status
+/ros_to_mqtt
+/rosout
+/rosout_agg
+/rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037/motionplanning_planning_scene_monitor/parameter_descriptions
+/rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037/motionplanning_planning_scene_monitor/parameter_updates
+/rviz_moveit_motion_planning_display/robot_interaction_interactive_marker_topic/feedback
+/rviz_moveit_motion_planning_display/robot_interaction_interactive_marker_topic/update
+/rviz_moveit_motion_planning_display/robot_interaction_interactive_marker_topic/update_full
+/task_description
+/tf
+/tf_static
+/trajectory_execution_event
+/whisper/text_output
+rostopic info: /arm_controller/follow_joint_trajectory/cancel
+Type: actionlib_msgs/GoalID
+
+Publishers: 
+ * /move_group (http://10.11.31.112:34687/)
+ * /planner (http://10.11.31.112:44309/)
+
+Subscribers: 
+ * /fanuc_interface_node (http://10.11.31.112:45269/)
+
+
+####################
+rostopic info: /arm_controller/follow_joint_trajectory/feedback
+Type: control_msgs/FollowJointTrajectoryActionFeedback
+
+Publishers: 
+ * /fanuc_interface_node (http://10.11.31.112:45269/)
+
+Subscribers: 
+ * /move_group (http://10.11.31.112:34687/)
+ * /planner (http://10.11.31.112:44309/)
+
+
+####################
+rostopic info: /arm_controller/follow_joint_trajectory/goal
+Type: control_msgs/FollowJointTrajectoryActionGoal
+
+Publishers: 
+ * /move_group (http://10.11.31.112:34687/)
+ * /planner (http://10.11.31.112:44309/)
+
+Subscribers: 
+ * /fanuc_interface_node (http://10.11.31.112:45269/)
+
+
+####################
+rostopic info: /arm_controller/follow_joint_trajectory/result
+Type: control_msgs/FollowJointTrajectoryActionResult
+
+Publishers: 
+ * /fanuc_interface_node (http://10.11.31.112:45269/)
+
+Subscribers: 
+ * /move_group (http://10.11.31.112:34687/)
+ * /planner (http://10.11.31.112:44309/)
+
+
+####################
+rostopic info: /arm_controller/follow_joint_trajectory/status
+Type: actionlib_msgs/GoalStatusArray
+
+Publishers: 
+ * /fanuc_interface_node (http://10.11.31.112:45269/)
+
+Subscribers: 
+ * /move_group (http://10.11.31.112:34687/)
+ * /planner (http://10.11.31.112:44309/)
+
+
+####################
+rostopic info: /attached_collision_object
+Type: moveit_msgs/AttachedCollisionObject
+
+Publishers: 
+ * /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037 (http://10.11.31.112:40661/)
+ * /move_group_commander_wrappers_1701951924462759870 (http://10.11.31.112:38897/)
+
+Subscribers: 
+ * /move_group (http://10.11.31.112:34687/)
+
+
+####################
+rostopic info: /clicked_point
+Type: geometry_msgs/PointStamped
+
+Publishers: 
+ * /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037 (http://10.11.31.112:40661/)
+
+Subscribers: None
+
+
+####################
+rostopic info: /collision_object
+Type: moveit_msgs/CollisionObject
+
+Publishers: None
+
+Subscribers: 
+ * /move_group (http://10.11.31.112:34687/)
+
+
+####################
+rostopic info: /detected_objects
+Type: fluently_msgs/ObjectList
+
+Publishers: 
+ * /vision_node (http://10.11.31.112:43195/)
+
+Subscribers: 
+ * /dynamic_ontology (http://10.11.31.112:38061/)
+
+
+####################
+rostopic info: /execute_trajectory/cancel
+Type: actionlib_msgs/GoalID
+
+Publishers: 
+ * /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037 (http://10.11.31.112:40661/)
+ * /move_group_commander_wrappers_1701951924462759870 (http://10.11.31.112:38897/)
+
+Subscribers: 
+ * /move_group (http://10.11.31.112:34687/)
+
+
+####################
+rostopic info: /execute_trajectory/feedback
+Type: moveit_msgs/ExecuteTrajectoryActionFeedback
+
+Publishers: 
+ * /move_group (http://10.11.31.112:34687/)
+
+Subscribers: 
+ * /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037 (http://10.11.31.112:40661/)
+ * /move_group_commander_wrappers_1701951924462759870 (http://10.11.31.112:38897/)
+
+
+####################
+rostopic info: /execute_trajectory/goal
+Type: moveit_msgs/ExecuteTrajectoryActionGoal
+
+Publishers: 
+ * /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037 (http://10.11.31.112:40661/)
+ * /move_group_commander_wrappers_1701951924462759870 (http://10.11.31.112:38897/)
+
+Subscribers: 
+ * /move_group (http://10.11.31.112:34687/)
+
+
+####################
+rostopic info: /execute_trajectory/result
+Type: moveit_msgs/ExecuteTrajectoryActionResult
+
+Publishers: 
+ * /move_group (http://10.11.31.112:34687/)
+
+Subscribers: 
+ * /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037 (http://10.11.31.112:40661/)
+ * /move_group_commander_wrappers_1701951924462759870 (http://10.11.31.112:38897/)
+
+
+####################
+rostopic info: /execute_trajectory/status
+Type: actionlib_msgs/GoalStatusArray
+
+Publishers: 
+ * /move_group (http://10.11.31.112:34687/)
+
+Subscribers: 
+ * /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037 (http://10.11.31.112:40661/)
+ * /move_group_commander_wrappers_1701951924462759870 (http://10.11.31.112:38897/)
+
+
+####################
+rostopic info: /fanuc_feedback
+Type: fanuc_msgs/FeedbackStatus
+
+Publishers: 
+ * /fanuc_interface_node (http://10.11.31.112:45269/)
+
+Subscribers: None
+
+
+####################
+rostopic info: /initialpose
+Type: geometry_msgs/PoseWithCovarianceStamped
+
+Publishers: 
+ * /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037 (http://10.11.31.112:40661/)
+
+Subscribers: None
+
+
+####################
+rostopic info: /joint_states
+Type: sensor_msgs/JointState
+
+Publishers: 
+ * /fanuc_interface_node (http://10.11.31.112:45269/)
+ * /ros_bridge (http://10.11.31.113:44647/)
+
+Subscribers: 
+ * /rob_st_pub (http://10.11.31.112:45473/)
+ * /move_group (http://10.11.31.112:34687/)
+ * /vision_node (http://10.11.31.112:43195/)
+ * /dynamic_ontology (http://10.11.31.112:38061/)
+ * /move_group_commander_wrappers_1701951924462759870 (http://10.11.31.112:38897/)
+ * /ros_bridge (http://10.11.31.113:44647/)
+
+
+####################
+rostopic info: /move_base_simple/goal
+Type: geometry_msgs/PoseStamped
+
+Publishers: 
+ * /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037 (http://10.11.31.112:40661/)
+
+Subscribers: None
+
+
+####################
+rostopic info: /move_group/cancel
+Type: actionlib_msgs/GoalID
+
+Publishers: 
+ * /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037 (http://10.11.31.112:40661/)
+ * /move_group_commander_wrappers_1701951924462759870 (http://10.11.31.112:38897/)
+
+Subscribers: 
+ * /move_group (http://10.11.31.112:34687/)
+
+
+####################
+rostopic info: /move_group/display_contacts
+Type: visualization_msgs/MarkerArray
+
+Publishers: 
+ * /move_group (http://10.11.31.112:34687/)
+
+Subscribers: None
+
+
+####################
+rostopic info: /move_group/display_planned_path
+Type: moveit_msgs/DisplayTrajectory
+
+Publishers: 
+ * /move_group (http://10.11.31.112:34687/)
+ * /planner (http://10.11.31.112:44309/)
+
+Subscribers: 
+ * /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037 (http://10.11.31.112:40661/)
+
+
+####################
+rostopic info: /move_group/feedback
+Type: moveit_msgs/MoveGroupActionFeedback
+
+Publishers: 
+ * /move_group (http://10.11.31.112:34687/)
+
+Subscribers: 
+ * /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037 (http://10.11.31.112:40661/)
+ * /move_group_commander_wrappers_1701951924462759870 (http://10.11.31.112:38897/)
+
+
+####################
+rostopic info: /move_group/goal
+Type: moveit_msgs/MoveGroupActionGoal
+
+Publishers: 
+ * /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037 (http://10.11.31.112:40661/)
+ * /move_group_commander_wrappers_1701951924462759870 (http://10.11.31.112:38897/)
+
+Subscribers: 
+ * /move_group (http://10.11.31.112:34687/)
+
+
+####################
+rostopic info: /move_group/monitored_planning_scene
+Type: moveit_msgs/PlanningScene
+
+Publishers: 
+ * /move_group (http://10.11.31.112:34687/)
+
+Subscribers: 
+ * /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037 (http://10.11.31.112:40661/)
+
+
+####################
+rostopic info: /move_group/ompl/parameter_descriptions
+Type: dynamic_reconfigure/ConfigDescription
+
+Publishers: 
+ * /move_group (http://10.11.31.112:34687/)
+
+Subscribers: None
+
+
+####################
+rostopic info: /move_group/ompl/parameter_updates
+Type: dynamic_reconfigure/Config
+
+Publishers: 
+ * /move_group (http://10.11.31.112:34687/)
+
+Subscribers: None
+
+
+####################
+rostopic info: /move_group/plan_execution/parameter_descriptions
+Type: dynamic_reconfigure/ConfigDescription
+
+Publishers: 
+ * /move_group (http://10.11.31.112:34687/)
+
+Subscribers: None
+
+
+####################
+rostopic info: /move_group/plan_execution/parameter_updates
+Type: dynamic_reconfigure/Config
+
+Publishers: 
+ * /move_group (http://10.11.31.112:34687/)
+
+Subscribers: None
+
+
+####################
+rostopic info: /move_group/planning_scene_monitor/parameter_descriptions
+Type: dynamic_reconfigure/ConfigDescription
+
+Publishers: 
+ * /move_group (http://10.11.31.112:34687/)
+
+Subscribers: None
+
+
+####################
+rostopic info: /move_group/planning_scene_monitor/parameter_updates
+Type: dynamic_reconfigure/Config
+
+Publishers: 
+ * /move_group (http://10.11.31.112:34687/)
+
+Subscribers: None
+
+
+####################
+rostopic info: /move_group/result
+Type: moveit_msgs/MoveGroupActionResult
+
+Publishers: 
+ * /move_group (http://10.11.31.112:34687/)
+
+Subscribers: 
+ * /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037 (http://10.11.31.112:40661/)
+ * /move_group_commander_wrappers_1701951924462759870 (http://10.11.31.112:38897/)
+
+
+####################
+rostopic info: /move_group/sense_for_plan/parameter_descriptions
+Type: dynamic_reconfigure/ConfigDescription
+
+Publishers: 
+ * /move_group (http://10.11.31.112:34687/)
+
+Subscribers: None
+
+
+####################
+rostopic info: /move_group/sense_for_plan/parameter_updates
+Type: dynamic_reconfigure/Config
+
+Publishers: 
+ * /move_group (http://10.11.31.112:34687/)
+
+Subscribers: None
+
+
+####################
+rostopic info: /move_group/status
+Type: actionlib_msgs/GoalStatusArray
+
+Publishers: 
+ * /move_group (http://10.11.31.112:34687/)
+
+Subscribers: 
+ * /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037 (http://10.11.31.112:40661/)
+ * /move_group_commander_wrappers_1701951924462759870 (http://10.11.31.112:38897/)
+
+
+####################
+rostopic info: /move_group/trajectory_execution/parameter_descriptions
+Type: dynamic_reconfigure/ConfigDescription
+
+Publishers: 
+ * /move_group (http://10.11.31.112:34687/)
+
+Subscribers: None
+
+
+####################
+rostopic info: /move_group/trajectory_execution/parameter_updates
+Type: dynamic_reconfigure/Config
+
+Publishers: 
+ * /move_group (http://10.11.31.112:34687/)
+
+Subscribers: None
+
+
+####################
+rostopic info: /mqtt_to_ros
+Type: std_msgs/String
+
+Publishers: 
+ * /ros_bridge (http://10.11.31.113:44647/)
+
+Subscribers: 
+ * /ros_bridge (http://10.11.31.113:44647/)
+
+
+####################
+rostopic info: /mqtt_to_ros/robot
+Type: std_msgs/String
+
+Publishers: 
+ * /ros_bridge (http://10.11.31.113:44647/)
+
+Subscribers: 
+ * /ros_bridge (http://10.11.31.113:44647/)
+
+
+####################
+rostopic info: /mqtt_to_ros/text_output
+Type: std_msgs/String
+
+Publishers: 
+ * /ros_bridge (http://10.11.31.113:44647/)
+
+Subscribers: 
+ * /ros_bridge (http://10.11.31.113:44647/)
+
+
+####################
+rostopic info: /nlu/robot_intent
+Type: std_msgs/String
+
+Publishers: 
+ * /intent_publisher (http://10.11.31.112:35339/)
+
+Subscribers: 
+ * /intent_listener (http://10.11.31.112:44113/)
+
+
+####################
+rostopic info: /ontologenius/end
+Type: std_msgs/String
+
+Publishers: 
+ * /ontologenius_core (http://10.11.31.112:33419/)
+
+Subscribers: 
+ * /dynamic_ontology (http://10.11.31.112:38061/)
+
+
+####################
+rostopic info: /ontologenius/feeder_notifications
+Type: std_msgs/String
+
+Publishers: 
+ * /ontologenius_core (http://10.11.31.112:33419/)
+
+Subscribers: None
+
+
+####################
+rostopic info: /ontologenius/insert
+Type: std_msgs/String
+
+Publishers: 
+ * /dynamic_ontology (http://10.11.31.112:38061/)
+
+Subscribers: 
+ * /ontologenius_core (http://10.11.31.112:33419/)
+
+
+####################
+rostopic info: /ontologenius/insert_echo
+Type: ontologenius/StampedString
+
+Publishers: 
+ * /ontologenius_core (http://10.11.31.112:33419/)
+
+Subscribers: None
+
+
+####################
+rostopic info: /ontologenius/insert_explanations
+Type: ontologenius/OntologeniusExplanation
+
+Publishers: 
+ * /ontologenius_core (http://10.11.31.112:33419/)
+
+Subscribers: None
+
+
+####################
+rostopic info: /ontologenius/insert_stamped
+Type: ontologenius/StampedString
+
+Publishers: 
+ * /dynamic_ontology (http://10.11.31.112:38061/)
+
+Subscribers: 
+ * /ontologenius_core (http://10.11.31.112:33419/)
+
+
+####################
+rostopic info: /ontologenius/reasoner_notifications
+Type: std_msgs/String
+
+Publishers: 
+ * /ontologenius_core (http://10.11.31.112:33419/)
+
+Subscribers: None
+
+
+####################
+rostopic info: /pickup/cancel
+Type: actionlib_msgs/GoalID
+
+Publishers: 
+ * /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037 (http://10.11.31.112:40661/)
+ * /move_group_commander_wrappers_1701951924462759870 (http://10.11.31.112:38897/)
+
+Subscribers: 
+ * /move_group (http://10.11.31.112:34687/)
+
+
+####################
+rostopic info: /pickup/feedback
+Type: moveit_msgs/PickupActionFeedback
+
+Publishers: 
+ * /move_group (http://10.11.31.112:34687/)
+
+Subscribers: 
+ * /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037 (http://10.11.31.112:40661/)
+ * /move_group_commander_wrappers_1701951924462759870 (http://10.11.31.112:38897/)
+
+
+####################
+rostopic info: /pickup/goal
+Type: moveit_msgs/PickupActionGoal
+
+Publishers: 
+ * /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037 (http://10.11.31.112:40661/)
+ * /move_group_commander_wrappers_1701951924462759870 (http://10.11.31.112:38897/)
+
+Subscribers: 
+ * /move_group (http://10.11.31.112:34687/)
+
+
+####################
+rostopic info: /pickup/result
+Type: moveit_msgs/PickupActionResult
+
+Publishers: 
+ * /move_group (http://10.11.31.112:34687/)
+
+Subscribers: 
+ * /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037 (http://10.11.31.112:40661/)
+ * /move_group_commander_wrappers_1701951924462759870 (http://10.11.31.112:38897/)
+
+
+####################
+rostopic info: /pickup/status
+Type: actionlib_msgs/GoalStatusArray
+
+Publishers: 
+ * /move_group (http://10.11.31.112:34687/)
+
+Subscribers: 
+ * /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037 (http://10.11.31.112:40661/)
+ * /move_group_commander_wrappers_1701951924462759870 (http://10.11.31.112:38897/)
+
+
+####################
+rostopic info: /place/cancel
+Type: actionlib_msgs/GoalID
+
+Publishers: 
+ * /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037 (http://10.11.31.112:40661/)
+ * /move_group_commander_wrappers_1701951924462759870 (http://10.11.31.112:38897/)
+
+Subscribers: 
+ * /move_group (http://10.11.31.112:34687/)
+
+
+####################
+rostopic info: /place/feedback
+Type: moveit_msgs/PlaceActionFeedback
+
+Publishers: 
+ * /move_group (http://10.11.31.112:34687/)
+
+Subscribers: 
+ * /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037 (http://10.11.31.112:40661/)
+ * /move_group_commander_wrappers_1701951924462759870 (http://10.11.31.112:38897/)
+
+
+####################
+rostopic info: /place/goal
+Type: moveit_msgs/PlaceActionGoal
+
+Publishers: 
+ * /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037 (http://10.11.31.112:40661/)
+ * /move_group_commander_wrappers_1701951924462759870 (http://10.11.31.112:38897/)
+
+Subscribers: 
+ * /move_group (http://10.11.31.112:34687/)
+
+
+####################
+rostopic info: /place/result
+Type: moveit_msgs/PlaceActionResult
+
+Publishers: 
+ * /move_group (http://10.11.31.112:34687/)
+
+Subscribers: 
+ * /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037 (http://10.11.31.112:40661/)
+ * /move_group_commander_wrappers_1701951924462759870 (http://10.11.31.112:38897/)
+
+
+####################
+rostopic info: /place/status
+Type: actionlib_msgs/GoalStatusArray
+
+Publishers: 
+ * /move_group (http://10.11.31.112:34687/)
+
+Subscribers: 
+ * /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037 (http://10.11.31.112:40661/)
+ * /move_group_commander_wrappers_1701951924462759870 (http://10.11.31.112:38897/)
+
+
+####################
+rostopic info: /planning_scene
+Type: moveit_msgs/PlanningScene
+
+Publishers: 
+ * /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037 (http://10.11.31.112:40661/)
+
+Subscribers: 
+ * /move_group (http://10.11.31.112:34687/)
+
+
+####################
+rostopic info: /planning_scene_world
+Type: moveit_msgs/PlanningSceneWorld
+
+Publishers: 
+ * /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037 (http://10.11.31.112:40661/)
+
+Subscribers: 
+ * /move_group (http://10.11.31.112:34687/)
+
+
+####################
+rostopic info: /recognized_object_array
+Type: object_recognition_msgs/RecognizedObjectArray
+
+Publishers: None
+
+Subscribers: 
+ * /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037 (http://10.11.31.112:40661/)
+
+
+####################
+rostopic info: /rfluenty2/aligned_depth_to_color/image_raw
+Type: sensor_msgs/Image
+
+Publishers: 
+ * /ros_bridge (http://10.11.31.113:44647/)
+
+Subscribers: 
+ * /ros_bridge (http://10.11.31.113:44647/)
+
+
+####################
+rostopic info: /robot_status
+Type: industrial_msgs/RobotStatus
+
+Publishers: 
+ * /fanuc_interface_node (http://10.11.31.112:45269/)
+
+Subscribers: None
+
+
+####################
+rostopic info: /ros_to_mqtt
+Type: std_msgs/String
+
+Publishers: 
+ * /ros_bridge (http://10.11.31.113:44647/)
+
+Subscribers: 
+ * /ros_bridge (http://10.11.31.113:44647/)
+ * /mqtt_client (http://10.11.31.113:39979/)
+
+
+####################
+rostopic info: /rosout
+Type: rosgraph_msgs/Log
+
+Publishers: 
+ * /fanuc_interface_node (http://10.11.31.112:45269/)
+ * /stf_pub (http://10.11.31.112:41437/)
+ * /rob_st_pub (http://10.11.31.112:45473/)
+ * /move_group (http://10.11.31.112:34687/)
+ * /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037 (http://10.11.31.112:40661/)
+ * /vision_node (http://10.11.31.112:43195/)
+ * /ontologenius_core (http://10.11.31.112:33419/)
+ * /intent_listener (http://10.11.31.112:44113/)
+ * /ontologenius_rest (http://10.11.31.112:43979/)
+ * /dynamic_ontology (http://10.11.31.112:38061/)
+ * /intent_publisher (http://10.11.31.112:35339/)
+ * /move_group_commander_wrappers_1701951924462759870 (http://10.11.31.112:38897/)
+ * /planner (http://10.11.31.112:44309/)
+ * /ros_bridge (http://10.11.31.113:44647/)
+ * /mqtt_client (http://10.11.31.113:39979/)
+
+Subscribers: 
+ * /rosout (http://10.11.31.112:43053/)
+
+
+####################
+rostopic info: /rosout_agg
+Type: rosgraph_msgs/Log
+
+Publishers: 
+ * /rosout (http://10.11.31.112:43053/)
+
+Subscribers: None
+
+
+####################
+rostopic info: /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037/motionplanning_planning_scene_monitor/parameter_descriptions
+Type: dynamic_reconfigure/ConfigDescription
+
+Publishers: 
+ * /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037 (http://10.11.31.112:40661/)
+
+Subscribers: None
+
+
+####################
+rostopic info: /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037/motionplanning_planning_scene_monitor/parameter_updates
+Type: dynamic_reconfigure/Config
+
+Publishers: 
+ * /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037 (http://10.11.31.112:40661/)
+
+Subscribers: None
+
+
+####################
+rostopic info: /rviz_moveit_motion_planning_display/robot_interaction_interactive_marker_topic/feedback
+Type: visualization_msgs/InteractiveMarkerFeedback
+
+Publishers: 
+ * /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037 (http://10.11.31.112:40661/)
+
+Subscribers: 
+ * /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037 (http://10.11.31.112:40661/)
+
+
+####################
+rostopic info: /rviz_moveit_motion_planning_display/robot_interaction_interactive_marker_topic/update
+Type: visualization_msgs/InteractiveMarkerUpdate
+
+Publishers: 
+ * /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037 (http://10.11.31.112:40661/)
+
+Subscribers: 
+ * /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037 (http://10.11.31.112:40661/)
+
+
+####################
+rostopic info: /rviz_moveit_motion_planning_display/robot_interaction_interactive_marker_topic/update_full
+Type: visualization_msgs/InteractiveMarkerInit
+
+Publishers: 
+ * /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037 (http://10.11.31.112:40661/)
+
+Subscribers: None
+
+
+####################
+rostopic info: /task_description
+Type: fluently_msgs/TaskMethod
+
+Publishers: 
+ * /dynamic_ontology (http://10.11.31.112:38061/)
+
+Subscribers: 
+ * /planner (http://10.11.31.112:44309/)
+
+
+####################
+rostopic info: /tf
+Type: tf2_msgs/TFMessage
+
+Publishers: 
+ * /stf_pub (http://10.11.31.112:41437/)
+ * /rob_st_pub (http://10.11.31.112:45473/)
+
+Subscribers: 
+ * /move_group (http://10.11.31.112:34687/)
+ * /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037 (http://10.11.31.112:40661/)
+ * /vision_node (http://10.11.31.112:43195/)
+ * /dynamic_ontology (http://10.11.31.112:38061/)
+ * /move_group_commander_wrappers_1701951924462759870 (http://10.11.31.112:38897/)
+ * /planner (http://10.11.31.112:44309/)
+
+
+####################
+rostopic info: /tf_static
+Type: tf2_msgs/TFMessage
+
+Publishers: 
+ * /rob_st_pub (http://10.11.31.112:45473/)
+
+Subscribers: 
+ * /move_group (http://10.11.31.112:34687/)
+ * /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037 (http://10.11.31.112:40661/)
+ * /vision_node (http://10.11.31.112:43195/)
+ * /dynamic_ontology (http://10.11.31.112:38061/)
+ * /move_group_commander_wrappers_1701951924462759870 (http://10.11.31.112:38897/)
+ * /planner (http://10.11.31.112:44309/)
+
+
+####################
+rostopic info: /trajectory_execution_event
+Type: std_msgs/String
+
+Publishers: 
+ * /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037 (http://10.11.31.112:40661/)
+ * /move_group_commander_wrappers_1701951924462759870 (http://10.11.31.112:38897/)
+
+Subscribers: 
+ * /move_group (http://10.11.31.112:34687/)
+
+
+####################
+rostopic info: /whisper/text_output
+Type: std_msgs/String
+
+Publishers: 
+ * /ros_bridge (http://10.11.31.113:44647/)
+
+Subscribers: 
+ * /ros_bridge (http://10.11.31.113:44647/)
+
+
+####################
+rosnode info: /dynamic_ontology
+--------------------------------------------------------------------------------
+Node [/dynamic_ontology]
+Publications: 
+ * /ontologenius/insert [std_msgs/String]
+ * /ontologenius/insert_stamped [ontologenius/StampedString]
+ * /rosout [rosgraph_msgs/Log]
+ * /task_description [fluently_msgs/TaskMethod]
+
+Subscriptions: 
+ * /detected_objects [fluently_msgs/ObjectList]
+ * /joint_states [sensor_msgs/JointState]
+ * /ontologenius/end [std_msgs/String]
+ * /tf [tf2_msgs/TFMessage]
+ * /tf_static [tf2_msgs/TFMessage]
+
+Services: 
+ * /dynamic_ontology/get_loggers
+ * /dynamic_ontology/set_logger_level
+
+
+contacting node http://10.11.31.112:38061/ ...
+Pid: 752672
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound (39497 - 10.11.31.112:46960) [8]
+    * transport: TCPROS
+ * topic: /task_description
+    * to: /planner
+    * direction: outbound (39497 - 10.11.31.112:55272) [26]
+    * transport: TCPROS
+ * topic: /ontologenius/insert
+    * to: /ontologenius_core
+    * direction: outbound (39497 - 10.11.31.112:46968) [25]
+    * transport: TCPROS
+ * topic: /ontologenius/insert_stamped
+    * to: /ontologenius_core
+    * direction: outbound (39497 - 10.11.31.112:46980) [24]
+    * transport: TCPROS
+ * topic: /ontologenius/end
+    * to: /ontologenius_core (http://10.11.31.112:33419/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /joint_states
+    * to: /fanuc_interface_node (http://10.11.31.112:45269/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: /stf_pub (http://10.11.31.112:41437/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: /rob_st_pub (http://10.11.31.112:45473/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /tf_static
+    * to: /rob_st_pub (http://10.11.31.112:45473/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /detected_objects
+    * to: /vision_node (http://10.11.31.112:43195/)
+    * direction: inbound
+    * transport: TCPROS
+
+####################
+rosnode info: /fanuc_interface_node
+--------------------------------------------------------------------------------
+Node [/fanuc_interface_node]
+Publications: 
+ * /arm_controller/follow_joint_trajectory/feedback [control_msgs/FollowJointTrajectoryActionFeedback]
+ * /arm_controller/follow_joint_trajectory/result [control_msgs/FollowJointTrajectoryActionResult]
+ * /arm_controller/follow_joint_trajectory/status [actionlib_msgs/GoalStatusArray]
+ * /fanuc_feedback [fanuc_msgs/FeedbackStatus]
+ * /joint_states [sensor_msgs/JointState]
+ * /robot_status [industrial_msgs/RobotStatus]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /arm_controller/follow_joint_trajectory/cancel [actionlib_msgs/GoalID]
+ * /arm_controller/follow_joint_trajectory/goal [control_msgs/FollowJointTrajectoryActionGoal]
+
+Services: 
+ * /fanuc_interface_node/get_loggers
+ * /fanuc_interface_node/set_logger_level
+ * /read_single_io
+ * /set_payload_num
+ * /write_single_io
+
+
+contacting node http://10.11.31.112:45269/ ...
+Pid: 752332
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound (51195 - 10.11.31.112:48534) [12]
+    * transport: TCPROS
+ * topic: /joint_states
+    * to: /rob_st_pub
+    * direction: outbound (51195 - 10.11.31.112:48540) [22]
+    * transport: TCPROS
+ * topic: /joint_states
+    * to: /move_group
+    * direction: outbound (51195 - 10.11.31.112:48550) [14]
+    * transport: TCPROS
+ * topic: /joint_states
+    * to: /vision_node
+    * direction: outbound (51195 - 10.11.31.112:58338) [17]
+    * transport: TCPROS
+ * topic: /joint_states
+    * to: /dynamic_ontology
+    * direction: outbound (51195 - 10.11.31.112:54536) [18]
+    * transport: TCPROS
+ * topic: /joint_states
+    * to: /move_group_commander_wrappers_1701951924462759870
+    * direction: outbound (51195 - 10.11.31.112:45396) [21]
+    * transport: TCPROS
+ * topic: /arm_controller/follow_joint_trajectory/result
+    * to: /move_group
+    * direction: outbound (51195 - 10.11.31.112:48566) [24]
+    * transport: TCPROS
+ * topic: /arm_controller/follow_joint_trajectory/result
+    * to: /planner
+    * direction: outbound (51195 - 10.11.31.112:45430) [20]
+    * transport: TCPROS
+ * topic: /arm_controller/follow_joint_trajectory/feedback
+    * to: /move_group
+    * direction: outbound (51195 - 10.11.31.112:48576) [25]
+    * transport: TCPROS
+ * topic: /arm_controller/follow_joint_trajectory/feedback
+    * to: /planner
+    * direction: outbound (51195 - 10.11.31.112:45422) [26]
+    * transport: TCPROS
+ * topic: /arm_controller/follow_joint_trajectory/status
+    * to: /move_group
+    * direction: outbound (51195 - 10.11.31.112:48560) [23]
+    * transport: TCPROS
+ * topic: /arm_controller/follow_joint_trajectory/status
+    * to: /planner
+    * direction: outbound (51195 - 10.11.31.112:45434) [27]
+    * transport: TCPROS
+ * topic: /arm_controller/follow_joint_trajectory/goal
+    * to: /move_group (http://10.11.31.112:34687/)
+    * direction: inbound (55530 - 10.11.31.112:52411) [15]
+    * transport: TCPROS
+ * topic: /arm_controller/follow_joint_trajectory/goal
+    * to: /planner (http://10.11.31.112:44309/)
+    * direction: inbound (52428 - 10.11.31.112:45957) [31]
+    * transport: TCPROS
+ * topic: /arm_controller/follow_joint_trajectory/cancel
+    * to: /move_group (http://10.11.31.112:34687/)
+    * direction: inbound (55544 - 10.11.31.112:52411) [16]
+    * transport: TCPROS
+ * topic: /arm_controller/follow_joint_trajectory/cancel
+    * to: /planner (http://10.11.31.112:44309/)
+    * direction: inbound (52440 - 10.11.31.112:45957) [32]
+    * transport: TCPROS
+
+####################
+rosnode info: /intent_listener
+--------------------------------------------------------------------------------
+Node [/intent_listener]
+Publications: 
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /nlu/robot_intent [std_msgs/String]
+
+Services: 
+ * /intent_listener/get_loggers
+ * /intent_listener/set_logger_level
+
+
+contacting node http://10.11.31.112:44113/ ...
+Pid: 752673
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound (41805 - 10.11.31.112:37454) [8]
+    * transport: TCPROS
+ * topic: /nlu/robot_intent
+    * to: /intent_publisher (http://10.11.31.112:35339/)
+    * direction: inbound
+    * transport: TCPROS
+
+####################
+rosnode info: /intent_publisher
+--------------------------------------------------------------------------------
+Node [/intent_publisher]
+Publications: 
+ * /nlu/robot_intent [std_msgs/String]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: None
+
+Services: 
+ * /intent_publisher/get_loggers
+ * /intent_publisher/set_logger_level
+
+
+contacting node http://10.11.31.112:35339/ ...
+Pid: 752781
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound (37953 - 10.11.31.112:34222) [11]
+    * transport: TCPROS
+ * topic: /nlu/robot_intent
+    * to: /intent_listener
+    * direction: outbound (37953 - 10.11.31.112:34214) [8]
+    * transport: TCPROS
+
+####################
+rosnode info: /move_group
+--------------------------------------------------------------------------------
+Node [/move_group]
+Publications: 
+ * /arm_controller/follow_joint_trajectory/cancel [actionlib_msgs/GoalID]
+ * /arm_controller/follow_joint_trajectory/goal [control_msgs/FollowJointTrajectoryActionGoal]
+ * /execute_trajectory/feedback [moveit_msgs/ExecuteTrajectoryActionFeedback]
+ * /execute_trajectory/result [moveit_msgs/ExecuteTrajectoryActionResult]
+ * /execute_trajectory/status [actionlib_msgs/GoalStatusArray]
+ * /move_group/display_contacts [visualization_msgs/MarkerArray]
+ * /move_group/display_planned_path [moveit_msgs/DisplayTrajectory]
+ * /move_group/feedback [moveit_msgs/MoveGroupActionFeedback]
+ * /move_group/monitored_planning_scene [moveit_msgs/PlanningScene]
+ * /move_group/ompl/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /move_group/ompl/parameter_updates [dynamic_reconfigure/Config]
+ * /move_group/plan_execution/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /move_group/plan_execution/parameter_updates [dynamic_reconfigure/Config]
+ * /move_group/planning_scene_monitor/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /move_group/planning_scene_monitor/parameter_updates [dynamic_reconfigure/Config]
+ * /move_group/result [moveit_msgs/MoveGroupActionResult]
+ * /move_group/sense_for_plan/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /move_group/sense_for_plan/parameter_updates [dynamic_reconfigure/Config]
+ * /move_group/status [actionlib_msgs/GoalStatusArray]
+ * /move_group/trajectory_execution/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /move_group/trajectory_execution/parameter_updates [dynamic_reconfigure/Config]
+ * /pickup/feedback [moveit_msgs/PickupActionFeedback]
+ * /pickup/result [moveit_msgs/PickupActionResult]
+ * /pickup/status [actionlib_msgs/GoalStatusArray]
+ * /place/feedback [moveit_msgs/PlaceActionFeedback]
+ * /place/result [moveit_msgs/PlaceActionResult]
+ * /place/status [actionlib_msgs/GoalStatusArray]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /arm_controller/follow_joint_trajectory/feedback [control_msgs/FollowJointTrajectoryActionFeedback]
+ * /arm_controller/follow_joint_trajectory/result [control_msgs/FollowJointTrajectoryActionResult]
+ * /arm_controller/follow_joint_trajectory/status [actionlib_msgs/GoalStatusArray]
+ * /attached_collision_object [moveit_msgs/AttachedCollisionObject]
+ * /collision_object [unknown type]
+ * /execute_trajectory/cancel [actionlib_msgs/GoalID]
+ * /execute_trajectory/goal [moveit_msgs/ExecuteTrajectoryActionGoal]
+ * /joint_states [sensor_msgs/JointState]
+ * /move_group/cancel [actionlib_msgs/GoalID]
+ * /move_group/goal [moveit_msgs/MoveGroupActionGoal]
+ * /pickup/cancel [actionlib_msgs/GoalID]
+ * /pickup/goal [moveit_msgs/PickupActionGoal]
+ * /place/cancel [actionlib_msgs/GoalID]
+ * /place/goal [moveit_msgs/PlaceActionGoal]
+ * /planning_scene [moveit_msgs/PlanningScene]
+ * /planning_scene_world [moveit_msgs/PlanningSceneWorld]
+ * /tf [tf2_msgs/TFMessage]
+ * /tf_static [tf2_msgs/TFMessage]
+ * /trajectory_execution_event [std_msgs/String]
+
+Services: 
+ * /apply_planning_scene
+ * /check_state_validity
+ * /clear_octomap
+ * /compute_cartesian_path
+ * /compute_fk
+ * /compute_ik
+ * /get_planner_params
+ * /get_planning_scene
+ * /move_group/get_loggers
+ * /move_group/load_map
+ * /move_group/ompl/set_parameters
+ * /move_group/plan_execution/set_parameters
+ * /move_group/planning_scene_monitor/set_parameters
+ * /move_group/save_map
+ * /move_group/sense_for_plan/set_parameters
+ * /move_group/set_logger_level
+ * /move_group/trajectory_execution/set_parameters
+ * /plan_kinematic_path
+ * /query_planner_interface
+ * /set_planner_params
+
+
+contacting node http://10.11.31.112:34687/ ...
+Pid: 752428
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound (52411 - 10.11.31.112:55520) [27]
+    * transport: TCPROS
+ * topic: /move_group/monitored_planning_scene
+    * to: /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037
+    * direction: outbound (52411 - 10.11.31.112:43696) [35]
+    * transport: TCPROS
+ * topic: /move_group/display_planned_path
+    * to: /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037
+    * direction: outbound (52411 - 10.11.31.112:43702) [36]
+    * transport: TCPROS
+ * topic: /arm_controller/follow_joint_trajectory/goal
+    * to: /fanuc_interface_node
+    * direction: outbound (52411 - 10.11.31.112:55530) [10]
+    * transport: TCPROS
+ * topic: /arm_controller/follow_joint_trajectory/cancel
+    * to: /fanuc_interface_node
+    * direction: outbound (52411 - 10.11.31.112:55544) [11]
+    * transport: TCPROS
+ * topic: /execute_trajectory/result
+    * to: /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037
+    * direction: outbound (52411 - 10.11.31.112:43828) [47]
+    * transport: TCPROS
+ * topic: /execute_trajectory/result
+    * to: /move_group_commander_wrappers_1701951924462759870
+    * direction: outbound (52411 - 10.11.31.112:52960) [72]
+    * transport: TCPROS
+ * topic: /execute_trajectory/feedback
+    * to: /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037
+    * direction: outbound (52411 - 10.11.31.112:43818) [50]
+    * transport: TCPROS
+ * topic: /execute_trajectory/feedback
+    * to: /move_group_commander_wrappers_1701951924462759870
+    * direction: outbound (52411 - 10.11.31.112:52990) [60]
+    * transport: TCPROS
+ * topic: /execute_trajectory/status
+    * to: /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037
+    * direction: outbound (52411 - 10.11.31.112:43836) [14]
+    * transport: TCPROS
+ * topic: /execute_trajectory/status
+    * to: /move_group_commander_wrappers_1701951924462759870
+    * direction: outbound (52411 - 10.11.31.112:52976) [69]
+    * transport: TCPROS
+ * topic: /move_group/result
+    * to: /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037
+    * direction: outbound (52411 - 10.11.31.112:43734) [30]
+    * transport: TCPROS
+ * topic: /move_group/result
+    * to: /move_group_commander_wrappers_1701951924462759870
+    * direction: outbound (52411 - 10.11.31.112:52878) [53]
+    * transport: TCPROS
+ * topic: /move_group/feedback
+    * to: /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037
+    * direction: outbound (52411 - 10.11.31.112:43720) [29]
+    * transport: TCPROS
+ * topic: /move_group/feedback
+    * to: /move_group_commander_wrappers_1701951924462759870
+    * direction: outbound (52411 - 10.11.31.112:52870) [55]
+    * transport: TCPROS
+ * topic: /move_group/status
+    * to: /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037
+    * direction: outbound (52411 - 10.11.31.112:43714) [39]
+    * transport: TCPROS
+ * topic: /move_group/status
+    * to: /move_group_commander_wrappers_1701951924462759870
+    * direction: outbound (52411 - 10.11.31.112:52894) [17]
+    * transport: TCPROS
+ * topic: /pickup/result
+    * to: /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037
+    * direction: outbound (52411 - 10.11.31.112:43768) [31]
+    * transport: TCPROS
+ * topic: /pickup/result
+    * to: /move_group_commander_wrappers_1701951924462759870
+    * direction: outbound (52411 - 10.11.31.112:52914) [43]
+    * transport: TCPROS
+ * topic: /pickup/feedback
+    * to: /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037
+    * direction: outbound (52411 - 10.11.31.112:43754) [19]
+    * transport: TCPROS
+ * topic: /pickup/feedback
+    * to: /move_group_commander_wrappers_1701951924462759870
+    * direction: outbound (52411 - 10.11.31.112:52906) [63]
+    * transport: TCPROS
+ * topic: /pickup/status
+    * to: /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037
+    * direction: outbound (52411 - 10.11.31.112:43748) [41]
+    * transport: TCPROS
+ * topic: /pickup/status
+    * to: /move_group_commander_wrappers_1701951924462759870
+    * direction: outbound (52411 - 10.11.31.112:52904) [62]
+    * transport: TCPROS
+ * topic: /place/result
+    * to: /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037
+    * direction: outbound (52411 - 10.11.31.112:43788) [42]
+    * transport: TCPROS
+ * topic: /place/result
+    * to: /move_group_commander_wrappers_1701951924462759870
+    * direction: outbound (52411 - 10.11.31.112:52942) [64]
+    * transport: TCPROS
+ * topic: /place/feedback
+    * to: /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037
+    * direction: outbound (52411 - 10.11.31.112:43784) [46]
+    * transport: TCPROS
+ * topic: /place/feedback
+    * to: /move_group_commander_wrappers_1701951924462759870
+    * direction: outbound (52411 - 10.11.31.112:52926) [67]
+    * transport: TCPROS
+ * topic: /place/status
+    * to: /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037
+    * direction: outbound (52411 - 10.11.31.112:43804) [13]
+    * transport: TCPROS
+ * topic: /place/status
+    * to: /move_group_commander_wrappers_1701951924462759870
+    * direction: outbound (52411 - 10.11.31.112:52946) [48]
+    * transport: TCPROS
+ * topic: /tf
+    * to: /stf_pub (http://10.11.31.112:41437/)
+    * direction: inbound (35180 - 10.11.31.112:54289) [20]
+    * transport: TCPROS
+ * topic: /tf
+    * to: /rob_st_pub (http://10.11.31.112:45473/)
+    * direction: inbound (41170 - 10.11.31.112:48299) [21]
+    * transport: TCPROS
+ * topic: /tf_static
+    * to: /rob_st_pub (http://10.11.31.112:45473/)
+    * direction: inbound (41178 - 10.11.31.112:48299) [22]
+    * transport: TCPROS
+ * topic: /joint_states
+    * to: /fanuc_interface_node (http://10.11.31.112:45269/)
+    * direction: inbound (48550 - 10.11.31.112:51195) [23]
+    * transport: TCPROS
+ * topic: /joint_states
+    * to: /ros_bridge (http://10.11.31.113:44647/)
+    * direction: inbound (36098 - 10.11.31.113:44735) [54]
+    * transport: TCPROS
+ * topic: /attached_collision_object
+    * to: /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037 (http://10.11.31.112:40661/)
+    * direction: inbound (37786 - 10.11.31.112:46699) [34]
+    * transport: TCPROS
+ * topic: /attached_collision_object
+    * to: /move_group_commander_wrappers_1701951924462759870 (http://10.11.31.112:38897/)
+    * direction: inbound (46260 - 10.11.31.112:33553) [52]
+    * transport: TCPROS
+ * topic: /planning_scene
+    * to: /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037 (http://10.11.31.112:40661/)
+    * direction: inbound (37752 - 10.11.31.112:46699) [15]
+    * transport: TCPROS
+ * topic: /planning_scene_world
+    * to: /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037 (http://10.11.31.112:40661/)
+    * direction: inbound (37754 - 10.11.31.112:46699) [16]
+    * transport: TCPROS
+ * topic: /arm_controller/follow_joint_trajectory/status
+    * to: /fanuc_interface_node (http://10.11.31.112:45269/)
+    * direction: inbound (48560 - 10.11.31.112:51195) [24]
+    * transport: TCPROS
+ * topic: /arm_controller/follow_joint_trajectory/feedback
+    * to: /fanuc_interface_node (http://10.11.31.112:45269/)
+    * direction: inbound (48576 - 10.11.31.112:51195) [26]
+    * transport: TCPROS
+ * topic: /arm_controller/follow_joint_trajectory/result
+    * to: /fanuc_interface_node (http://10.11.31.112:45269/)
+    * direction: inbound (48566 - 10.11.31.112:51195) [25]
+    * transport: TCPROS
+ * topic: /trajectory_execution_event
+    * to: /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037 (http://10.11.31.112:40661/)
+    * direction: inbound (37770 - 10.11.31.112:46699) [33]
+    * transport: TCPROS
+ * topic: /trajectory_execution_event
+    * to: /move_group_commander_wrappers_1701951924462759870 (http://10.11.31.112:38897/)
+    * direction: inbound (40412 - 10.11.31.112:33553) [56]
+    * transport: TCPROS
+ * topic: /execute_trajectory/goal
+    * to: /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037 (http://10.11.31.112:40661/)
+    * direction: inbound (37868 - 10.11.31.112:46699) [49]
+    * transport: TCPROS
+ * topic: /execute_trajectory/goal
+    * to: /move_group_commander_wrappers_1701951924462759870 (http://10.11.31.112:38897/)
+    * direction: inbound (46332 - 10.11.31.112:33553) [71]
+    * transport: TCPROS
+ * topic: /execute_trajectory/cancel
+    * to: /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037 (http://10.11.31.112:40661/)
+    * direction: inbound (37884 - 10.11.31.112:46699) [51]
+    * transport: TCPROS
+ * topic: /execute_trajectory/cancel
+    * to: /move_group_commander_wrappers_1701951924462759870 (http://10.11.31.112:38897/)
+    * direction: inbound (46342 - 10.11.31.112:33553) [74]
+    * transport: TCPROS
+ * topic: /move_group/goal
+    * to: /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037 (http://10.11.31.112:40661/)
+    * direction: inbound (37800 - 10.11.31.112:46699) [37]
+    * transport: TCPROS
+ * topic: /move_group/goal
+    * to: /move_group_commander_wrappers_1701951924462759870 (http://10.11.31.112:38897/)
+    * direction: inbound (46274 - 10.11.31.112:33553) [57]
+    * transport: TCPROS
+ * topic: /move_group/cancel
+    * to: /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037 (http://10.11.31.112:40661/)
+    * direction: inbound (37814 - 10.11.31.112:46699) [38]
+    * transport: TCPROS
+ * topic: /move_group/cancel
+    * to: /move_group_commander_wrappers_1701951924462759870 (http://10.11.31.112:38897/)
+    * direction: inbound (46288 - 10.11.31.112:33553) [58]
+    * transport: TCPROS
+ * topic: /pickup/goal
+    * to: /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037 (http://10.11.31.112:40661/)
+    * direction: inbound (37824 - 10.11.31.112:46699) [32]
+    * transport: TCPROS
+ * topic: /pickup/goal
+    * to: /move_group_commander_wrappers_1701951924462759870 (http://10.11.31.112:38897/)
+    * direction: inbound (46298 - 10.11.31.112:33553) [61]
+    * transport: TCPROS
+ * topic: /pickup/cancel
+    * to: /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037 (http://10.11.31.112:40661/)
+    * direction: inbound (37838 - 10.11.31.112:46699) [40]
+    * transport: TCPROS
+ * topic: /pickup/cancel
+    * to: /move_group_commander_wrappers_1701951924462759870 (http://10.11.31.112:38897/)
+    * direction: inbound (46306 - 10.11.31.112:33553) [59]
+    * transport: TCPROS
+ * topic: /place/goal
+    * to: /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037 (http://10.11.31.112:40661/)
+    * direction: inbound (37844 - 10.11.31.112:46699) [44]
+    * transport: TCPROS
+ * topic: /place/goal
+    * to: /move_group_commander_wrappers_1701951924462759870 (http://10.11.31.112:38897/)
+    * direction: inbound (46322 - 10.11.31.112:33553) [68]
+    * transport: TCPROS
+ * topic: /place/cancel
+    * to: /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037 (http://10.11.31.112:40661/)
+    * direction: inbound (37854 - 10.11.31.112:46699) [45]
+    * transport: TCPROS
+ * topic: /place/cancel
+    * to: /move_group_commander_wrappers_1701951924462759870 (http://10.11.31.112:38897/)
+    * direction: inbound (46320 - 10.11.31.112:33553) [66]
+    * transport: TCPROS
+
+####################
+rosnode info: /move_group_commander_wrappers_1701951924462759870
+--------------------------------------------------------------------------------
+Node [/move_group_commander_wrappers_1701951924462759870]
+Publications: 
+ * /attached_collision_object [moveit_msgs/AttachedCollisionObject]
+ * /execute_trajectory/cancel [actionlib_msgs/GoalID]
+ * /execute_trajectory/goal [moveit_msgs/ExecuteTrajectoryActionGoal]
+ * /move_group/cancel [actionlib_msgs/GoalID]
+ * /move_group/goal [moveit_msgs/MoveGroupActionGoal]
+ * /pickup/cancel [actionlib_msgs/GoalID]
+ * /pickup/goal [moveit_msgs/PickupActionGoal]
+ * /place/cancel [actionlib_msgs/GoalID]
+ * /place/goal [moveit_msgs/PlaceActionGoal]
+ * /rosout [rosgraph_msgs/Log]
+ * /trajectory_execution_event [std_msgs/String]
+
+Subscriptions: 
+ * /execute_trajectory/feedback [moveit_msgs/ExecuteTrajectoryActionFeedback]
+ * /execute_trajectory/result [moveit_msgs/ExecuteTrajectoryActionResult]
+ * /execute_trajectory/status [actionlib_msgs/GoalStatusArray]
+ * /joint_states [sensor_msgs/JointState]
+ * /move_group/feedback [moveit_msgs/MoveGroupActionFeedback]
+ * /move_group/result [moveit_msgs/MoveGroupActionResult]
+ * /move_group/status [actionlib_msgs/GoalStatusArray]
+ * /pickup/feedback [moveit_msgs/PickupActionFeedback]
+ * /pickup/result [moveit_msgs/PickupActionResult]
+ * /pickup/status [actionlib_msgs/GoalStatusArray]
+ * /place/feedback [moveit_msgs/PlaceActionFeedback]
+ * /place/result [moveit_msgs/PlaceActionResult]
+ * /place/status [actionlib_msgs/GoalStatusArray]
+ * /tf [tf2_msgs/TFMessage]
+ * /tf_static [tf2_msgs/TFMessage]
+
+Services: 
+ * /move_group_commander_wrappers_1701951924462759870/get_loggers
+ * /move_group_commander_wrappers_1701951924462759870/set_logger_level
+
+
+contacting node http://10.11.31.112:38897/ ...
+Pid: 752855
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound (33553 - 10.11.31.112:40402) [27]
+    * transport: TCPROS
+ * topic: /trajectory_execution_event
+    * to: /move_group
+    * direction: outbound (33553 - 10.11.31.112:40412) [22]
+    * transport: TCPROS
+ * topic: /attached_collision_object
+    * to: /move_group
+    * direction: outbound (33553 - 10.11.31.112:46260) [28]
+    * transport: TCPROS
+ * topic: /move_group/goal
+    * to: /move_group
+    * direction: outbound (33553 - 10.11.31.112:46274) [31]
+    * transport: TCPROS
+ * topic: /move_group/cancel
+    * to: /move_group
+    * direction: outbound (33553 - 10.11.31.112:46288) [33]
+    * transport: TCPROS
+ * topic: /pickup/goal
+    * to: /move_group
+    * direction: outbound (33553 - 10.11.31.112:46298) [21]
+    * transport: TCPROS
+ * topic: /pickup/cancel
+    * to: /move_group
+    * direction: outbound (33553 - 10.11.31.112:46306) [24]
+    * transport: TCPROS
+ * topic: /place/goal
+    * to: /move_group
+    * direction: outbound (33553 - 10.11.31.112:46322) [40]
+    * transport: TCPROS
+ * topic: /place/cancel
+    * to: /move_group
+    * direction: outbound (33553 - 10.11.31.112:46320) [38]
+    * transport: TCPROS
+ * topic: /execute_trajectory/goal
+    * to: /move_group
+    * direction: outbound (33553 - 10.11.31.112:46332) [43]
+    * transport: TCPROS
+ * topic: /execute_trajectory/cancel
+    * to: /move_group
+    * direction: outbound (33553 - 10.11.31.112:46342) [46]
+    * transport: TCPROS
+ * topic: /tf
+    * to: /rob_st_pub (http://10.11.31.112:45473/)
+    * direction: inbound (53314 - 10.11.31.112:48299) [29]
+    * transport: TCPROS
+ * topic: /tf
+    * to: /stf_pub (http://10.11.31.112:41437/)
+    * direction: inbound (56736 - 10.11.31.112:54289) [32]
+    * transport: TCPROS
+ * topic: /tf_static
+    * to: /rob_st_pub (http://10.11.31.112:45473/)
+    * direction: inbound (53310 - 10.11.31.112:48299) [23]
+    * transport: TCPROS
+ * topic: /move_group/status
+    * to: /move_group (http://10.11.31.112:34687/)
+    * direction: inbound (52894 - 10.11.31.112:52411) [35]
+    * transport: TCPROS
+ * topic: /move_group/feedback
+    * to: /move_group (http://10.11.31.112:34687/)
+    * direction: inbound (52870 - 10.11.31.112:52411) [30]
+    * transport: TCPROS
+ * topic: /move_group/result
+    * to: /move_group (http://10.11.31.112:34687/)
+    * direction: inbound (52878 - 10.11.31.112:52411) [34]
+    * transport: TCPROS
+ * topic: /pickup/status
+    * to: /move_group (http://10.11.31.112:34687/)
+    * direction: inbound (52904 - 10.11.31.112:52411) [19]
+    * transport: TCPROS
+ * topic: /pickup/feedback
+    * to: /move_group (http://10.11.31.112:34687/)
+    * direction: inbound (52906 - 10.11.31.112:52411) [25]
+    * transport: TCPROS
+ * topic: /pickup/result
+    * to: /move_group (http://10.11.31.112:34687/)
+    * direction: inbound (52914 - 10.11.31.112:52411) [26]
+    * transport: TCPROS
+ * topic: /place/status
+    * to: /move_group (http://10.11.31.112:34687/)
+    * direction: inbound (52946 - 10.11.31.112:52411) [41]
+    * transport: TCPROS
+ * topic: /place/feedback
+    * to: /move_group (http://10.11.31.112:34687/)
+    * direction: inbound (52926 - 10.11.31.112:52411) [37]
+    * transport: TCPROS
+ * topic: /place/result
+    * to: /move_group (http://10.11.31.112:34687/)
+    * direction: inbound (52942 - 10.11.31.112:52411) [39]
+    * transport: TCPROS
+ * topic: /execute_trajectory/status
+    * to: /move_group (http://10.11.31.112:34687/)
+    * direction: inbound (52976 - 10.11.31.112:52411) [44]
+    * transport: TCPROS
+ * topic: /execute_trajectory/feedback
+    * to: /move_group (http://10.11.31.112:34687/)
+    * direction: inbound (52990 - 10.11.31.112:52411) [45]
+    * transport: TCPROS
+ * topic: /execute_trajectory/result
+    * to: /move_group (http://10.11.31.112:34687/)
+    * direction: inbound (52960 - 10.11.31.112:52411) [42]
+    * transport: TCPROS
+ * topic: /joint_states
+    * to: /fanuc_interface_node (http://10.11.31.112:45269/)
+    * direction: inbound (45396 - 10.11.31.112:51195) [18]
+    * transport: TCPROS
+ * topic: /joint_states
+    * to: /ros_bridge (http://10.11.31.113:44647/)
+    * direction: inbound (36092 - 10.11.31.113:44735) [64]
+    * transport: TCPROS
+
+####################
+rosnode info: /mqtt_client
+--------------------------------------------------------------------------------
+Node [/mqtt_client]
+Publications: 
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /ros_to_mqtt [std_msgs/String]
+
+Services: 
+ * /mqtt_client/get_loggers
+ * /mqtt_client/is_connected
+ * /mqtt_client/set_logger_level
+
+
+contacting node http://10.11.31.113:39979/ ...
+####################
+rosnode info: /ontologenius_core
+--------------------------------------------------------------------------------
+Node [/ontologenius_core]
+Publications: 
+ * /ontologenius/end [std_msgs/String]
+ * /ontologenius/feeder_notifications [std_msgs/String]
+ * /ontologenius/insert_echo [ontologenius/StampedString]
+ * /ontologenius/insert_explanations [ontologenius/OntologeniusExplanation]
+ * /ontologenius/reasoner_notifications [std_msgs/String]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /ontologenius/insert [std_msgs/String]
+ * /ontologenius/insert_stamped [ontologenius/StampedString]
+
+Services: 
+ * /ontologenius/actions
+ * /ontologenius/class
+ * /ontologenius/class_index
+ * /ontologenius/conversion
+ * /ontologenius/data_property
+ * /ontologenius/data_property_index
+ * /ontologenius/individual
+ * /ontologenius/individual_index
+ * /ontologenius/object_property
+ * /ontologenius/object_property_index
+ * /ontologenius/reasoner
+ * /ontologenius/sparql
+ * /ontologenius/sparql_index
+ * /ontologenius_core/get_loggers
+ * /ontologenius_core/set_logger_level
+
+
+contacting node http://10.11.31.112:33419/ ...
+Pid: 752670
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound (57539 - 10.11.31.112:34576) [13]
+    * transport: TCPROS
+ * topic: /ontologenius/end
+    * to: /dynamic_ontology
+    * direction: outbound (57539 - 10.11.31.112:34604) [12]
+    * transport: TCPROS
+ * topic: /ontologenius/insert
+    * to: /dynamic_ontology (http://10.11.31.112:38061/)
+    * direction: inbound (46968 - 10.11.31.112:39497) [18]
+    * transport: TCPROS
+ * topic: /ontologenius/insert_stamped
+    * to: /dynamic_ontology (http://10.11.31.112:38061/)
+    * direction: inbound (46980 - 10.11.31.112:39497) [19]
+    * transport: TCPROS
+
+####################
+rosnode info: /ontologenius_rest
+--------------------------------------------------------------------------------
+Node [/ontologenius_rest]
+Publications: 
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: None
+
+Services: 
+ * /ontologenius/rest
+ * /ontologenius_rest/get_loggers
+ * /ontologenius_rest/set_logger_level
+
+
+contacting node http://10.11.31.112:43979/ ...
+Pid: 752671
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound (43943 - 10.11.31.112:49918) [8]
+    * transport: TCPROS
+
+####################
+rosnode info: /planner
+--------------------------------------------------------------------------------
+Node [/planner]
+Publications: 
+ * /arm_controller/follow_joint_trajectory/cancel [actionlib_msgs/GoalID]
+ * /arm_controller/follow_joint_trajectory/goal [control_msgs/FollowJointTrajectoryActionGoal]
+ * /move_group/display_planned_path [moveit_msgs/DisplayTrajectory]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /arm_controller/follow_joint_trajectory/feedback [control_msgs/FollowJointTrajectoryActionFeedback]
+ * /arm_controller/follow_joint_trajectory/result [control_msgs/FollowJointTrajectoryActionResult]
+ * /arm_controller/follow_joint_trajectory/status [actionlib_msgs/GoalStatusArray]
+ * /task_description [fluently_msgs/TaskMethod]
+ * /tf [tf2_msgs/TFMessage]
+ * /tf_static [tf2_msgs/TFMessage]
+
+Services: 
+ * /planner/get_loggers
+ * /planner/set_logger_level
+
+
+contacting node http://10.11.31.112:44309/ ...
+Pid: 752855
+Connections:
+ * topic: /arm_controller/follow_joint_trajectory/goal
+    * to: /fanuc_interface_node
+    * direction: outbound (45957 - 10.11.31.112:52428) [50]
+    * transport: TCPROS
+ * topic: /arm_controller/follow_joint_trajectory/cancel
+    * to: /fanuc_interface_node
+    * direction: outbound (45957 - 10.11.31.112:52440) [63]
+    * transport: TCPROS
+ * topic: /move_group/display_planned_path
+    * to: /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037
+    * direction: outbound (45957 - 10.11.31.112:52412) [62]
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound (45957 - 10.11.31.112:52444) [49]
+    * transport: TCPROS
+ * topic: /arm_controller/follow_joint_trajectory/status
+    * to: /fanuc_interface_node (http://10.11.31.112:45269/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /arm_controller/follow_joint_trajectory/result
+    * to: /fanuc_interface_node (http://10.11.31.112:45269/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /arm_controller/follow_joint_trajectory/feedback
+    * to: /fanuc_interface_node (http://10.11.31.112:45269/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /task_description
+    * to: /dynamic_ontology (http://10.11.31.112:38061/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: /rob_st_pub (http://10.11.31.112:45473/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: /stf_pub (http://10.11.31.112:41437/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /tf_static
+    * to: /rob_st_pub (http://10.11.31.112:45473/)
+    * direction: inbound
+    * transport: TCPROS
+
+####################
+rosnode info: /rob_st_pub
+--------------------------------------------------------------------------------
+Node [/rob_st_pub]
+Publications: 
+ * /rosout [rosgraph_msgs/Log]
+ * /tf [tf2_msgs/TFMessage]
+ * /tf_static [tf2_msgs/TFMessage]
+
+Subscriptions: 
+ * /joint_states [sensor_msgs/JointState]
+
+Services: 
+ * /rob_st_pub/get_loggers
+ * /rob_st_pub/set_logger_level
+
+
+contacting node http://10.11.31.112:45473/ ...
+Pid: 752429
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound (48299 - 10.11.31.112:41194) [16]
+    * transport: TCPROS
+ * topic: /tf
+    * to: /move_group
+    * direction: outbound (48299 - 10.11.31.112:41170) [10]
+    * transport: TCPROS
+ * topic: /tf
+    * to: /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037
+    * direction: outbound (48299 - 10.11.31.112:41210) [17]
+    * transport: TCPROS
+ * topic: /tf
+    * to: /vision_node
+    * direction: outbound (48299 - 10.11.31.112:45604) [11]
+    * transport: TCPROS
+ * topic: /tf
+    * to: /dynamic_ontology
+    * direction: outbound (48299 - 10.11.31.112:46324) [19]
+    * transport: TCPROS
+ * topic: /tf
+    * to: /move_group_commander_wrappers_1701951924462759870
+    * direction: outbound (48299 - 10.11.31.112:53314) [23]
+    * transport: TCPROS
+ * topic: /tf
+    * to: /planner
+    * direction: outbound (48299 - 10.11.31.112:53330) [21]
+    * transport: TCPROS
+ * topic: /tf_static
+    * to: /move_group
+    * direction: outbound (48299 - 10.11.31.112:41178) [15]
+    * transport: TCPROS
+ * topic: /tf_static
+    * to: /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037
+    * direction: outbound (48299 - 10.11.31.112:41202) [13]
+    * transport: TCPROS
+ * topic: /tf_static
+    * to: /vision_node
+    * direction: outbound (48299 - 10.11.31.112:45616) [12]
+    * transport: TCPROS
+ * topic: /tf_static
+    * to: /dynamic_ontology
+    * direction: outbound (48299 - 10.11.31.112:46332) [18]
+    * transport: TCPROS
+ * topic: /tf_static
+    * to: /move_group_commander_wrappers_1701951924462759870
+    * direction: outbound (48299 - 10.11.31.112:53310) [22]
+    * transport: TCPROS
+ * topic: /tf_static
+    * to: /planner
+    * direction: outbound (48299 - 10.11.31.112:53332) [20]
+    * transport: TCPROS
+ * topic: /joint_states
+    * to: /fanuc_interface_node (http://10.11.31.112:45269/)
+    * direction: inbound (48540 - 10.11.31.112:51195) [14]
+    * transport: TCPROS
+ * topic: /joint_states
+    * to: /ros_bridge (http://10.11.31.113:44647/)
+    * direction: inbound (56146 - 10.11.31.113:44735) [26]
+    * transport: TCPROS
+
+####################
+rosnode info: /ros_bridge
+--------------------------------------------------------------------------------
+Node [/ros_bridge]
+Publications: 
+ * /joint_states [sensor_msgs/JointState]
+ * /mqtt_to_ros [std_msgs/String]
+ * /mqtt_to_ros/robot [std_msgs/String]
+ * /mqtt_to_ros/text_output [std_msgs/String]
+ * /rfluenty2/aligned_depth_to_color/image_raw [sensor_msgs/Image]
+ * /ros_to_mqtt [std_msgs/String]
+ * /rosout [rosgraph_msgs/Log]
+ * /whisper/text_output [std_msgs/String]
+
+Subscriptions: 
+ * /joint_states [sensor_msgs/JointState]
+ * /mqtt_to_ros [std_msgs/String]
+ * /mqtt_to_ros/robot [std_msgs/String]
+ * /mqtt_to_ros/text_output [std_msgs/String]
+ * /rfluenty2/aligned_depth_to_color/image_raw [sensor_msgs/Image]
+ * /ros_to_mqtt [std_msgs/String]
+ * /whisper/text_output [std_msgs/String]
+
+Services: 
+ * /ros_bridge/get_loggers
+ * /ros_bridge/set_logger_level
+
+
+contacting node http://10.11.31.113:44647/ ...
+####################
+rosnode info: /rosout
+--------------------------------------------------------------------------------
+Node [/rosout]
+Publications: 
+ * /rosout_agg [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /rosout [rosgraph_msgs/Log]
+
+Services: 
+ * /rosout/get_loggers
+ * /rosout/set_logger_level
+
+
+contacting node http://10.11.31.112:43053/ ...
+Pid: 752279
+Connections:
+ * topic: /rosout
+    * to: /fanuc_interface_node (http://10.11.31.112:45269/)
+    * direction: inbound (48534 - 10.11.31.112:51195) [13]
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /stf_pub (http://10.11.31.112:41437/)
+    * direction: inbound (35168 - 10.11.31.112:54289) [16]
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /rob_st_pub (http://10.11.31.112:45473/)
+    * direction: inbound (41194 - 10.11.31.112:48299) [17]
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /move_group (http://10.11.31.112:34687/)
+    * direction: inbound (55520 - 10.11.31.112:52411) [18]
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037 (http://10.11.31.112:40661/)
+    * direction: inbound (58530 - 10.11.31.112:46699) [14]
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /vision_node (http://10.11.31.112:43195/)
+    * direction: inbound (53280 - 10.11.31.112:33025) [19]
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /ontologenius_core (http://10.11.31.112:33419/)
+    * direction: inbound (34576 - 10.11.31.112:57539) [20]
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /ontologenius_rest (http://10.11.31.112:43979/)
+    * direction: inbound (49918 - 10.11.31.112:43943) [22]
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /intent_listener (http://10.11.31.112:44113/)
+    * direction: inbound (37454 - 10.11.31.112:41805) [23]
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /dynamic_ontology (http://10.11.31.112:38061/)
+    * direction: inbound (46960 - 10.11.31.112:39497) [21]
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /intent_publisher (http://10.11.31.112:35339/)
+    * direction: inbound (34222 - 10.11.31.112:37953) [25]
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /move_group_commander_wrappers_1701951924462759870 (http://10.11.31.112:38897/)
+    * direction: inbound (40402 - 10.11.31.112:33553) [26]
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /planner (http://10.11.31.112:44309/)
+    * direction: inbound (52444 - 10.11.31.112:45957) [27]
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /ros_bridge (http://10.11.31.113:44647/)
+    * direction: inbound (56142 - 10.11.31.113:44735) [24]
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /mqtt_client (http://10.11.31.113:39979/)
+    * direction: inbound (56526 - 10.11.31.113:51147) [28]
+    * transport: TCPROS
+
+####################
+rosnode info: /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037
+--------------------------------------------------------------------------------
+Node [/rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037]
+Publications: 
+ * /attached_collision_object [moveit_msgs/AttachedCollisionObject]
+ * /clicked_point [geometry_msgs/PointStamped]
+ * /execute_trajectory/cancel [actionlib_msgs/GoalID]
+ * /execute_trajectory/goal [moveit_msgs/ExecuteTrajectoryActionGoal]
+ * /initialpose [geometry_msgs/PoseWithCovarianceStamped]
+ * /move_base_simple/goal [geometry_msgs/PoseStamped]
+ * /move_group/cancel [actionlib_msgs/GoalID]
+ * /move_group/goal [moveit_msgs/MoveGroupActionGoal]
+ * /pickup/cancel [actionlib_msgs/GoalID]
+ * /pickup/goal [moveit_msgs/PickupActionGoal]
+ * /place/cancel [actionlib_msgs/GoalID]
+ * /place/goal [moveit_msgs/PlaceActionGoal]
+ * /planning_scene [moveit_msgs/PlanningScene]
+ * /planning_scene_world [moveit_msgs/PlanningSceneWorld]
+ * /rosout [rosgraph_msgs/Log]
+ * /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037/motionplanning_planning_scene_monitor/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037/motionplanning_planning_scene_monitor/parameter_updates [dynamic_reconfigure/Config]
+ * /rviz_moveit_motion_planning_display/robot_interaction_interactive_marker_topic/feedback [visualization_msgs/InteractiveMarkerFeedback]
+ * /rviz_moveit_motion_planning_display/robot_interaction_interactive_marker_topic/update [visualization_msgs/InteractiveMarkerUpdate]
+ * /rviz_moveit_motion_planning_display/robot_interaction_interactive_marker_topic/update_full [visualization_msgs/InteractiveMarkerInit]
+ * /trajectory_execution_event [std_msgs/String]
+
+Subscriptions: 
+ * /execute_trajectory/feedback [moveit_msgs/ExecuteTrajectoryActionFeedback]
+ * /execute_trajectory/result [moveit_msgs/ExecuteTrajectoryActionResult]
+ * /execute_trajectory/status [actionlib_msgs/GoalStatusArray]
+ * /move_group/display_planned_path [moveit_msgs/DisplayTrajectory]
+ * /move_group/feedback [moveit_msgs/MoveGroupActionFeedback]
+ * /move_group/monitored_planning_scene [moveit_msgs/PlanningScene]
+ * /move_group/result [moveit_msgs/MoveGroupActionResult]
+ * /move_group/status [actionlib_msgs/GoalStatusArray]
+ * /pickup/feedback [moveit_msgs/PickupActionFeedback]
+ * /pickup/result [moveit_msgs/PickupActionResult]
+ * /pickup/status [actionlib_msgs/GoalStatusArray]
+ * /place/feedback [moveit_msgs/PlaceActionFeedback]
+ * /place/result [moveit_msgs/PlaceActionResult]
+ * /place/status [actionlib_msgs/GoalStatusArray]
+ * /recognized_object_array [unknown type]
+ * /rviz_moveit_motion_planning_display/robot_interaction_interactive_marker_topic/feedback [visualization_msgs/InteractiveMarkerFeedback]
+ * /rviz_moveit_motion_planning_display/robot_interaction_interactive_marker_topic/update [visualization_msgs/InteractiveMarkerUpdate]
+ * /tf [tf2_msgs/TFMessage]
+ * /tf_static [tf2_msgs/TFMessage]
+
+Services: 
+ * /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037/get_loggers
+ * /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037/load_config
+ * /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037/load_config_discarding_changes
+ * /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037/motionplanning_planning_scene_monitor/set_parameters
+ * /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037/reload_shaders
+ * /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037/save_config
+ * /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037/set_logger_level
+
+
+contacting node http://10.11.31.112:40661/ ...
+Pid: 752431
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound (46699 - 10.11.31.112:58530) [41]
+    * transport: TCPROS
+ * topic: /planning_scene
+    * to: /move_group
+    * direction: outbound (46699 - 10.11.31.112:37752) [38]
+    * transport: TCPROS
+ * topic: /planning_scene_world
+    * to: /move_group
+    * direction: outbound (46699 - 10.11.31.112:37754) [36]
+    * transport: TCPROS
+ * topic: /rviz_moveit_motion_planning_display/robot_interaction_interactive_marker_topic/update
+    * to: /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037
+    * direction: outbound
+    * transport: INTRAPROCESS
+ * topic: /rviz_moveit_motion_planning_display/robot_interaction_interactive_marker_topic/feedback
+    * to: /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037
+    * direction: outbound
+    * transport: INTRAPROCESS
+ * topic: /trajectory_execution_event
+    * to: /move_group
+    * direction: outbound (46699 - 10.11.31.112:37770) [54]
+    * transport: TCPROS
+ * topic: /attached_collision_object
+    * to: /move_group
+    * direction: outbound (46699 - 10.11.31.112:37786) [56]
+    * transport: TCPROS
+ * topic: /move_group/goal
+    * to: /move_group
+    * direction: outbound (46699 - 10.11.31.112:37800) [58]
+    * transport: TCPROS
+ * topic: /move_group/cancel
+    * to: /move_group
+    * direction: outbound (46699 - 10.11.31.112:37814) [61]
+    * transport: TCPROS
+ * topic: /pickup/goal
+    * to: /move_group
+    * direction: outbound (46699 - 10.11.31.112:37824) [50]
+    * transport: TCPROS
+ * topic: /pickup/cancel
+    * to: /move_group
+    * direction: outbound (46699 - 10.11.31.112:37838) [62]
+    * transport: TCPROS
+ * topic: /place/goal
+    * to: /move_group
+    * direction: outbound (46699 - 10.11.31.112:37844) [64]
+    * transport: TCPROS
+ * topic: /place/cancel
+    * to: /move_group
+    * direction: outbound (46699 - 10.11.31.112:37854) [66]
+    * transport: TCPROS
+ * topic: /execute_trajectory/goal
+    * to: /move_group
+    * direction: outbound (46699 - 10.11.31.112:37868) [69]
+    * transport: TCPROS
+ * topic: /execute_trajectory/cancel
+    * to: /move_group
+    * direction: outbound (46699 - 10.11.31.112:37884) [71]
+    * transport: TCPROS
+ * topic: /tf
+    * to: /rob_st_pub (http://10.11.31.112:45473/)
+    * direction: inbound (41210 - 10.11.31.112:48299) [42]
+    * transport: TCPROS
+ * topic: /tf
+    * to: /stf_pub (http://10.11.31.112:41437/)
+    * direction: inbound (35186 - 10.11.31.112:54289) [43]
+    * transport: TCPROS
+ * topic: /tf_static
+    * to: /rob_st_pub (http://10.11.31.112:45473/)
+    * direction: inbound (41202 - 10.11.31.112:48299) [28]
+    * transport: TCPROS
+ * topic: /move_group/monitored_planning_scene
+    * to: /move_group (http://10.11.31.112:34687/)
+    * direction: inbound (43696 - 10.11.31.112:52411) [53]
+    * transport: TCPROS
+ * topic: /move_group/display_planned_path
+    * to: /move_group (http://10.11.31.112:34687/)
+    * direction: inbound (43702 - 10.11.31.112:52411) [55]
+    * transport: TCPROS
+ * topic: /move_group/display_planned_path
+    * to: /planner (http://10.11.31.112:44309/)
+    * direction: inbound (52412 - 10.11.31.112:45957) [45]
+    * transport: TCPROS
+ * topic: /rviz_moveit_motion_planning_display/robot_interaction_interactive_marker_topic/feedback
+    * to: /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037 (http://10.11.31.112:40661/)
+    * direction: inbound
+    * transport: INTRAPROCESS
+ * topic: /rviz_moveit_motion_planning_display/robot_interaction_interactive_marker_topic/update
+    * to: /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037 (http://10.11.31.112:40661/)
+    * direction: inbound
+    * transport: INTRAPROCESS
+ * topic: /move_group/status
+    * to: /move_group (http://10.11.31.112:34687/)
+    * direction: inbound (43714 - 10.11.31.112:52411) [57]
+    * transport: TCPROS
+ * topic: /move_group/feedback
+    * to: /move_group (http://10.11.31.112:34687/)
+    * direction: inbound (43720 - 10.11.31.112:52411) [59]
+    * transport: TCPROS
+ * topic: /move_group/result
+    * to: /move_group (http://10.11.31.112:34687/)
+    * direction: inbound (43734 - 10.11.31.112:52411) [60]
+    * transport: TCPROS
+ * topic: /pickup/status
+    * to: /move_group (http://10.11.31.112:34687/)
+    * direction: inbound (43748 - 10.11.31.112:52411) [49]
+    * transport: TCPROS
+ * topic: /pickup/feedback
+    * to: /move_group (http://10.11.31.112:34687/)
+    * direction: inbound (43754 - 10.11.31.112:52411) [51]
+    * transport: TCPROS
+ * topic: /pickup/result
+    * to: /move_group (http://10.11.31.112:34687/)
+    * direction: inbound (43768 - 10.11.31.112:52411) [52]
+    * transport: TCPROS
+ * topic: /place/status
+    * to: /move_group (http://10.11.31.112:34687/)
+    * direction: inbound (43804 - 10.11.31.112:52411) [67]
+    * transport: TCPROS
+ * topic: /place/feedback
+    * to: /move_group (http://10.11.31.112:34687/)
+    * direction: inbound (43784 - 10.11.31.112:52411) [63]
+    * transport: TCPROS
+ * topic: /place/result
+    * to: /move_group (http://10.11.31.112:34687/)
+    * direction: inbound (43788 - 10.11.31.112:52411) [65]
+    * transport: TCPROS
+ * topic: /execute_trajectory/status
+    * to: /move_group (http://10.11.31.112:34687/)
+    * direction: inbound (43836 - 10.11.31.112:52411) [72]
+    * transport: TCPROS
+ * topic: /execute_trajectory/feedback
+    * to: /move_group (http://10.11.31.112:34687/)
+    * direction: inbound (43818 - 10.11.31.112:52411) [68]
+    * transport: TCPROS
+ * topic: /execute_trajectory/result
+    * to: /move_group (http://10.11.31.112:34687/)
+    * direction: inbound (43828 - 10.11.31.112:52411) [70]
+    * transport: TCPROS
+
+####################
+rosnode info: /stf_pub
+--------------------------------------------------------------------------------
+Node [/stf_pub]
+Publications: 
+ * /rosout [rosgraph_msgs/Log]
+ * /tf [tf2_msgs/TFMessage]
+
+Subscriptions: None
+
+Services: 
+ * /stf_pub/get_loggers
+ * /stf_pub/set_logger_level
+
+
+contacting node http://10.11.31.112:41437/ ...
+Pid: 752430
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound (54289 - 10.11.31.112:35168) [12]
+    * transport: TCPROS
+ * topic: /tf
+    * to: /move_group
+    * direction: outbound (54289 - 10.11.31.112:35180) [11]
+    * transport: TCPROS
+ * topic: /tf
+    * to: /rviz_fluently2_ThinkCentre_M80q_Gen_3_752353_4610258942119045037
+    * direction: outbound (54289 - 10.11.31.112:35186) [13]
+    * transport: TCPROS
+ * topic: /tf
+    * to: /vision_node
+    * direction: outbound (54289 - 10.11.31.112:47626) [10]
+    * transport: TCPROS
+ * topic: /tf
+    * to: /dynamic_ontology
+    * direction: outbound (54289 - 10.11.31.112:32774) [14]
+    * transport: TCPROS
+ * topic: /tf
+    * to: /move_group_commander_wrappers_1701951924462759870
+    * direction: outbound (54289 - 10.11.31.112:56736) [16]
+    * transport: TCPROS
+ * topic: /tf
+    * to: /planner
+    * direction: outbound (54289 - 10.11.31.112:56740) [15]
+    * transport: TCPROS
+
+####################
+rosnode info: /vision_node
+--------------------------------------------------------------------------------
+Node [/vision_node]
+Publications: 
+ * /detected_objects [fluently_msgs/ObjectList]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /joint_states [sensor_msgs/JointState]
+ * /tf [tf2_msgs/TFMessage]
+ * /tf_static [tf2_msgs/TFMessage]
+
+Services: 
+ * /vision_node/get_loggers
+ * /vision_node/set_logger_level
+
+
+contacting node http://10.11.31.112:43195/ ...
+Pid: 752602
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound (33025 - 10.11.31.112:53280) [8]
+    * transport: TCPROS
+ * topic: /detected_objects
+    * to: /dynamic_ontology
+    * direction: outbound (33025 - 10.11.31.112:33180) [17]
+    * transport: TCPROS
+ * topic: /joint_states
+    * to: /fanuc_interface_node (http://10.11.31.112:45269/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: /stf_pub (http://10.11.31.112:41437/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: /rob_st_pub (http://10.11.31.112:45473/)
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /tf_static
+    * to: /rob_st_pub (http://10.11.31.112:45473/)
+    * direction: inbound
+    * transport: TCPROS
+
+####################

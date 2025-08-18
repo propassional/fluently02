@@ -1,0 +1,10 @@
+// https://sequencediagram.org/
+title Fluently Use Case 1
+OperatorVoice->Mothership BT:BT: Start Top Scan
+Mothership BT->Mothership ROS2: Audio 
+Mothership ROS2->Mothership ROS2: Speech to text
+Mothership ROS2->Mothership ROS2: Publish Start Top Scan string
+Mothership ROS2->Fluently1 ROS1: Bridge: publish cmd
+Fluently1 ROS1->Fluently1 ROS1: load top scan trajectory
+Fluently1 ROS1->CRX ROS1 driver: Top Scan Joint trajectory
+CRX ROS1 driver->ROS1

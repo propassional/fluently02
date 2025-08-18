@@ -1,0 +1,54 @@
+Searching for EBuddy intents, by scanning all state machine JSON files within this YAML file: 
+D:\Banfi\Github\Fluently\Releases\2024_07_09_EBuddy\Data\Input\YAML\default.yaml
+
+Parsed JSON files:
+D:\Banfi\Github\Fluently\Releases\2024_07_09_EBuddy\Data\Input\SM\Generic__Instructions__2024_08_19__10_56_54\JSON\Generic__Instructions__2024_08_19__10_56_54.json
+D:\Banfi\Github\Fluently\Releases\2024_07_09_EBuddy\Data\Input\SM\ArtecStudio__Setup__2024_08_29__09_54_27\JSON\ArtecStudio__Setup__2024_08_29__09_54_27.json
+D:\Banfi\Github\Fluently\Releases\2024_07_09_EBuddy\Data\Input\SM\ArtecStudio__PreviewBasic__2024_08_05__14_57_32\JSON\ArtecStudio__PreviewBasic__2024_08_05__14_57_32.json
+D:\Banfi\Github\Fluently\Releases\2024_07_09_EBuddy\Data\Input\SM\ArtecStudio__Preview__2024_08_05__14_57_32\JSON\ArtecStudio__Preview__2024_08_05__14_57_32.json
+D:\Banfi\Github\Fluently\Releases\2024_07_09_EBuddy\Data\Input\SM\ArtecStudio__FullScan__2024_08_05__14_57_32\JSON\ArtecStudio__FullScan__2024_08_05__14_57_32.json
+D:\Banfi\Github\Fluently\Releases\2024_07_09_EBuddy\Data\Input\SM\ArtecStudio__SliceScan__2024_09_15__11_43_22\JSON\ArtecStudio__SliceScan__2024_09_15__11_43_22.json
+D:\Banfi\Github\Fluently\Releases\2024_07_09_EBuddy\Data\Input\SM\ArtecStudio__SnakeScan__2024_09_15__11_43_22\JSON\ArtecStudio__SnakeScan__2024_09_15__11_43_22.json
+D:\Banfi\Github\Fluently\Releases\2024_07_09_EBuddy\Data\Input\SM\ArtecStudio__Registration__2024_11_07\JSON\ArtecStudio__Registration__2024_11_07.json
+D:\Banfi\Github\Fluently\Releases\2024_07_09_EBuddy\Data\Input\SM\ArtecStudio__CommandHub__2024_10_07\JSON\ArtecStudio__CommandHub__2024_10_07.json
+
+Intents from EBuddy GUI: 
+StartAutopilot 
+StopAutopilot 
+Settings 
+
+Intents for tabs switching:
+Instructions
+Setup
+PreviewBasic
+Preview
+FullScan
+SliceScan
+SnakeScan
+Registration
+CommandHub
+
+Intents from states machine:
+CheckArtecStudioIsOff
+CheckArtecStudioIsOn
+CheckPreview
+CheckScannerIsOn
+Close
+Last
+MoveDown
+MoveHome
+MoveUp
+Next
+StartArtecStudio
+StartAutoMenu
+StartGlobalRegistration
+StartPause
+StartPreview
+StartRecording
+StartScanMenu
+StartToolsMenu
+StopRecording
+StopToolsMenu
+VerifyCameraSetupAdvanced1
+VerifyCameraSetupAdvanced2
+VerifyCameraSetupBasic

@@ -1,0 +1,37 @@
+# E-Buddy YAML setup file: the user defines which SM he wants to use and where they are located
+   
+# App command files: Artec Studio, taskbar, DK, 
+    # Specific GUI parts of the app: widgets, features
+
+# SM command files: 
+    # SM JSON file
+    # SM YAML file
+    # Feedback tools: check code, rollback code
+
+- transition name intern: CmdAutoStart
+  transition name extern: .
+  
+- transition name intern: CmdStartArtecStudio
+  #D:\Banfi\Github\Fluently\Releases\2024_04_09_Teachix\Data\Input\CommandImages\Taskbar\CmdStartArtecStudio.png
+  command image: 
+    - app: Taskbar
+    - name: SearchField
+    # Write this string into the taskbar field
+    - command text: C:\Program Files\Artec\Artec Studio 16 Professional\astudio_pro.exe
+
+# Servono queste infos?
+- state name intern: ArtecStudioIsActive
+  check code: ArtecStudioIsActiveCheck.py
+  rollback code: ArtecStudioIsActiveRollback.py
+
+  # This state has three GUI interactions
+- transition name intern: CmdSaveFile
+  # click on file menu
+  command image 1: CmdSaveFile1.png
+  # Click on "Save project as"
+  command image 2: CmdSaveFile2.png
+  # Find the window where to write the file name
+  command image 3: CmdSaveFile3.png
+  # Write into the field the name of the file, in autofill mode
+  command text: autofill
+  comment: 

@@ -1,0 +1,49 @@
+{
+    "states": [
+		"Start",
+		"Ready",
+        "ArtecStudioIsOn",
+        "ScanMenuIsOn",
+		"ScannerIsOn",
+        "PreviewIsOn",
+		"End"
+    ],
+    "transitions": [
+	    {
+            "trigger": "Next",
+            "source": "Start",
+            "dest": "Ready"
+        },
+        {
+            "trigger": "CheckArtecStudioIsOn",
+            "source": "Ready",
+            "dest": "ArtecStudioIsOn"
+        },
+        {
+            "trigger": "StartScanMenu",
+            "source": "ArtecStudioIsOn",
+            "dest": "ScanMenuIsOn"
+        },
+		{
+            "trigger": "CheckScannerIsOn",
+            "source": "ScanMenuIsOn",
+            "dest": "ScannerIsOn"
+        },
+        {
+            "trigger": "StartPreview",
+            "source": "ScannerIsOn",
+            "dest": "PreviewIsOn"
+        },
+        {
+            "trigger": "Auto",
+            "source": "PreviewIsOn",
+            "dest": "End"
+        },
+        {
+            "trigger": "Next",
+            "source": "End",
+            "dest": "Start"
+        }
+    ],
+    "initial": "Start"
+}

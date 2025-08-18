@@ -1,0 +1,12 @@
+services:
+  convexhull-client:
+    image: gitlab-core.supsi.ch:5050/dti-isteps/armlab/fluently/convex-hull-estimation:main
+    container_name: "convexhull-client"
+    environment:
+        - ROS_DOMAIN_ID=5
+    network_mode: host
+    command: >
+      /bin/bash -c "source /opt/ros/humble/setup.bash &&
+                source /home/ros_ws/install/setup.bash &&
+                ros2 run convex_hull_estimation client"
+ 

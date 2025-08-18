@@ -1,0 +1,145 @@
+[0.000000] (-) TimerEvent: {}
+[0.000000] (convex_hull_estimation_interface) JobQueued: {'identifier': 'convex_hull_estimation_interface', 'dependencies': OrderedDict()}
+[0.000000] (convex_hull_estimation_interface) JobStarted: {'identifier': 'convex_hull_estimation_interface'}
+[0.110000] (-) TimerEvent: {}
+[0.141000] (convex_hull_estimation_interface) JobProgress: {'identifier': 'convex_hull_estimation_interface', 'progress': 'cmake'}
+[0.141000] (convex_hull_estimation_interface) Command: {'cmd': ['C:\\Program Files\\CMake\\bin\\cmake.EXE', 'D:\\Banfi\\Github\\Fluently\\Code\\Python\\ConvexHull\\src\\convex-hull-estimation-interface', '-DCMAKE_INSTALL_PREFIX=D:\\Banfi\\Github\\Fluently\\Code\\Python\\ConvexHull\\install\\convex_hull_estimation_interface', '-G', 'Visual Studio 16 2019'], 'cwd': 'D:\\Banfi\\Github\\Fluently\\Code\\Python\\ConvexHull\\build\\convex_hull_estimation_interface', 'env': OrderedDict([('ALLUSERSPROFILE', 'C:\\ProgramData'), ('AMENT_PREFIX_PATH', 'C:\\dev\\ros2_humble'), ('APPDATA', 'C:\\Users\\operator\\AppData\\Roaming'), ('ARTEC_SDK_HOME', 'C:\\Program Files\\Artec\\Artec 3D Scanning SDK\\'), ('AVS_PROFESSIONAL_SDK5_1', 'C:\\Program Files\\Adaptive Vision\\Adaptive Vision Studio 5.1 Professional\\SDK'), ('AVS_RUNTIME_PATH5_1', 'C:\\Program Files\\Adaptive Vision\\Adaptive Vision Studio 5.1 Runtime'), ('C4UTILITY_ROOT', 'C:\\Program Files\\C4Utility\\'), ('ChocolateyInstall', 'C:\\ProgramData\\chocolatey'), ('ChocolateyLastPathUpdate', '133835753404774724'), ('CMAKE_PREFIX_PATH', 'C:\\dev\\ros2_humble'), ('COLCON', '1'), ('COLCON_PREFIX_PATH', 'C:\\dev\\ros2_humble\\'), ('CommandPromptType', 'Cross'), ('CommonProgramFiles', 'C:\\Program Files\\Common Files'), ('CommonProgramFiles(x86)', 'C:\\Program Files (x86)\\Common Files'), ('CommonProgramW6432', 'C:\\Program Files\\Common Files'), ('COMPUTERNAME', 'FEMTOSURF'), ('ComSpec', 'C:\\Windows\\system32\\cmd.exe'), ('DataSpell', 'C:\\Program Files\\JetBrains\\DataSpell 2024.1.1\\bin;'), ('DevEnvDir', 'C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Common7\\IDE\\'), ('DIAPHUS_GENTL64_FILE', 'C:\\Program Files\\C4Utility\\diaphus\\win64-x64\\diaphus.cti'), ('DriverData', 'C:\\Windows\\System32\\Drivers\\DriverData'), ('ExtensionSdkDir', 'C:\\Program Files (x86)\\Microsoft SDKs\\Windows Kits\\10\\ExtensionSDKs'), ('FPS_BROWSER_APP_PROFILE_STRING', 'Internet Explorer'), ('FPS_BROWSER_USER_PROFILE_STRING', 'Default'), ('Framework40Version', 'v4.0'), ('FrameworkDir', 'C:\\Windows\\Microsoft.NET\\Framework\\'), ('FrameworkDir32', 'C:\\Windows\\Microsoft.NET\\Framework\\'), ('FrameworkDir64', 'C:\\Windows\\Microsoft.NET\\Framework64\\'), ('FrameworkVersion', 'v4.0.30319'), ('FrameworkVersion32', 'v4.0.30319'), ('FrameworkVersion64', 'v4.0.30319'), ('GENICAM_GENTL32_PATH', 'C:\\Program Files\\C4Utility\\diaphus\\win32-i86\\'), ('GENICAM_GENTL64_PATH', 'C:\\Program Files\\C4Utility\\diaphus\\win64-x64\\'), ('HALCONARCH', 'x64-win64'), ('HALCONEXAMPLES', 'C:\\Users\\Public\\Documents\\MVTec\\HALCON-23.11-Progress-Student-Edition/examples'), ('HALCONIMAGES', 'C:\\Users\\Public\\Documents\\MVTec\\HALCON-23.11-Progress-Student-Edition/examples/images'), ('HALCONROOT', 'C:\\Program Files\\MVTec\\HALCON-23.11-Progress-Student-Edition'), ('HOMEDRIVE', 'C:'), ('HOMEPATH', '\\Users\\operator'), ('INCLUDE', 'C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\ATLMFC\\include;C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\include;C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.19041.0\\ucrt;C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.19041.0\\shared;C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.19041.0\\um;C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.19041.0\\winrt;C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.19041.0\\cppwinrt'), ('INTEL_DEV_REDIST', 'C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\'), ('LIB', 'C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\ATLMFC\\lib\\x64;C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\lib\\x64;C:\\Program Files (x86)\\Windows Kits\\10\\lib\\10.0.19041.0\\ucrt\\x64;C:\\Program Files (x86)\\Windows Kits\\10\\lib\\10.0.19041.0\\um\\x64'), ('LIBPATH', 'C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\ATLMFC\\lib\\x64;C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\lib\\x64;C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\lib\\x86\\store\\references;C:\\Program Files (x86)\\Windows Kits\\10\\UnionMetadata\\10.0.19041.0;C:\\Program Files (x86)\\Windows Kits\\10\\References\\10.0.19041.0;C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319'), ('LOCALAPPDATA', 'C:\\Users\\operator\\AppData\\Local'), ('LOGONSERVER', '\\\\FEMTOSURF'), ('NUMBER_OF_PROCESSORS', '20'), ('OneDrive', 'C:\\Users\\operator\\OneDrive'), ('OpenCV_DIR', 'C:\\opencv'), ('OPENGPS_LOCATION', 'C:\\Program Files\\Digital Surf\\MountainsLab Premium 8.0\\Bin'), ('OPENSSL_CONF', 'C:\\Program Files\\OpenSSL-Win64\\bin\\openssl.cfg'), ('OS', 'Windows_NT'), ('OV_NI_PLUGIN_DIR', 'C:\\Program Files\\National Instruments\\Shared\\OpenVINO\\'), ('Path', 'C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX86\\x64;C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX86\\x86;C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Common7\\IDE\\VC\\VCPackages;C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\TestWindow;C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\TeamFoundation\\Team Explorer;C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\MSBuild\\Current\\bin\\Roslyn;C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Team Tools\\Performance Tools\\x64;C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Team Tools\\Performance Tools;C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\Common\\VSPerfCollectionTools\\vs2019\\\\x64;C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\Common\\VSPerfCollectionTools\\vs2019\\;C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Common7\\Tools\\devinit;C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.19041.0\\x86;C:\\Program Files (x86)\\Windows Kits\\10\\bin\\x86;C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\\\MSBuild\\Current\\Bin;C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319;C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Common7\\IDE\\;C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Common7\\Tools\\;C:\\dev\\ros2_humble\\opt\\yaml_cpp_vendor\\bin;C:\\dev\\ros2_humble\\opt\\rviz_ogre_vendor\\bin;C:\\dev\\ros2_humble\\opt\\rviz_assimp_vendor\\bin;C:\\dev\\ros2_humble\\opt\\libcurl_vendor\\bin;C:\\dev\\ros2_humble\\Scripts;C:\\Python39\\Scripts\\;C:\\Python39\\;C:\\Python38\\Scripts\\;C:\\Python38\\;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\redist\\intel64_win\\compiler;C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\redist\\ia32_win\\compiler;C:\\Enthought\\edm\\;C:\\Program Files\\National Instruments\\Shared\\OpenVINO\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\IVI Foundation\\VISA\\WinNT\\Bin\\;C:\\Program Files\\IVI Foundation\\VISA\\Win64\\Bin\\;C:\\Program Files (x86)\\IVI Foundation\\VISA\\WinNT\\Bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\CMake\\bin;C:\\ProgramData\\chocolatey\\lib\\cunit\\lib;C:\\ProgramData\\chocolatey\\lib\\tinyxml2\\lib;C:\\ProgramData\\chocolatey\\lib\\bullet\\lib;C:\\Program Files\\Graphviz\\bin;C:\\dev\\ros2_humble\\bin;;C:\\Program Files\\NVIDIA Corporation\\NVIDIA app\\NvDLISR;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\Users\\operator\\.pyenv\\pyenv-win\\bin;C:\\Users\\operator\\.pyenv\\pyenv-win\\shims;C:\\Program Files\\MVTec\\HALCON-23.11-Progress-Student-Edition/bin/x64-win64;$BASEDIRPROG/bin/x64-win64;C:\\Users\\operator\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\operator\\.dotnet\\tools;C:\\Program Files\\JetBrains\\PyCharm Community Edition 2024.3.5\\bin;C:\\Program Files\\JetBrains\\DataSpell 2024.1.1\\bin;C:\\Program Files\\OpenSSL-Win64\\bin;C:\\opencv\\x64\\vc16\\bin;C:\\Program Files\\CMake\\bin;C:\\Users\\operator\\AppData\\Local\\GitHubDesktop\\bin'), ('PATHEXT', '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'), ('PKG_CONFIG_PATH', 'C:\\dev\\ros2_humble\\lib\\pkgconfig'), ('Platform', 'x64'), ('PROCESSOR_ARCHITECTURE', 'AMD64'), ('PROCESSOR_IDENTIFIER', 'Intel64 Family 6 Model 165 Stepping 5, GenuineIntel'), ('PROCESSOR_LEVEL', '6'), ('PROCESSOR_REVISION', 'a505'), ('ProgramData', 'C:\\ProgramData'), ('ProgramFiles', 'C:\\Program Files'), ('ProgramFiles(x86)', 'C:\\Program Files (x86)'), ('ProgramW6432', 'C:\\Program Files'), ('PROMPT', '$P$G'), ('PSModulePath', 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'), ('PUBLIC', 'C:\\Users\\Public\nPyCharm Community Edition=C:\\Program Files\\JetBrains\\PyCharm Community Edition 2024.3.5\\bin;'), ('PYENV', 'C:\\Users\\operator\\.pyenv\\pyenv-win\\'), ('PYENV_HOME', 'C:\\Users\\operator\\.pyenv\\pyenv-win\\'), ('PYENV_ROOT', 'C:\\Users\\operator\\.pyenv\\pyenv-win\\'), ('PYTHONPATH', 'C:\\ci\\ws\\install\\lib\\python3.8\\dist-packages;C:\\dev\\ros2_humble\\Lib\\site-packages;'), ('Qt5_DIR', 'C:\\Qt\\Qt5.12.12\\5.12.12\\msvc2017_64'), ('QT_QPA_PLATFORM_PLUGIN_PATH', 'C:\\Qt\\Qt5.12.12\\5.12.12\\msvc2017_64\\plugins\\platforms'), ('ROS_DISTRO', 'humble'), ('ROS_DOMAIN_ID', '5'), ('ROS_LOCALHOST_ONLY', '0'), ('ROS_PYTHON_VERSION', '3'), ('ROS_VERSION', '2'), ('SESSIONNAME', 'Console'), ('SystemDrive', 'C:'), ('SystemRoot', 'C:\\Windows'), ('TEMP', 'C:\\Users\\operator\\AppData\\Local\\Temp'), ('TMP', 'C:\\Users\\operator\\AppData\\Local\\Temp'), ('UCRTVersion', '10.0.19041.0'), ('UGII_3DCONNEXION_DIR', 'C:\\Program Files\\3Dconnexion\\3DxWare\\3DxNX\\ugii_dir\\'), ('UGII_3DCONNEXION_DIR32', 'C:\\Program Files\\3Dconnexion\\3DxWare\\3DxNX\\ugii_dir32\\'), ('UniversalCRTSdkDir', 'C:\\Program Files (x86)\\Windows Kits\\10\\'), ('USERDOMAIN', 'FEMTOSURF'), ('USERDOMAIN_ROAMINGPROFILE', 'FEMTOSURF'), ('USERNAME', 'operator'), ('USERPROFILE', 'C:\\Users\\operator'), ('VCIDEInstallDir', 'C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Common7\\IDE\\VC\\'), ('VCINSTALLDIR', 'C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\'), ('VCToolsInstallDir', 'C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\'), ('VCToolsRedistDir', 'C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Redist\\MSVC\\14.29.30133\\'), ('VCToolsVersion', '14.29.30133'), ('VisualStudioVersion', '16.0'), ('VS160COMNTOOLS', 'C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Common7\\Tools\\'), ('VSCMD_ARG_app_plat', 'Desktop'), ('VSCMD_ARG_HOST_ARCH', 'x86'), ('VSCMD_ARG_TGT_ARCH', 'x64'), ('VSCMD_VER', '16.11.42'), ('VSINSTALLDIR', 'C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\'), ('VXIPNPPATH', 'C:\\Program Files (x86)\\IVI Foundation\\VISA\\'), ('VXIPNPPATH64', 'C:\\Program Files\\IVI Foundation\\VISA\\'), ('windir', 'C:\\Windows'), ('WindowsLibPath', 'C:\\Program Files (x86)\\Windows Kits\\10\\UnionMetadata\\10.0.19041.0;C:\\Program Files (x86)\\Windows Kits\\10\\References\\10.0.19041.0'), ('WindowsSdkBinPath', 'C:\\Program Files (x86)\\Windows Kits\\10\\bin\\'), ('WindowsSdkDir', 'C:\\Program Files (x86)\\Windows Kits\\10\\'), ('WindowsSDKLibVersion', '10.0.19041.0\\'), ('WindowsSdkVerBinPath', 'C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.19041.0\\'), ('WindowsSDKVersion', '10.0.19041.0\\'), ('ZES_ENABLE_SYSMAN', '1'), ('__devinit_path', 'C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Common7\\Tools\\devinit\\devinit.exe'), ('__DOTNET_ADD_32BIT', '1'), ('__DOTNET_ADD_64BIT', '1'), ('__DOTNET_PREFERRED_BITNESS', '32'), ('__VSCMD_PREINIT_PATH', 'C:\\dev\\ros2_humble\\opt\\yaml_cpp_vendor\\bin;C:\\dev\\ros2_humble\\opt\\rviz_ogre_vendor\\bin;C:\\dev\\ros2_humble\\opt\\rviz_assimp_vendor\\bin;C:\\dev\\ros2_humble\\opt\\libcurl_vendor\\bin;C:\\dev\\ros2_humble\\Scripts;C:\\Python39\\Scripts\\;C:\\Python39\\;C:\\Python38\\Scripts\\;C:\\Python38\\;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\redist\\intel64_win\\compiler;C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\redist\\ia32_win\\compiler;C:\\Enthought\\edm\\;C:\\Program Files\\National Instruments\\Shared\\OpenVINO\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\IVI Foundation\\VISA\\WinNT\\Bin\\;C:\\Program Files\\IVI Foundation\\VISA\\Win64\\Bin\\;C:\\Program Files (x86)\\IVI Foundation\\VISA\\WinNT\\Bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\CMake\\bin;C:\\ProgramData\\chocolatey\\lib\\cunit\\lib;C:\\ProgramData\\chocolatey\\lib\\tinyxml2\\lib;C:\\ProgramData\\chocolatey\\lib\\bullet\\lib;C:\\Program Files\\Graphviz\\bin;C:\\dev\\ros2_humble\\bin;;C:\\Program Files\\NVIDIA Corporation\\NVIDIA app\\NvDLISR;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\Users\\operator\\.pyenv\\pyenv-win\\bin;C:\\Users\\operator\\.pyenv\\pyenv-win\\shims;C:\\Program Files\\MVTec\\HALCON-23.11-Progress-Student-Edition/bin/x64-win64;$BASEDIRPROG/bin/x64-win64;C:\\Users\\operator\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\operator\\.dotnet\\tools;C:\\Program Files\\JetBrains\\PyCharm Community Edition 2024.3.5\\bin;C:\\Program Files\\JetBrains\\DataSpell 2024.1.1\\bin;C:\\Program Files\\OpenSSL-Win64\\bin;C:\\opencv\\x64\\vc16\\bin;C:\\Program Files\\CMake\\bin;C:\\Users\\operator\\AppData\\Local\\GitHubDesktop\\bin;'), ('__VSCMD_script_err_count', '0')]), 'shell': False}
+[0.219000] (-) TimerEvent: {}
+[0.250000] (convex_hull_estimation_interface) StderrLine: {'line': b'CMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):\n'}
+[0.250000] (convex_hull_estimation_interface) StderrLine: {'line': b'  Compatibility with CMake < 3.10 will be removed from a future version of\n'}
+[0.250000] (convex_hull_estimation_interface) StderrLine: {'line': b'  CMake.\n'}
+[0.250000] (convex_hull_estimation_interface) StderrLine: {'line': b'\n'}
+[0.250000] (convex_hull_estimation_interface) StderrLine: {'line': b'  Update the VERSION argument <min> value or use a ...<max> suffix to tell\n'}
+[0.250000] (convex_hull_estimation_interface) StderrLine: {'line': b'  CMake that the project does not need compatibility with older versions.\n'}
+[0.250000] (convex_hull_estimation_interface) StderrLine: {'line': b'\n'}
+[0.250000] (convex_hull_estimation_interface) StderrLine: {'line': b'\n'}
+[0.281000] (convex_hull_estimation_interface) StdoutLine: {'line': b'-- Selecting Windows SDK version 10.0.19041.0 to target Windows 10.0.19045.\n'}
+[0.328000] (-) TimerEvent: {}
+[0.438000] (-) TimerEvent: {}
+[0.469000] (convex_hull_estimation_interface) StdoutLine: {'line': b'-- Found shape_msgs: 4.2.4 (C:/dev/ros2_humble/share/shape_msgs/cmake)\n'}
+[0.547000] (-) TimerEvent: {}
+[0.656000] (-) TimerEvent: {}
+[0.766000] (-) TimerEvent: {}
+[0.875000] (-) TimerEvent: {}
+[1.000000] (-) TimerEvent: {}
+[1.110000] (-) TimerEvent: {}
+[1.219000] (-) TimerEvent: {}
+[1.328000] (-) TimerEvent: {}
+[1.438000] (-) TimerEvent: {}
+[1.547000] (-) TimerEvent: {}
+[1.656000] (-) TimerEvent: {}
+[1.766000] (-) TimerEvent: {}
+[1.875000] (-) TimerEvent: {}
+[1.938000] (convex_hull_estimation_interface) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (C:/dev/ros2_humble/share/rosidl_generator_c/cmake)\n'}
+[1.969000] (convex_hull_estimation_interface) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (C:/dev/ros2_humble/share/rosidl_adapter/cmake)\n'}
+[1.985000] (-) TimerEvent: {}
+[2.078000] (convex_hull_estimation_interface) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (C:/dev/ros2_humble/share/rosidl_generator_cpp/cmake)\n'}
+[2.110000] (-) TimerEvent: {}
+[2.219000] (-) TimerEvent: {}
+[2.235000] (convex_hull_estimation_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.328000] (-) TimerEvent: {}
+[2.391000] (convex_hull_estimation_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.438000] (-) TimerEvent: {}
+[2.547000] (-) TimerEvent: {}
+[2.656000] (-) TimerEvent: {}
+[2.781000] (-) TimerEvent: {}
+[2.891000] (-) TimerEvent: {}
+[2.953000] (convex_hull_estimation_interface) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (C:/dev/ros2_humble/share/rosidl_default_generators/cmake)\n'}
+[3.000000] (-) TimerEvent: {}
+[3.110000] (-) TimerEvent: {}
+[3.219000] (-) TimerEvent: {}
+[3.328000] (-) TimerEvent: {}
+[3.438000] (-) TimerEvent: {}
+[3.547000] (-) TimerEvent: {}
+[3.656000] (-) TimerEvent: {}
+[3.766000] (-) TimerEvent: {}
+[3.891000] (-) TimerEvent: {}
+[4.000000] (-) TimerEvent: {}
+[4.110000] (-) TimerEvent: {}
+[4.141000] (convex_hull_estimation_interface) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (C:/dev/ros2_humble/share/ament_cmake_ros/cmake)\n'}
+[4.219000] (-) TimerEvent: {}
+[4.328000] (-) TimerEvent: {}
+[4.438000] (-) TimerEvent: {}
+[4.547000] (-) TimerEvent: {}
+[4.672000] (-) TimerEvent: {}
+[4.781000] (-) TimerEvent: {}
+[4.891000] (-) TimerEvent: {}
+[5.000000] (-) TimerEvent: {}
+[5.110000] (-) TimerEvent: {}
+[5.219000] (-) TimerEvent: {}
+[5.328000] (-) TimerEvent: {}
+[5.438000] (-) TimerEvent: {}
+[5.547000] (-) TimerEvent: {}
+[5.672000] (-) TimerEvent: {}
+[5.781000] (-) TimerEvent: {}
+[5.891000] (-) TimerEvent: {}
+[6.000000] (-) TimerEvent: {}
+[6.110000] (-) TimerEvent: {}
+[6.219000] (-) TimerEvent: {}
+[6.328000] (-) TimerEvent: {}
+[6.406000] (convex_hull_estimation_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[6.438000] (-) TimerEvent: {}
+[6.547000] (-) TimerEvent: {}
+[6.672000] (-) TimerEvent: {}
+[6.781000] (-) TimerEvent: {}
+[6.891000] (-) TimerEvent: {}
+[7.000000] (-) TimerEvent: {}
+[7.110000] (-) TimerEvent: {}
+[7.219000] (-) TimerEvent: {}
+[7.266000] (convex_hull_estimation_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[7.281000] (convex_hull_estimation_interface) StderrLine: {'line': b'CMake Warning (dev) at C:/dev/ros2_humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:20 (find_package):\n'}
+[7.281000] (convex_hull_estimation_interface) StderrLine: {'line': b'  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules\n'}
+[7.281000] (convex_hull_estimation_interface) StderrLine: {'line': b'  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use\n'}
+[7.281000] (convex_hull_estimation_interface) StderrLine: {'line': b'  the cmake_policy command to set the policy and suppress this warning.\n'}
+[7.281000] (convex_hull_estimation_interface) StderrLine: {'line': b'\n'}
+[7.281000] (convex_hull_estimation_interface) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[7.281000] (convex_hull_estimation_interface) StderrLine: {'line': b'  C:/dev/ros2_humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)\n'}
+[7.281000] (convex_hull_estimation_interface) StderrLine: {'line': b'  C:/dev/ros2_humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)\n'}
+[7.281000] (convex_hull_estimation_interface) StderrLine: {'line': b'  CMakeLists.txt:14 (rosidl_generate_interfaces)\n'}
+[7.281000] (convex_hull_estimation_interface) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[7.281000] (convex_hull_estimation_interface) StderrLine: {'line': b'\n'}
+[7.297000] (convex_hull_estimation_interface) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (C:/dev/ros2_humble/share/python_cmake_module/cmake)\n'}
+[7.313000] (convex_hull_estimation_interface) StderrLine: {'line': b'CMake Warning (dev) at C:/dev/ros2_humble/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:52 (find_package):\n'}
+[7.313000] (convex_hull_estimation_interface) StderrLine: {'line': b'  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules\n'}
+[7.313000] (convex_hull_estimation_interface) StderrLine: {'line': b'  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use\n'}
+[7.313000] (convex_hull_estimation_interface) StderrLine: {'line': b'  the cmake_policy command to set the policy and suppress this warning.\n'}
+[7.313000] (convex_hull_estimation_interface) StderrLine: {'line': b'\n'}
+[7.313000] (convex_hull_estimation_interface) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[7.313000] (convex_hull_estimation_interface) StderrLine: {'line': b'  C:/dev/ros2_humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:23 (find_package)\n'}
+[7.313000] (convex_hull_estimation_interface) StderrLine: {'line': b'  C:/dev/ros2_humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)\n'}
+[7.313000] (convex_hull_estimation_interface) StderrLine: {'line': b'  C:/dev/ros2_humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)\n'}
+[7.313000] (convex_hull_estimation_interface) StderrLine: {'line': b'  CMakeLists.txt:14 (rosidl_generate_interfaces)\n'}
+[7.313000] (convex_hull_estimation_interface) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[7.313000] (convex_hull_estimation_interface) StderrLine: {'line': b'\n'}
+[7.313000] (convex_hull_estimation_interface) StderrLine: {'line': b'CMake Warning (dev) at C:/dev/ros2_humble/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:140 (find_package):\n'}
+[7.313000] (convex_hull_estimation_interface) StderrLine: {'line': b'  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules\n'}
+[7.313000] (convex_hull_estimation_interface) StderrLine: {'line': b'  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use\n'}
+[7.313000] (convex_hull_estimation_interface) StderrLine: {'line': b'  the cmake_policy command to set the policy and suppress this warning.\n'}
+[7.313000] (convex_hull_estimation_interface) StderrLine: {'line': b'\n'}
+[7.313000] (convex_hull_estimation_interface) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[7.313000] (convex_hull_estimation_interface) StderrLine: {'line': b'  C:/dev/ros2_humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:23 (find_package)\n'}
+[7.313000] (convex_hull_estimation_interface) StderrLine: {'line': b'  C:/dev/ros2_humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)\n'}
+[7.313000] (convex_hull_estimation_interface) StderrLine: {'line': b'  C:/dev/ros2_humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)\n'}
+[7.313000] (convex_hull_estimation_interface) StderrLine: {'line': b'  CMakeLists.txt:14 (rosidl_generate_interfaces)\n'}
+[7.313000] (convex_hull_estimation_interface) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[7.313000] (convex_hull_estimation_interface) StderrLine: {'line': b'\n'}
+[7.328000] (-) TimerEvent: {}
+[7.422000] (convex_hull_estimation_interface) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: C:/Users/operator/.pyenv/pyenv-win/shims/python3\n'}
+[7.422000] (convex_hull_estimation_interface) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: C:/Python38/include\n'}
+[7.422000] (convex_hull_estimation_interface) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: C:/Python38/libs/python38.lib\n'}
+[7.422000] (convex_hull_estimation_interface) StderrLine: {'line': b'CMake Error at C:/dev/ros2_humble/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:174 (message):\n'}
+[7.422000] (convex_hull_estimation_interface) StderrLine: {'line': b"  execute_process(C:/Users/operator/.pyenv/pyenv-win/shims/python3 -c 'from\n"}
+[7.422000] (convex_hull_estimation_interface) StderrLine: {'line': b"  sysconfig import get_config_var;print(get_config_var('SOABI'))') returned\n"}
+[7.422000] (convex_hull_estimation_interface) StderrLine: {'line': b'  error code no such file or directory\n'}
+[7.422000] (convex_hull_estimation_interface) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[7.422000] (convex_hull_estimation_interface) StderrLine: {'line': b'  C:/dev/ros2_humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:23 (find_package)\n'}
+[7.422000] (convex_hull_estimation_interface) StderrLine: {'line': b'  C:/dev/ros2_humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)\n'}
+[7.422000] (convex_hull_estimation_interface) StderrLine: {'line': b'  C:/dev/ros2_humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)\n'}
+[7.422000] (convex_hull_estimation_interface) StderrLine: {'line': b'  CMakeLists.txt:14 (rosidl_generate_interfaces)\n'}
+[7.422000] (convex_hull_estimation_interface) StderrLine: {'line': b'\n'}
+[7.422000] (convex_hull_estimation_interface) StderrLine: {'line': b'\n'}
+[7.422000] (convex_hull_estimation_interface) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[7.438000] (-) TimerEvent: {}
+[7.453000] (convex_hull_estimation_interface) CommandEnded: {'returncode': 1}
+[7.485000] (convex_hull_estimation_interface) JobEnded: {'identifier': 'convex_hull_estimation_interface', 'rc': 1}
+[7.516000] (-) EventReactorShutdown: {}

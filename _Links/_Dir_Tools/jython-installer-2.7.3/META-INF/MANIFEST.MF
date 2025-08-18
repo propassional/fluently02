@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.10.12
+Created-By: 1.8.0_321-b07 (Oracle Corporation)
+Main-Class: org.python.util.install.Installation
+Built-By: Jeff
+Implementation-Vendor: Python Software Foundation
+Implementation-Title: Jython installer
+Implementation-Version: 2.7.3
+
+Name: Jython
+version: 2.7.3
+exclude-dirs: org;META-INF
+
+Name: Build-Info
+git-build: true
+oracle: true
+informix: true
+build-compiler: modern
+jdk-target-version: 1.8
+debug: true
+

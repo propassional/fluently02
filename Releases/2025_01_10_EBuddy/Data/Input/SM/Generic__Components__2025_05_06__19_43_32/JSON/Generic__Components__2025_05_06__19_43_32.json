@@ -1,0 +1,101 @@
+{
+    "states": [
+		"Start",
+		"Ready",
+		"GUI",
+		"EBuddy",
+		"Impeller",
+		"Holder",
+		"Cobot",
+		"Scanner",
+		"End"
+    ],
+    "transitions": [
+	    {
+            "trigger": "Auto",
+            "source": "Start",
+            "dest": "Ready"
+        },
+		{
+            "trigger": "NextState",
+            "source": "Ready",
+            "dest": "GUI"
+        },
+		{
+            "trigger": "BackState",
+            "source": "Ready",
+            "dest": "End"
+        },
+		{
+            "trigger": "NextState",
+            "source": "GUI",
+            "dest": "EBuddy"
+        },
+		{
+            "trigger": "BackState",
+            "source": "GUI",
+            "dest": "Ready"
+        },
+		{
+            "trigger": "BackState",
+            "source": "EBuddy",
+            "dest": "GUI"
+        },
+		{
+            "trigger": "NextState",
+            "source": "EBuddy",
+            "dest": "Impeller"
+        },
+		{
+            "trigger": "NextState",
+            "source": "Impeller",
+            "dest": "Holder"
+        },
+		{
+            "trigger": "BackState",
+            "source": "Impeller",
+            "dest": "EBuddy"
+        },
+		{
+            "trigger": "NextState",
+            "source": "Holder",
+            "dest": "Cobot"
+        },
+		{
+            "trigger": "BackState",
+            "source": "Holder",
+            "dest": "Impeller"
+        },
+		{
+            "trigger": "NextState",
+            "source": "Cobot",
+            "dest": "Scanner"
+        },
+		{
+            "trigger": "BackState",
+            "source": "Cobot",
+            "dest": "Holder"
+        },
+		{
+            "trigger": "NextState",
+            "source": "Scanner",
+            "dest": "End"
+        },
+		{
+            "trigger": "BackState",
+            "source": "Scanner",
+            "dest": "Cobot"
+        },
+		{
+            "trigger": "BackState",
+            "source": "End",
+            "dest": "Scanner"
+        },
+		{
+            "trigger": "NextState",
+            "source": "End",
+            "dest": "Ready"
+        }
+    ],
+    "initial": "Start"
+}

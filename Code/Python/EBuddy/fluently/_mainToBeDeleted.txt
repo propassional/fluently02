@@ -1,0 +1,1117 @@
+#######################
+# EBuddy Survival Kit #
+#######################
+EBuddy:
+Acronyms: SM = State Machine
+D:\Banfi\Github\Fluently\Code\Phyton\EBuddy contains the EBuddy software
+D:\Banfi\Github\Fluently\Releases\2024_07_09_EBuddy contains data and application software
+D:\Banfi\Github\Fluently\Diagrams\ComponentDiagram contains the EBuddy concepts
+FLConstants.py contains all project constants, dirs, log file, data input / output, etc
+Explorer setup for develop code: run _FLSetupExplorerWorkspace
+C:\Users\operator\.conda\envs\ml_env\python.exe installed with conda
+
+#########
+# To do #
+#########
+xRelPrio
+# git log --oneline / git status / git add . / git commit -m "Text" / git push
+commit Recognize rec is on/off via OCR
+
+https://platform.openai.com/playground/chat?models=gpt-4o-mini
+Use https://www.perplexity.ai
+Use search with regular expressions, see ExpSearch
+
+E' meglio dire "fate come siete abituati a fare", e non "fate come volete"
+"Elephant in the room vs il re è nudo"
+
+x (Send Commands) => Settings
+
+x Integrare client server into EBuddy
+>C:\Python38\python.exe D:\Banfi\Github\Fluently\Code\Python\EBuddy\fluently\FLSocketClient.py
+>C:\Python38\python.exe D:\Banfi\Github\Fluently\Code\Python\EBuddy\fluently\FLROS2TalkerListener.py
+2024-12-13 10:26:49,376 - INFO - from FLGUIMain.py line 391 method GUI_main_SM_commands_execute: State after transitioning: Read
+FLCommands line 121
+
+Integrare ROS2 in EBuddy per Rocco, remove send commands button
+
+x FLROS2TalkerListener.py init ok, but non sembra inviare ne ricevere nulla, quindi prima testarlo in ambiente ROS2,
+x Slice scan deve funzionare!!
+
+Open EBuddy, run this in the terminal
+C:\Python38\python.exe D:\Banfi\Github\Fluently\Code\Python\EBuddy\fluently\FLROS2Listener.py
+C:\Python38\python.exe D:\Banfi\Github\Fluently\Code\Python\ROS2\FLTalker.py
+
+x GUI image
+    x Fix: Start > Next > Ready era automatico!!
+    x Scroll width is wrong
+
+x View
+    Add GUI button: user can toggle between focused view (around current state) and enlarged view (complete state machine)
+
+x Users
+    x I have three yaml files: beginner, advanced, guru. i want that guru contains advanced, which contains beginner yaml.
+    To achieve this, you can use YAML anchors and aliases to include the contents of one YAML file into another
+    pip install pyyaml
+
+x Volume estimation
+    x Scambio dati via ROS2: vorrei organizzare un meeting con Oliver + Ste + Paolo + Quattrini + me per decidere cosa proporre a SDU
+    Quattrini priorities secondo SB:
+        a) ricavare il convexhull da una camera
+        b) dalle due camere
+        c) scambiarlo via ROS2
+
+x Rinominare l'environment conda da ml_env a ebuddy_env, backupparlo, verificane l'utilizzo ctrl+alt+s, python interpreter,
+
+x User Help doc: significato ti stato in red vs blu
+
+x Non funziona in mono schermo, dà un errore stupido d'immagine mancante (add an if)
+
+x Demo to Rocco & Corrado
+    x Rocco mi manda il file che ricevo da ros2 e che contiene gli intents che lui mi propone
+    Offline: json file
+    Online: return state, GUI buttons: autopilot, stop autopilot, settings
+    Comments: user cambia il tab dicendo il nome del tab, il contenuto di settings non lo comandiamo a voce, quindi neanche lo apriamo
+    Rocco parla direttamente con l'utente se non si ritrova con un comando, EBuddy non viene coinvolto
+    Online: pubblicare su un topic ad es per "Save&Close Artec Studio"
+    Instructions
+    {
+        state1 : trigger1, trigger2,
+        state2 : trigger3, trigger4,
+        state3 : trigger3, trigger4,
+    }
+
+x Rocco
+    x Enter gitlab con supsi net credentials
+        https://gitlab-core.supsi.ch/dti-isteps/armlab/fluently/natural-language-understanding/-/blob/main/ros2_ws/src/nlu/nlu/nlu_node.py?ref_type=heads
+    x Send json: read yaml, parse json files
+    x Fare un branch dopo la demo a Rocco
+    x Creare un nodo ROS in grado di scrivere, ed uno di leggere un nodo di Rocco
+    x Creare un flag per add/remove all GUI buttons, ed interagire con EBuddy sostituendo la GUI e i commands
+    x Macro tabs: Instructions, Scan, 3D data processing
+
+x Demo
+    x StartToolsMenu deve chiudere la domanda yes / no nel caso in cui preview è on oppure interazione con Rocco?
+    x Programma per fare il release a Rocco impacchettando i json
+    x PreviewIsOn: log deve mostrare il valore threshold, e mostrare OCR context
+    x Add settings button for modifying FLConstants
+    x Registration
+        Dopo Ready verificare che il menu scan sia chiuso,
+            Se non è chiuso chiuderlo, e rispondere si a "are you sure you want to stop scanning"
+    x CommandHub CloseAllArtecStudios funziona?
+    x Paolo mi sa dire come tirar su ros, come usare visualizzatore robot devo solo integrarlo, come tirar su lo slice e lo snake
+    x FullScan, se non sono in recording stopped, file non è selezionabile: riconoscere la situazione ed avvisare l'utente
+    x SliceScan: per utente basic disabilitare AutoPilot, che fa solo casino?
+    x StartScanMenu: CV2 non trova l'icona se il menu a lato è aperto! La piazza in posti assurdi!
+        Ask "Which other free alternatives are there to python cv2.matchTemplate?"
+        https://www.g2.com/products/opencv/competitors/alternatives
+        Halcon (a pagamento)
+    x Beginner user: scrivere la differenza fra commento e comando che puoi dire
+
+x A state is already satisfied
+    x StateDo come li trovo? Non hanno verbi
+    Problem: TransitionDo non ha un check prima, quindi è stupido e "fa" senza controllare
+    Problema1: se il menu che doveva attivare era già attivo, lui lo disattiva
+    Problema2: per risolvere problema1 puoi lasciare TransitionDo vuoto, ed usi StateCheck per vedere se il menu è attivo,
+    se non è attivo lo puoi attivare con StateDo, ma se è già attivo FAI UNA ROLLBACK e non ne esci piu!
+    Registration: StartToolsMenu > MenuToolsIsOn
+
+x Artec Studio User settings
+    x Crea
+    ! User setting implementato male
+        ! Features to track non fa parte dello user setup
+        x Cosa fa veramente parte dello user setting?
+        ! Salvi il setting, ma non lo vedi, devi chiudere e riaprire per vederlo
+        ! Non puoi sovrascriverlo, ogni volta ne crea uno nuovo, non puoi cancellarli
+    ! Most advanced user: Frank02
+x Beginner user
+    x Fix scan menu states usando ver vecchie, check messaggistica
+    x Do rewind on all SM, per poter ricominciare
+    x Create tab ReScan
+x Experienced User
+    x Ad ogni cambio di valori mostrarli tutti a schermo in una tabella, save/load setups
+    x Add "Preferences" to command hub, save/load profiles:
+        x show log files, user dir (e.g. artec project files, profiles), flag scroll on/off, change user, mouse speed, wait time between hints
+        disable arrows controlling tabs, flag save mouse coordinates before auto moving it
+    x Hide scrollbars when image is not used
+
+x Update instructions images
+    x Cobot setup, and not manual setup
+    x How to use EBuddy
+    x Potenziare le immagini di aiuto allo SliceScan
+    x Propose Oliver as beta tester
+
+x FullScan PauseIsOn mi capita che lo score x il do image e' solo 0.4898, quindi meno di 0.5, pero' il bottone pause lo trova e lo clicca
+  Errore: il check non riesce a ribaltare la situazione in riga 91 di FLModel / riga 33 del FLboolean
+
+x Dire allo user che il menu deve essere attivato e non auto-hide! Show him the win11 menu setup
+
+x Use Tabs in tab?
+
+x Fullscan previewIsOn c'è una doppia alternativa: usare \n per non uscire dallo schermo
+
+x Preview: gestire il caso in cui Artec Studio è spento, and open it, fluently
+
+x The external code such as D:\Banfi\Github\Fluently\Releases\2024_07_09_EBuddy\Data\Input\SM\Generic__Instructions__2024_08_19__10_56_54\JSON\Generic__Instructions__2024_08_19__10_56_54.py
+must contain a dynamic reference to the SM name, based on yaml, and not be hard coded in .py!
+x If the SM changes, the code fails without any warnings! Fix this as well, a warning must be shown!!
+
+Which one is the real master, why?
+D:\Banfi\Github\Fluently\Releases\2024_07_09_EBuddy\Data\Input\App\ArtecStudio\Code\ArtecStudio.py (molto probabile)
+oppure D:\Banfi\Github\Fluently\Releases\2024_07_09_EBuddy\Data\Input\SM\ArtecStudio__2024_07_09__10_22_29_Backup\JSON\ArtecStudio__2024_07_09__10_22_29.py
+
+FLCommands
+    x command_file_delete Forse vale la pena di spostarlo in una dir invece che fare delete, col nome year_month_day_command_name?
+        D:\Banfi\Github\Fluently\Releases\2024_07_09_EBuddy\Data\Input\Command\CommandForEBuddy\Performed
+    x FLCommands print arrivano su al log?
+
+Insert roles into yaml
+
+Neither CUDA nor MPS are available - defaulting to CPU. Note: This module is much faster with a GPU.
+
+OCR in FLCV2.py line 145
+OCR non funziona su "MB | Ready", poichè legge "MB | Aligning keyframes" e lo accetta
+Per ora lo commento e verifico se serve per la demo ad Oliver
+
+Falso positivo:
+Auto non sottolineato viene riconosciuto come Auto sottolineato
+Matching score: 0.7552: se venisse applicato CV2_MATCHING_SCORE_GOOD 0.8 invece CV2_MATCHING_SCORE_SUFFICIENT, vedremmo la differenza!
+Applicare una threshold diversa: aggiungere un .txt che dichiara come verificare il matching:
+Usa soglie alternative, risultato fra ok e good: OCR yes/no
+
+Chain concept:
+states that are chained together use the auto transition for the chain: Do GlobReg, wait for GlobRegDone
+
+#######################################################################################################################################
+
+x Update my linked in profile
+
+x Prompt engineering
+    Sfruttando il reverse prompt engineering, puoi acquisire una comprensione più profonda del ragionamento e della logica di ChatGPT,
+    consentendoti di creare prompt che suscitino risposte più precise
+    Abilita il reverse prompt engineering digitando il seguente messaggio:
+    “Abilita il reverse prompt engineering. Per Reverse Prompt Engineering mi riferisco alla generazione di un prompt basato su un determinato testo"
+    "Ecco un esempio di prompt: “Scrivi dal punto di vista di Marcella, una productivity coach di 35 anni con sede a Roma. Sara ha oltre 10 anni di esperienza nell’aiutare i professionisti a ottimizzare la loro routine lavorativa. È nota per i suoi consigli pratici, il tono amichevole e l’attenzione ai passi da compiere. Utilizza un tono colloquiale, che rifletta la personalità di Marcella“."
+    Un altro modo per guidare gli strumenti di AI a fornire risposte testuali simili a quelle umane è mostrargli esempi di testi già scritti.
+
+x New laptop
+    x Specs: i9-13900H vPRO top as of 2024.Q2, 32 GB DDR5, 1 TB, GeForce RTX40
+    x Foto vacanze order
+    x Scarica videos
+    x VM
+        x Install VMware workstation pro free for personal use
+        x Ableton, Arturia, python
+
+x Isolated environment
+    x Prompts
+        "Which is the best nuc optimized for audio play back of vst, according to pcmag.com?"
+        "I want to create a win10 isolated environment for VST playback, how?"
+        "Where can i download a vmware VM optimized for audio processing?"
+        "Use of virtual machines with music plugins"
+        "Which are the best settings to optimize a virtual machine for low latency audio?"
+    x Technologies: NUC / VM / Windows sandbox /
+    x Installare win10 not updatable dentro a win11, con files da me criptati, ad es su una partizione?
+    x VM + encryption + strong pwd: VMware workstation pro audio quality is better than VirtualBox, Mirco usa Virtual Box
+        - Pros: download an optimized VM OS, VM using win10 and not win11, no updates, contained repeatable no need to update
+        - Cons: high latency because lack of optimized drivers, processing?
+        x P2V, c Convert your entire physical machine into a virtual machine, P2V: physical to virtual conversion
+            x With Sysprep create an image of your host PC's disk and use it to create a new VM
+    x NUC / Mini-PC or mini computer:
+        - www.pcmag.com
+        - AliExpress, Intel NUC8i5BEK, Intel NUC10i7FNH 64GB, ASUS NUC 14 Pro+ DDR5 739 Euro,
+
+x Old laptop
+    x Se consegna: disinstall Arturia, pcloud (legato a partizione P), rasare with a bootable key created with rufus that writes an iso downloaded with a win media creation tool,
+
+x Backup Huawei:
+    x il folder camera non ci stava sul mio laptop D, cosi l'ho scritto sul mio HD ricerca: BanfiMobileBackupTemp
+    x Dove è finito?
+
+x GPT flops: "Dove posso comprare delle scarpe di plastica per la doccia a Viganello?" => Alla Plastiplex & Scripta
+
+x Articolo Galimberti
+https://ar5iv.labs.arxiv.org/html/2312.07216 Learning from Interaction: User Interface Adaptation using Reinforcement Learning
+
+x Search preview: ctrl + shift + f
+x Do a release after the demo, move on to a new release afterwards
+x Support doing multiple ringwise scans: does it work?
+x Instructions: add photo, es rototilt, Frank
+x Support next steps, according to MG "best guidelines"
+
+x Modules to be somehow integrated within the pycharm project, best may be using a list of paths
+D:\Banfi\Github\Fluently\Releases\2024_07_09_EBuddy\Data\Input\App\ArtecStudio\Code\ArtecStudio.py
+D:\Banfi\Github\Fluently\Releases\2024_07_09_EBuddy\Data\Input\SM\ArtecStudio__Preview__2024_08_05__14_57_32\JSON\ArtecStudio__Preview__2024_08_05__14_57_32.py
+D:\Banfi\Github\Fluently\Releases\2024_07_09_EBuddy\Data\Input\SM\Shortcut__CreateMesh__2024_08_05_15_56_47\JSON\Shortcut__CreateMesh__2024_08_05_15_56_47.py
+D:\Banfi\Github\Fluently\Releases\2024_07_09_EBuddy\Data\Input\SM\ArtecStudio__Setup_2024_08_29__09_54_27\JSON\ArtecStudio__Setup__2024_08_29__09_54_27.py
+D:\Banfi\Github\Fluently\Releases\2024_07_09_EBuddy\Data\Input\SM\ArtecStudio__Scan__2024_08_05__14_57_32\JSON\ArtecStudio__Scan__2024_08_05__14_57_32.py
+D:\Banfi\Github\Fluently\Releases\2024_07_09_EBuddy\Data\Input\SM\Generic__Instructions_2024_08_19__10_56_54\JSON\Generic__Instructions__2024_08_19__10_56_54.py
+
+x ExpGUISGScroll.py pilotare lo scroll
+x SaveFile deve annunciarti che non puo' farlo se vede che File è grayed out
+x When SaveFile is pressed, but RecordingIsOn, show an error message
+x Wrong message scanner is not connected is always shown, even when it is connected, then it disappears
+x If last state in "states" in json terminates with a wrong ",", display a GUI error as now when a SM is not found, show which SM creates the error
+x I don't like image cashing (why does this happen?), for example i want to change PauseIsOnCheck.png whenever I want, without having to restart EBuddy
+x Quando si scrive su THREAD_READ_COMMANDS, scrivere anche da quale SM e non solo a quale SM?
+x F1 switch non va piu o non l'ho mai implementato?
+x bio = io.BytesIO() inserire le 4 linee attorno in un metodo, che posso riutilizzare almeno 3 altre volte
+
+x Read about dependency injection, maybe interesting to inject functionality from SM to EBuddy
+    def __init__(self, engine):
+        self.engine = engine # The engine is provided from outside, instead than the classical self.engine = Engine(), where Car creates its own Engine instance
+
+x SMCode inserts a button into main_window: quite complex, or dependency injection is easier?
+    Extend ExpGUISGButtonOpenImage.py / ExpGUISGLayoutDynamic.py
+    SM fa una transizione, which calls SM_method
+    SM_method riceve come argomento la main_window (add meccanismo come il queue message),
+    SM_method adds to main_window il layout del bottone con self.window_main.extend_layout(self.window_main[tab_key], [[sg.Button('New Button')]])
+    SM_method manda window_main un window_event che indica come argomento quale metodo di sè stesso chiamare via getattr quando il bottone verrà premuto
+    in values contiene -SMName- cat method: self.window_main.write_event_value(('-SM_COMMANDS-',), sm_in_loop.sm_gui.name cat button_method_name)
+    layout_dict = self.window_main.AllKeysDict
+    # Access a specific element using its key
+    #tabgroup = layout_dict['-TAB_GROUP-']
+
+x SSD backup to ricerca: almeno 155 GB di D:\Banfi\ArtecStudio\ArtecStudio16Projects
+
+xBB SM Name dispatcher: read SM names from YAML, dispatch them to all modules so that they are not hardcoded
+
+x Add do_state with images, unifying with check_state with do_transition
+
+x Implement JumpTo: reuse autopilot_insert_old1 dialog
+
+x Implement FindLastState: do a for loop on states, and run each StateCheck, the last True is selected (not the first)
+  Implement FindFirstState
+
+x Bounce state:
+    x PreviewIsOn is not a bounce state, remove it: easy with a standard Machine, not with a GraphMachine since it does not support a fundamental method
+      conditions_create_new and many temp files
+      Why does this happen, since GraphMachine inherits from StateMachine?
+      Problem: self.machine.get_transitions() returns all potential possible transitions between all states, not really helpful
+    x Implement jump, so that from PreviewIsOn the user can jump to CloseAllArtecStudios and land in ArtecStudioIsOff: create jump_list find_transitions_from_states_with_no_incoming
+    x No rollback for a jump: easy
+    x Auto is a Autotransition: how? not easy: timed transitions, non riesco ad installare il modulo
+
+x For autopilot, rename jump_to_state into bounce_to_state, and create a new real jump_to_state
+
+x Get reply from DK, D:\Banfi\DK_repairing Daniel Data Spell project, user ml_env lost many libs, why?
+
+x Programming theory:
+    Which mechanism happens when my_model.next_state() is called, in SMCallbackTraversing?
+    Next state is magically called, but model does not define that method nor inherit it!
+
+x Autopilot mode
+    x Screen interpreter: come capire fino a dove è arrivato l'utente, e quindi quale stato fa matching con la app?
+        x Come interpretare lo stato di Artec Studio?
+            x Ce lo dice l'utente selezionando uno state drop down menu: scan done / scan to be done / processing done / processing to be completed
+            x E-Buddy parte da start ed attraversa il check di tutti gli stati (niente do, solo check)
+                Attraversare la SM senza fare le transizioni, guardando solo se lo stato d'arrivo è soddisfatto,
+                ad es CmdStartArtecStudio viene attraversata ma non fatta, e se il feedback di ArtecStudioIsActive è True, continuiamo
+        x SM state ottimo solo per la parte fatta dal cobot
+    x Learn all mouse & keyboard user interactions, repeat them
+
+x FLGUIMain.GUI_main_loop add create n tabs: cfr GUITabs07+08+13
+    x draw.io: D:\Banfi\Github\Fluently\Diagrams\ComponentDiagram
+    x Implement multicommands
+        x Cobot start > Cobot all / top / side / bottom
+            x Add autopilot mode:
+
+x Trigger
+    calling the method "trigger" of pytransitions I get this error, SOMETIMES:
+    not enough values to unpack (expected 3, got 2): is it a problem? probably not. any ideas about the problem?
+
+use type hints sm_in_loop: YourClassName = self.GM_GUI_dictionary[key]
+
+x Autopilot in multi SM mode
+
+xAB App state classifier
+    x Ogni stato deve avere il proprio check
+    x Far girare il check di ogni stato, da start via: vince quello piu' lontano?
+
+xBB CloseAllArtecStudios potrebbe diventare un jump state che torna su ArtecStudioOff via una AutoStart transition,
+per permetterci di evitare di dover chiedere CheckArtecStudioOff
+
+xBB Non ricaricare i moduli ogni volta
+
+xAA OA Case Study
+    Artec Studio > Export Mesh
+    Meshlab > File > Import > Import Mesh > wrl è lentino,
+     ma puoi puoi fare Filter > Texture > Set Texture > select .png e ti applica la texture es funziona con BallyShoeMarker,
+     ma non funziona con Frank, forse poichè ha 3 .png e non solo una?
+    Meshlab > File > Import > Import Mesh > .ply è veloce, ma non puoi applicare alcuna texture
+
+spec.loader.exec_module(module) # what is executed, in detail?
+
+x path_from_SM_code_to_artec_studio_code make this app independent
+
+x ScannerIsOnCheck dovrebbe essere convertito in ScannerIsOn, e lanciato alla fine della callback, se non ci sono rollbacks
+
+x Second ArtecStudio SM
+    x do_code method builds the code path, starting from SM path and :
+    x GUI_command_send "Start" to ArtecStudio__Preview in autopilot mode from a SM to another SM
+    x Since I have inserted the transition "Start" instead than "Autostart" I get the error:
+            D:\Banfi\Github\Fluently\Releases\error.png
+        x Come far partire ArtecStudio__Preview?
+            Search commands come fa SendCommands, ma non devi incappare in un jump command: rinominare i jump commands
+
+        x At EBuddy startup, check which apps are defined in D:\Banfi\Github\Fluently\Releases\2024_07_09_EBuddy\Data\Input\App
+          For each app_x find \App\app_x\Code.py, obtain the list of all modules
+          Load all modules
+          Given a method name, with hasattr search within all modules if they define the method, if yes, run it with getattr
+        Una SM conosce altre SM da yaml
+        Voglio creare una SM che gestisce piu' apps: apre ArtecStudio e fa uno scan, fa un artec process, fa un DK process
+            ArtecStudio OpenToPreview in autopilot mode
+            ArtecStudio rec e gestire il robot in autopilot
+            ArtecStudio process
+            ArtecStudio export CAD file
+        Ogni SM gestisce una app: quanto puo' essere limitante?
+        Code is app centric? si
+        SM_Build_ runs code of another app: how
+    x Move code from D:\Banfi\Github\Fluently\Releases\2024_07_09_EBuddy\Data\Input\SM\ArtecStudio__2024_09_07__10_22_29\JSON
+        to app\artecstudio\code
+    x path_code in yaml: rinominare a path_control_contents
+
+x Remove the label "State Machine" from the graph
+
+x FLCommands command_file_delete does not seem to print to the current SM
+
+x savefile quando artec studio è chiuso come fare il warn?
+
+x autopiloting? use these images as feedback
+D:\Banfi\Github\Fluently\Releases\2024_07_09_EBuddy\Data\Input\SM\ArtecStudio__2024_09_07__10_22_29\Tool\_ToBeUsed
+
+ x Cockpit:
+    x Fix it
+    x Add button to go to project directory
+
+x Add DK SM
+
+x Remove Artec Studio methods from FLOS
+
+x Add other resolutions
+
+x CV2 false negatives
+    x Usare il None e non solo il true false: feedback true or false ha molto valore, feedback none non ne ha poichè non c'è stato
+    x Passare dal giudicare un image do dal CV2 score a quello che si vede davvero, es lo score è del 0.3 ma lo ScanMenu è attivo, a noi va bene
+
+x Jump: do non funzionano, check contiene la vera funzionalità e se non funziona si avvisa, rollback implementabile?
+    x Se Save non va poiché artec studio non c'è aperto, dirlo
+    x Nel save, cancellare il nome precedente
+    x Remove # Reset global variables, remove all global variables
+
+x Validator:
+    x Leggere SM json, estrarre tutte le transizioni, verificare che ci sia almeno un'immagine / codice / testo per ognuna
+        Stessa cosa per gli stati e il feedback? No, poichè essi non sono un must
+        Compilare una tabella
+
+D:\Banfi\Github\Fluently\Releases\2024_07_09_EBuddy\Data\Output\Data\2024_07_19__11_17_44.txt
+
+FocusIsOnArtecStudioDo
+
+x Jump state SaveFileIsOn:
+    x How can i find out if Artec is on focus, and avoid doing focus_set_on_app?
+    x Insert into model the app name: Artec Studio 16 Professional / EBuddy
+    x I have to do two interactions in a row, without refocusing on Artec Studio
+    x Try to jump to it from ArtecStudioIsOff
+    x Come gestire il caso in cui si vuole fare save ma Artec non è neppure aperto?
+
+v transition_condition_set is set to True, but not to False
+
+x Ok to move mouse, but then reset the mouse to its previous position
+
+x remove all "feedback", substitute with "check"
+
+x StartPreview after recording does multiple things: why?
+
+x Cosa succede se spengo lo scanner in mezzo a tutto, capisce dove deve andare?
+
+x Cropping when in RecordingIsOff is wrong: the right part is cropped, but it should not
+
+x circular import problem: use
+x code_path still not used, .py is search where .json is
+
+x GUI diventata instabile:
+    v Restarted pycharm, but crashed immediately, redone a couple of times
+    x Viene aperta una finestra (vedi la penna), poi subito sovrascritta dalla solita ebuddy gui: remove this
+
+x Code integration into a single SM file
+    x The tkinter window must open where EBuddy is, and not into the main screen: is it possible?
+    x Multiple files approach: gets more complex (dependencies for user interactions), versioning, editability: a single file vs class
+    x Keep or remove FLGUIMain search for "Launch external code" (rollback code)?
+        This is done there only for solving the pygui problem main thread problem,
+        but now I have three types of external codes: do, check, rollback, that need to be done one after the other
+        A list of codes to be executed could make it?
+    x External thread for hearing must work independently, and write a "Quit window" command file, while external code has to read it,
+    but it is stucked in the event window, so it must launch a reading thread before getting stucked, that is able to send to it a quit event
+
+x External code window interactions: close the window vocally, how?
+    x I don't like that a SM is split into Artec and into Taskbar (launcher) parts
+    => Launcher as creator: code knows it must search the taskbar
+
+    File: jump, its position has a role, EBuddy knows where to search the file in the file system, if found it executes its main()
+    Code: function call (debug ok) and no jump (check if the method is defined, try catch if problems in code), easy to find code and versioning, if found it executes do / check / rollback name
+    Type: SM name, code name (do / check / rollback name)
+    ArtecStudio__2024_09_07__10_22_29.py
+
+x Implement command code in callback
+    x ArtecStudioIsOn has to check if artec studio is opened
+    x Remove main code che lo fa
+
+x Do and Feedback code integration in project
+    x Invece che avere codice su file esterni, come integrarlo nel codice del progetto? chiamo lui, che chiama il codice nel progetto?
+
+X Cominciare a saltare in giro per la SM grazie ad autopilot e vedere come funziona
+
+This event is not transmitted: self.window_main.write_event_value(('-WINDOW_CLOSED-',), 'GUI_main_SM_commands_execute')
+    v Shutdown all EBuddy components
+    v Add jump states
+    sm_in_loop.state_force in FLGUISM vs jump_to_state in Model
+
+x States SaveFile1 and SaveFile2 have to be merged, since refocusing on Artec cancels SaveFile1 actions
+    Read text from file
+        Apply it as a constant
+        Apply it as a path to be extended
+
+x Make clear what is the difference between the code in FLGraphMachine and the one in FLModel
+
+x Settings version control: put my software on a new github called EBuddy, and use pycharm tools?
+
+x CV2 matching_score è 0.44 pur trovando perfettamente l'oggetto:
+    x D:\Banfi\Github\Fluently\Releases\2024_07_09_EBuddy\CV2ImagesProblem
+    x Preprocess images before template matching: resize, normalize
+    x Provare varianti di parametri
+    x Utilize dedicated object detectors including HOG + Linear SVM, Faster R-CNN, SSDs, YOLO, etc.
+    x Visto che è statistico, rifarlo potrebbe ritornare risultati diversi?
+        per il click non guardare il matching, ma il risultato e in caso fare rollback?
+    x Codice strampalato if cv2.TM_CCOEFF_NORMED in [cv2.TM_SQDIFF, cv2.TM_SQDIFF_NORMED]:
+    v L'immagine che sto usando è stata presa con la giusta risoluzione e zoom? si
+    v Preprocess images before template matching: from color to grey
+    v Best image format for the algorithm: jpeg/png, color/bw: gpt tells it does not matter
+
+x transition_condition_set se è su False, la transizione davvero non avviene?
+
+x New data structure:
+    v Cmd is needed
+    v Simple naming: remove IsActive
+    v os.remove(path_to_file) can be done only by FLOS, and not by and any other objects
+    x Do focus on app programmatically as done in screenshot_search, and not clicking on the app icon on the taskbar
+    x Lighter naming within SM: Artec Studio Is Off vs ArtecStudioOffIsActive, Artec Studio Is On vs ArtecStudioIsActive
+    v I have divided apps widgets & features from SM data, so this data is not repeated
+    v Each SM has its own data, separated from the rest
+    v The resolution is changed drastically:
+        v Keep all app images having the same resolution together in the same folder
+        x Support multi-resolution: check current screen resolution, work with the image folders that are more near to the new resolution
+    x I want to work with a specific state machine:
+        where can I find the list of all transitions (commands) that a SM exposes? See the trigger list within the json file
+    x If within an Artec Studio SM I want to reach RecordingIsActive, I can read from json that I have to send CmdStartRecording
+        To be sure that this state will be reached from the current state, set autopilot to on
+    x Check name coherence
+        x Between YAML file and JSON file: JSON is the reference, YAML states and transitions are checked
+        x Within a YAML file, check that state and transitions names are unique
+    x Dettaglio: startScanMenu to Start Scan Menu, sarebbe bello non dover avere due transizioni StartScanMenu,
+        con dietro due immagini StartScanMenu1 e 2, ma significa disaccoppiare ed aggiungere un altro layer
+    x sm_in_loop.sm_gui.machine.model.state = "ShutdownIsActive":
+        find out how the shutdown state is called in the current SM and use force transition, or let the code unchanged ("pseudo" state ShutdownIsActive can be reached even if not existing?)
+
+x GUI_command_send has to write the command file twice: which method deletes it the first time? (I already inspected all python primitives for removing files)
+x All prints have to be shown on screen
+x Molto raramente, ma avviene, il comando di start di artec studio viene trascritto sbagliando i caratteri "\" e ":",
+    quindi invece di artec studio viene avviato un browser: per ovviare basta ripetere il comando, ma la robustezza?
+x autopilot_insert remove quick and dirt code
+x When user removes autopilot, all autopilot actions within the queue have to be removed, otherwise it still does stuff
+x Implement vocal tab switching + add to the hint: "tab left", "tab right"
+x La scelta dello stato di partenza dell'autopilot funziona?
+x Pyton server check ExpServer
+x When a new state is reached, on state check resulting to False, the state is rolled back, but if the feedback code crashes, the "wrong" state is not changed: I don't like this!
+x Do a GA3 demo and do record screens for Oliver with: obs, game bar
+
+x Correct screen_width, screen_height = pyautogui.size() in CV2 for the second screen, instead than hardcoding
+x {AttributeError}'FLModel' object has no attribute 'GM_GUI_dictionary'
+x State feedback: implementare un check nello state che il preview si veda, ed una rollback in caso non avvenga
+                    x TIME_WAIT_GRAPH_IMAGE_IS_SAVED is huge
+                    x Remove quit and dirty code marked with "xxx"
+                    x If in pyautogui.typewrite(text) the text is wrong, for example the path to artec studio exe is wrong, and then pyautogui.press('enter') is done, the text stays there,
+                        and subsequent OS calls to python fail with "Calling Tcl from different apartment" (such as ArtecStudioIsActiveCheck.py)
+                    x Add capability to define and try to reach whatever end state, starting from the current state, traversing state by state, for example from start to CmdStartRecording
+                    x matching score 0.63 per 2024_06_19__15_01_44_3_Result.png mi sembra molto basso, visto che il matching è perfetto
+                    x getWindowsWithTitle mi sembra molto piu' robusto di focus_set_on_app!
+                    x Search for "Store all fired transitions" and fix it
+                    x Log: il print di FLGUIMain è molto sofisticato, ma funziona? E' giusto? E gli altri?
+                    x Study HierarchicalGraphMachine (for nesting states) vs GraphMachine: https://github.com/pytransitions/transitions?tab=readme-ov-file#callback-execution-order
+                    x SM_Logger: how to avoid that the method name is hardcoded into the message? self.log_object.logger.info vs self.print
+                    x Do "nextState" until required state is reached, wait a timeout vs feedback
+                    x How to handle SM forks? Priority to first?
+                    x Remove if application == APPLICATION_ARTECSTUDIO
+            x Creare una SM basata sull'utilizzo di Artec Studio autopilot
+            x Add DoAllMovementsIsActive triggers Artec > Record, writes file Artec CmdStartRecording
+            x Cobot SM sends command and feedback files to Cobot
+    x Artec setup: creare una SM che
+        a) Scelga e carichi il giusto "partial" setup file
+        b) setta lo scanner correttamente (fps, depth of field ecc), per esempio:
+        Artec > Button Scan > Flag: hide this panel during scanning se è settato complica le interazioni grafiche (scan va ripremuto prima di fare stop)
+    x Quando modifichi la struttura della SM, ed essa viene ricreata, immagino che il log file non funzioni piu'
+    x State check: cerca "StateCheck" nel codice
+        x Come implementare il feedback di uno stato? Chiedere feedback all'utente
+        x Come implementare il feedback di una transizione? E' avvenuto quello che volevo?
+        x All commands should be transitions, not states, so that SM1 can ask SM2 to transition
+    x Hint TakeOver: idea sparked by accidentally touching the record button while Teachix was driving
+        x Implement is as jump state as ShutdownIsActive: does this work?
+        x Acquires the left part of Artec Studio, evaluates in which state it is
+        x Each transition needs an image for verifying that it fired correctly,
+            start with CmdStartArtecStudio, write the wrong app start path, search for ArtecStudio will fail
+    x Add file > new project
+    x Creare folder input CommandIntern vs CommandExtern, poi command intern text dovrebbe essere dentro alla state machine che risponde a questo comando
+    x if set(triggers_available) != set(triggers_available_new):
+    x Commands: da static and file based a dynamic and state based
+    x Main GUI: add open a SM from main menu
+    v SM_graph_default_path vs SM_graph_path
+    x GUI_main_update is not able to change the size of the tab, which is needed if you delete all states
+
+Danish People:
+- They should have the same physical environment as ours:
+  Center and raise the propeller, adjust the table, move the robot and its pedestal
+- Their robot is different (not a big concern), so this means that they need to send absolute poses to us (XYZ coordinates+Orientation)
+- They need to scan the edge and the underneath propeller parts as well
+- The visualization is not the one of a Lidar scan (area), but the one of a laser blade scan (line): I think it may be misleading for the user
+
+x window.update non aggiorna il tab con la nuova immagine di default, che pero' viene creata correttamente
+x Rimetti SCROLL_IS_ACTIVE a False, poi FLGUIMain.graph_save_to_file deve discernere se cropped or not
+x FLGUIMain.GUI_main_update: estendere che ogni singolo tab deve salvare il file (default/crop), e ricaricarlo
+- Insert comment for orientation within sm:
+        sm_gui.machine.model.state: current state, sm_gui.machine.states: all possible states, sm_gui.machine.initial: the initial SM state
+        sm_gui.machine.model.conditions, machine.events all possible transitions?
+x Tutti i tabs devono avere i bottoni come nella GA
+x SM_update deve ricevere il dictionary e fare update su tutti i tabs
+x Load and show all tabs
+x Attento al protocollo di feedback on cobot commands
+x I comandi vanno smistati per state machine
+xx Le SM devono essere in grado di mandare comandi alle altre SM (es da cobot a arted: play/stop)
+(Hint lo terrei locale, non so se ha senso farlo diventare globale)
+    v Programmatically switch tab works with GUITkinter01.py
+    x Multi SM
+        x MainGUI cmd: separate MainGUI from SMGUI in main, and in GUI_main_loop,
+            add vocal tab switch, load SM also opening a new tab (vs load in place)
+        x Integrate the current SMB GUI using GUITkinter01.py
+        x Create a SMCobot: controller is up c'è? / fungo is disabled / start movement (top-border-bottom-complete) / movement is finished
+        ? Cobot as pilot:
+            ?x Indicando una master SM (ad es ArtecStudio) il cobot puo' fare i passi per aprire ArtecStudio, ma poi?
+                Come fa il cobot a sapere che per fare lo scanning, durante il recording bisogna lanciare cobot allpositions?
+                UIObserver impara le transizioni che servono ad arrivare al risultato, ed è in grado di ripeterle.
+                ? Fault handling?
+            x Interazioni fra SM:
+                x Artec deve far partire un certo programma sul cobot
+                x Cobot deve fermare il recording su Artec
+        x Add capability to load a SM from file
+    x Server: cfr C++ code saved here as text file: _ServerCodeOpenOnlyClosedFiles
+    x D:\Banfi\ArtecStudio\ArtecStudio16Projects ordinare & do backup sul server ricerca
+    x Return appropriate server feedbacks
+        x Feedback to server is needed? Delete cmd files or use time stamp and read newest file?
+        x Server must
+            x read available commands from dir D:\Banfi\Github\Fluently\Releases\2024_04_09_Teachix\Data\Input\CommandImages\ArtecStudio
+            x be able to distinguish between cmds with and without feedback
+    v LAN Robot dell'artec PC
+        x in c++ i want to read the names of all closed file names of a directory, skipping all opened files. how? with dirent.h
+        x Testare con windows firewall on, testa da cuffie a messaggio mandato dal client sul tender e ricevuto dal server
+        v Configurazione IP corretta cfr ipconfig_2024_04_25.txt
+        v Devi usare un adapter il cui mac address sia conosciuto ed accettato da supsi,
+            Gianluca ne ha alcuni nell'armadio, hanno l'etichetta con su il loro IP già predisposto: 10.11.31.135
+            ping 10.11.31.132 (tender o fluently1 o Thinkpad) e ping 10.11.31.131 (cobot) ora funziona
+        v Devi inserire gateway, e DNS 8.8.8.8 se vuoi accesso ad internet
+    x Multiple SM with interactions
+        x Handle multiple SM's
+            v Log file, graph_save_to_file add postfix GM1
+            x Refresh window
+        x Use case: the blade is inspected as three processes: scan+CAD extract of top, side and bottom
+
+    1) i want to easily create a large number of state machines
+    2) i want the state machines to be able to interact between each others
+    Is python transitions a correct answer to these requirements?
+
+    - Configuration management libs: Paolo dice di fare con import yaml: fatto, future hydra vincenzo dice che è una lib complessa / Dynaconf / ConfZ
+    - Ask Tommaso: come rimuovere il floor con artec studio?
+    - Test: try Pyunit or Nose2 for automatic code testing, selenium for gui test, Behave per analisi comportamentale scritto in linguaggio naturale
+    - set scroll on/off from command window
+    - Add center active state without scrolling
+    - Open an image with a given scroll amount is possible?
+      https://pypi.org/project/psgdemos/ pip install psgdemos, then run it with >psgdemos in terminal
+      pySimpleGUI hscroll example, focus > set_vscroll_position(scroll_y)
+    - Add processing steps
+    - Add a second screen for displaying Teachix:
+        - Screenshot has to be done on Artec, and click as well
+        - If needed: write hints into command window as well & get focus to this window after starting Artec Studio
+    - Add command images to create transition
+    - Autopilot: add feedback after each state, for example if user does not wait until Artec Studio is opened, CmdStartScanMenu fails
+    - Handle multiple SM
+    - Handle display resolution change from 125% to 150%
+    - Scroll window for centering the SM image: add vocal command for scrolling
+    - on_enter_each_state: gestire modi diversi di fare la stessa cosa con command images diverse
+    - JSOn nei super stati
+
+############
+# Concepts #
+############
+Legenda:
+!! Pay attention !!
+XX To do now
+
+Subvocalization still uses the vocal cords
+MIT AlterEgo wearable device with electrodes
+Lavalier microphones
+Laryngeal microphones
+
+XX See HierarchicalMachine in pytransitions
+XX BT readability when the application is complex?
+
+**************
+Ci sono giochi fatti con pytransitions?
+Tutti i giochi fatti con unity sono fatti con BT?
+Display BT: how can be displayed a complex behavior tree ? is it possible to hide details? which is the most powerful tool for displaying behavior trees?
+******************
+
+I give you an example to be solved with pytransitions:
+my state machine is in state1, then a wildcard transition fires, and the new state becomes stateEmergency, then the emergency is solved, i want to return to state1. how?
+Store the state before jump, do the wildcard transition, use the To_State transition to return to the state before the jump
+
+Jump in SM
+La questione del jump nelle SM è reale: non è per niente evidente debuggare le diverse situazioni di jump,
+mentre nei BT la struttura stessa ti sa dire se l'implementazione è corretta,
+sebbene ci possano essere delle zone della BT che non vengono quasi mai attivate, e possono quindi nascondere bugs
+XXX La vera questione diventa il supporto per l'automated testing for both?
+
+"Jump" states (wildcard transitions in pytransitions):
+tutti gli stati possono entrarci, se una condizione è vera, si ritorna dove si era solo se la condizione scompare, ad es stati emergenza
+In SM questi stati vanno differenziati dagli stati normali (devono chiamarsi JP_), visto che sono transitionless ma ci si resta
+Se la condizione scompare, per poter tornare subito allo stato prima del jump, la SM deve ricordarsi quello stato prima di fare il jump
+In pytransitions which configuration shall I set in order to be able to impose a state machine state in any moment?
+For example, if you want to move to ‘state1’, call machine.to_state1()
+In BT you can create a Fallback node containing n normal states nodes, and a CheckEmergencyCondition and a ExecuteEmergencyProtocol
+
+Transitionless states:
+Tutti gli stati ci possono entrare ed uscire senza condizioni (ad es questi stati cambiano solo la visualizzazione)
+!! Visto che questi sono stati "globali", come gestire quegli stati che sono transitionless ma hanno delle preconditions per essere abilitati?
+   Per ogni situazione di questo tipo devi realizzare una SM ad hoc, si riesce poi a capire dove si salta, quando le SM diventano molte?
+
+Hierarchy
+SM has the extension HierarchicalMachine (clock example) which may be used for low level state machines,
+while high level SM may still use GraphMachine
+
+Trigger another SM
+In SM se voglio triggerare un'altra SM creo uno stato che le manda dei segnali
+Come faccio a sapere quali stati di un altra SM posso triggerare? Apro il json file e vedo di quali stati dispone
+
+Ogni SM ha un pytransition json file,
+ed uno state json file che definisce cosa si deve fare per ogni enter state:
+- keyboard emulator: switch app + text to write
+- mouse emulator: switch app + left click on image xy or right click or mouse wheel
+- write command file to cobot, to another SM
+
+!! SM Come mantenere la coerenza dei simboli? Ad esempio se rimuovo uno stato con la GUI,
+poi devo ricordarmi io di salvarlo in json, e poi le chiamate dalle altre SM a quello stato diventano non valide
+Serve un parser che verifichi che sono coerenti le SM, gli states, le transizioni
+!! Come riutilizzare codice in BT?
+
+
+x Handling a state machine system means being able to
+  1) Define multiple SM with states and transitions => pytransitions
+  2) A SM is able to execute external commands coming from other SM
+        => The thread GUI_SM_commands_execute reads the command folder
+  3) A SM is able to execute SM internal commands (via on_enter_state method )such as:
+        a) Switch app to click onto: Taskbar, ArtecStudio, Daniel
+        b) Emulate a keyboard via command text (what to write into a field),
+    - Emulate a mouse via a Command image:
+        a) Switch app to click onto: Taskbar, ArtecStudio, Daniel
+        b) Load the image related to the state, and search it within the app
+    - SM can send GUI messages for user warnings on transitions that can not be completed correctly (and states that can not be entered)
+    - Closed-loop: verify if the transition had the desired effect or not, in negative case do transition rollback and warn user, examples:
+        CobotSM:
+            Server and Client interact only via files: D:\Banfi\Github\Fluently\Diagrams\ClientServerStates\ClientServerSikulixStates_0_4.png
+            LaunchServer => Run TCP_Server.exe (TCPClient has to be started on ThinkCentre by admin)
+            CheckServerIsActive
+            CheckCobotIsActive
+            CheckEmergencyIsActive
+            CobotReadyToStart
+            CobotDoScanTop => Writes a command file to the server, that sends it to the cobot
+        ArtecStudioSM:
+            ArtecStudioIsActive: ArtecStudio process exists => Run a code snippet for checking if the process is active
+            eClick ScanMenuIsActive, PreviewIsActive, RecordingIsActive => Switch to artec studio app, load image, find image, click on it
+            SaveFile: eClick + check if OS gives an error
+    - Send commands to other SM's, defining name, transition, how to get transition feedback
+
+x Completare il disegno Behavior Tree per i miei casi, add le mie SM, send to him e Ste
+
+X Oliver discussion
+    Interaction vs Auto (or Execution) mode: add state for auto step execution e poi global execution e stop execution
+    Use case: Oliver fa solo il top, Michele fa lo scan completo: come modellarlo?
+    Con le SM, l'utente riesce a "vedere" facilmente l'interazione fra state machines, come accade con i Behavior trees?
+    Use case: se tolgo la polvere di scansione, quali KPI mi indicano che lo scanning è meno buono? Oliver vorrebbe ricevere dei consigli di fluently, es fai uno scan piu' lento
+    Use case: che tipo d'interazioni ha il sw di Anneke?
+    - Behavior tree:
+     - tick continously updates: tick inspect if the door is open, of somebody is nearby, if i have a key etc while preparing to brake in
+     => Problema: se lo user takes over execution, entra in interaction, e fa stop e disabilita il preview, come fa a capirlo la mia SM? Partendo dall'inizio, ma come si comporta ai bivi?
+     - free diagram behavior tree: Visio, oppure https://www.behaviortrees.com/#/dash/home
+    x Create SM processing workflow, and SM processing orthogonal
+    - Implemented Tools:
+        JSON
+        D:\Banfi\Github\Fluently\Releases\2024_04_09_Teachix\Data\Input: command images (click here), commands, write commands,
+        SM sends commands to other SM,
+    - SM with workflow enable cobot to work independently but following a specific workflow, that with RL can be optimized
+    - SM with orthogonal states
+    - SM: ArtecStudio play/rec, ArtecStudio processing, cobot, DK
+    - Problem: "Jump States": shutdown (each state has to jump to it) => solved with callbacks, SM state changes
+    - Problem: "Orthogonal States" (state does not change): DK Visualization Show Scan or CAD is orthogonal to the workflow => x callback, SM state does not change
+    - Problem: "Parametrisation": Hole filling 500 which parameter? => x add state input\parameters
+
+SWOT
+- Nota di SB: JSON SM puo' essere processato da un language model :-D
+v SB Voice deve funzionare sempre nelle demos: learn well to do it, check with Vincenzo
+- Threat: Artec Studio colours the menu "save file" in blue when the user moves onto it, but when that menu is searched, it is not blue: does it find it?
+- Threat: robustness to drastic monitor resolution changes: log matching results from SC_Model
+- Threat: robustness: solve all known open issues before rising code to the next level
+!!- MB Implementare il feedback degli stati, comodo anche per il debugging
+!!- MB Multistate machine, Daniel
+- SB Multi state machines: l'utente puo' passare da una all'altra (tabs per multi-aprirne al contempo),
+    ad es una SM apre Artec e predispone l'acquisizione, una SM fa rec/pause/stop save, una fa il post processing
+- SB Learn from user: Teachix vede i miei click, riconosce l'applicazione, crea un folder, sa dove ho cliccato e salva l'immagine attorno al click,
+    e crea una state machine imparando da me
+- SB Cockpit switch: per un po' va avanti l'utente, poi continua Teachix riconoscendo lo stato, e seguendo la state machine che conosce
+
+Demo concept:
+    Do a list of interactions:
+    - Change display 125% resolution to 150% for demo
+    - Tell that I abandoned the macro approach for simplification
+    - Show GA SM: show all states in detail
+    - Show load / save SM to json
+    - Show SM modifications: a) remove Recording state, which is attached to PauseIsActive b) add CmdStartScanMenu to ScanMenuIsActive
+    - Show corresponding log
+
+Consolidation
+    x Load a SM from json, continue working with it: error when opening Cockpit
+    x Command images: save to D:\Banfi\Github\Fluently\Releases\2024_03_13_Teachix\Data\Input\CommandImages\ArtecStudio
+    x Click on real time fusion
+    x Do complete GA demo with save:
+        xxx CmdStartPause: click on pause or click on stop should be the same but click does not give any feedback,
+        thus it is hard to find out if the image command has been done or not, for all possible cases
+        x Save is done in two steps
+        v on_enter_each_state focus to Artec works?
+        x AppSwitcher: enable user to add an app to focus on (record a focus image when app is open and when app is closed),
+            b) add command image dirs to D:\Banfi\Github\Fluently\Releases\2024_03_13_Teachix\Data\Input\CommandImages
+                such as Taskbar, Artec Studio, Daniel, Anneke app
+        x Check if preview is running: insert the concept of feedback
+        x on_enter_each_state: log has to be sent to the log file, somehow
+    x Run and control a part of Daniel code
+    x Check se mio paper è nella lista dei papers fatta da Anneke
+    x Solve PySimpleGui problem around -HINT-: same object is badly  shared by two different threads: use queue?
+    x Add Jump states (as Shutdown):
+        x Draw current use case on paper
+        x Think about how to handle complete parallel threads: uno mette su acqua e pasta, l'altro fa la salsa
+        x Add Jump states concept into JSON, it has no transitions leading to it, but all states can transition to it (Shutdown)
+    x 14.03.24 Scanner non va piu' bene, ricorda che robot va tenuto acceso il weekend
+
+    x GraphMachine is constructed in graph_machine_delete_state without using FLGraphMachine
+
+    Release D:\Banfi\Github\Fluently\Releases\2024_03_06_Teachix_1_0 add sw, add data
+    x Add video to GA release (handle github too big), send it to Tommaso
+    x screenshot_do_temp fare ordine, ci sono 3 metodi + move them out of the class, but keep them within flggui
+    x Remove all code used for building the SM, from now on use only JSON or prickle
+    Store all fired transitions in on_enter_each_state, usa StateHistory.py
+    - When the "Handle States" window is opened, the main window can not respond to the button "Handle States",
+        since the execution loop is in Handle states: create two independent threads, or integrate "Handle states" in the main window
+
+Remove a state:
+    If I remove a state that I just added, there is no problem
+    If I remove a state which is not new, the SM is recreated, but the log file probably not
+    self.sm_gui.machine.model.log_file.write(*args)
+    AttributeError: 'Model' object has no attribute 'log_file'
+
+Command simulator:
+    insert into teachix un botton per andare avanti, che legge il prossimo command file e glielo manda
+    Introduce a transition "back door", that enables SM to jump to the first state (a restart)
+
+Add feedback concept:
+    For example in CmdStartArtecStudio add a check that ArtecStudio is really up, it may be in ArtecStudioIsUp, that falls back if not true
+    SM must be able to autofire transitions
+
+Integrate SM data with the Fluently System: Corrado
+
+
+
+
+Use SMTraverseVer3.py vs Machine.proceed() + callback before_state_change
+after_state_change='on_enter_state'
+
+
+# Il nome della transizione deve essere riportato nel check del metodo, che viene poi dynamic bound
+# SMTraverse: Check transition, then fire it
+# https://github.com/pytransitions/transitions?tab=readme-ov-file#callable-resolution
+# Guardare esempi avanzati pubblicati su un sito a parte
+# https://github.com/pytransitions/transitions/tree/master/examples study this graph example
+# How to define on_enter & on_exit for a state: {'name': 'standing', 'on_enter': ['do_x', 'do_y'], 'on_exit': 'do_z'} in https://github.com/pytransitions/transitions/blob/master/examples/Graph%20MIxin%20Demo%20Nested.ipynb
+
+# Connect voice msg client to SM
+# New concept: support different state types:
+# "Transition Do" try to do something, if not success, they do not change state, on success it triggers the new state
+# Transition auto
+
+# Self demo: creare tutti gli stati, e tutte le possibili transizioni
+# create manually a complete GA SM (create state & transition), (add automatically macro states), show SM scrollable, traverse SM button (history, go back), add Do Images
+
+# Jetbrains renew login for Dataspell, Daniel IDE D:\Temp\DK_repairing, https://account.jetbrains.com/oauth2/signin?login_challenge=dbfce69c02a942438faa94371e89c4a2
+# Integrate Daniel sw into mine, backup it
+
+# Enhance GUI: D:\Temp\Banfi\transitions-gui-master checkout doc/images well presented GUI
+
+# Implement state history: each time a state is entered, on_enter_state is called automatically
+# class MyModel:
+#     def __init__(self):
+#         self.state_history = []
+#   def on_enter_state(self):
+#   self.state_history.append(self.state)
+
+# Dual SM
+#   v Create method in GUI_states_handle for adding StateN+1: add two new states and two new transitions
+#   v Transform GA SM into DA Complete SM
+#   x Display large images
+#   x Dual SM: show only states without Do, and transitions without
+
+# Order main
+# print(model.state), triggers
+
+# Graphic concept:
+# - Multiple transitions, some of them with wildcards (production setup) make the graph less readable: ['drink', '*', 'caffeinated_dithering']
+# - Already with 11 states, "Start" state can not be shown anymore, rankdir has no influence
+# + Show the main items of the main sm: states, CmdTransitions, no errors
+# + Split the main sm into a series of sub sm: ScannerSM, ArtecStudioSM, AcquisitionSM, ProcessingSM
+
+# SM Traversal Concept:
+# JSON with a standard state transition: SMFluentlySubModule, it is not enough to add one transition and one state, but 2 states and 4 transitions
+# Ad esempio la SM è in ArtecStudioIsOpen, lo user chiude ArtecStudio a mano, la SM deve autoaggiornarsi per capirlo, quindi deve attraversare le sue transitions
+# m.get_triggers('solid') = show which transitions are valid from a certain state
+
+# Commit: SM traversal & graphic concept code
+# Add in do_screenshot a button called "Link image to state", that opens a state selector and an image file selector
+#       The selected image will be renamed as the state name (link), and used when the state is fired
+# Add state images: do_screenshot
+# Add state launch Artec Studio:
+# search the launch window, click it, write C:\\Program Files\\Artec\\Artec Studio 16 Professional\\astudio_pro.exe, wait
+
+# Discuss con Corrado PyCharm vs VisualStudioCode
+# Creare uno user diverso da operator, poi si riesce ad entrare come operator se blocco il pc?
+# List comprehension: new_option = ["New Option {}".format(i) for i in range(1, 4)]
+# add_ordered_transitions()
+
+# Copy this sw to supsi gitlab, at least on release
+# Persistence: https://github.com/pytransitions/transitions?tab=readme-ov-file#restoring
+# https://github.com/pytransitions/transitions?tab=readme-ov-file#restoring import logging module for logging
+
+# Libs installed in conda ml env (partial):
+# pip install transitions
+# pip install dill
+# conda install graphviz python-graphviz
+# pip install graphviz pygraphviz => Error: "Cannot open include file: 'graphviz/cgraph.h': No such file or directory"
+#   I tried: conda install graphviz, then pip install pygraphviz
+#   Not worked: pip install --global-option=build_ext --global-option="-IC:\Program Files\Graphviz\include" --global-option="-LC:\Program Files\Graphviz\lib" pygraphviz
+#   At the end I could use pygraphviz despite of the above error
+# Press Shift+F10 to execute it or replace it with your code.
+# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+
+#########################
+# Concept & Terminology #
+#########################
+# Terminology:
+# A synchronous state machines rely on a clock, while asynchronous state machines respond to external events or conditions (event-driven)
+# a transition is evaluated, and if the result is true, the transition is "fired",
+#   and the state the transition leads to is "entered" (or "activated"), A reflexive trigger: it has the same state as source and destination
+# If you need to know which transitions are valid from a certain state, use get_triggers:
+# If you want to check whether a transition is possible before you execute it ('look before you leap'), you can use may_<trigger_name> convenience functions that have been attached to your model:
+# A state is entered because previously a user command has been performed or an action has been performed by Fluently (automatic)
+#   or by a user interaction (one or multiple interactions): co-leadership
+# Each state has a transition that leads to it, and it has an action part, and a transition that leaves it (a condition to be checked)
+#   For example, when ArtecStudioIsOff is activated its action part is executed (this state has no action),
+#   then the transition ArtecStudioIsOpen is checked, so the state has to find out if ArtecStudioIsOpen,
+#   and this is performed by verifying that the image that confirms this can be read on the screen
+#  workflow: state_activation > transition_evaluation > transition_fired > next_state_activation > next_state_transition_evaluation etc
+# SM modes: SM classic mode vs SM auto mode (SM states are traversed from start on, only checking their transitions and not running their actions)
+
+# Hide/Show SM details:
+# In state machine transitions library, is there a way to simplify the state machine visualization, viewing some states and hiding some others? No, use superstates/substates/composite states
+# Orthogonal Regions: In UML, orthogonal regions are used to represent concurrent states within a composite state1. This can simplify the representation of concurrent behavior.
+# Substates: Substates are used to simplify complex flat state machines by showing that some states are only possible within a particular context (the enclosing state).
+#  This allows you to focus on a subset of states within a larger state machine.
+# Composite States: Composite states are states that contain one or more substates, that can run in parallel
+#   They allow you to group related states together, which can make the state machine easier to understand
+
+# Fire transitions
+# https://github.com/pytransitions/transitions?tab=readme-ov-file#callable-resolution
+# Checkout add_ordered_transitions(): you just define the states, then the transitions are added automatically in an ordered way
+# Iterator retrieves the first state of the SM: first_state = next(iter(self.sm_gui.machine.states))
+# works? # self.sm_gui.machine.next_state()
+
+#####################################
+# Done (last is below, first above) #
+#####################################
+v When a transition is created:
+v a) click command: a command image has to be added, it will be recognized and clicked by Teachix
+v Add the capability to store this image when creating a new transition, use FLGUI.do_screenshot
+v The image and the text has to be stored here D:\Banfi\Github\Fluently\StateMachines\_Default
+v The image reports the name of the transition, for example CmdStartArtecStudio.png, the text file is called CmdStartArtecStudio.txt
+v b) write command: as click command, plus a text to be inserted
+v c) Add the capability of the SM to use this data during transitioning
+        v add a generic callback dynamically: CmdStartArtecStudioCallback(), setattr
+        v use the image with open cv or D:\Banfi\Github\Fluently\Code\Halcon
+v Add operator name to the log file
+v D:\Banfi\Github\Fluently\StateMachines divide into \Input and \Output
+v Add "if event == sg.WIN_CLOSED or event == "Cancel":" to all interaction windows
+v Log file add: add state, remove state, load SM, save SM
+v "Handle States" window: add exit check, remove exit button
+v Autotransition must happen automatically, otherwise if only CmdStartArtecStudio is sent, transition is wrong
+v Delete all command files before starting SM
+v print solo un cambio di conditions nel log
+v Show the hint
+v Add "open log file" into Cockpit
+v Cockpit button writes that SM command reader has been shutdown
+v GUI moved back to main thread since unstable
+
+#############
+# GA slides #
+#############
+- Use case: user wants to 3D scan a propeller by means of a Artec Scanner and voice commands
+- Main steps:
+    - Main acquisition steps: open Artec Studio app, connect the scanner, record, move the cobot, do rec stop
+    - Main processing steps: with Artec Studio do global registration, fast fusion, remove outsiders, hole filling, smoothing
+    - Evaluation
+        KPI for evaluating scan quality: fidelity (minimize distortions, noise, artifacts), completeness, resolution
+    - Change:
+        cobot speed, scanner speed
+    - Acquire again: some steps can be done manually, while others can be done in autopilot mode
+
+    - Autopilot mode: E-Buddy emulates a mouse and keyboard and by means of state machines, it knows what to do and in which app
+
+    - Preparation work
+        An experienced user splits the work into main functions, then into detailed steps, and models them into E-Buddy
+        Main functions are modeled within state machines (SM): SMAcquisition, SMCobot, SMProcessing, SMPostProcessing
+        Steps: each state machine contains multiple specialized steps
+        SM are defined with a JSON file
+        Function call: SMAcquisition can call SMCobot for starting the cobot (it happens right after having entered the record mode)
+    - Doing the work
+        An inexperienced user observes the work steps performed by E-Buddy autopilot, and learns how to solve specific portions of the work
+    - Resulting model supports the "single responsibility principle" (each SM works on a specific domain), abstraction is supported, coherent, separated,
+
+################################################################################
+# eBuddy (siamo in due e facciamo cockpit switch) or Fluent Buddy (EnDy for "handy") or Fluent Cooperator or Cobot Assistant
+# State Machine Builder or Teachix
+################################################################################
+# This python software project enables the user to implement a workflow into a state machine (SM) that he can create/edit/load,
+#   The SM is then able to control an application as Artec Studio as the user would do, through learnt mouse/keyboard/image inputs
+
+# https://github.com/orgs/pytransitions/repositories 4 projects: transitions, GUI, SM distribution, asynchronous SM
+# https://github.com/pytransitions/transitions?tab=readme-ov-file#diagrams Lib transitions & Graphmachine
+
+#########
+# Notes #
+#########
+# Private temp notes:
+x Switchdrive private infrastruttura laptop banfiprivato contiene il "desktop" del vecchio laptop
+X Mario Galimberti consiglia di usare per le password "Bit Warden" offerto by SUPSI, infomaniac
+x Ogni comunicazione ha un aspetto di comunicazione e uno di relazione, se non c'è relazione non puoi comunicare, al massimo puoi informare
+x "Comfortably numb" anestatizzato dai processi compensatori che costo emotivo ha? Non considerare solo il costo razionale
+    vs lucidità emotiva del Tantra, il piacere dell'acqua fredda sulle mani, la presenza, arrivare qui, esserci
+    A Viktor: la gt non perdona errori, la voce sembra di si ma alla fine no
+x https://www.sinomedica.com 160 chf prima seduta, solo cash, 10 kg per un maschio non sono tanti quindi 2-3 mesi
+x Ask Pat supporto per Sandra
+x Ask Anna di riavere il tavolo alzabile nel nuovo ufficio
+x Opinion on facts: sito basato su ricerce scientifiche che possa aiutare il cittadino
+    a crearsi la propria personale opinione su specifici aspetti, basandosi su fatti e KPI
+    tipo di energia da sviluppare: pros and cons di ognuna
+x Prompting techniques: approfondire Character AI per parlare con personaggi noti, o storici
+https://www.perplexity.ai si concentra sulla comprensione dell’intento dell’utente
+    Analizza la richiesta, il contesto delle interazioni precedenti e la base di conoscenze generali per determinare ciò che si sta realmente cercando
+    Pro version funziona con GPT-4o di OpenAI, Claude-3 di Anthropic e LLaMa 3
+https://www.punto-informatico.it/cognify-prigione-ia-futuro/ Cognify presenta la sofferenza degli altri per aumentare la capacità di empatia nei criminali in poche ore e dimetterli subito
+https://www.punto-informatico.it/stability-ai-stable-audio-2 genera 3 minuti di audio a partire da un prompt
+https://www.punto-informatico.it/copilot-vittima-allucinazioni-genera-false-dichiarazioni-putin/ copilot ha citato fonti inesistenti
+https://www.punto-informatico.it/sanzioni-usa-sviluppatori-predator/ Pegasus, predator, attacchi zero-click per spiare giornalisti, dissidenti, oppositori politici
+https://www.punto-informatico.it/digital-markets-act-tutte-novita-gatekeeper/ DMA, gatekeepers:  Apple, Alphabet (Google), Microsoft, Meta, ByteDance (TikTok) e Amazon,
+“Core Service Platform”: App Store, Messenger, Marketplace e TikTok ecc,
+VLOP very large online platform (designazione attuata dalla commissione europea), DSA digital services act, VLOSE very large search engine
+
+# Work temp notes:
+- Alt+Shift toggles between the Swiss German keyboard layout (QWERTZ, shown as "SG") and the US English keyboard layout (QWERTY, shown as ENG")
+- Pycharm:
+    Marker: add marker Ctrl+F11, see markers Shift+F11 poi premi la lettera corrispondente, see markers in window Alt+2
+    Method doc: ctrl-q
+- Git
+    Add to git doc: git log --oneline => Show all last commit messages
+- Infos
+    - Siti per tech infos: https://www.showtechies.com/
+    - AI per avvocati è già una realtà: https://www.showtechies.com/luminance-lai-giuridica-raccoglie-40-milioni-di-dollari/
+- Teach pendant
+    Touch and hold del tablet del Cobot funziona solo se usi l'unghia oppure la penna, col polpastrello va subito in hold
+- Python positive + and negative (Paionate) - experiences
+    + command_text_path = command_text_path_list[0] if command_text_path_list else ""
+    - Crasha senza dare errore:
+        - Il terzo parametro viene richiesto dal chiamante ma non viene fornito dal metodo
+            self.do_image_found, self.do_image_matched, self.do_image_error = self.run_images()
+    - Check ExpBoolean: l'operator and non è commutativo se uno dei due operandi non è boolean ma NoneType
+    - Hidden bombs:
+        - Improvvisamente pyautogui.typewrite si è messo a convertire il testo in capital, pycharm restart solved the problem
+        - Missing import: se per errore commenti un import in un else che usi poco spesso, solo quando passerai di li si pianterà, durante una demo, ovviamente :-D
+            In debug mode non ti dà neanche un errore e crasha, ma prima di crashare ti mostra il codice di altri moduli a sbalzo
+            In run mode ti dice dove c'è l'errore d'import, in casi del genere usa run prima d'impazzire :-d
+        - Per far crashare un metodo, ti basta chiamare: my_future_crash_is_here = self.attributo_non_definito
+            self.nome_non_definito verrà mostrato in giallo, ma non ti dà nessun errore, poi a runtime si pianta ma almeno ti mostra dove
+        - sys.exit() probabilmente anche negli altri linguaggi chiude l'applicazione senza lasciare tracce (GUI o thread)
+    - PySimpleGUI, Tkinter, Matplot must run completely into the main loop (but using GUI signals from other threads is ok):
+        FLCommand does not work in standalone mode, and interferes with FLGUIMain
+        => Integrated in FLGUIMain (user interaction is less elegant)
+        - If not, it happened more than once that a thread crash brought the main thread to crash (main GUI window)
+        - Given main_window, multiple examples of perplexity and gpt to extract a tab don't work
+          If TabGroup would be a type, it would be simple to find out how to interact with it
+          All I have is this bad doc...
+          https://docs.pysimplegui.com/en/latest/call_reference/web/elements/tab_group/#class-methods
+          ...that divides layout from dynamic layout (instead than layout and layout dynamic),
+          thus a pain in the ass to find out that once defined, a layout can not be modified in the same way as you created, but in this way
+          https://docs.pysimplegui.com/en/latest/documentation/module/dynamic_layouts/
+    - ExpButtonPressedCheck.py shows how difficult it is to implement a listener, and - most of all - to stop the thread, since there is no stop method!
+    - I don't like that much the way global is implemented in python (check out ExpGUITkinter00.py)
+    - If this part "if __name__ == '__main__':" is tabbed in, it does not even find the constructor of the class it belongs
+    - Python doesn’t have strict access control (public, protected, private), so the convention of naming an attribute with underscore
+        suggests that an attribute is not meant to be accessed directly from outside the class (beware of the recursion error if underscore is not used)
+    - If when you modify a method you forget to implement a return value (you deleted it by mistake),
+        there is no warning at all and you will get a crash on the first method call
+    - The method __init__ never reports usage links, for finding out who uses it, check its class usage
+    - If you define a variable as global in pycharm, you won't see its value in debugging, you have to manually add it as watch
+        => Define the variable at the beginning of the method, but not as global, just define and initialize it
+    - Passing arguments in Python:
+        arguments are "passed by assignment", which means it’s neither pure pass-by-value nor pass-by-reference.
+        Instead, Python employs a concept called “pass by assignment” or “call by object reference”
+        If you pass a mutable object (like a list, dictionary or custom object) into a method, the method gets a reference to the same object.
+        You can modify it within the method, and the changes will be reflected outside.
+        If you pass an immutable object (like a string or integer), you can’t rebind the outer reference, and you can’t mutate the object.
+        https://stackoverflow.com/questions/986006/how-do-i-pass-a-variable-by-reference
+    - Returning results from a method:
+        If a method returns two results (feedback_code_path, app_name = self.item_find()),
+        but only one result is assigned (feedback_code_path = self.item_find()),
+        you will get a feedback_code_path containing two items (always!), which is quite different from feedback_code_path = ""
+    - Method interface:
+        Pros: it is convenient to be able to return multiple values from a method,
+        Cons: from the interface of a method you cannot read what it returns, you have to read the "return" part of the method code
+    - There is no do while statement, static non c'é, elif e non else if
+    - Python tacitly fails:
+        Se l'errore è in una parte di codice mai eseguita, resta li silente pronto a saltare quando verrà eseguito
+        E' pericoloso come python "salta via" in una callback una chiamata diventata sbagliata causa spostamento di funzionalità
+        (la esegue, va in errore ma poi resta su e termina la callback come se non fosse stata eseguita, visto che la chiamata era la prima cosa da fare),
+        invece di piantarsi come fanno i C languages. Il rischio è che parti intere di codice non vengano eseguite, senza che ce ne si accorga
+    - text_elements refers to the original list, while *text_elements is the separate list unpacked and treated as separate arguments
+    *text_elements,  # Unpack the text elements
+    - sys.exit(0) # It does not terminate all threads, but only the main thread, 0 = successful
+    - Creare un numero random di bottoni
+    layout = [[sg.Button(file_name, key=file_name) for file_name in file_names],
+    - Print the type of a variable: print(type(extracted_transitions))
+    - try: "this code" except Exception as e: print(f"An error occurred: {str(e)}")
+    - if cmd_to_do == "StopRecording": breakpoint()  # or pdb.set_trace()
+    - In Python, the __name__ variable is a special built-in attribute that represents the name of the current module or script.
+        When a Python script is executed directly (as the main program), __name__ is set to "__main__".
+        When the script is imported as a module into another script, __name__ takes the name of the module.
+- Add to Fluently doc, PyCharm: Ctrl+shift+up or down moves an entire method, ctrl+alt+left to navigate back to your last positions
+- Windows Explorer indexing:
+    Search within files works only if files are pre-indexed: Win + S to open the Windows search, type “indexing options” and select the corresponding result
+    Click the “Advanced” button, switch to the “File Types” tab, select the .py extension (Python files), wait for indexing, check the “Index Properties and File Contents” option
+    Search string within files with cmd: >findstr /s /i /m /c:"string to search" *.py

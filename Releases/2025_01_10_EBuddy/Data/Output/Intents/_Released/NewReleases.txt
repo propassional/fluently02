@@ -1,0 +1,58 @@
+Components: added EBuddy, Wearables
+
+################## Release 1.3 Requests agreed term: please asap :-D ##################
+
+1.3.A] Requests ordered by priority:
+
+Check Preview StartPause: start pose seems not to be accepted
+
+New SM
+When I add a new SM, your current release is not supporting it, this is ok.
+The problem is that if I use this SM, you get an unknown state
+You react with "Invalid input or state not set" and you do not get out of this state
+
+Vocal commands for the Help System: 
+A Navigation: PreviousSlide, NextSlide, Okay
+A Info frequentation:  SkipSlide (skip all slides) / DetailedSlide (go into detail)
+A Info quality: ThumbUp/ThumbDown & Like/Dislike (same functionality but different commands)
+
+1.3.B] Vocal commands for moving the mouse (for example for rotating the workpiece in Artec Studio)
+	Command structure: verb / direct object / adverb or adjective etc)
+	move mouse over the desk: MoveMouseRight/Left/Up/Down
+	press mouse buttons: PressMouseLeft/Middle/Right + ReleaseMouseLeft/Middle/Right
+	rotate mouse rotary wheel for zooming: ZoomIn/ZoomOut
+
+################### Release 1.4 (term to be agreed) ######################################
+
+Vocal commands for the Help System: 
+Browser navigation: 
+"Help" (for identifying the help app) is needed since these coommands do exist in EBuddy as well
+Scroll in help browser: "HelpScrollDown/HelpScrollUp", Zoom: "HelpZoomIn/HelpZoomOut" in the browser (Selenium or Puppeteer)
+Video controls: HelpPlay/HelpStop/HelpPause
+
+x Implement NLU crash logs
+
+################### To be evaluated ######################################
+
+x End guidance: add a state machine for acquisition
+
+x Support multi user state machines: D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\YAML
+
+x Generic transitions, Rocco proposal so that the user can move in a state machine: transition up/down/left/right
+
+C? SlideSeen (as a bookmark, please keep this instruction, don't let it disappear)
+C? Multiple Links on artec studio help
+
+
+SMState1	
+		Slide1 Slide2 Slide3
+
+SMState2	
+		SlideX1 SlideX2 SlideX3 OK
+		DetailedSlide SlideY1 SlideY2 SlideY3
+				SlideXA1 Slide2 Slide3
+SMState2	
+		SlideX1 Slide2 Slide3
+		SlideX1 Slide2 Slide3
+				SlideXA1 Slide2 Slide3
+

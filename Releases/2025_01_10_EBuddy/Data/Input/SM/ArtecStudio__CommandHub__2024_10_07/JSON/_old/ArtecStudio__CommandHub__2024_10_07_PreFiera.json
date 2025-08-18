@@ -1,0 +1,17 @@
+{
+    "states": [
+		"Start",
+		"Ready",
+		"Shutdown",
+        "SaveFile",
+        "CloseAllArtecStudios"
+    ],
+    "transitions": [
+	    {
+            "trigger": "Auto",
+            "source": "Start",
+            "dest": "Ready"
+        }
+    ],
+    "initial": "Start"
+}

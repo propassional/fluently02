@@ -1,0 +1,55 @@
+# Add as many SM entries as needed, they will appear in the GUI from top to bottom order > left to right order
+# If path is empty, the user is asked to provide a path to the SM
+
+# Overall SM
+  # Defines the JSON file name as json_name.json, but indirectly it defines also the name of the code to be used as json_name.py
+  # (TabX): parenthesis define SM that are shared between users, for example are available to beginners but belong to intermediate users
+
+# SM for recording without the cobot
+- SM_path: D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\ArtecStudio__Recording__2025_05_06__10_09_12\JSON\ArtecStudio__Recording__2025_05_06__10_09_12.json
+  # Name used for the EBuddy tab
+  SM_name: (TabRecording)
+  app_name: Artec Studio 16 Professional
+  autopilot: False
+  
+  # SM for setting up Artec Studio slice scan mode
+- SM_path: D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\ArtecStudio__SliceScan__2025_03_12__12_21_46\JSON\ArtecStudio__SliceScan__2025_03_12__12_21_46.json
+  # Name used for the EBuddy tab
+  SM_name: (TabSliceScan)
+  app_name: Artec Studio 16 Professional
+  autopilot: False
+
+# SM for part program generation
+- SM_path: D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\ArtecStudio__PartProgram__2025_06_10__10_19_47\JSON\ArtecStudio__PartProgram__2025_06_10__10_19_47.json
+  # Name used for the EBuddy tab
+  SM_name: TabPartProgram
+  app_name: Artec Studio 16 Professional
+  autopilot: False
+
+# SM for registration
+- SM_path: D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\ArtecStudio__Registration__2024_11_07\JSON\ArtecStudio__Registration__2024_11_07.json
+  # Name used for the EBuddy tab
+  SM_name: TabRegistration
+  app_name: 
+  autopilot: False
+
+# SM for setting up Artec Studio full scan mode
+- SM_path: D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\ArtecStudio__FullScan__2024_08_05__14_57_32\JSON\ArtecStudio__FullScan__2024_08_05__14_57_32.json
+  # Name used for the EBuddy tab
+  SM_name: TabFullScan
+  app_name: Artec Studio 16 Professional
+  autopilot: False
+  
+# SM for opening Artec Studio and starting preview
+- SM_path: D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\ArtecStudio__Preview__2025_05_06__10_55_39\JSON\ArtecStudio__Preview__2025_05_06__10_55_39.json
+  # Name used for the EBuddy tab
+  SM_name: TabPreview
+  app_name: Artec Studio 16 Professional
+  autopilot: False
+
+# SM for documentation on components
+- SM_path: D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\Generic__Components__2025_05_06__19_43_32\JSON\Generic__Components__2025_05_06__19_43_32.json
+  # Name used for the EBuddy tab
+  SM_name: TabComponents
+  app_name: Artec Studio 16 Professional
+  autopilot: False

@@ -1,0 +1,69 @@
+{
+    "states": [
+		"Start",
+		"Ready",
+		"Cobot",
+		"Holder",
+		"Impeller",
+		"Rototilt",
+		"Scanner"
+    ],
+    "transitions": [
+	    {
+            "trigger": "Auto",
+            "source": "Start",
+            "dest": "Ready"
+        },
+		{
+            "trigger": "Cobot",
+            "source": "Ready",
+            "dest": "Cobot"
+        },
+		{
+            "trigger": "GoBack",
+            "source": "Cobot",
+            "dest": "Ready"
+        },
+		{
+            "trigger": "Holder",
+            "source": "Ready",
+            "dest": "Holder"
+        },
+		{
+            "trigger": "GoBack",
+            "source": "Holder",
+            "dest": "Ready"
+        },
+		{
+            "trigger": "Impeller",
+            "source": "Ready",
+            "dest": "Impeller"
+        },
+		{
+            "trigger": "GoBack",
+            "source": "Impeller",
+            "dest": "Ready"
+        },
+		{
+            "trigger": "Rototilt",
+            "source": "Ready",
+            "dest": "Rototilt"
+        },
+		{
+            "trigger": "GoBack",
+            "source": "Rototilt",
+            "dest": "Ready"
+        },
+		{
+            "trigger": "Scanner",
+            "source": "Ready",
+            "dest": "Scanner"
+        },
+		{
+            "trigger": "GoBack",
+            "source": "Scanner",
+            "dest": "Ready"
+        }
+    ],
+    "initial": "Start"
+}

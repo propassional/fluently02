@@ -1,0 +1,90 @@
+{
+    "states": [
+		"Start",
+		"Ready",
+		"Impeller",
+		"Holder",
+		"ImpellerInstalled",
+		"Scanner",
+		"Cobot",
+		"End"
+    ],
+    "transitions": [
+	    {
+            "trigger": "Auto",
+            "source": "Start",
+            "dest": "Ready"
+        },
+        {
+            "trigger": "Next",
+            "source": "Ready",
+            "dest": "Impeller"
+        },
+        {
+            "trigger": "Last",
+            "source": "Impeller",
+            "dest": "Ready"
+        },
+        {
+            "trigger": "Next",
+            "source": "Impeller",
+            "dest": "Holder"
+        },
+        {
+            "trigger": "Last",
+            "source": "Holder",
+            "dest": "Impeller"
+        },
+        {
+            "trigger": "Next",
+            "source": "Holder",
+            "dest": "ImpellerInstalled"
+        },
+        {
+            "trigger": "Last",
+            "source": "ImpellerInstalled",
+            "dest": "Holder"
+        },
+        {
+            "trigger": "Next",
+            "source": "ImpellerInstalled",
+            "dest": "Scanner"
+        },
+        {
+            "trigger": "Last",
+            "source": "Scanner",
+            "dest": "ImpellerInstalled"
+        },
+        {
+            "trigger": "Next",
+            "source": "Scanner",
+            "dest": "Cobot"
+        },
+		{
+            "trigger": "Last",
+            "source": "Cobot",
+            "dest": "Scanner"
+        },
+		{
+            "trigger": "Next",
+            "source": "Cobot",
+            "dest": "End"
+        },
+		{
+            "trigger": "Last",
+            "source": "Ready",
+            "dest": "End"
+        },
+		{
+            "trigger": "Last",
+            "source": "End",
+            "dest": "Cobot"
+        },
+		{
+            "trigger": "Next",
+            "source": "End",
+            "dest": "Ready"
+        }				
+    ],
+    "initial": "Start"
+}

@@ -1,0 +1,29 @@
+################## Release 1.1 Requests (to be possibly done until 30.4 at 13:00) ##################
+
+Ordered by priority:
+
+x Switch tab: use tab names and not only GoToRight/Left, so that the user can also jump
+
+x In whatever SliceScan SM state, SaveHighPosition nor SaveLowPosition are triggered (but I can trigger them from EBuddy debug cockpit, simulating their call)
+		
+x Vocal commands for moving the mouse (for example for rotating the workpiece in Artec Studio)
+	Command structure: verb / direct object / adverb or adjective etc)
+	move mouse over the desk: move mouse right / left / up / down
+	press mouse buttons: press mouse left / middle / right / 
+	release mouse buttons: release mouse left / middle / right / 
+	rotate mouse rotary wheel: rotate wheel forward / backward
+
+x Bug: Rocco Registration>ToolsMenuIsOn dico StartAutoMenu, NLU capisce StartToolsMenu 
+	=> E' deterministico, error occurred: FLCommands.command_file_archive() missing 1 required positional argument: 'attribute'
+
+x Generic transitions, Rocco proposal so that the user can move in a state machine: up/down/left/right
+
+################## Release 1.2 Requests (to be planned) ##################
+
+Ordered by priority:
+
+x Implement NLU crash logs
+
+x Support multi user state machines: D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\YAML
+
+x End guidance: add a state machine for acquisition

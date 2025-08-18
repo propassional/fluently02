@@ -1,0 +1,72 @@
+#########################<br>
+# Concept & Terminology #<br>
+#########################<br>
+# This python software project enables the user to implement a workflow into a state machine (SM) that he can create/edit/load,<br>
+#   The SM is then able to control an application as Artec Studio as the user would do, through learnt mouse/keyboard/image inputs<br>
+
+# Terminology:<br>
+# A synchronous state machines rely on a clock, while asynchronous state machines respond to external events or conditions (event-driven)<br>
+# a transition is evaluated, and if the result is true, the transition is "fired",<br>
+#   and the state the transition leads to is "entered" (or "activated"), A reflexive trigger: it has the same state as source and destination<br>
+# If you need to know which transitions are valid from a certain state, use get_triggers:<br>
+# If you want to check whether a transition is possible before you execute it ('look before you leap'), you can use may_<trigger_name> convenience functions that have been attached to your model:<br>
+# A state is entered because previously a user command has been performed or an action has been performed by Fluently (automatic)<br>
+#   or by a user interaction (one or multiple interactions): co-leadership<br>
+# Each state has a transition that leads to it, and it has an action part, and a transition that leaves it (a condition to be checked)<br>
+#   For example, when ArtecStudioIsOff is activated its action part is executed (this state has no action),<br>
+#   then the transition ArtecStudioIsOpen is checked, so the state has to find out if ArtecStudioIsOpen,<br>
+#   and this is performed by verifying that the image that confirms this can be read on the screen<br>
+#  workflow: state_activation > transition_evaluation > transition_fired > next_state_activation > next_state_transition_evaluation etc<br>
+# SM modes: SM classic mode vs SM auto mode (SM states are traversed from start on, only checking their transitions and not running their actions)<br>
+
+# Hide/Show SM details:<br>
+# In state machine transitions library, is there a way to simplify the state machine visualization, viewing some states and hiding some others? No, use superstates/substates/composite states<br>
+# Orthogonal Regions: In UML, orthogonal regions are used to represent concurrent states within a composite state1. This can simplify the representation of concurrent behavior.<br>
+# Substates: Substates are used to simplify complex flat state machines by showing that some states are only possible within a particular context (the enclosing state).<br>
+#  This allows you to focus on a subset of states within a larger state machine.<br>
+# Composite States: Composite states are states that contain one or more substates, that can run in parallel<br>
+#   They allow you to group related states together, which can make the state machine easier to understand<br>
+
+# Fire transitions<br>
+# https://github.com/pytransitions/transitions?tab=readme-ov-file#callable-resolution<br>
+# Checkout add_ordered_transitions(): you just define the states, then the transitions are added automatically in an ordered way<br>
+# Iterator retrieves the first state of the SM: first_state = next(iter(self.sm_gui.machine.states))<br>
+# works? # self.sm_gui.machine.next_state()<br>
+
+
+Handle a state machine system means to be able to do following:
+    1) Define multiple SM with states and transitions => pytransitions
+    2) A SM is able to execute external commands coming from other SM
+        => The thread GUI_SM_commands_execute reads the command folder
+    3) A SM is able to execute SM internal commands (via on_enter_state method )such as:
+        a) Switch app to click onto: Taskbar, ArtecStudio, Daniel
+        b) Emulate a keyboard via command text (what to write into a field),
+    - Emulate a mouse via a Command image:
+        a) Switch app to click onto: Taskbar, ArtecStudio, Daniel
+        b) Load the image related to the state, and search it within the app
+    - SM can send GUI messages for user warnings on transitions that can not be completed correctly (and states that can not be entered)
+    - Closed-loop: verify if the transition had the desired effect or not, in negative case do transition rollback and warn user, examples:
+        CobotSM:
+            Server and Client interact only via files: D:\Banfi\Github\Fluently\Diagrams\ClientServerStates\ClientServerSikulixStates_0_4.png
+            LaunchServer => Run TCP_Server.exe (TCPClient has to be started on ThinkCentre by admin)
+            CheckServerIsActive
+            CheckCobotIsActive
+            CheckEmergencyIsActive
+            CobotReadyToStart
+            CobotDoScanTop => Writes a command file to the server, that sends it to the cobot
+        ArtecStudioSM:
+            ArtecStudioIsActive: ArtecStudio process exists => Run a code snippet for checking if the process is active
+            eClick ScanMenuIsActive, PreviewIsActive, RecordingIsActive => Switch to artec studio app, load image, find image, click on it
+            SaveFile: eClick + check if OS gives an error
+    - Send commands to other SM's, defining name, transition, how to get transition feedback
+
+    CobotSM:<br>
+Server and Client interact only via files: D:\Banfi\Github\Fluently\Diagrams\ClientServerStates\ClientServerSikulixStates_0_4.png<br>
+
+SM sends commands to other SM,<br>
+- SM with workflow enable cobot to work independently but following a specific workflow, that with RL can be optimized<br>
+- SM with orthogonal states<br>
+- SM: ArtecStudio play/rec, ArtecStudio processing, cobot, DK<br>
+- Problem: "Jump States": shutdown (each state has to jump to it) => solved with callbacks, SM state changes<br>
+- Problem: "Orthogonal States" (state does not change): DK Visualization Show Scan or CAD is orthogonal to the workflow => x callback, SM state does not change<br>
+- Problem: "Parametrisation": Hole filling 500 which parameter? => x add state input\parameters<br>

@@ -1,0 +1,18 @@
+title Artec Studio States
+
+artec_studio_is_off->frames_recorded_is_off:(open artec)
+frames_recorded_is_off->scan_menu_is_on: (scan)
+scan_menu_is_on->preview_is_on: (preview)
+artec_studio_is_off->preview_is_on: preview
+preview_is_on->scan_menu_is_on: stop
+preview_is_on->robot_is_in_top_pos: robot goto top pos
+robot_is_in_top_pos->recording_is_on: record
+note over robot_is_in_top_pos, recording_is_on: robot scan top
+recording_is_on->scan_menu_is_on: stop
+recording_is_on->frames_recorded_is_on: record > 6 seconds
+frames_recorded_is_on->tools_is_on: tools
+tools_is_on->global_registration_done: global registration
+global_registration_done->fast_fusion_done:fast fusion
+fast_fusion_done->project_saved: save
+project_saved->artec_closed: close
+artec_closed->artec_studio_is_off: shutdown
