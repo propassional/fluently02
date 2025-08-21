@@ -85,9 +85,9 @@ def RecordingIsOnDoLoop(message_queue):
     message_queue.put(message)
     return True
 
-# Classic demo version
-#def RecordingIsOnDo(message_queue):
-def StartCobotDo(message_queue):
+# Final demo version, while old demos versions are commented
+# It is called RecordingIsOnDo so that StartCobotDo can start the recording, and then RecordingIsOnDo can start the cobot afterwards
+def RecordingIsOnDo(message_queue):
 
     # message = "Cobot goes to top scan pos"
     #StartCobotDo(message_queue)
@@ -115,15 +115,21 @@ def StartCobotDo(message_queue):
     
     # Scan trajectory: trajectory of the full scan is automatically calculated
     # Override 100%
-    #'''
+    '''
     csv_abs_path_root = r"D:\Banfi\Github\Fluently\Code\Python\knowledge-transfer-fleuntly-main\trajs\2025_05_07_Paolo"
     csv_name = "trj_smooth.csv" # 1246 positions
     index_start = 0
-    index_end = 0 # 1293 # 740 # 2552 # 1246
+    index_end = 0 # If 0, use all data, 1293 # 740 # 2552 # 1246
     control_time = 0.05
-    #'''
+    '''
+    csv_abs_path_root = r"D:\Banfi\Github\Fluently02\Releases\2025_01_10_EBuddy\Data\Input\DataJoints\Diego"
+    csv_name = "diego_arc_trj.csv" # 1495 positions
+    index_start = 0
+    index_end = 0 # 1495 
+    control_time = 0.05
     
     csv_abs_path = os.path.join(csv_abs_path_root, csv_name)
+    print("Cobot path used: " + csv_abs_path)
 
     if index_end == 0:
         # Use all available joint data

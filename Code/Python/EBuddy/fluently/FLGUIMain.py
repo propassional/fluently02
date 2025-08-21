@@ -32,8 +32,8 @@ from FLGUISM import FLGUISM
 from FLOS import screen_coordinates_for_popup, screen_coordinates_for_GUI_main
 from pynput import keyboard
 
-from fluently.FLSMStateRecorder import FLSMStateRecorder
-from fluently.FLSocketServer import Server
+from FLSMStateRecorder import FLSMStateRecorder
+from FLSocketServer import Server
 
 message_GUI = MESSAGE_GUI_STARTUP # So this variable it can also be accessed by FLModel
 

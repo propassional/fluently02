@@ -6,7 +6,10 @@ self.do_image_found, self.do_image_matched, self.do_image_error = self.run_image
 - Check ExpBoolean: l'operator and non è commutativo se uno dei due operandi non è boolean ma NoneType<br>
 - Hidden bombs:<br>
 - Improvvisamente pyautogui.typewrite si è messo a convertire il testo in capital, pycharm restart solved the problem<br>
-- Missing import: se per errore commenti un import in un else che usi poco spesso, solo quando passerai di li si pianterà, durante una demo, ovviamente :-D<br>
+- E' complicato usare un modulo da un altro package, es. se chiamato da fuori fluently serve from .FLConstants, ma da dentro fluently serve from FLConstants
+  Questo è successo quando ho copiato tutto il codice Fluently in Fluently02, ed improvvisamente non trova piu' FLConstants: ma come mai è successo???
+  Anche GPT molto confuso sul tema, non mi dà suggerimenti utili per gestire entrambi i casi
+- Missing import: se per errore commenti un import in un else che usi poco spesso, solo quando passerai di li si pianterà, ovviamente durante una demo ;-D <br>
 In debug mode non ti dà neanche un errore e crasha, ma prima di crashare ti mostra il codice di altri moduli a sbalzo<br>
 In run mode ti dice dove c'è l'errore d'import, in casi del genere usa run prima d'impazzire :-d<br>
 - Per far crashare un metodo, ti basta chiamare: my_future_crash_is_here = self.attributo_non_definito<br>

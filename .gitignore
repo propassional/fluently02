@@ -1,0 +1,19 @@
+# BEWARE
+# Git does not accept backslashes, even if working on windows
+# The "/" at the end of the path indicates clearly that it is a directory, so it will be accepted but it is less clear
+# The paths must be relative to the repo root position
+# If Git has already committed a folder, .gitignore won’t remove it from tracking.
+# https://github.com/github/gitignore/blob/main/VisualStudio.gitignore
+
+# BEFORE COMMITTING
+# Check that there are no nested .git folders: cmd>dir /a /s /b .git | findstr /i /v /x "%cd%\.git"
+
+# Python Tools for Visual Studio (PTVS)
+__pycache__/
+*.pyc
+
+# Logfile > 600 KB should not be put into the repo, but this condition is not supported, 
+# so they are all excluded for avoiding to have a huge repo, that can not be pushed as it happened with the repo Fluently
+Releases/2025_01_10_EBuddy/Data/Output/LogFileBig
+# It's the same for this folder
+Releases/2025_01_10_EBuddy/Data/Output/CV2Image/

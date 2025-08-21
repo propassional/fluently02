@@ -1,4 +1,5 @@
 # For avoiding circular imports, this module_declared_at_top_of_the_file does not have to use higher levels modules
+import shutil
 import sys
 from datetime import datetime
 
@@ -10,8 +11,10 @@ import win32com.client
 import yaml
 from screeninfo import get_monitors
 
-from fluently.FLConstants import ARTEC_STUDIO_APP_NAME, LINK_TO_COMMAND_IMAGES, SM_COMMAND_IMAGES, COMMAND_FOR_EBUDDY, \
-    SCREENSHOT_FILES, UI_LOGORRHOIC, YAML_MAIN_PATH, APP_DIR_NAME, CV2_FILES
+#from .FLConstants # When used from FLIntentExtractFromYAMLPerState.py
+from FLConstants import ARTEC_STUDIO_APP_NAME, LINK_TO_COMMAND_IMAGES, SM_COMMAND_IMAGES, COMMAND_FOR_EBUDDY, \
+    SCREENSHOT_FILES, UI_LOGORRHOIC, YAML_MAIN_PATH, APP_DIR_NAME, CV2_FILES, LOG_FILES, LOG_FILES_BIG, \
+    BIG_LOG_SIZE_LIMIT
 
 
 # Useful methods:
@@ -246,6 +249,28 @@ def CV2_images_delete(log_object):
             file_path = os.path.join(SCREENSHOT_FILES, filename)
             file_remove(file_path)
             log_object.print(f"Deleted {file_path}")
+
+# Move uselss big log files to a git untracked folder: keep the repo light
+def log_file_big_move():
+    # We assume to be in D:\Banfi\Github\Fluently02\Code\Python\EBuddy, but anyway the path here are absolute thus ok
+    source_dir = LOG_FILES
+    dest_dir = LOG_FILES_BIG
+
+    # Make sure the destination directory exists
+    # Check if source and destination directories exist
+    if not os.path.isdir(source_dir) or not os.path.isdir(dest_dir):
+        print("Error: One or both directories do not exist.")
+        sys.exit(1)
+
+    for filename in os.listdir(source_dir):
+        file_path = os.path.join(source_dir, filename)
+        if os.path.isfile(file_path):
+            if os.path.getsize(file_path) > BIG_LOG_SIZE_LIMIT:
+                shutil.move(file_path, dest_dir)
+                # Create a log file with the same name at the original location, but with no contents, just a reminder
+                log_file_path = os.path.join(source_dir, filename)
+                with open(log_file_path, 'w', encoding='utf-8') as f:
+                    f.write("The original file has been moved to dir LogFileBig, and the current content has been removed")
 
 def screenshots_delete(log_object):
     # Delete all old command files

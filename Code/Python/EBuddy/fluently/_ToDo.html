@@ -1,5 +1,5 @@
-<!-- Show the index of this document using the correct viewer -->
-<!-- In Pycharm IDE by selecting the "Structure" mode (alt+7, on left part, on top), -->
+<!-- Show the index of this document using the correct viewer: -->
+<!-- in Pycharm IDE open the structure window by selecting the "Structure" mode (alt+7, on left part, on top), -->
 <!-- then within "Structure" select the "Eye" on the right and select the HTML5 outline:-->
 <!-- Within the "Structure" viewer, the structure can be folded with expand/collapse all -->
 <!-- This document contains some main hints, but most of all it is a todo list -->
@@ -79,12 +79,23 @@
 
     Emilia: ok lo mostra sempre quando ha finito le slides?, ev remove participant id
 
+    x Get red key and bring here my parked bike
+
     x Critic:
-    git backup,
+    x Ask Paolo monday: Diego could not produce slice scan paths, and installing guglielmo stuff corrupted my ros2 installation
+    x Add logs and images to git ignore
+    x FullScan: Add StartRecording after Preview is on, then start cobot
+    X Slice scan add preview is on check, change name of start cobot
+    x Try Diego csv, install Guglielmo stuff here,
+    x Crash! SliceScan.TopScanPos performed after FullScan
+        x SliceScan.StartCobotDo cerca di attivare il recording, come avviene in FullScan, ma qui non è corretto: StartCobotSlice?
+    x Use ml_env for installing guglielmo stuff
+    x Display commands received/done: self.GUI_main_needs_update = False
         rrr Cobot paths
             x Organize call con Guillermo e Diego
             x Diego è assente last week 08
             x Guglielmo
+              Diego ha usato python 3.10.12 essendo la ver python di riferimento per ubuntu22
               1) Please complete the rings (at the moment they are about 80% complete, thus some scan data is missing),
                     then descend in spiral (it's already ok), then make a new complete ring, etc.
               2) Please send me the code, and give me as parameter the nr of rings (3-5-7)
@@ -132,6 +143,7 @@
         rrr Fix cavo scanner sul cobot
         rrr Anneke: riesce a fare i calcoli per tempo, es sfruttando la GPU? Come chiudere la mesh?
 
+    x Imports: .FLConstants when used from FLIntentExtractFromYAMLPerState.py vs from FLConstants when used from _FL_main
     x put everything on gitlab: pptx, Emilia code
     x Integrare D:\Banfi\Lavoro\ArtecStudio con D:\Banfi\ArtecStudio\ArtecStudio16ProjectsTest, e check che save vada ancora!
     x Registration: add export mesh, copiando il modo da SaveFileDox
@@ -342,10 +354,6 @@
     Diagram
         x System setup: scanner type distance min max, GPU RTX 2060 super, risoluzioni screens, desktop pc
 
-    x Le mie bici parked ci sono ancora?
-
-    x Fluently2 non carica
-
     x PySimpleGUI project (sg) è stato chiuso!
 
     x Meet SB 11.4, AV valorizzazione 23.4: come la vede lui?
@@ -445,15 +453,6 @@
 
     <h2>Todo</h2>
     x Get magneti for flip chart
-
-    x Metroind paper
-
-    x In the mornings read VS paper + abstract: feedback deadline 22.1
-    https://www.dropbox.com/home/projects/Standoff_control/Paper
-
-    x Solve Rocco's dependency problem
-
-    x Fluently: comandare start stop con voce
 
     x Test Rocco:
         x Tab switch via voice are accepted? autopilot?
@@ -702,14 +701,8 @@
     x Learn all mouse & keyboard user interactions, repeat them
 
     <h1>Intents</h1>
-    source win11: call C:\dev\ros2_humble\local_setup.bat
-    Rocco topics: sm_state, gui_output
-
-    x Riattivare i firewall alla fine del tutto
-
-    v Whisper latency problem
-    v Problema: whisper non vedeva la GPU, quindi usava la CPU ed era molto lento
-    Puoi usare un modello small/medium/large => Latenza
+    v Problema on Alienware: whisper non vedeva la GPU, quindi usava la CPU ed era molto lento
+    Puoi scegliere di usare un modello small/medium/large, questo influenza la latenza
     Richiedere la versione di cuda
     1) >nvcc --version => cuda 11.5,
     2) Corrado dice piu affidabile di >nvidia-smi che dice 12.2
@@ -720,13 +713,15 @@
     cfr sua guida installare cuda (non straight ahead)
     suso apt install cuda12-4
     - Notes: isaac lab x driver cuda download, con python non devi sourcare ma se hai componenti cpp allora si
-    - Alessio usava una tastiera esterna, il laptop lo ha comprato mattia con rtx2070
+    - Alessio usava una tastiera esterna, il laptop lo ha comprato mattia, con su scheda video rtx2070
     - source install/setup.bash fa source (esegue il file) di quella bash, che è dentro alla dir di install, dove si è messo ROS
     >source whisper env bin activate => Per attivare il nodo di whisper in ros
+
     - Scaricare un git: mkdir x, cd x, git clone https
     >htop => Tool che mostra gpu memory alloc
-    >colcon build => ROS2 command for building, non serve sempre, si fa per paranoia, The built packages are placed in the install directory within your workspace,
-        poi dopo devi sourcare pero' con >source install/setup.bash
+    >colcon build => Command for building ROS2 components, non serve sempre, si fa per paranoia,
+                The built packages are placed in the install directory within your workspace,
+                poi dopo devi sourcare pero' con >source install/setup.bash
 
     Setup docker di Rocco
     in cmd (questi comandi li ho estratti da build_docker.sh di Rocco, visto che sudo non è supportato in windows)
@@ -757,8 +752,7 @@ ROS_VERSION=2
     docker --version
     docker compose version
 
-
-    x Rocco doc on NLU module:
+    v Rocco doc on NLU module:
         - Per lanciarlo usi ./build_docker.sh all'interno della directory /Desktop/natural-language-understanding e il nodo parte in automatico
             - Con Andrea Bussolan abbiamo cambiato un parametro per permettergli di usare la lan vera, altrimenti al di fuori non vedi nulla
         - Per pubblicare lo stato corrente della state_machine pf utilizza un topic con il seguente nome: sm_state
@@ -767,21 +761,17 @@ ROS_VERSION=2
         - Tutte queste informazioni le trovi nel branch 'pa' su gitlab: ho accesso con login supsi standard
             https://gitlab-core.supsi.ch/dti-isteps/armlab/fluently/natural-language-understanding/-/tree/pa?ref_type=heads
 
-    nnn Voice functionality:
+    Voice functionality:
     x Problem: docker comunica con docker, ma non comunica con il mio ros2
         v Verificato molte env var, resta RMW
         x Docker flags: network == host
     x Ogni comando che mi arriva va associato alla ultima SM attiva
     x How should a SM call another SM? All transitions
-    x Reload client server stuff
-    x Reload Rocco stuff
 
     x Rocco
     x Enter gitlab con supsi net credentials
     https://gitlab-core.supsi.ch/dti-isteps/armlab/fluently/natural-language-understanding/-/blob/main/ros2_ws/src/nlu/nlu/nlu_node.py?ref_type=heads
     x Send json: read yaml, parse json files
-    x Fare un branch dopo la demo a Rocco
-    v Creare un nodo ROS in grado di scrivere, ed uno di leggere un nodo di Rocco
     x Creare un flag per add/remove all GUI buttons, ed interagire con EBuddy sostituendo la GUI e i commands
     x Macro process tabs identified: Instructions, Scan, 3D data processing
 

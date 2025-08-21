@@ -6,7 +6,13 @@
 import json
 from datetime import datetime
 
-import fluently
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+print("\n".join(sys.path))
+import fluently # Neglect this error, online it will work
+print(fluently) # Expected: <module 'fluently' from '/path/to/your/project/fluently/__init__.py'>
+
 import fluently.FLOS
 from fluently.FLConstants import SM_FILES_OUTPUT, INTENTS_DIR
 

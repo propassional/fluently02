@@ -5,14 +5,14 @@ import psutil
 import subprocess
 
 paths = [
-    r"D:\Banfi\Github\Fluently\Diagrams\ComponentDiagram",  # Component diagram
-    r"D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\YAML",  # The EBuddy configuration file
-    r"D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM",  # Data used by the SM
-    r"D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App\ArtecStudio",  # Images used for do/check/rollback/hints
-    r"D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\Command\CommandForEBuddyHistory",  # Commands
-    r"D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\LogFile",  # Dir containing all EBuddy logfiles, organised for SM name
-    r"D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\CV2Image",  # Image processing results
-    r"D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\Screenshot",  # State machine screenshots
+    r"D:\Banfi\Github\Fluently02\Diagrams\ComponentDiagram",  # Component diagram
+    r"D:\Banfi\Github\Fluently02\Releases\2025_01_10_EBuddy\Data\Input\YAML",  # The EBuddy configuration file
+    r"D:\Banfi\Github\Fluently02\Releases\2025_01_10_EBuddy\Data\Input\SM",  # Data used by the SM
+    r"D:\Banfi\Github\Fluently02\Releases\2025_01_10_EBuddy\Data\Input\App\ArtecStudio",  # Images used for do/check/rollback/hints
+    r"D:\Banfi\Github\Fluently02\Releases\2025_01_10_EBuddy\Data\Input\Command\CommandForEBuddyHistory",  # Commands
+    r"D:\Banfi\Github\Fluently02\Releases\2025_01_10_EBuddy\Data\Output\LogFile",  # Dir containing all EBuddy logfiles, organised for SM name
+    r"D:\Banfi\Github\Fluently02\Releases\2025_01_10_EBuddy\Data\Output\CV2Image",  # Image processing results
+    r"D:\Banfi\Github\Fluently02\Releases\2025_01_10_EBuddy\Data\Output\Screenshot",  # State machine screenshots
     # r"D:\Banfi\Lavoro\ArtecStudio\ArtecStudio16Projects"  # Artec Studio projects containing mesh, .ply files
 ]
 

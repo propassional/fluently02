@@ -25,7 +25,7 @@ USER_ROLE = USER_ROLES[0]
 COMMAND_HISTORY_SAVE = True # True: command files are moved to a history directory for debug or neuronal net training aims, False: command files are deleted
 # Sockets: D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\_readme.txt
 ROS2_INTERPRETER = r'C:\Python38\python.exe'
-ROS2_SOCKET_LISTENER = r'D:\Banfi\Github\Fluently\Code\Python\ROS2\FLROS2ListenerSocket.py'
+ROS2_SOCKET_LISTENER = r'D:\Banfi\Github\Fluently02\Code\Python\ROS2\FLROS2ListenerSocket.py'
 SOCKET_SERVER_IS_USED = True # Default: True, ROS2 operation: EBuddy starts a socket server, which waits until a socket client connects, then it sends via socket the state name at each state change
 SOCKET_SERVER_LAUNCHES_CLIENT = True # Default: True, Server launches client, False means that the admin has to launch it manually (see doc)
 
@@ -64,6 +64,9 @@ TIME_WAIT_READ_NEXT_COMMAND = 0.1 # [sec, decimal]
 COMMAND_FILE_NR_OF_ARGS = 3 # See examples here: D:\Banfi\Github\Fluently\Releases\2024_07_09_EBuddy\Data\Output\Intents\_Released
 # Dynamic loading of python modules
 MODULES_RELOAD_ALWAYS = True
+
+# Log files
+BIG_LOG_SIZE_LIMIT = 600 * 1024  # 600 kilobytes in bytes
 
 #########
 # Names #
@@ -105,7 +108,7 @@ ERROR = "error"
 #########
 # Links #
 #########
-RELEASES_FOLDER = r"D:\Banfi\Github\Fluently\Releases"
+RELEASES_FOLDER = r"D:\Banfi\Github\Fluently02\Releases"
 RELEASE_FOLDER = RELEASES_FOLDER + "\\" + RELEASE_NAME
 SM_FILES = RELEASE_FOLDER + r"\Data"
 
@@ -141,6 +144,7 @@ DATA_OUTPUT = SM_FILES_OUTPUT + "\Data"
 
 # Logs
 LOG_FILES = SM_FILES_OUTPUT + "\LogFile"
+LOG_FILES_BIG = SM_FILES_OUTPUT + "\LogFileBig"
 
 # Images searched
 CV2_IMAGES = SM_FILES_OUTPUT + "\CV2Image"
