@@ -17,6 +17,8 @@ SLEEP_TIME = 3
 #csv_abs_path_root = r"D:\Banfi\Github\Fluently\Code\Python\knowledge-transfer-fleuntly-main\trajs" # Path to dir
 csv_abs_path_root = r"D:\Banfi\Github\Fluently02\Releases\2025_01_10_EBuddy\Data\Input\DataJoints\Diego" # Path to dir
 csv_name = "diego_arc_trj.csv" # Slice scan file name
+csv_abs_path_root = r"D:\Banfi\Github\Fluently02\Code\Python\Vendor\Cobot\Borzoneg_2025_08_20\knowledge-transfer-fleuntly-main"
+csv_name = "arc_trj.csv" # Slice scan file name
 csv_abs_path = os.path.join(csv_abs_path_root, csv_name)
 print("Cobot path used: " + csv_abs_path)
 

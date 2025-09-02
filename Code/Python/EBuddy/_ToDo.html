@@ -1,0 +1,921 @@
+<!-- Show the index of this document using the correct viewer: -->
+<!-- in Pycharm IDE open the structure window by selecting the "Structure" mode (alt+7, on left part, on top), -->
+<!-- then within "Structure" select the "Eye" on the right and select the HTML5 outline:-->
+<!-- Within the "Structure" viewer, the structure can be folded with expand/collapse all -->
+<!-- This document contains some main hints, but most of all it is a todo list -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document with Chapters</title>
+</head>
+<body>
+    <h1>_EBuddy Survival Kit</h1>
+    - Acronyms: SM = State Machine
+    - EBuddy software: D:\Banfi\Github\Fluently\Code\Phyton\EBuddy
+    - Start EBuddy: D:\Banfi\Github\Fluently\Code\Python\EBuddy\fluently\_FLMain.py
+    - Tool for setting up the file explorer folders for developing code: run tools\FLWorkspaceExplorerSetup.py
+    - Data and application software (no EBuddy sw): D:\Banfi\Github\Fluently\Releases\2024_07_09_EBuddy
+    - EBuddy concepts: D:\Banfi\Github\Fluently\Diagrams\ComponentDiagram
+    - EBuddy constants: FLConstants.py contains all project constants, dirs, log file, data input / output, etc
+    - Conda: C:\Users\operator\.conda\envs\ml_env\python.exe installed with conda
+
+    <h1>_Diversicum</h1>
+
+    <h2>_Legenda</h2>
+    <!-- Use only subsequent triple vowel or consonant words here for uniqueness -->
+    nnn doing right now
+    xxx Very urgent
+    rrr Very relevant
+
+    <h2>Cmd</h2>
+    - Search for all .csv files: >dir /s /b *.csv
+    - Search for all python interpreters: >C:, then >dir /s /b python.exe
+    - Search for a file: >dir /s /b *ileName*
+    - Search within files: findstr but complex command and annoying output > use explorer
+
+    <h2>GitHub</h2>
+    - GIT process: git log --oneline => git status => git add . => git commit -m "Text" => git push
+    - GIT commit starts with a name: Added ROS2 / Refactored FLWorkspace / Status end of the week (thus several undocumented changes are implicit) / Removed LibX /
+    - GIT remove dirs that have been unintentionally tracked: git rm -r --cached MyDirName
+
+    <h2>Knowhow search</h2>
+    - copilot of microsoft
+        - chatgpt.com
+    - Perplexity: https://www.perplexity.ai
+    - https://stackoverflow.com
+    - Siti per tech infos: https://www.showtechies.com/
+    - Try 01 for coding: https://openai.com/index/o1-and-new-tools-for-developers/
+    - Try this: https://platform.openai.com/playground/chat?models=gpt-4o-mini
+
+    <h2>Onedrive</h2>
+    Open onedrive: accedere al proprio abbonamento di Office 365, poi selezionare OneDrive nell'icona di avvio delle app
+    - FAQ: https://si.supsi.ch/cms/microsoft-onedrive
+    - Quickstart: https://si.supsi.ch/cms/wp-content/uploads/sites/44/2024/10/MS_Office_QuickstartOneDrive.pdf
+
+    <h2>PyCharm</h2>
+    - Comment lines: "ctrl" + "/" + "+"
+    - Search preview: ctrl + shift + f
+    - Marker: add marker Ctrl+F11, see markers Shift+F11 poi premi la lettera corrispondente, see markers in window Alt+2
+    - Method doc: ctrl-q
+    - Use search with regular expressions, see ExpSearch
+    - Alt+Shift toggles between the Swiss German keyboard layout (QWERTZ, shown as "SG") and the US English keyboard layout (QWERTY, shown as ENG")
+
+    <h2>Teach pendant</h2>
+    - As first, always check to have released the red button
+    - Touch and hold del tablet del Cobot funziona solo se usi l'unghia oppure la penna, col polpastrello va subito in hold
+
+    <h1>_DO NOW</h1>
+
+    <!-- This chapter collects tasks done for commit docs -->
+    <!-- This chapter should not even exist, since we mark high priority tasks throughout the document, check the Legenda: keep here max 3 things -->
+    "...e per questo (vi) sono grato"
+    E' meglio dire "fate come siete abituati a fare", e non "fate come volete"
+
+    Cyril: use Claude for improve sw, use google voice and get a US number first
+
+    !!! Lavorare maggiormente process-oriented, fare in modo di misurare in modo oggettivo l'outcome di ogni processo
+    per far capire allo user se lo ha completato o meno, ad esempio quando uno scan è considerato "finito"? Quando il processing è finito?
+
+    Emilia: ok lo mostra sempre quando ha finito le slides?, ev remove participant id
+
+    x Get red key from home and bring here my parked bike
+
+    x Critic:
+
+    x commit and push my stuff
+
+    x Compare git branches
+
+    x Guglielmo
+        x Feedback: code in uno stato prototipale: non ha separato input / code / output: tutto è in un calderone, e molti nr sono hardcoded, non ha nessun nr di release
+            x Se voglio crearmi un "set di input" devo farlo io!!
+      Diego ha usato python 3.10.12 essendo la ver python di riferimento per ROS2 per ubuntu22, ma io devo restare sulla 3.8 causa ROS2 e win11
+      1) Complete the rings (at the moment they are about 80% complete, thus some scan data is missing),
+            then descend in spiral (it's already ok), then make a new complete ring, etc.
+      2) Send me the code, and give me as parameter the nr of rings (3-5-7)
+      3) As you mostly already do now (there are some interruptions but the scanner does not loose the track),
+            please always maintain the scanning distance min-max,
+            otherwise tracking will be lost: this would be a great problem for the automated demo
+            There would be multiple data instead than just one data, resulting into a much more complex interaction
+            The challenge here is to always ensure that the cobot does not have to unroll and therefore lose the scanning distance
+            Which min-max values were you given?
+      4) Slice scan: please just update to the new impeller position
+
+    x Ask Paolo monday: Diego could not produce slice scan paths
+        x Paolo branch of 28.05.25: non ha integrato il suo codice con quello di Borzoneg (this branch is 1 commit ahead of main, and 9 commits behind main)
+            Inoltre dice davanti a me e Diego di non essere sicuro di aver pushato l'ultima versione, ed oggi 2.9.25 si mette a cercare il suo vecchio laptop 3 mesi dopo (ormai rasato ed in mano a Francesco, credo)
+        x Paolo fix: Diego output ha ancora la vecchia impeller position: dove la si cambia? obj_pose
+        x Paolo fix: evitare il tuffo iniziale se lo porti on top a mano + complete rings + add 2 rings + at end, goback from end scan to top position
+        x Paolo fix: Create a slice scan trajectory with new impeller position
+        x Ask: nr anelli? dove viene settata la distanza fra impeller e scanner: sphere radius only? yes
+        x Ask: define well all input parameters: dove va inserito il convex hull dell'impeller?
+    in pad_cell.urdf beam è il palo impeller è turbine
+        x Ask: La continuità nel mantenere l’orientamento della camera sul cobot verso l’impeller quanto è garantito dal  fatto che da una cobot pose ad un'altra pose l’algoritmo sceglie quella che gli chiede di muoversi di meno
+            Cosa devo fare se dovessi avere problemi di tracking lost? Hres aumentare?
+        x Ask: Quale variabile rappresenta lo schiacciamento della sfera?
+        v Ask: primitive to save the tree as .json (calculated data)? jconf_tree.save("test.json"), load_from_file: reload it for saving calculation time
+
+    x Corrado test app + Rocco: app si chiama Fluently, pa invece luigi.verdi
+    x FullScan: Add StartRecording after Preview is on, then start cobot
+    X Slice scan add preview is on check, change name of start cobot
+    x Crash! SliceScan.TopScanPos performed after FullScan
+        x SliceScan.StartCobotDo cerca di attivare il recording, come avviene in FullScan, ma qui non è corretto: StartCobotSlice?
+    x Display commands received/done: self.GUI_main_needs_update = False
+        rrr Voice
+            x ppt add: se la voce non viene interpretata bene: parlare piu' forte, con accento diverso, scandendo bene le sillabe, piu' lento ma senza pause fra le parole di un comando
+            x TabSlice next cambia nome vs add a state in cui lo user certifica di avere in mano il TP e la posizione corretta
+            x Rocco lower the threshold keyword: StartRecording > ?
+            x Spegnere mic mentre si parla in italiano, o capisce davvero roma per toma e poi fa transizioni inaspettate
+            x mqtt crasha volentieri: devo testare sempre con la voce d'ora in avanti, e prepararmi un file con gli ordini da dare x stop, remove, restart
+            x Reinstall mqtt by Corrado
+            x Rocco intents giovedi 14.8: check voice errors described in my mail 12.8.25
+            x Update, and then do more tests: Anneke accento olandese, Babi low voice, Diego espanol,
+        rrr EBuddy o un'altra app
+            x EBuddy o un'altra app: mostrare quello che arriva da ROS, quello che arriva da Intents, l'ultimo comando effettuato (fare chiarezza in caso di un next slide non capito)
+                Refresh da fuori app è possibile?
+            x Detailed slide non va con voce
+            x Global registration ha lisciato con OA poi con me ha di nuovo funzionato bene: ha selezionato isotropic remesh!!
+            x Enhance: fusion non aspetta e ti dice che ha calcolato, implementalo come global registration
+            x Autopilot on Components avanza troppo in fretta, escape via voice non va: dove ha davvero senso mostrarlo? Esso deve sempre avere un feedback altrimenti nonsense
+        rrr SM
+            x SM enhance: RepairingVolume>RepairVolume
+            x Rename all tabs con Tab prefisso: voglio essere sicuro che TabRecording non venga attivato non appena si dice recording
+            x Evitare il doppio comando in Preview: remove PreviewIsOff.StartPreview
+            x BackState deve tornare a Ready, non a Start, otherwise beeps
+            x Registration.FusionEntered togliere remove outliers, since it speeds up process + attendere la fine del calcolo
+            x StartAutoMenu fargli fare un deselect all flags di default? Devi leggere il flag, poi il flag title, poi mandarlo li e risettarlo
+            x Add convex hull, show results ev senza pala, poi con pala
+        rrr Slides
+            x Ripetere alla fine di tutte le slides di Fullscan.PreviewIsOn come posizionarsi:
+                x TP in mano, sinistra schermi, destra cobot
+                x Evita che lo user vada in horror: avvisalo che ci saranno passaggi molto vicini al pezzo: fare foto, add
+            x breve ppt di intro alla PA Cell fatta per tutti
+            x parte preview, in EBuddy le sposto in components:
+                Togliere start artec studios, add it to components e fai in modo di poterci accedere rapidamente vs new TabStudio con dentro la sua doc
+                Togliere la parte intents, lo spiego breve nella intro ppt
+                Togliere la slide 36 in cui spiego una transizione rifiutata poichè ad es lo scanner non è acceso
+        rrr Convex hull: test with Luca ROS2 data interchange: asked audience on thursday
+        rrr Fix cavo scanner sul cobot
+        rrr Anneke: riesce a fare i calcoli per tempo, es sfruttando la GPU? Come chiudere la mesh?
+
+    x Imports: .FLConstants when used from FLIntentExtractFromYAMLPerState.py vs from FLConstants when used from _FL_main
+    x put everything on gitlab: pptx, Emilia code
+    x Integrare D:\Banfi\Lavoro\ArtecStudio con D:\Banfi\ArtecStudio\ArtecStudio16ProjectsTest, e check che save vada ancora!
+    x Registration: add export mesh, copiando il modo da SaveFileDox
+    x Think how to repeat the process: look at mesh results: do slice scan
+    x Slice scan va ancora?
+    x Slice scan riesce a colmare il gap di scan?
+    x Evitare che il mouse torni sempre su a selezionare la app: posizionalo vicino al top cosi il tragitto è piu' breve
+
+
+    ############ KPI Bottom ######################################################################################################################
+    ##############################################################################################################################################
+
+    rrr SB asked for paper in HRC as guest editor, deadline 31.01.26
+        https://www.mdpi.com/journal/robotics/special_issues/HPJLP41QJ6
+        https://www.linkedin.com/feed/update/urn:li:activity:7354536679069609984/?origin=NETWORK_CONVERSATIONS&midToken=AQERjrur3QkKBA&midSig=0ljh_0oN7X_HQ1&trk=eml-email_network_conversations_01-network~post~cta-0-read~more&trkEmail=eml-email_network_conversations_01-network~post~cta-0-read~more-null-5yzdz~mdnfnmd7~3o-null-null&eid=5yzdz-mdnfnmd7-3o&otpToken=MTMwNTFlZTMxMjJjY2RjM2JlMmYwMmVmNDUxOWU1YjM4OGNlZDE0NTk4YWQ4NTZkNzZjNjAxNmU0YjU5NWFmOWI3OGFiNzgxNzBkOGZlYzgyYzc0MmIzNzgxZTAyZDM1MjQxY2IwNjgzMDMzMTBmOCwxLDE%3D
+    rrr Anneke: if mesh is still open, go back and show where parameters can be modified, modify one parameter of scan traj (nr of rings), redo 3D calc, do hole filling,
+    x Registration: start fusion con Tom non è andato, andrebbe ingrandito
+    x Show autopilot features by running Anneke tab: first add all feedbacks
+    x Prepare correct transition to slice scan without crash: program restart solves? How to do restart?
+    x D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\SM\ArtecStudio__PartProgram__2025_06_10__10_19_47 togliere ArtecStudio, non centra
+    x Accept also .PNG: D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Input\App\AODK\Image\2560x1440\Do
+    x git non va xke dice che c'e dentro un altro git: dove?
+
+    x Add slides to Anneke parts: do it with her before beginning tests
+
+    x Do manual, do questionnaire: repeat 3x cosi fa Corrado, Do Fluently, do questinnaie: repeat 3x
+
+    x Insert the app name into the code, so that focus_set_on_app results ok: screenshot_search: it's a pity that the code needs to be changed if another app is added!
+
+    Anneke:
+                x Get .py from Anneke for calc holes in model
+                x Anneke find algos for evaluation amount of surface and compare it with CAD
+                x Modify DK se mancano punti deve interpolare e non dare errore
+                x App è da considerarsi started solo se la vedi, come artec studio
+    x Rachele:
+        - Doc: Component.ManualScan (for the moment "parked" as a component even if it is not):
+            - If you loose track you may get two not correlated scans: big problem => Avoid to loose track => Not easy, not even predictable
+            - If you loose track go back to last scan position and try to refind it, thus please use a path that you can recall and no random ones
+        - Doc: Component.Wearables: how to adapt the strap of the headset (I added a "Wearables" state into Components) + something about HFluently
+        - Doc: Component.Holder: how to put the impeller onto the holder
+        - Doc: Component.Cobot: how the user is supposed to move the cobot by hand, and NOT supposed
+
+    x Add user
+        Topic name: /fluently/user
+        Message type: std_msgs/String
+        Content: {"user_id": "<USER_ID>", "token": "<TOKEN>"}
+        The <USER_ID> is a unique identifier for the user.
+        The <TOKEN> is only needed for the interaction with the DB.
+
+    x Emilia
+        x Emilia discuss:
+            x Ha funzionato solo commentando la persistence, altrimenti dopo un po rallenta di nuovo
+            x il msg "tutto ok" lo ha letto domenica mattina, non venerdi, ma comunque solo una cosa era ok, non di certo il problema della performance: è stata superficiale
+            x Dice di non lavorare il weekend, ma ho avevo chiesto supporto lunedi mattina alle 9, ma mi ha risposto solo alle 1230: perchè non mi ha detto che stava lavorando alla fix?
+            x Sinceramente non ho chiesto roba nuova, ma anzi una rollback: credo che sia un diritto questo
+        x Helper
+            v "BAT" ha fatto il DB
+            x Onthology naming
+                x If a state machine is called "Preview" everything works ok, if it is called "PreviewTab" images are not shown ("no instructions available")
+                x Some EBuddy "End" states are skipped, but they are exactly the same as others, which are not skipped
+            x DB
+                x ROS2 compile her message without colcon build messing up with several pythons
+                x User level improvements from L1 to L2: how should we do this?
+                x Test this: I have pushed to the git now and made the following changes:
+                speech_subscriber now listens to topic /gui_output to get the intents, so you can navigate the GUI by saying NextSlide, PreviousSlide, SkipSlide, DetailedSlide, and Okay
+                a new user_subscriber can register a user when logging into a session if it reads something from the topic /fluently/user
+                a new gui_publisher publishes the following information on the topic /help_output:
+                string user_id
+                int32 session_id
+                string instruction
+                int32 reading_time_total
+                int32 reading_time_session (just for this session)
+                int32 num_skip (of all-times skipped slides)
+                int32 num_help (detailed slides)
+                string expertise_level
+                the message type of the topic /help_output is in the folder custom_interfaces/msg/HelpOutput.msg
+                renamed buttons
+                shows the introduction every time the user logs in
+
+    x EBuddy:
+                xx Se alienware converte su internal mic, va risettato su am61, o almeno avvisare eBuddy
+                x Recording tabs chiamala diversa che si attiva a sbalzo: ok, ma da dove?
+                x Commands in blue, errors in red
+                x Add a "component fix" state for each component + photo: ping robot, ping hfluently (che non significa ancora che convex hull service sia su), check scanner connected via usb, ROS2 topics all there? do a voice test,
+
+    x OA asked for a new impeller 1.7.25: Tom develop holder > Luca do convex hull > Paolo do cobot trajectories > Io test them (collision free, scan quality) > EBuddy workflow change
+
+    Doc
+    Doc on Artec Studio (Scanning software), EBuddy, Convex, Automated repairing process  => part program generation
+    https://roboverse.sharepoint.com/:w:/r/sites/FLUENTLY-EU/_layouts/15/Doc2.aspx?action=edit&sourcedoc=%7Be6e81263-7384-4491-a185-03f591fcffe2%7D&wdOrigin=TEAMS-WEB.teamsSdk_ns.rwc&wdExp=TEAMS-TREATMENT&wdhostclicktime=1748952705179&web=1
+
+    SDU repo integration
+    Options: vendoring (for offline/closed envs), submodule/monorepo (projects with tight dependency control),
+    install from GitLab URL (open-source, sw always up-to-date), build wheel with package (Binary distribution, easy user install)
+    https://github.com/Borzoneg/knowledge-transfer-fleuntly
+
+    Convex hull:
+    x Vedere i docker topic: --network, dds env var
+    (x) Raddrizzare convex hull: non è orientato giusto e neanche al posto giusto Quattrini-Carlotta
+    x Get client from Quattrini, call it from my PC
+    x Se convex hull avesse parti mancanti: passare a Paolo hull vs cilindro (forma piu' plausibile)
+    x Get Paolo sw
+    x Get from Oliver a new impeller: convex hull sempre giusto?
+
+    Alienware remove dopo la consegna kpi
+
+    Use case draw
+    https://online.visual-paradigm.com/diagrams/solutions/free-use-case-diagram-tool/
+
+    Urgent issues:
+    x Jamiroquai 13.11.25 Forum Assago
+    x Call municipio comano x ipct firmare davanti a loro
+    x Collect cassa malati costs: pressione1, pressione2
+    x Infortunio nr send to dr spalla
+
+    xw Re-test the demo: start all components: wait for Emilia mail
+    xw Carlotta martedi: do calibrare le camere, teams open my document how to open workspace dir, command x aprire vidz, come aprire le cams, cams ip
+    x Paolo:
+    - Problema: il robot è in posizione ok ma coi joint messi sbagliati e si schianta:
+        Paolo mi manda il link di movit ed io lo installo
+        Add a joint control, se cobot non è vicino usi movit + Riproduci il problema avvitando apposta i joints del cobot, togli il pezzo e vedi lo schianto potenziale
+        Install movit che va su ros, easy su ubuntu, Paolo non sa se easy su win10
+    - Test: cobot torna on top position senza collisioni, io controllo la pos e se non è li non faccio partire lo scan
+    - Traiettoria Guglielmo check scan quality / slice scan / snake scan
+    - MB send robot in posizione libera
+    xxx Ricollega un altro switch: pc to switch, switch to alien, switch to robot, switch to nuc
+    xxx Rimonta scanner e ricollega prolunga usb
+    reinforcement learning to be introduced into emilia work
+    rrr Da risolvere:
+    a) 4 crash del sistema cuffie, e
+    b) al mattino Corrado che si lamenta poichè gli hanno cambiato gli IP: perchè dopo anni siamo ancora in questa situazione frustrante ed inaccettabile?
+    Il ticket è rimasto aperto ma non lo hanno risolto, Oliver non sa dirmi chi doveva occuparsene, non ha ancora parlato con nessuno dei servizi info ne supsi ne usi
+    rrr Il cobot si è piantato quando è basso e fa passare l'avambraccio sopra al pezzo: lo ha fatto almeno 60 volte, ma oggi si è piantato (elbow out of bounds): non avere feedback è pericoloso, visto che l'utente sta iniziando a fare i lavori da solo
+    rrr FullScan.PreviewIsOn: add GotoTop of the workpiece, and only then, StartScanner + Guglielmo makes small circles: makes scanning more robust
+    x Recording improvvisamente non ha piu' funzionato: why???
+    x CheckArtecStudioIsOff esempio di transizione di controllo add nelle slides
+    x Read Rocco new release x me
+    x HFluently user login: luigi.verdi@gmail.com or mario.rossi@gmail, 123456, su realwear my programs > select item 12 > scan pairing qr, scan the qr code with cam on realwear, next , select pa, confirm, loading models , get started click proceed/ se non va devi fare logout e chiudere app
+    x EBuddy slide: EBuddy beeps: read, area in cui lui scrive, area dei miei ordini (tabs)
+
+    x Show bigger EBuddy commands in the GUI?
+    x Training with Sonia (?)
+    x Corrado ci mostra il topic che riporta un JSON con dentro lo user nr
+    ? Slice scan non sembra collegare i nuovi dati correttamente: devo mettere il flag align con previous frames?
+    x Ask Emilia about behavior trees for recognizing the state of artec studio: command "Interpret(ArtecStudio)Status"
+    x Spruzzare pala vs ripulire perfettamente una singola aletta dallo spray
+
+    x Rimborso spese: 07.07.25 50.70 mensa supsi,
+
+    x Next release:
+    https://smallpdf.com/
+        x StartArtecStudio non deve essere eseguito se ArtecStudio is on vs allungare il tempo di wait (poco elegante ma efficace)
+        x Preview: read "green" scanner message "Direct your scanner at base that supports object" and tell user that preview is bad
+        x During startRecording devo dire di aspettare la fine, idem per fusion, write in red those things?
+        x Skip from a SM to the other one: se fusion non è stata finita, diventa un casino finirla se nel frattempo hai fatto slice scan
+        x Preview: ScanMenuIsOn rollback to ArtecStudioIsOn se scanner non è connesso: farlo andare in un nuovo stato, cosi help lo sa
+        x Disabilitare la capacità di ubuntu di commutare audio device, passando da solo da am61 a input mic
+        x Typo scanner is now connected
+        x Create a SM for giving voice feedback
+        x If scanner is now connected => help shows how to solve the problem
+        x Registration FusionIs done => can i close, even if not done?
+        x NextStep instead than next
+        x Rocco "start the pose" non lo accetta
+        x Rocco: dove leggo nel log il release nr?
+        x Io GotoTab sostituire con GoToTab in tutto il codice
+        x Io send new intents list
+        x Cobot safe start => check cobot joint positions, if bad (for example under the workpiece) tell user to move cobot by hand and bring it to safe position
+        x Save file deve verificare che File sia in nero e non in grigio, se fosse grigio deve avvisare di fermare il preview o il recording
+        x Come mai save va ad aprire un altro menu, eppure le coordinate mi sembrano giuste?
+        x EBuddy: GotoTabLeft non va
+        xB Disallineamento fra EBuddy e Rocco: Rocco pensa di essere nell'ultimo tab
+        x self.queue.element_insert(SM_names_all_ptr[0]
+            tab_searched = Da commandhub gototabright deve portarmi alla prima tab!
+
+    x da calculationIsDone renamed to GlobRegIsDone: dove è la immagine?
+    x In Preview json: add StartRecording to Pause
+    x D:\Banfi\Github\Fluently\Releases\2025_01_10_EBuddy\Data\Output\Intents\_Released\2025_04_29 qui è già credo tutto ok
+    x Try demo with Rocco release
+    x Preview.PreviewIsOn > StopPreview: I added the icon, does it work now?
+    x EBuddy fresh started, gototabright fa uscire dai bounds poich pensa di essere in commandhub, ask gototableft
+    x Scanner fps rallentano progressivamente: disconnect usb, restart scanner, reconnect usb (risk: not recognized)
+    x Velocità cobot ottimale (e buchi o meno nell'acquisizione):
+    - Override = 100%, create FullScan.RecordingIsOn ver slow and ver quick (control_time = 0.005, 100% or 50% == 109 sec, 549 frames) => EBuddy cambia control_time
+    !Override 25%: tracking lost + si schianta contro il tavolo!
+    2025_04_30a: 6 fps, control_time 0.05, override 100% > 180 sec, 999 frames
+    (- EBuddy warns user to modify Override for a slower acquisition
+    x Add save file to Registration
+    x Gli stati isolati dovrebbero essere indicati negli hints, cosi anche se non li vedi li sai lo stesso
+    x Add add close object check: generate mesh, send to Daniel, show results
+    x A manual tab change is not reported into EBuddy tab management (if you move two tabs on the right, then you ask to move right, it will move to the left!): quando cambio tab a mano devo emanare lo state
+    x Messaggi di Rocco show to GUI
+    x Read screen:
+    1) Verifica che Auto non sia già stato attivo da Ebuddy stesso
+    2) Read all flags that are already on, and disable all "X"
+    x Wrong message displayed: Registration: Save&Close Artec Studio è sbagliato Registration, dovrebbe essere Preview:Save&Close Artec Studio
+    x Doc: Il tablet non vede piu' il controller, come se il cavo fosse staccato: in app fai slide verso destra, appare un menu, fai cache clear
+    x I jump states non si vedono se sei all'inizio: add button per commutare la view from local to global
+
+    8.10.25 demo finale, 7.10.25 premeeting only for OA e SB
+    Paper for SB: splittare ebuddy in components, publish them
+
+    ArtecStudioScans dove sono finiti? SSD esterno?
+
+    SDU
+        Algo is slow: parallelizzare algo?
+        Perde il tracking: Si possono far girare i punti su un simulatore ed ottenere i punti che il cobot va veramente a toccare, e verificare che siano?
+
+    Diagram
+        x System setup: scanner type distance min max, GPU RTX 2060 super, risoluzioni screens, desktop pc
+
+    x PySimpleGUI project (sg) è stato chiuso!
+
+    x Meet SB 11.4, AV valorizzazione 23.4: come la vede lui?
+        x Fluently last part e post fluently: di cosa potrei occuparmi?
+            I want to interpret the state of a Human-Computer interaction:
+    AI starts interactions with Artec Studio 16, then the user continues some interactions with the tool, then lets AI take over again: how can AI interpret the situation?
+    Logging: create an independent tool that tells which widget has been clicked in artec studio, both by AI and user, and delivers this data to the state interpreter
+    Which AI tool can be most suitable? HCI: ontologies? Behavior trees?
+            Ontology: concepts, relationships,
+            Good prompt: which are some popular ontologies for user interactions? UI2Ont, MBUI Ontology,
+            Free ontology editor: Stanford protege
+    Pattern	            How it helps
+    Change Detection	Identify differences between pre- and post-user states.
+    Intent Inference	Guess the user’s goal from their actions.
+    Adaptive Planning	Modify AI behavior based on detected changes.
+
+    x Private masters python changeover remove, try to add the current under C, so no files are on laptop anymore
+
+    VS parla solo di geometria: è vero? Aggiungerei due parole sul classico controllo
+    https://sci-hub.gg/downloads/2019-01-19/e3/shamsaei2015.pdf classico: misura temperatura, controllo potenza
+    Quality KPI: microstructure porosity, residual stress, fatigue behavior, service load
+    Forse scrivere che approfondiremo on multi-track?
+    thermal control -> less bulk heating effects, but on multi-track deposition -> wavy non-uniform morphology + MP width changes -> more robust control needed
+
+    x Create setup per monitor diversi
+    i Monitor di robogym ha la riga dietro ed è touch (su ubuntu devi settarlo, su windows?)
+
+    x VISA
+        v fixed: gmail, spotify 23 chf/mese per family+Babi+LucaBeviacqua (45.90/anno),
+        x to fix: Apo music tool,
+
+    Rimborso spese 53034, Esposizione della cella PA di Fluently in fiera Automation & testing Torino
+    x Wait for Anna reply for valigiona
+    x Scan spese
+    x Insert into portale collaboratore queste spese + scan
+    x Get Babi rivevuta cena 14.2 e metti fuori la metà
+    (1) Hotel1 San Luigi Beinasco (To) pagato da me
+    () Hotel2 Air Palace Lingotto (To) pagato da Mary
+    () Dom 9.2 treno 16:02 pagato Mary, (3) apero 11.50, (1)cena in hotel 24 E, stazione to Hotel by Iris
+    Lun 10.2 pranzo gratis in Iris, (2) cena Kebab con Simone 21.50 E, Hotel <-> Iris by Iris
+    (1) Mar 11.2 ho pagato Hotel San Luigi 2 notti 292 E, pranzo gratis in Iris, (4) late apero Simone + cena Eataly 48.40, Hotel <-> Iris by Iris
+    (default) Mer 12.2 panino in fiera ricevuta ritirata, (default?????????) cena hotel late, Hotel <-> Fiera by Iris
+    (5) Giov 13.2 pranzo in fiera 27.80, (6) aperitivo-cena con Simone 43.90 E, Hotel <-> Iris by Iris
+    (7) Ven 14.2 pranzo in fiera 26.30, (XXXXXXXXXXXXXXX) cena con Babi, (8) Tassa di soggiorno, Hotel <-> Iris by Iris
+    x Mer 19.2 rientro in auto fiera Torino Lingotto Fiere to Comano 227 km + caselli 26.50 E according to tollguru.com
+
+    Post fiera
+    x Baco: send correctly the first Instructions state (after having sent the CommandHub state)
+    x Autopilot in Instructions: An error occurred: FLCommands.command_file_archive() missing 1 required positional argument: 'attribute', poi crasha il main thread
+    x Se devo parlare per presentare, devo poter spegnere il mic, loro lo fanno sulla dexterity, io posso farlo?
+    x GotoTabRight whisper problem when loud?
+    x New release
+        x Use my ludjam app viewer to show 4 scenarios: open artec studio, open EBuddy, open Robot controller to test some .csv, open workspace setup
+        x View: in FullScan PreviewIsOn non si riesce a leggere l'alternativa (State update?)
+        x In debug mode: show whisper output, show NLU output somewhere
+        x Activate end guidance (user can freely move the cobot : see notes how to do it)
+        rrrr Full scan demo in uscita dal pezzo si schianta contro il tavolo/pezzo, se viene rallentata di molto es 10%: in debug tell to check this before starting!
+            Top sarebbe poter settare in remote l'override al 100%, cosi il tablet non ha piu' influenza, e poi il tackt lo darebbe EBuddy su richiesta dello user
+        x GUI_main_SM_commands_execute is too long
+        x Whisper program deve avvisare che si è sganciato da navigator e sta usando il mic interno, ad es. non mandando piu nulla
+        Michele:
+        x NLU bring into windows docker
+            x whisper in my docker riesce a vedere la device BT5.3?
+            x I segnali ROS2 escono dal docker?
+        x EBuddy
+            x Add a button for removing scrollbars + tempo mouse movements, a real "Settings" button, while "Settings" rename to "Commands"
+    x Write documento con Simone
+    x Contact people fiera
+    x Da Barletta: n8n.io puoi crearti un agente personalizzato e fare fare quello che vuoi, a patto che ci sia un API a dispo per quel task
+
+    x Creare un agente che sorveglia i crash di python
+    x Endless loop ended deve reagire con un warning
+
+    x Sotto release vorrei creare una configuration dir, hw e sw, che contenga tutto quanto abbiamo usato nelle varie epoche,
+    es PC > rtx2060
+    D:\Banfi\Github\Fluently\_Setup va integrato in configuration sotto PC > ... > setup
+
+    x sm_state, guistate poi git commit
+
+    <h2>My Stuff</h2>
+    - Artec Studio create a dir containing all results: EasterHead07
+        Todo: Frank12
+
+    - https://www.aetevent.com/fiera-torino, 12-14.2.25, stand di Iris
+    x Materiale to bring:
+    Cuffie anti rumore, my laptop+alim (Ebuddy on it?), Vestiti da fiera, valigiona, PC + cavo rete + cavi monitor, laptop + alim + cavo rete, contenitore per scanner e cavi,
+    portapala, pala, spray, caricatore x le cuffie get mine from home di riserva, realwear+suo alim
+
+    ! Do not go to ubuntu24, noi siamo sulla 22 poichè i driver invidia non sono ancora pronti per la ver 24
+
+    - python38.exe file corrupted:
+        C:\Python38\python.exe is not a runnable app anymore, it has 0 bytes, and it has not been deleted (it is not in the trash)
+        - I Tried to reinstall python3.8.3 only, since file was 0 bytes
+            Tried to re-install python via chocolatey as requested by https://ros2docs.robook.org/humble/Installation/Windows-Install-Binary.html,
+            forced > not full installed, removed python3.8, forced > not full installed,
+            removed dir C:\Python38, installed > run source ok, ros2 topic list > multiple errors in C:\dev\ros2_humble e C:\Python38
+
+    <h2>Todo</h2>
+    x Get magneti for flip chart
+
+    x Test Rocco:
+        x Tab switch via voice are accepted? autopilot?
+        x AutopilotOn/off set true/false accordingly
+
+    x FLROS2ListenerSocket.py deve ascoltare il server e mandare il nuovo stato
+
+    x IRIS Screen: check if EBuddy works well on them
+
+    x D:\Banfi\Github\Fluently\Code\Python contiene 3 dirs di robots, tenerne uno, altrimenti from move_robot import FanucRosInterface cosa importa?
+
+    xxx Voice functionality: see below
+
+    Cyril usa Nodejs per UI, molto di moda
+
+    x Copy EBuddy to supsi gitlab, at least on release: needed?
+    x SSD backup to ricerca: almeno 155 GB di D:\Banfi\ArtecStudio\ArtecStudio16Projects
+    x Ask Anna (o chi organizza?) di riavere il tavolo alzabile nel nuovo ufficio
+    x Send Atomic Habits to Ester
+    x Riprendi spaced repetitions for harmony
+
+    x Scroll on/off as button: fix SCROLL_IS_ACTIVE = not SCROLL_IS_ACTIVE
+
+    Commands
+    x Test che commands vadano ancora, da una SM all'altra
+    x Test jump commands, states che non hanno uno sbocco: funziona?
+
+    <h1>Artec Studio</h1>
+    rrr When 3D processing has to be done LIVE, it is slow
+
+    Artec Studio > Export Mesh
+    Meshlab > File > Import > Import Mesh > wrl è lentino,
+    ma puoi puoi fare Filter > Texture > Set Texture > select .png e ti applica la texture es funziona con BallyShoeMarker,
+    ma non funziona con Frank, forse poichè ha 3 .png e non solo una?
+    Meshlab > File > Import > Import Mesh > .ply è veloce, ma non puoi applicare alcuna texture
+
+    x Artec Studio User settings
+    x Crea
+    ! User setting implementato male
+    ! Features to track non fa parte dello user setup
+    x Cosa fa veramente parte dello user setting?
+    ! Salvi il setting, ma non lo vedi, devi chiudere e riaprire per vederlo
+    ! Non puoi sovrascriverlo, ogni volta ne crea uno nuovo, non puoi cancellarli
+    ! Most advanced user: Frank02
+    x Beginner user
+    x Fix scan menu states usando ver vecchie, check messaggistica
+    x Do rewind on all SM, per poter ricominciare
+    x Experienced User
+    x Ad ogni cambio di valori mostrarli tutti a schermo in una tabella, save/load setups
+    x Add "Preferences" to command hub, save/load profiles:
+    x show log files, user dir (e.g. artec project files, profiles), flag scroll on/off, change user, mouse speed, wait time between hints
+    disable arrows controlling tabs, flag save mouse coordinates before auto moving it
+
+    <h1>Behavior Tree</h1>
+    - Ask Corrado per cosa li vuole usare
+    - Read paper del CIRP proposto: decision making ad alto livello di cosa deve fare il cobot con l'utilizzatore
+    - Read my doc on BT
+
+    <h1>Core</h1>
+    Chain concept:
+    states that are chained together use the auto transition for the chain: Do GlobReg, wait for GlobRegDone
+
+    xBB SM Name dispatcher: read SM names from YAML, dispatch them to all modules so that they are not hardcoded
+    x Implement JumpTo: reuse autopilot_insert_old1 dialog
+
+    x Add do_state with images, unifying with check_state with do_transition
+    x A state is already satisfied
+    x StateDo come li trovo? Non hanno verbi
+    Problem: TransitionDo non ha un check prima, quindi è stupido e "fa" senza controllare
+    Problema1: se il menu che doveva attivare era già attivo, lui lo disattiva
+    Problema2: per risolvere problema1 puoi lasciare TransitionDo vuoto, ed usi StateCheck per vedere se il menu è attivo,
+    se non è attivo lo puoi attivare con StateDo, ma se è già attivo FAI UNA ROLLBACK e non ne esci piu!
+    Registration: StartToolsMenu > MenuToolsIsOn
+
+    x Remove Artec Studio methods from FLOS
+
+    xBB Non ricaricare i moduli ogni volta è un problema o una feature, cosi EBuddy non deve essere chiuso se aggiungi nuova funzionalità?
+
+    x Quando si scrive su THREAD_READ_COMMANDS, scrivere anche da quale SM e non solo a quale SM?
+
+    x The external code such as D:\Banfi\Github\Fluently\Releases\2024_07_09_EBuddy\Data\Input\SM\Generic__Instructions__2024_08_19__10_56_54\JSON\Generic__Instructions__2024_08_19__10_56_54.py
+    must contain a dynamic reference to the SM name, based on yaml, and not be hard coded in .py!
+    x If the SM changes, the code fails without any warnings! Fix this as well, a warning must be shown!!
+
+    Which one is the real master, why?
+    D:\Banfi\Github\Fluently\Releases\2024_07_09_EBuddy\Data\Input\App\ArtecStudio\Code\ArtecStudio.py (molto probabile)
+    oppure D:\Banfi\Github\Fluently\Releases\2024_07_09_EBuddy\Data\Input\SM\ArtecStudio__2024_07_09__10_22_29_Backup\JSON\ArtecStudio__2024_07_09__10_22_29.py
+
+    FLCommands
+    x command_file_delete Forse vale la pena di spostarlo in una dir invece che fare delete, col nome year_month_day_command_name?
+    D:\Banfi\Github\Fluently\Releases\2024_07_09_EBuddy\Data\Input\Command\CommandForEBuddy\Performed
+    x FLCommands print arrivano su al log?
+
+    x Read about dependency injection, maybe interesting to inject functionality from SM to EBuddy
+    def __init__(self, engine):
+    self.engine = engine # The engine is provided from outside, instead than the classical self.engine = Engine(), where Car creates its own Engine instance
+
+    x SMCode inserts a button into main_window: quite complex, or dependency injection is easier?
+    Extend ExpGUISGButtonOpenImage.py / ExpGUISGLayoutDynamic.py
+    SM fa una transizione, which calls SM_method
+    SM_method riceve come argomento la main_window (add meccanismo come il queue message),
+    SM_method adds to main_window il layout del bottone con self.window_main.extend_layout(self.window_main[tab_key], [[sg.Button('New Button')]])
+    SM_method manda window_main un window_event che indica come argomento quale metodo di sè stesso chiamare via getattr quando il bottone verrà premuto
+    in values contiene -SMName- cat method: self.window_main.write_event_value(('-SM_COMMANDS-',), sm_in_loop.sm_gui.name cat button_method_name)
+    layout_dict = self.window_main.AllKeysDict
+    # Access a specific element using its key
+    #tabgroup = layout_dict['-TAB_GROUP-']
+
+    x Programming theory:
+    Which mechanism happens when my_model.next_state() is called, in SMCallbackTraversing?
+    Next state is magically called, but model does not define that method nor inherit it!
+
+    x Validator:
+        x Leggere SM json, estrarre tutte le transizioni, verificare che ci sia almeno un'immagine / codice / testo per ognuna
+        Stessa cosa per gli stati e il feedback? No, poichè essi non sono un must
+        Compilare una tabella
+        x Remove a state:
+        If I remove a state that I just added, there is no problem
+        If I remove a state which is not new, the SM is recreated, but the log file probably not
+
+    <h1>Daniel & Anneke</h1>
+    x Jetbrains renew login for Dataspell, Daniel IDE D:\Temp\DK_repairing, https://account.jetbrains.com/oauth2/signin?login_challenge=dbfce69c02a942438faa94371e89c4a2
+        # Integrate Daniel sw into mine, backup it
+    x Get reply from DK, D:\Banfi\DK_repairing Daniel Data Spell project, user ml_env lost many libs, why?
+    x Add DK SM
+
+    <h1>GUI</h1>
+    rrr Propose Oliver as beta tester
+
+    rrr Remove if (USER_ROLE == 'Beginner'):
+
+    rrr x State feedback: implementare un check nello state che il preview si veda, ed una rollback in caso non avvenga
+
+    rrr Hint lo terrei locale, non so se ha senso farlo diventare globale, si ricorda un hint per ogni SM, quando commuti li, te lo mostra, se esci dalla SM non lo mostra piu'
+
+    rrr x Fermare il recording su Artec
+        x Cobot feedback: read current coordinates, compare with sollwert
+
+    rrr Lo user fa apposta a fare crashare EBuddy, dice il prossimo comando senza aspettare che l'ultimo sia completato: ogni stato deve avere il suo feedback
+
+    rrr Problema: se lo user takes over execution, entra in interaction, e fa stop e disabilita il preview, come fa a capirlo la mia SM? Partendo dall'inizio, ma come si comporta ai bivi?
+
+    x Think about how to handle complete parallel threads: con un Artec Studio faccio processing, con un altro acquisizione
+
+    x If taskbar is in hide mode, return a warning
+
+    x When the "Handle States" window is opened, the main window can not respond to the button "Handle States",
+        since the execution loop is in Handle states: create two independent threads, or integrate "Handle states" in the main window
+
+    x State Check
+        x Add state images: do_screenshot
+        x CmdStartPause: click on pause or click on stop should be the same but click does not give any feedback,
+            thus it is hard to find out if the image command has been done or not, for all possible cases
+
+    x Extend 3D processing interactions
+        x Click on real time fusion
+
+    x SaveFile deve annunciarti che non puo' farlo se vede che File è grayed out
+
+    x For advanced or guru, the blade may be inspected as three processes: scan+CAD extract of top, side and bottom
+
+    x Come supportare lo user a rimuovere il floor con artec studio?
+
+    x Scroll window for centering the SM image: add vocal command for scrolling
+
+    x Teach the operator how to use the mouse:
+        x Insert it as user flag
+        x I have to do two interactions in a row, without refocusing on Artec Studio
+
+    x Instructions: add photos
+
+    x Add other resolutions
+
+    x Se artec studio è chiuso non lo troviamo, fare il giusto warning
+
+    x Preview: gestire il caso in cui Artec Studio è spento, and open it, fluently
+
+    x Use Tabs in tab?
+
+    x Fullscan previewIsOn c'è una doppia alternativa: usare \n per non uscire dallo schermo
+
+    x ExpGUISGScroll.py pilotare lo scroll
+    x When SaveFile is pressed, but RecordingIsOn, show an error message
+    x Wrong message scanner is not connected is always shown, even when it is connected, then it disappears
+    x If last state in "states" in json terminates with a wrong ",", display a GUI error as now when a SM is not found, show which SM creates the error
+
+    x Dire allo user che il menu deve essere attivato e non auto-hide! Show him the win11 menu setup
+
+    x Update instructions images
+    x Cobot setup, and not manual setup
+    x How to use EBuddy
+    x Potenziare le immagini di aiuto allo SliceScan
+
+    x FullScan, se non sono in recording stopped, file non è selezionabile: riconoscere la situazione ed avvisare l'utente
+    x SliceScan: per utente basic disabilitare AutoPilot, che fa solo casino?
+    x StartScanMenu: CV2 non trova l'icona se il menu a lato è aperto! La piazza in posti assurdi!
+    Ask "Which other free alternatives are there to python cv2.matchTemplate?"
+    https://www.g2.com/products/opencv/competitors/alternatives
+    Halcon (a pagamento)
+    x Beginner user: scrivere la differenza fra commento e comando che puoi dire
+
+    x Non funziona in mono schermo, dà un errore stupido d'immagine mancante (add an if)
+
+    x User Help doc: significato dello stato in red vs blu
+
+    x View
+    Add GUI button: user can toggle between focused view (around current state) and enlarged view (complete state machine)
+
+    x Users
+    x I have three yaml files: beginner, advanced, guru. i want that guru contains advanced, which contains beginner yaml.
+    To achieve this, you can use YAML anchors and aliases to include the contents of one YAML file into another
+    pip install pyyaml
+
+    <h1>Take Over</h1>
+    <!-- Autopilot, SM state change from A to D jumping -->
+
+    - SB Learn from user: Teachix vede i miei click, riconosce l'applicazione, crea un folder, sa dove ho cliccato e salva l'immagine attorno al click,
+    e crea una state machine imparando da me
+    - SB Cockpit switch: per un po' va avanti l'utente, poi continua Teachix riconoscendo lo stato, e seguendo la state machine che conosce
+
+    x Autopilot: how to handle SM forks? Priority to first?
+
+    x GUI state interpretation
+        x Acquire the left part of Artec Studio, evaluate in which state it is
+
+    x Reinforcement learning Articolo Galimberti
+    https://ar5iv.labs.arxiv.org/html/2312.07216 Learning from Interaction: User Interface Adaptation using Reinforcement Learning
+
+    x Behaviour trees BT
+        x Use BT but hide its output for readability when the application is complex?
+        x Completare il disegno Behavior Tree per i miei casi, add le mie SM, send to him e Ste
+        x free diagram behavior tree: Visio, oppure https://www.behaviortrees.com/#/dash/home
+
+    x State machine handling doing take over:
+        x Add capability to define and try to reach whatever end state, starting from the current state, traversing state by state, for example from start to CmdStartRecording
+        x UIObserver impara le transizioni che servono ad arrivare al risultato, ed è in grado di ripeterle.
+
+    x Autopilot mode
+    x Screen interpreter: come capire fino a dove è arrivato l'utente, e quindi quale stato fa matching con la app?
+    x Come interpretare lo stato di Artec Studio?
+    x Ce lo dice l'utente selezionando uno state drop down menu: scan done / scan to be done / processing done / processing to be completed
+    x E-Buddy parte da start ed attraversa il check di tutti gli stati (niente do, solo check)
+    Attraversare la SM senza fare le transizioni, guardando solo se lo stato d'arrivo è soddisfatto,
+    ad es CmdStartArtecStudio viene attraversata ma non fatta, e se il feedback di ArtecStudioIsActive è True, continuiamo
+    x SM state ottimo solo per la parte fatta dal cobot
+    x Learn all mouse & keyboard user interactions, repeat them
+
+    <h1>Intents</h1>
+    v Problema on Alienware: whisper non vedeva la GPU, quindi usava la CPU ed era molto lento
+    Puoi scegliere di usare un modello small/medium/large, questo influenza la latenza
+    Richiedere la versione di cuda
+    1) >nvcc --version => cuda 11.5,
+    2) Corrado dice piu affidabile di >nvidia-smi che dice 12.2
+    3) >python3 => >>import torch => >>print(torch.__version__) => 2.5.1+cu124 => >>exit
+    => Non ho capito bene a quale dare retta, visto che ognuno dà una versione diversa
+    cuda e pytorch devono essere compatibili, la 12.4 non lo era, prima ha messo torch, dopo cuda12.4
+    reinstallati i driver nvidia, restart laptop is needed
+    cfr sua guida installare cuda (non straight ahead)
+    suso apt install cuda12-4
+    - Notes: isaac lab x driver cuda download, con python non devi sourcare ma se hai componenti cpp allora si
+    - Alessio usava una tastiera esterna, il laptop lo ha comprato mattia, con su scheda video rtx2070
+    - source install/setup.bash fa source (esegue il file) di quella bash, che è dentro alla dir di install, dove si è messo ROS
+    >source whisper env bin activate => Per attivare il nodo di whisper in ros
+
+    - Scaricare un git: mkdir x, cd x, git clone https
+    >htop => Tool che mostra gpu memory alloc
+    >colcon build => Command for building ROS2 components, non serve sempre, si fa per paranoia,
+                The built packages are placed in the install directory within your workspace,
+                poi dopo devi sourcare pero' con >source install/setup.bash
+
+    Setup docker di Rocco
+    in cmd (questi comandi li ho estratti da build_docker.sh di Rocco, visto che sudo non è supportato in windows)
+    cmd>cd D:\Banfi\Github\Fluently\Code\Docker\natural-language-understanding-pa
+    cmd>docker build -t rasa_ros .
+    Dopo questo ti ritrovi un'immagine nel docker app
+    >docker run -it --rm --name my_rasa_ros rasa_ros
+    docker>ctrl-d per uscire da docker oppure exit
+
+    in un cmd dockerato:
+    >ros2 run nlu nlu_node
+    >pip list
+    >pip install rasa==3.6.20
+    (>pip install torch => era per controllare se funziona la gpu)
+    >docker container list -a
+    docker exec -it 4e21186b72d9 => wrong
+    cmd>docker run -it --rm osrf/ros:humble-desktop ros2 run demo_nodes_cpp listener
+    >docker run -it --rm osrf/ros:humble-desktop => Scarica un ros2 container dal loro sito, e resta in modalita' interattiva
+    docker>export ROS_DOMAIN_ID=5, mentre
+    ROS_DISTRO=humble
+ROS_DOMAIN_ID=5
+ROS_LOCALHOST_ONLY=0
+ROS_PYTHON_VERSION=3
+ROS_VERSION=2
+    erano giä  a posto
+
+    i want to install docker on win11, but not the desktop version. how
+    docker --version
+    docker compose version
+
+    v Rocco doc on NLU module:
+        - Per lanciarlo usi ./build_docker.sh all'interno della directory /Desktop/natural-language-understanding e il nodo parte in automatico
+            - Con Andrea Bussolan abbiamo cambiato un parametro per permettergli di usare la lan vera, altrimenti al di fuori non vedi nulla
+        - Per pubblicare lo stato corrente della state_machine pf utilizza un topic con il seguente nome: sm_state
+            Utilizza una semplice stringa come tipo di messaggio con il seguente formato 'TabNode' e.g. InstructionsStart, InstructionsReady or PreviewBasicArtecStudioIsOff
+            Come output sul topic gui_output troverai in formato stringa il nome della transizione che l'operatore vorrebbe eseguire
+        - Tutte queste informazioni le trovi nel branch 'pa' su gitlab: ho accesso con login supsi standard
+            https://gitlab-core.supsi.ch/dti-isteps/armlab/fluently/natural-language-understanding/-/tree/pa?ref_type=heads
+
+    Voice functionality:
+    x Problem: docker comunica con docker, ma non comunica con il mio ros2
+        v Verificato molte env var, resta RMW
+        x Docker flags: network == host
+    x Ogni comando che mi arriva va associato alla ultima SM attiva
+    x How should a SM call another SM? All transitions
+
+    x Rocco
+    x Enter gitlab con supsi net credentials
+    https://gitlab-core.supsi.ch/dti-isteps/armlab/fluently/natural-language-understanding/-/blob/main/ros2_ws/src/nlu/nlu/nlu_node.py?ref_type=heads
+    x Send json: read yaml, parse json files
+    x Creare un flag per add/remove all GUI buttons, ed interagire con EBuddy sostituendo la GUI e i commands
+    x Macro process tabs identified: Instructions, Scan, 3D data processing
+
+    x Rocco mi manda il file che ricevo da ros2 e che contiene gli intents che lui mi propone
+    Offline: json file
+    Online: return state, GUI buttons: autopilot, stop autopilot, settings
+    Comments: user cambia il tab dicendo il nome del tab, il contenuto di settings non lo comandiamo a voce, quindi neanche lo apriamo
+    Rocco parla direttamente con l'utente se non si ritrova con un comando, EBuddy non viene coinvolto
+    Online: pubblicare su un topic ad es per "Save&Close Artec Studio"
+    Instructions
+    {
+    state1 : trigger1, trigger2,
+    state2 : trigger3, trigger4,
+    state3 : trigger3, trigger4,
+    }
+
+    Open EBuddy, run this in the terminal
+    C:\Python38\python.exe D:\Banfi\Github\Fluently\Code\Python\EBuddy\fluently\FLROS2Listener.py
+    C:\Python38\python.exe D:\Banfi\Github\Fluently\Code\Python\ROS2\FLTalker.py
+
+    x Integrare client server into EBuddy
+    >C:\Python38\python.exe D:\Banfi\Github\Fluently\Code\Python\EBuddy\fluently\FLSocketClient.py
+    >C:\Python38\python.exe D:\Banfi\Github\Fluently\Code\Python\EBuddy\fluently\FLROS2TalkerListener.py
+    2024-12-13 10:26:49,376 - INFO - from FLGUIMain.py line 391 method GUI_main_SM_commands_execute: State after transitioning: Read
+    FLCommands line 121
+
+    x Integrare ROS2 in EBuddy per Rocco, remove send commands button
+
+    x FLROS2TalkerListener.py init ok, but non sembra inviare ne ricevere nulla, quindi prima testarlo in ambiente ROS2,
+
+    <h1>Image Processing</h1>
+    - Threat: Artec Studio colours the menu "save file" in blue when the user moves onto it, but when that menu is searched, it is not blue: does it find it?
+    - Threat: robustness to drastic monitor resolution changes: log matching results from SC_Model
+
+    x CV2 matching_score è 0.44 pur trovando perfettamente l'oggetto:
+    x D:\Banfi\Github\Fluently\Releases\2024_07_09_EBuddy\CV2ImagesProblem
+    x Preprocess images before template matching: resize, normalize
+    x Provare varianti di parametri
+    x Utilize dedicated object detectors including HOG + Linear SVM, Faster R-CNN, SSDs, YOLO, etc.
+    x Visto che è statistico, rifarlo potrebbe ritornare risultati diversi?
+    per il click non guardare il matching, ma il risultato e in caso fare rollback?
+    x Codice strampalato if cv2.TM_CCOEFF_NORMED in [cv2.TM_SQDIFF, cv2.TM_SQDIFF_NORMED]:
+    v L'immagine che sto usando è stata presa con la giusta risoluzione e zoom? si
+    v Preprocess images before template matching: from color to grey
+    v Best image format for the algorithm: jpeg/png, color/bw: gpt tells it does not matter
+
+    OCR in FLCV2.py line 145
+    OCR non funziona su "MB | Ready", poichè legge "MB | Aligning keyframes" e lo accetta
+    Per ora lo commento e verifico se serve per la demo ad Oliver
+
+    x CV2 false negatives
+    x Usare il None e non solo il true false: feedback true or false ha molto valore, feedback none non ne ha poichè non c'è stato
+    x Passare dal giudicare un image do dal CV2 score a quello che si vede davvero, es lo score è del 0.3 ma lo ScanMenu è attivo, a noi va bene
+
+    Falso positivo:
+    Auto non sottolineato viene riconosciuto come Auto sottolineato
+    Matching score: 0.7552: se venisse applicato CV2_MATCHING_SCORE_GOOD 0.8 invece CV2_MATCHING_SCORE_SUFFICIENT, vedremmo la differenza!
+    Applicare una threshold diversa: aggiungere un .txt che dichiara come verificare il matching:
+    Usa soglie alternative, risultato fra ok e good: OCR yes/no
+
+    x FullScan PauseIsOn mi capita che lo score x il do image e' solo 0.4898, quindi meno di 0.5, pero' il bottone pause lo trova e lo clicca
+    Errore: il check non riesce a ribaltare la situazione in riga 91 di FLModel / riga 33 del FLboolean
+
+    <h1>Platform</h1>
+    Neither CUDA nor MPS are available - defaulting to CPU. Note: This module is much faster with a GPU.
+
+    <h1>Portability</h1>
+    <!-- Tasks needed to control the PA cell through my laptop -->
+
+    x Setup network adapter
+        Gianluca ne ha alcuni nell'armadio, hanno l'etichetta con su il loro IP già predisposto: 10.11.31.135
+        ping 10.11.31.132 (tender o fluently1 o Thinkpad) e ping 10.11.31.131 (cobot) ora funziona
+        Devi inserire gateway, e DNS 8.8.8.8 se vuoi accesso ad internet
+
+    x Handle display resolution change from 125% to 150%
+
+    <h1>Robustness</h1>
+    rrr Remove quit and dirty code marked with "xxx"
+
+    rrr Set up automatic testing with GitLab, you can use GitLab CI/CD, come Alessio Mosca col suo
+
+    xxx git
+    You've added another git repository inside your current repository
+    D:\Banfi\Github\Fluently\Code\Docker\welcome-to-docker
+    git submodule add <url> Code/Docker/welcome-to-docker
+
+    x TIME_WAIT_GRAPH_IMAGE_IS_SAVED is huge
+
+    x Each transition should have an image for verifying that it fired correctly
+
+    x Correct screen_width, screen_height = pyautogui.size() in CV2 for the second screen, instead than hardcoding
+
+    x Molto raramente, ma avviene, il comando di start di artec studio viene trascritto sbagliando i caratteri "\" e ":",
+    quindi invece di artec studio viene avviato un browser: per ovviare basta ripetere il comando, ma la robustezza?
+
+    x autopilot_insert remove quick and dirt code
+
+    x Quando modifichi la struttura della SM, ed essa viene ricreata, immagino che il log file non funzioni piu'
+
+    x GUI_command_send has to write the command file twice: which method deletes it the first time? (I already inspected all python primitives for removing files)
+
+    x When a new state is reached, on state check resulting to False, the state is rolled back, but if the feedback code crashes, the "wrong" state is not changed: I don't like this!
+
+    x La scelta dello stato di partenza dell'autopilot funziona?
+
+    x Test: try Pyunit or Nose2 for automatic code testing, selenium for gui test, Behave per analisi comportamentale scritto in linguaggio naturale
+
+    x getWindowsWithTitle mi sembra molto piu' robusto di focus_set_on_app!
+
+    x GUI_main_update is not able to change the size of the tab, which is needed if you delete all states
+
+    x Artec deve far partire il programma sul cobot che legge dove andare
+
+    x SM Come mantenere la coerenza dei simboli? Ad esempio se rimuovo uno stato con la GUI,
+    poi devo ricordarmi io di salvarlo in json, e poi le chiamate dalle altre SM a quello stato diventano non valide
+    Serve un parser che verifichi che sono coerenti le SM, gli states, le transizioni
+
+    <h1>SDU</h1>
+    x Support doing multiple ringwise scans: does it work?
+
+    x Cobot path Viewer
+
+    x Volume estimation
+
+    x Scambio dati via ROS2: vorrei organizzare un meeting con Oliver + Ste + Paolo + Quattrini + me per decidere cosa proporre a SDU
+    Quattrini priorities secondo SB:
+    a) ricavare il convexhull da una camera
+    b) dalle due camere
+    c) scambiarlo via ROS2
+
+</body>
+</html>

@@ -1,10 +1,13 @@
+# Adapt Path1, Path2
+
 import sys
 import os
 import queue
-from fluently.FLOS import *
+#from fluently.FLOS import *
 
-# Add the directory containing FanucRosInterface.py to the system path
-sys.path.append(os.path.abspath(r'D:\Banfi\Github\Fluently\Code\Python\knowledge-transfer-fleuntly-main'))
+# Path1: add the directory containing FanucRosInterface.py to the system path
+#sys.path.append(os.path.abspath(r'D:\Banfi\Github\Fluently\Code\Python\knowledge-transfer-fleuntly-main'))
+sys.path.append(os.path.abspath(r'D:\Banfi\Github\Fluently02\Code\Python\Vendor\Cobot\Borzoneg_2024_11_29\knowledge-transfer-fleuntly-main'))
 print("Printing sys.path \n")
 for path in sys.path:
     print(path)
@@ -59,6 +62,7 @@ def RecordingIsOffDo(message_queue):
     return True
 
 def RecordingIsOnDoLoop(message_queue):
+
     csv_abs_path_root = r"D:\Banfi\Github\Fluently\Code\Python\knowledge-transfer-fleuntly-main\trajs"
 
     # Scan the top part of the propeller
@@ -115,19 +119,23 @@ def RecordingIsOnDo(message_queue):
     
     # Scan trajectory: trajectory of the full scan is automatically calculated
     # Override 100%
-    '''
-    csv_abs_path_root = r"D:\Banfi\Github\Fluently\Code\Python\knowledge-transfer-fleuntly-main\trajs\2025_05_07_Paolo"
+
+    #csv_abs_path_root = r"D:\Banfi\Github\Fluently\Code\Python\knowledge-transfer-fleuntly-main\trajs\2025_05_07_Paolo"
+    csv_abs_path_root = r"D:\Banfi\Github\Fluently02\Releases\2025_01_10_EBuddy\Data\Input\DataJoints\trajs\2025_05_07_Paolo"
     csv_name = "trj_smooth.csv" # 1246 positions
     index_start = 0
     index_end = 0 # If 0, use all data, 1293 # 740 # 2552 # 1246
     control_time = 0.05
+
     '''
+    # Path2
     csv_abs_path_root = r"D:\Banfi\Github\Fluently02\Releases\2025_01_10_EBuddy\Data\Input\DataJoints\Diego"
-    csv_name = "diego_arc_trj.csv" # 1495 positions
+    # csv_name = "diego_arc_trj.csv" # 1495 positions for this "wrong" slice scan
+    csv_name = "diego_trj.csv" # 1495 positions for full scan
     index_start = 0
     index_end = 0 # 1495 
     control_time = 0.05
-    
+    '''    
     csv_abs_path = os.path.join(csv_abs_path_root, csv_name)
     print("Cobot path used: " + csv_abs_path)
 
